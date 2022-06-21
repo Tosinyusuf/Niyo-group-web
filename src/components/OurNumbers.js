@@ -1,8 +1,11 @@
+import StyledOurNumbers from "../styled/OurNumbers.styled";
 
 const OurNumbers = () => {
     return (
         <>
-        <h1>Our Numbers</h1>
+        <StyledOurNumbers>
+            <h1>Our Numbers</h1>
+        </StyledOurNumbers>
         </>
     )
 }

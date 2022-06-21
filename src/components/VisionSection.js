@@ -15,7 +15,6 @@ const VisionSection = () => {
                     <p className="vision-text">A nation of brands where ambitious black women build and create products that shape the face of culture</p>
                     <button className="vision-button">Learn More <span><img src={Arrow} alt="symbol" className="arrow" /></span></button>
                 </div>
-
             </div>
 
 

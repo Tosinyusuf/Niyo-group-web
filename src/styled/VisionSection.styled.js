@@ -110,23 +110,29 @@ const styledVisionSection = styled.div`
     }
 
     .vision-image-container {
-        // height: 873px;
         z-index: 10;
-        // position: relative;
-        // bottom: 200px;
-        width: 50vw;
-
-        // display: inline-block;
+        padding: 0;
+        margin: 0;
+        // width: 50vw;
     }
 
     .vision-image {
-        width: 99%;
-        // position: absolute;
-        top: -50px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        z-index: 10;
+        object.fit: cover;
+        padding: 0;
+        margin: 0;
+
+
+
+
         // width: 100%;
         // height: 120%;
-        // object.fit: cover;
-        // bottom: 500px;
+        // bottom: 2500px;
         // top; 500px;
         // width: 50vw;
         // height: 115%;
