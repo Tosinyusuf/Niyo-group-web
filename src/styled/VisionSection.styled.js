@@ -46,9 +46,6 @@ const styledVisionSection = styled.div`
         height: 26px;
         left: 124px;
         top: 219px;
-    }
-
-    .vision-description {
         font-size: 27px;
         margin-right: 1%;
     }
