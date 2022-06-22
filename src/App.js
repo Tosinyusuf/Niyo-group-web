@@ -1,6 +1,8 @@
 import HeroSection from "./components/HeroSection";
-import OurNumbers from "./components/OurNumbers";
 import VisionSection from "./components/VisionSection";
+
+// import Mission from "./components/Mission";
+// import OurNumbers from "./components/OurNumbers";
 import GlobalStyle from "./styled/Global.styled";
 
 function App() {
@@ -9,9 +11,12 @@ function App() {
    <GlobalStyle />
       <HeroSection />
       <VisionSection />
-      <OurNumbers />
+
    </>
   );
 }
 
 export default App;
+
+ /* s<OurNumbers />  */
+

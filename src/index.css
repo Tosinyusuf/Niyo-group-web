@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: 'AtypDisplay-Bold';
+    src: local('AtypDisplay-Bold'),
+    url("./fonts/fonts/AtypDisplay-Bold.ttf") format('opentype')
+}
+
+@font-face {
+    font-family: 'Light';
+    src: local('AtypText-Light'),
+         url('./fonts/fonts/AtypText-Light.ttf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'regular';
+    src: local('AtypText-Regular'),
+         url('./fonts/fonts/AtypText-Regular.ttf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'semibold';
+    src: local('AtypText-Semibold'),
+         url('./fonts/fonts/AtypText-Semibold.ttf') format('opentype');
+  }
+
+/* body {
+    font-family: AtypDisplay-Bold;
+} */
