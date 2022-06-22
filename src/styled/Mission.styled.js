@@ -36,7 +36,7 @@ const StyledMission = styled.div`
         color: #FBAF00;
         width: 245.5px;
         height: 26px;
-        font-size: 14px;
+        font-size: 14px; 
     }
 
     .rectangle {
