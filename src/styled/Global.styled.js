@@ -1,14 +1,7 @@
 // import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
-import "../fonts/fonts/AtypDisplay-Bold.ttf";
 
 const GlobalStyle = createGlobalStyle`
-
-@font-face {
-    font-family: 'AtypDisplay-Bold';
-    src: local('AtypDisplay-Bold'),
-    url("../fonts/fonts/AtypDisplay-Bold.ttf")
-}
 
 
     body {

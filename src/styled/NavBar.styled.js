@@ -1,17 +1,12 @@
 import styled from 'styled-components'
 
 export const StyledNavBar = styled.div`
-position: absolute;
 width: 100%;
 height: 91px;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
-overflow-x: hidden;
-padding: 0;
-margin: 0;
-left: 0px;
-top: 0px;
+font-family: semibold;
 background-color: #070909;
 color: #fff;
 
@@ -49,7 +44,8 @@ color: #fff;
     color: #070909;
     height: 6.5vh;
     border-radius: 20px;
-    width: 197px;
+    width: 164px;
     height: 55px;
+    font-family: semibold;
 }
 `;

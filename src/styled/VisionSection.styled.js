@@ -1,22 +1,15 @@
 import styled from 'styled-components';
+import classroomImage1 from "../assets/classroom-image-1.svg";
+
 
 const styledVisionSection = styled.div`
-    // height: 100vh;
+    height: 100vh;
     width: 100vw;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: 896px;
-    overflow-x: hidden;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     background-color: #070909;
-    position: absolute;
     z-index: -1;
     color: #fff;
-
 
     .vision-left-container {
         display: flex;
@@ -24,81 +17,57 @@ const styledVisionSection = styled.div`
         align-items: center;
         justify-content: center;
         width: 50vw;
-        // height: 100vh;
-    }
-
-    .vision-text-container {
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-        height: 80%;
-        align-items: center;
-        justify-content: center;
-        width: 50vw;
-        bottom: 50%;
-
+        height: 100vh;
     }
 
     .vision-description {
+        font-family: regular;
         color: #FBAF00;
-        position: absolute;
         width: 245.5px;
         height: 26px;
-        left: 124px;
-        top: 219px;
-        font-size: 27px;
-        margin-right: 1%;
+        font-size: 14px;
     }
 
     .rectangle {
-        margin-right: 10%;
+        margin-right: 8%;
+        align-self: center;
+        padding: 0;
+        margin: 0 5% 0 0;
     }
 
     .vision-title {
         width: 484px;
-        position: absolute;
         height: 90px;
-        top: 269px;
-        left: 124px;
-        // font-family: 'Atyp Display';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 112.5%; 
+        align-self: center;
+        font-family: AtypDisplay-Bold;
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: 12px;
+
     }
 
     .vision-text {
-        position: absolute;
         width: 30vw;
-        height: 168px;
-        left: 124px;
-        top: 394px;
-        
-        // font-family: 'Atyp Display';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 130%;
-        /* or 42px */
+        // height: 168px;
+        font-family: regular;
+        font-size: 20px;
+        line-height: 25px;
     }
 
     .vision-button {
+        margin: 32px 0 0 0;
+        padding: 0;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        align-items: flex-start;
         color: #FBAF00;
-        position: absolute;
-        width: 188px;
-        height: 26px;
-        left: 116px;
-        top: 597px;
         background: none; 
         cursor: pointer;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 27px;
         text-decoration: underline;
-        border: none;
+        border: none;        
+        font-size: 19px;
+        font-family: regular;
     }
 
     .arrow {
@@ -107,32 +76,21 @@ const styledVisionSection = styled.div`
     }
 
     .vision-image-container {
+        position: relative;
+        width: 50vw;
+        height: 100vh;
+        background-image: url(${classroomImage1});
+        top: -70px;
+        background-size: 600px 1260px;
+        background-size: cover;
+        background-position: center;
         z-index: 10;
-        padding: 0;
-        margin: 0;
-        // width: 50vw;
     }
 
-    .vision-image {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        padding: 0;
-        margin: 0;
-        z-index: 10;
-        object.fit: cover;
-        padding: 0;
-        margin: 0;
-
-
-
-
-        // width: 100%;
-        // height: 120%;
-        // bottom: 2500px;
-        // top; 500px;
-        // width: 50vw;
-        // height: 115%;
+    .hero-badge {
+    position: relative;
+    top: -90px;
+    left: -100px;
     }
 
 `;
