@@ -1,8 +1,8 @@
 import HeroSection from "./components/HeroSection";
 import VisionSection from "./components/VisionSection";
+import OurNumbers from "./components/OurNumbers";
+import Mission from "./components/Mission";
 
-// import Mission from "./components/Mission";
-// import OurNumbers from "./components/OurNumbers";
 import GlobalStyle from "./styled/Global.styled";
 
 function App() {
@@ -11,12 +11,12 @@ function App() {
    <GlobalStyle />
       <HeroSection />
       <VisionSection />
-
+      <OurNumbers />
+      <Mission />
    </>
   );
 }
 
 export default App;
 
- /* s<OurNumbers />  */
 

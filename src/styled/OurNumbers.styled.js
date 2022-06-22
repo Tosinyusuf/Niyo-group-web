@@ -1,41 +1,38 @@
 import styled from 'styled-components';
 
 const StyledOurNumbers = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #070909;
-    position: absolute;
-    width: 1440px;
-    height: 374px;
-    top: 1694px;
+    height: 380px;
 
     .numbers-text-container {
         display: flex;
         flex-direction: column;
         height: 100%;
         width: 100%;
-        left: 144px;
         color: #fff;
-    }
+    } 
 
     .numbers-headings {
-        left: 14%;
-        margin: 2% 0 0 8%;
+        margin: 0 0 0 8%;
         font-size: 20px;
     }
 
     .numbers-rectangle {
-        left: 144px;
         width: 57px;
-        margin-right: 2%;
     }
 
     .numbers-description {
-        left: 144px;
         font-size: 20px;
         color: #FBAF00;
+        font-family: regular;
     }
 
     .numbers-title {
         font-size: 38px;
+        font-family: AtypDisplay-Bold;
     }
 
     .tally-container {
@@ -44,6 +41,7 @@ const StyledOurNumbers = styled.div`
         align-items: center;
         margin-left: 8%;
         width: 100%;
+        font-family: AtypDisplay-Bold;
     }
 
     .numbers-tally {
@@ -65,10 +63,7 @@ const StyledOurNumbers = styled.div`
         font-size: 20px;
         padding: 0;
         margin: 0;
-
     }
-
-
 `;
 
 export default StyledOurNumbers;

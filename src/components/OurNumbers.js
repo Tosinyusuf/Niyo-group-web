@@ -20,7 +20,7 @@ const OurNumbers = () => {
                         <h4 className="tally-title"><span>30,000</span>+ </h4>
                         <p className="tally-text">Community Members</p>
                     </div>
-                    <div className="numbers-tally">
+                    <div className="numbers-tally"> 
                         <h4 className="tally-title"><span>100,000</span>+ </h4>
                         <p className="tally-text">Upskilled through Niyo Group</p>
                     </div>
