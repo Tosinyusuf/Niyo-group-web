@@ -7,7 +7,7 @@ const OurNumbers = () => {
         <StyledOurNumbers>
             <div className="numbers-text-container">
                 <div className="numbers-headings">
-                    <p className="numbers-description"><img src={orangeRectangle} className="numbers-rectangle" alt="symbol" />Our Numbers</p>
+                    <p className="numbers-description"><img src={orangeRectangle} className="rectangle" alt="symbol" />Our Numbers</p>
                     <h1 className="numbers-title">Niyo in numbers</h1>
                 </div>
 
@@ -29,7 +29,7 @@ const OurNumbers = () => {
 
 
 
-
+ 
         </StyledOurNumbers>
         </>
     )

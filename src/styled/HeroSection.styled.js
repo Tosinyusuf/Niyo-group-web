@@ -7,7 +7,7 @@ export const StyledHeroSection = styled.div`
     background-size: cover;
     background-position: center;
     height: 120%;
-
+ 
 
     .hero-text-container {
         display: flex;

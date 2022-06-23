@@ -19,48 +19,41 @@ const Brands = () => {
 
             <div className="brand-cards">
                 <div className="individual-card">
-                    <div className="card-image">
-                        <img src={cardImage1} alt="brand card"></img>
-                        <img src={cardLogo1} alt="niyo logo"></img>
+                    <div className="card-images">
+                        <img src={cardImage1} className="card-single-image" alt="brand card"></img>
+                        <img src={cardLogo1} className="card-niyo-logo" alt="niyo logo"></img>
                     </div>
                     <div className="brand-text-container">
-                        <h1 className="card-title">Niyo </h1>
-                        <p className="cart-text">xxxxx</p>
-                        <button className="card-button">xxxxxxx</button>
+                        <h1 className="card-title">Niyo Network</h1>
+                        <p className="card-text">The training ground for the best black women in tech and its intersections with other high impact industries. We run  bootcamps focused on tech careers, entrepreneurship, and hair and beauty.</p>
+                        <button className="card-button button-1">Discover our Bootcamps</button>
                     </div>
                 </div>
                 
 
                 <div className="individual-card">
-                    <div className="card-image">
-                        <img src={cardImage2} alt="brand card"></img>
-                        <img src={cardLogo2} alt="niyo logo"></img>
+                    <div className="card-images">
+                        <img src={cardImage2} className="card-single-image" alt="brand card"></img>
+                        <img src={cardLogo2} className="card-niyo-logo" alt="niyo logo"></img>
                     </div>
                     <div className="brand-text-container">
-                        <h1 className="card-title">Niyo </h1>
-                        <p className="cart-text">xxxxx</p>
-                        <button className="card-button">xxxxxxx</button>
+                        <h1 className="card-title">Niyo Hair & Beauty</h1>
+                        <p className="card-text">Niyo Hair and beauty is the one stop shop for all healthy afro hair and beauty needs.</p>
+                        <button className="card-button button-2">Innovative hair & beauty</button>
                     </div>
                 </div>
-
 
                 <div className="individual-card">
-                    <div className="card-image">
-                        <img src={cardImage3} alt="brand card"></img>
-                        <img src={cardLogo3} alt="niyo logo"></img>
+                    <div className="card-images">
+                        <img src={cardImage3} className="card-single-image" alt="brand card"></img>
+                        <img src={cardLogo3} className="card-niyo-logo" alt="niyo logo"></img>
                     </div>
                     <div className="brand-text-container">
-                        <h1 className="card-title">Niyo </h1>
-                        <p className="cart-text">xxxxx</p>
-                        <button className="card-button">xxxxxxx</button>
+                        <h1 className="card-title">Niyo Dapp</h1>
+                        <p className="card-text">Niyo Dapp is  where creators, brands and users get rewarded in crypto for creating killer content through turning their content into NFTs and physical products.</p>
+                        <button className="card-button button-3">NFT for Beauty & Fashion</button>
                     </div>
                 </div>
-
-
-
-
-
-
             </div>
         </StyledBrands>
         </>
