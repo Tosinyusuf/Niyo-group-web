@@ -25,16 +25,15 @@ const styledVisionSection = styled.div`
         color: #FBAF00;
         width: 245.5px;
         height: 26px;
-        font-size: 14px;
+        font-size: 14x;
     }
 
     .rectangle {
-        margin-right: 8%;
         align-self: center;
-        padding: 0;
+        width: 70px;
         margin: 0 5% 0 0;
     }
-
+ 
     .vision-title {
         width: 484px;
         height: 90px;

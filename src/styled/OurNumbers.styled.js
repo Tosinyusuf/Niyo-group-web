@@ -20,19 +20,22 @@ const StyledOurNumbers = styled.div`
         font-size: 20px;
     }
 
-    .numbers-rectangle {
-        width: 57px;
-    }
+.rectangle {
+    align-self: center;
+    width: 70px;
+    margin: 0 1% 0 0;
+}
 
     .numbers-description {
-        font-size: 20px;
+        font-size: 14px;
         color: #FBAF00;
         font-family: regular;
     }
 
     .numbers-title {
         font-size: 38px;
-        font-family: AtypDisplay-Bold;
+        font-family: AtypDisplay-Bold; 
+        margin: 0;
     }
 
     .tally-container {
