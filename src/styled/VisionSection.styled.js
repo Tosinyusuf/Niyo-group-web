@@ -47,7 +47,6 @@ const styledVisionSection = styled.div`
 
     .vision-text {
         width: 30vw;
-        // height: 168px;
         font-family: regular;
         font-size: 20px;
         line-height: 25px;

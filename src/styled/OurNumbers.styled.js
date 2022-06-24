@@ -21,7 +21,6 @@ const StyledOurNumbers = styled.div`
     }
 
 .rectangle {
-    align-self: center;
     width: 70px;
     margin: 0 1% 0 0;
 }

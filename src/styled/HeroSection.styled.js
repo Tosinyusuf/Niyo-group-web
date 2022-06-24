@@ -3,7 +3,7 @@ import heroImage from "../assets/hero-image.svg";
 
 export const StyledHeroSection = styled.div`
     background-image: url(${heroImage});
-    background-size: 140vw 140vh;
+    background-size: 100vw 100vh;
     background-size: cover;
     background-position: center;
     height: 120%;

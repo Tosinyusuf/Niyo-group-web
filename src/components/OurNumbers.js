@@ -1,7 +1,7 @@
 import StyledOurNumbers from "../styled/OurNumbers.styled";
 import orangeRectangle from "../assets/orange-rectangle.svg";
 
-const OurNumbers = () => {
+const OurNumbers = () => { 
     return (
         <>
         <StyledOurNumbers>

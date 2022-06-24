@@ -12,9 +12,8 @@ color: #fff;
 
 .nav-logo-container {
     width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding: 0 100px 0 0;
 }
 
 .nav-logo {
