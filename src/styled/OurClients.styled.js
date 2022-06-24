@@ -10,7 +10,7 @@ const StyledOurClients = styled.div`
     justify-content: center;
     align-items: center;
 
-    .clients-container {
+    .clients-container { 
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -72,6 +72,7 @@ const StyledOurClients = styled.div`
 
     .individual-client-logo {
         width: 120px;
+        margin-right: 50px;
     }
 `;
 

@@ -6,6 +6,8 @@ import Brands from "./components/Brands";
 import Empowered from "./components/Empowered";
 import Industries from "./components/Industries";
 import OurClients from "./components/OurClients";
+import Join from "./components/Join";
+import Footer from "./components/Footer";
 
 import GlobalStyle from "./styled/Global.styled";
 
@@ -21,6 +23,8 @@ function App() {
       <Empowered />
       <Industries />
       <OurClients />
+      <Join />
+      <Footer />
    </>
   );
 }

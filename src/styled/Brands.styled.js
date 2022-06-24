@@ -4,19 +4,32 @@ const StyledBrands = styled.div`
     background-color: #070709;
 
     .brands-container {
-        left: 20%;
         display: flex;
         flex-direction: column;
+        padding: 0% 10%;
+        width: 100%;
+
+        .brands-description {
+            font-family: regular;
+            color: #FBAF00;  
+            width: 245.5px;
+            height: 26px;
+            font-size: 16px; 
+        }
+
+        .brands-title {
+        width: 484px;
+        height: 90px;
+        font-family: AtypDisplay-Bold;
+        font-size: 30px;
+        color: #fff;
+
     }
 
-    .brands-description {
-        font-family: regular;
-        color: #FBAF00; 
-        width: 245.5px;
-        height: 26px;
-        font-size: 16px; 
-        margin: 6% 0 0 10%;
+
     }
+
+
 
     .rectangle {
         align-self: center;
@@ -24,67 +37,50 @@ const StyledBrands = styled.div`
         margin: 0 2% 0 0;
     }
 
-    .brands-title {
-        width: 484px;
-        height: 90px;
-        font-family: AtypDisplay-Bold;
-        font-size: 30px;
-        margin: 0 0 0 10%;
-        // line-height: 36px;
-        // margin-top: 12px;
-        color: #fff;
 
-    }
 
     .brand-cards {
             display: flex;
             flex-direction: row;
-            justify-content: center;
             align-items: center;
             height: 100%;
             width: 100%;
             color: #fff;
-            padding-bottom: 4%;
+            padding: 0 10% 4% 10%;
+            justify-content: space-between;
     }
 
     .individual-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         background-color: #141414;
-        width: 24%;
+        width: 32%;
         border-radius: 15px;
-        margin: 0 2%;
-    }
-
-    .card-images {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 6%;
+        padding: 20px;
+        height: 600px;
         position: relative;
     }
 
-    .card-single-image {
-        height: 42%;
-        width: 90%;
+    .card-images {
+        height: 200px;
+        width: 100%;
+        background-size: cover;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    .logo-div {
+        position: absolute;
+        bottom: -40px;
+        width: 100%;
+        text-align: center;
     }
 
     .card-niyo-logo {
-        position: absolute;
-        bottom: -44px;
+        margin: auto;
     }
 
     .brand-text-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-stretch;
-        justify-content: center;
-        width: 90%;
-        height: 250px;
-        margin: 12% 0 4% 0
+       height: 250px;
+       margin-top: 50px;
     }
 
     
@@ -103,24 +99,25 @@ const StyledBrands = styled.div`
         border: none;
         font-family: semibold;
         font-size: 16px;
-        text-decoration: underline;
         color: #fff;
-        height: 40px;
-        width: 210px;
-        align-self: flex-start;
+        height: 45px;
+        position: absolute;
+        width: 250px;        
+        bottom: 50px;
     }
 
-    .button-1 {
-       background-color: #F39200
+    .card-button:nth-child(1) {
+        background: #F39200 !important;
     }
 
-    .button-2 {
-        background-color: #FF6FD8
+    .card-button:nth-child(2) {
+        background: #FF6FD8 !important;
     }
 
-    .button-3 {
-        background-image: linear-gradient(to bottom, #ff6fd8, #ff61a8, #ff6575, #ff7944, #f39200);
+    .card-button:nth-child(3) {
+        background: linear-gradient(180deg, #FF6FD8 0%, #F39200 100%);
     }
+
 
 
 `;
