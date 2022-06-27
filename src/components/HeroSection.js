@@ -1,22 +1,22 @@
-import NavBar from "./NavBar"
+import NavBar from "./NavBar";
 
-import {StyledHeroSection} from "../styled/HeroSection.styled";
+import { StyledHeroSection } from "../styled/HeroSection.styled";
 
 const HeroSection = () => {
-    return (
-        <StyledHeroSection>
-         <NavBar className="hero-nav" />
-         <div className="hero-text-container">
-            <p className="hero-text">
-                Economically empowering black women in <span>technology</span> globally
-            </p>
-         </div>
-        </StyledHeroSection>
-    )    
-}
+  return (
+    <StyledHeroSection>
+      <NavBar className="hero-nav" />
+      <div className="hero-text-container">
+        <p className="hero-text">
+          Economically empowering black women in <span>technology</span>{" "}
+          globally
+        </p>
+      </div>
+    </StyledHeroSection>
+  );
+};
 
 export default HeroSection;
-
 
 /* <StyledHeroSection>
 <NavBar className="hero-nav" />
@@ -30,7 +30,6 @@ export default HeroSection;
     <img src={niyoBadge} className="hero-badge"/>
 </div>
 </StyledHeroSection> */
-
 
 /* <img src={heroImage} alt="classroom" className="hero-image" />
 <div className="hero-text-container">

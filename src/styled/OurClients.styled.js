@@ -42,7 +42,7 @@ const StyledOurClients = styled.div`
 
     .clients-title {
         font-family: AtypDisplay-Bold; 
-        margin: 1% 0 6% 0;
+        margin: 1% 0 10% 0;
     }
 
     .button-container{ 
@@ -51,11 +51,11 @@ const StyledOurClients = styled.div`
         width: 50%;
         align-items: flex-start;
         justify-content: flex-end;
-        margin-top: 3%;
+        /* margin-top: 3%; */
     }
 
     .clients-button {
-        height: 50%;
+        height: 30%;
         width: 30%;
         background-color: #FBAF00;
         border: none;
@@ -68,6 +68,7 @@ const StyledOurClients = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 8%;
     }
 
     .individual-client-logo {
