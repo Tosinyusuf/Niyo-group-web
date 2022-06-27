@@ -5,20 +5,27 @@ const GlobalStyle = createGlobalStyle`
 
     * {
         box-sizing: border-box;
+        /* overflow-x: hidden; */
     }
 
     body {
         height: 100vh;
         width:  100vw;
         margin: 0;
+        overflow-x: hidden;
+
     }
 
     #root {
         height: 100vh;
         width:  100vw;
-        margin: 0;
+        /* margin: 0; */
     }
 
+    .html {
+        height: 100vh;
+        width: 100vw;
+    }
     
 `;
 

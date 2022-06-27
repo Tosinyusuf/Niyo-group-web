@@ -3,30 +3,39 @@ import orangeRectangle from "../assets/orange-rectangle.svg";
 import arrow from "../assets/arrow.svg";
 
 const Mission = () => {
-    return (<>
-        <StyledMission>
-        <div className="mission-image-container">
-        </div>  
+  return (
+    <>
+      <StyledMission>
+        <div className="mission-image-container"></div>
 
         <div className="mission-right-container">
-            <div className="mission-text-container">
-                <p className="mission-description"><img src={orangeRectangle} alt="symbol" className="rectangle" />We are on a Mission</p>
-                <h1 className="mission-title">Changing the narrative for black female disruptors globally..</h1>
-                <p className="mission-text">To build ecosystems for ambitious black women who have a passion to build and create disruptive ideas and technologies that drive society forward. </p>
-                <button className="mission-button">Read More <span><img src={arrow} alt="symbol" className="arrow" /></span></button>
-            </div>
-        </div> 
+          <div className="mission-text-container">
+            <p className="mission-description">
+              <img src={orangeRectangle} alt="symbol" className="rectangle" />
+              We are on a Mission
+            </p>
+            <h1 className="mission-title">
+              Changing the narrative for black female disruptors globally..
+            </h1>
+            <p className="mission-text">
+              To build ecosystems for ambitious black women who have a passion
+              to build and create disruptive ideas and technologies that drive
+              society forward.{" "}
+            </p>
+            <button className="mission-button">
+              Read More{" "}
+              <span>
+                <img src={arrow} alt="symbol" className="arrow" />
+              </span>
+            </button>
+          </div>
+        </div>
+      </StyledMission>
+    </>
+  );
+};
 
-        </StyledMission>
-        </>
-    )
-}
-
-
-
-export default Mission; 
-
-
+export default Mission;
 
 /* <>
 <StyledMission>
