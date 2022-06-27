@@ -62,8 +62,10 @@ const StyledJoin = styled.div`
     .join-button {
       width: 50vw;
       height: 50px;
+      border-radius: 10px;
       font-family: regular;
       font-size: 20px;
+      padding-left: 22px;
     }
   }
 `;

@@ -44,6 +44,7 @@ const StyledFooter = styled.div`
 
   .contact-icon {
     margin-right: 2%;
+    width: 10px;
   }
 
   .footer-no-icon {
@@ -52,7 +53,7 @@ const StyledFooter = styled.div`
 
   .footer-niyo-registration {
     font-family: "DM Sans", sans-serif;
-    font-size: 17px;
+    font-size: 14px;
     text-align: center;
     width: 90%;
     border-top: 1px solid #afafaf;

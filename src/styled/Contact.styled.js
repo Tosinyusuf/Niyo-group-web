@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledContact = styled.div`
-  background-color: green;
+  background-color: #fff;
   font-family: Light;
 
   .contact-container {
@@ -36,6 +36,10 @@ const StyledContact = styled.div`
       .contact-form {
         display: flex;
         flex-direction: column;
+
+        .contact-details-capture {
+          background-color: #f5f5f5;
+        }
 
         .contact-checkbox-section {
           display: flex;
