@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpointSizes from "../constants/breakpointSizes";
 
 export const StyledNavBar = styled.div`
   width: 100%;
@@ -10,14 +11,31 @@ export const StyledNavBar = styled.div`
   background-color: #070909;
   color: #fff;
 
+  @media ${breakpointSizes.mobile} {
+    height: 10vh;
+  }
+
   .nav-logo-container {
     width: 40%;
     text-align: center;
     padding: 0 100px 0 0;
+
+    @media ${breakpointSizes.mobile} {
+      display: flex;
+      width: 100%;
+    }
   }
 
   .nav-logo {
     height: 6.5vh;
+
+    @media ${breakpointSizes.mobile} {
+      height: 5vh;
+    }
+
+    @media ${breakpointSizes.mobile} {
+      padding-left: 10%;
+    }
   }
 
   .nav-link-container {
@@ -27,6 +45,10 @@ export const StyledNavBar = styled.div`
     align-items: center;
     width: 60%;
     right: 10%;
+
+    @media ${breakpointSizes.mobile} {
+      display: none;
+    }
   }
 
   .nav-link {
@@ -36,9 +58,10 @@ export const StyledNavBar = styled.div`
     color: #fff;
   }
 
-  .nav-link:first-child {
+  // Keep styling for navigation
+  /* .nav-link:first-child {
     border-bottom: 2px solid #fbaf00;
-  }
+  } */
 
   .nav-button {
     background-color: #fff;

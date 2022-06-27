@@ -1,35 +1,37 @@
-// import HeroSection from "./components/HeroSection";
-// import VisionSection from "./components/VisionSection";
-// import OurNumbers from "./components/OurNumbers";
-// import Mission from "./components/Mission";
-// import Brands from "./components/Brands";
-// import Empowered from "./components/Empowered";
-// import Industries from "./components/Industries";
-// import OurClients from "./components/OurClients";
-// import Join from "./components/Join";
-// import Footer from "./components/Footer";
-
-import Contact from "./components/Contact";
 import GlobalStyle from "./styled/Global.styled";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+
+import Home from "./pages/Home.js";
+import ContactUs from "./pages/ContactUs";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Contact />
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/contactus" element={<ContactUs />}></Route>
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }
 
 export default App;
 
-/* <HeroSection />
-<VisionSection />
-<OurNumbers />
-<Mission />
-<Brands />
-<Empowered />
-<Industries />
-<OurClients />
-<Join />
-<Footer /> */
+/* <ContactUs /> */
+
+/* <Router>
+<NavBar />
+<Routes>
+  <Route path="/" element={Home}>
+    <Home />
+  </Route>
+</Routes>
+</Router> */

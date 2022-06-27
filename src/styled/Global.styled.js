@@ -1,11 +1,12 @@
 // import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
+// import breakpointSizes from "../constants/breakpointSizes";
 
 const GlobalStyle = createGlobalStyle`
 
     * {
         box-sizing: border-box;
-        /* overflow-x: hidden; */
+
     }
 
     body {
@@ -16,15 +17,20 @@ const GlobalStyle = createGlobalStyle`
 
     }
 
+    
+
     #root {
         height: 100vh;
         width:  100vw;
-        /* margin: 0; */
+        margin: 0;
+        overflow-x: hidden;
     }
 
     .html {
         height: 100vh;
         width: 100vw;
+        overflow-x: hidden;
+
     }
     
 `;

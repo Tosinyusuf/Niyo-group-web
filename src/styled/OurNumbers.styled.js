@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledOurNumbers = styled.div`
   display: flex;
@@ -7,12 +8,22 @@ const StyledOurNumbers = styled.div`
   background-color: #070909;
   height: 380px;
 
+  @media ${breakpointSizes.mobile} {
+    height: 670px;
+    width: 100vw;
+    display: flex;
+  }
+
   .numbers-text-container {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
     color: #fff;
+
+    @media ${breakpointSizes.mobile} {
+      align-items: center;
+    }
   }
 
   .numbers-headings {
@@ -29,12 +40,21 @@ const StyledOurNumbers = styled.div`
     font-size: 14px;
     color: #fbaf00;
     font-family: regular;
+
+    @media ${breakpointSizes.mobile} {
+      font-size: 17px;
+    }
   }
 
   .numbers-title {
     font-size: 38px;
     font-family: AtypDisplay-Bold;
     margin: 0;
+
+    @media ${breakpointSizes.mobile} {
+      font-size: 26px;
+      padding: 12px 0 10px 0;
+    }
   }
 
   .tally-container {
@@ -44,6 +64,12 @@ const StyledOurNumbers = styled.div`
     margin-left: 8%;
     width: 100%;
     font-family: AtypDisplay-Bold;
+
+    @media ${breakpointSizes.mobile} {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
   }
 
   .numbers-tally {
@@ -53,18 +79,32 @@ const StyledOurNumbers = styled.div`
     justify-content: center;
     text-align: center;
     margin-right: 200px;
+
+    @media ${breakpointSizes.mobile} {
+      margin: 0;
+      padding: 22px 0;
+    }
   }
 
   .tally-title {
     font-size: 48px;
     padding: 0;
     margin: 0;
+
+    @media ${breakpointSizes.mobile} {
+      font-size: 52px;
+    }
   }
 
   .tally-text {
     font-size: 20px;
     padding: 0;
     margin: 0;
+
+    @media ${breakpointSizes.mobile} {
+      font-size: 17px;
+      font-family: regular;
+    }
   }
 `;
 

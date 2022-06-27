@@ -74,6 +74,18 @@ const StyledBrands = styled.div`
   .brand-text-container {
     height: 250px;
     margin-top: 50px;
+
+    .one {
+      background-color: #f39200;
+    }
+
+    .two {
+      background-color: #ff6fd8;
+    }
+
+    .three {
+      background: linear-gradient(180deg, #ff6fd8 0%, #f39200 100%);
+    }
   }
 
   .card-title {
@@ -96,18 +108,6 @@ const StyledBrands = styled.div`
     position: absolute;
     width: 250px;
     bottom: 50px;
-  }
-
-  .card-button:nth-child(1) {
-    background: #f39200 !important;
-  }
-
-  .card-button:nth-child(2) {
-    background: #ff6fd8 !important;
-  }
-
-  .card-button:nth-child(3) {
-    background: linear-gradient(180deg, #ff6fd8 0%, #f39200 100%);
   }
 `;
 

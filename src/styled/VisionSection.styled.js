@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import classroomImage1 from "../assets/classroom-image-1.svg";
+import breakpointSizes from "../constants/breakpointSizes";
 
 const styledVisionSection = styled.div`
   height: 100vh;
@@ -10,6 +11,12 @@ const styledVisionSection = styled.div`
   z-index: -1;
   color: #fff;
 
+  @media ${breakpointSizes.mobile} {
+    display: block;
+    height: 710px;
+    padding-left: 5%;
+  }
+
   .vision-left-container {
     display: flex;
     flex-direction: column;
@@ -17,6 +24,15 @@ const styledVisionSection = styled.div`
     justify-content: center;
     width: 50vw;
     height: 100vh;
+
+    @media ${breakpointSizes.mobile} {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 70vh;
+      width: 130%;
+    }
   }
 
   .vision-description {
@@ -25,12 +41,21 @@ const styledVisionSection = styled.div`
     width: 245.5px;
     height: 26px;
     font-size: 14x;
+
+    @media ${breakpointSizes.mobile} {
+      font-size: 15px;
+      padding: 8% 0;
+    }
   }
 
   .rectangle {
     align-self: center;
     width: 70px;
     margin: 0 5% 0 0;
+
+    @media ${breakpointSizes.mobile} {
+      width: 50px;
+    }
   }
 
   .vision-title {
@@ -41,6 +66,12 @@ const styledVisionSection = styled.div`
     font-size: 30px;
     line-height: 36px;
     margin-top: 12px;
+
+    @media ${breakpointSizes.mobile} {
+      width: 60%;
+      font-size: 26px;
+      line-height: 30px;
+    }
   }
 
   .vision-text {
@@ -48,6 +79,12 @@ const styledVisionSection = styled.div`
     font-family: regular;
     font-size: 20px;
     line-height: 25px;
+
+    @media ${breakpointSizes.mobile} {
+      width: 60%;
+      font-size: 18px;
+      padding-top: 10px;
+    }
   }
 
   .vision-button {
@@ -64,6 +101,11 @@ const styledVisionSection = styled.div`
     border: none;
     font-size: 19px;
     font-family: regular;
+
+    @media ${breakpointSizes.mobile} {
+      padding-bottom: 30px;
+      font-size: 16px;
+    }
   }
 
   .arrow {
@@ -81,12 +123,25 @@ const styledVisionSection = styled.div`
     background-size: cover;
     background-position: center;
     z-index: 10;
+
+    @media ${breakpointSizes.mobile} {
+      top: 4%;
+      width: 90vw;
+      height: 78vw;
+      border-radius: 20px;
+    }
   }
 
   .hero-badge {
     position: relative;
     top: -90px;
     left: -100px;
+
+    @media ${breakpointSizes.mobile} {
+      height: 100px;
+      top: -50px;
+      left: 250px;
+    }
   }
 `;
 

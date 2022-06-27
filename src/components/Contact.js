@@ -1,5 +1,4 @@
 import StyledContact from "../styled/Contact.styled";
-import NavBar from "../components/NavBar";
 import orangeRectangle from "../assets/orange-rectangle.svg";
 import contactImage from "../assets/contact-image.svg";
 
@@ -7,7 +6,6 @@ const Contact = () => {
   return (
     <>
       <StyledContact>
-        <NavBar />
         <div className="contact-container">
           <div className="contact-left-container">
             <p className="contact-description">
@@ -15,7 +13,7 @@ const Contact = () => {
                 src={orangeRectangle}
                 className="rectangle"
                 alt="rectangle"
-              />{" "}
+              />
               Let's hear from you
             </p>
             <h1 className="contact-title">Work with us!</h1>
@@ -26,7 +24,7 @@ const Contact = () => {
             <img
               src={contactImage}
               className="contact-image"
-              alt="contact image"
+              alt="contact us"
             />
           </div>
 
