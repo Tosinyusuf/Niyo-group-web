@@ -9,7 +9,7 @@ const StyledOurNumbers = styled.div`
   height: 380px;
 
   @media ${breakpointSizes.mobile} {
-    height: 670px;
+    height: 640px;
     width: 100vw;
     display: flex;
   }
@@ -92,7 +92,7 @@ const StyledOurNumbers = styled.div`
     margin: 0;
 
     @media ${breakpointSizes.mobile} {
-      font-size: 52px;
+      font-size: 64px;
     }
   }
 
@@ -102,7 +102,7 @@ const StyledOurNumbers = styled.div`
     margin: 0;
 
     @media ${breakpointSizes.mobile} {
-      font-size: 17px;
+      font-size: 20px;
       font-family: regular;
     }
   }
