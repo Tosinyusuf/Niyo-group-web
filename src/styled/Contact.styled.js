@@ -7,7 +7,7 @@ const StyledContact = styled.div`
   height: 180vh;
 
   @media ${breakpointSizes.mobile} {
-    height: 296vh;
+    height: 330vh;
   }
 
   .contact-container {
@@ -68,10 +68,6 @@ const StyledContact = styled.div`
 
       .contact-image {
         height: 400px;
-
-        @media ${breakpointSizes.mobile} {
-          height: 350px;
-        }
       }
     }
 
@@ -86,12 +82,20 @@ const StyledContact = styled.div`
       font-family: regular;
 
       @media ${breakpointSizes.mobile} {
+        width: 100vw;
         display: flex;
         flex-direction: column;
+        padding-top: 10%;
       }
 
       .contact-right-contents {
-        width: 100%;
+        width: 80%;
+
+        @media ${breakpointSizes.mobile} {
+          width: 100vw;
+          align-items: center;
+          justify-content: center;
+        }
       }
 
       .contact-form {
@@ -113,11 +117,21 @@ const StyledContact = styled.div`
           display: flex;
           flex-direction: column;
           width: 46%;
+
+          @media ${breakpointSizes.mobile} {
+            width: 200px;
+            /* padding-right: 4px; */
+            justify-content: center;
+          }
         }
 
         .form-box {
           display: flex;
           flex-direction: column;
+
+          @media ${breakpointSizes.mobile} {
+            width: 374px;
+          }
         }
 
         .contact-details-capture {
@@ -128,6 +142,10 @@ const StyledContact = styled.div`
           border-radius: 5px;
           height: 44px;
           margin-top: 10px;
+
+          @media ${breakpointSizes.mobile} {
+            font-size: 10px;
+          }
         }
 
         .contact-checkbox-section {
@@ -152,6 +170,15 @@ const StyledContact = styled.div`
           border-radius: 15px;
           height: 40px;
           font-size: 16px;
+
+          @media ${breakpointSizes.mobile} {
+            border-radius: 5px;
+            border-color: #070909;
+            height: 58px;
+            width: 200px;
+            margin-top: 22px;
+            font-size: 20px;
+          }
         }
       }
     }
