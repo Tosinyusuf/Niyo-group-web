@@ -8,97 +8,101 @@ const Contact = () => {
       <StyledContact>
         <div className="contact-container">
           <div className="contact-left-container">
-            <p className="contact-description">
+            <div className="contact-left-contents">
+              <p className="contact-description">
+                <img
+                  src={orangeRectangle}
+                  className="rectangle"
+                  alt="rectangle"
+                />
+                Let's hear from you
+              </p>
+              <h1 className="contact-title">Work with us!</h1>
+              <p className="contact-text">
+                We’d love to hear from you or want to get in touch with us about
+                an event, partnership or general enquiry?
+              </p>
               <img
-                src={orangeRectangle}
-                className="rectangle"
-                alt="rectangle"
+                src={contactImage}
+                className="contact-image"
+                alt="contact us"
               />
-              Let's hear from you
-            </p>
-            <h1 className="contact-title">Work with us!</h1>
-            <p className="contact-text">
-              We’d love to hear from you or want to get in touch with us about
-              an event, partnership or general enquiry?
-            </p>
-            <img
-              src={contactImage}
-              className="contact-image"
-              alt="contact us"
-            />
+            </div>
           </div>
 
           <div className="contact-right-container">
-            <form className="contact-form">
-              <div className="contact-names-section">
-                <label className="contact-form-label">
-                  First Name
+            <div className="contact-right-contents">
+              <form className="contact-form">
+                <div className="contact-names-section">
+                  <label className="contact-form-label name-box">
+                    First Name
+                    <input
+                      className=" contact-details-capture "
+                      type="text"
+                      value="Your first name"
+                    />
+                  </label>
+
+                  <label className="contact-form-label name-box">
+                    Last Name
+                    <input
+                      className="contact-details-capture"
+                      type="text"
+                      value="Your last name"
+                    />
+                  </label>
+                </div>
+
+                <label className="contact-form-label form-box">
+                  Email Address
                   <input
-                    className="first-name contact-details-capture"
+                    className="email-address contact-details-capture"
                     type="text"
-                    value="Your first name"
+                    value="Enter your email address here"
                   />
                 </label>
 
-                <label className="contact-form-label">
-                  Last Name
+                <label className="contact-form-label form-box">
+                  Subject
                   <input
-                    className="last-name contact-details-capture"
+                    className="contact-subject contact-details-capture"
                     type="text"
-                    value="Your last name"
+                    value=""
                   />
                 </label>
-              </div>
 
-              <label className="contact-form-label">
-                Email Address
-                <input
-                  className="email-address contact-details-capture"
-                  type="text"
-                  value="Enter your email address here"
-                />
-              </label>
+                <div className="contact-checkbox-section">
+                  <label>
+                    <input
+                      type="checkbox"
+                      className="partnerships-checkbox checkbox"
+                      name="partnerships-checkbox"
+                    />
+                    Partnerships
+                  </label>
 
-              <label className="contact-form-label">
-                Subject
-                <input
-                  className="contact-subject contact-details-capture"
-                  type="text"
-                  value=""
-                />
-              </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      className="enquiry-checkbox checkbox"
+                      name="enquiry-checkbox"
+                    />
+                    General Enquiry
+                  </label>
+                </div>
 
-              <div className="contact-checkbox-section">
-                <label>
+                <label className="contact-form-label form-box">
+                  Message/Comments
                   <input
-                    type="checkbox"
-                    className="partnerships-checkbox checkbox"
-                    name="partnerships-checkbox"
+                    className="message-comments contact-details-capture"
+                    type="text"
+                    value=""
                   />
-                  Partnerships
                 </label>
 
-                <label>
-                  <input
-                    type="checkbox"
-                    className="enquiry-checkbox checkbox"
-                    name="enquiry-checkbox"
-                  />
-                  General Enquiry
-                </label>
-              </div>
-
-              <label className="contact-form-label">
-                Message/Comments
-                <input
-                  className="message-comments contact-details-capture"
-                  type="text"
-                  value=""
-                />
-              </label>
-
-              <button className="contact-submit-button">Send</button>
-            </form>
+                <button className="contact-submit-button">Send</button>
+              </form>
+            </div>
           </div>
         </div>
       </StyledContact>

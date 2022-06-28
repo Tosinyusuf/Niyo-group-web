@@ -28,44 +28,39 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-column-container">
-            <div className="footer-column legal">
-              <h5 className="footer-column-title ">Legal</h5>
-              <p className="footer-column-text">Privacy</p>
-              <p className="footer-column-text">Terms of service</p>
-            </div>
+          <div className="footer-column legal">
+            <h5 className="footer-column-title ">Legal</h5>
+            <p className="footer-column-text">Privacy</p>
+            <p className="footer-column-text">Terms of service</p>
+          </div>
 
-            <div className="footer-column company">
-              <h5 className="footer-column-title">Company</h5>
-              <p className="footer-column-text">Work with Us</p>
-              <p className="footer-column-text">About Us</p>
-              <p className="footer-column-text">Careers</p>
-              <p className="footer-column-text">Niyo Planet</p>
-              <p className="footer-column-text">Niyo Network</p>
-              <p className="footer-column-text">Niyo Hair & Beauty</p>
-              <p className="footer-column-text">Niyo Dapp</p>
-            </div>
+          <div className="footer-column company">
+            <h5 className="footer-column-title">Company</h5>
+            <p className="footer-column-text">Work with Us</p>
+            <p className="footer-column-text">About Us</p>
+            <p className="footer-column-text">Careers</p>
+            <p className="footer-column-text">Niyo Planet</p>
+            <p className="footer-column-text">Niyo Network</p>
+            <p className="footer-column-text">Niyo Hair & Beauty</p>
+            <p className="footer-column-text">Niyo Dapp</p>
+          </div>
 
-            <div className="footer-column explore">
-              <h5 className="footer-column-title">Explore</h5>
-              <p className="footer-column-text">Blog</p>
-            </div>
+          <div className="footer-column explore">
+            <h5 className="footer-column-title">Explore</h5>
+            <p className="footer-column-text">Blog</p>
+          </div>
 
-            <div className="footer-column footer-contact">
-              <h5 className="footer-column-title">Contact Us</h5>
-              <p className="footer-column-text">
-                <img src={phone} alt="phone" className="contact-icon" />
-                +123 056 7983
-              </p>
-              <p className="footer-column-text footer-no-icon">
-                {" "}
-                +123 056 7983
-              </p>
-              <p className="footer-column-text">
-                <img src={email} alt="phone" className="contact-icon" />
-                admin@niyogroup
-              </p>
-            </div>
+          <div className="footer-column footer-contact">
+            <h5 className="footer-column-title">Contact Us</h5>
+            <p className="footer-column-text">
+              <img src={phone} alt="phone" className="contact-icon" />
+              +123 056 7983
+            </p>
+            <p className="footer-column-text footer-no-icon"> +123 056 7983</p>
+            <p className="footer-column-text">
+              <img src={email} alt="phone" className="contact-icon" />
+              admin@niyogroup
+            </p>
           </div>
         </div>
 

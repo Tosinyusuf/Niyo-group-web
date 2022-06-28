@@ -6,9 +6,6 @@ const StyledFooter = styled.div`
   background-color: #070909;
   color: #fff;
   font-family: Light;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   @media ${breakpointSizes.mobile} {
     height: 260vh;
@@ -19,17 +16,10 @@ const StyledFooter = styled.div`
     display: flex;
     width: 100vw;
     justify-content: center;
-    padding-top: 6%;
     padding: 4% 0 4% 0;
 
     @media ${breakpointSizes.mobile} {
       flex-direction: column;
-    }
-  }
-
-  .footer-column-container {
-    @media ${breakpointSizes.mobile} {
-      padding-left: 6%;
     }
   }
 
@@ -38,14 +28,13 @@ const StyledFooter = styled.div`
 
     @media ${breakpointSizes.mobile} {
       width: 100vw;
-      /* padding-bottom: 50px; */
     }
   }
 
   .footer-column:not(.top-footer) {
     @media ${breakpointSizes.mobile} {
       width: 100vw;
-      padding-bottom: 50px;
+      padding: 0 0 50px 20px;
     }
   }
 
@@ -137,22 +126,18 @@ const StyledFooter = styled.div`
   .footer-niyo-registration {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
-    display: flex;
     text-align: center;
-    justify-content: center;
-    width: 90%;
     border-top: 1px solid #afafaf;
 
     @media ${breakpointSizes.mobile} {
       padding-top: 60px;
       font-family: semibold;
-      /* font-family: AtypDisplay-Bold; */
       font-size: 12px;
       border-top: 2px solid #afafaf;
     }
 
     .company-registration {
-      width: 58vw;
+      padding: 0 0 4vh 10vw;
     }
   }
 `;
