@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import empoweredImage from "../assets/empowered-image.svg";
+import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledJoin = styled.div`
-  /* background-color: green; */
   background-image: url(${empoweredImage});
   background-size: cover;
   background-position: center;
@@ -13,6 +13,10 @@ const StyledJoin = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media ${breakpointSizes.mobile} {
+    height: 58vh;
+  }
+
   .join-title:before {
     display: block;
     width: 90px;
@@ -20,6 +24,10 @@ const StyledJoin = styled.div`
     border-top: 3px solid #fbaf00;
     z-index: 2;
     font-family: AtypDisplay-Bold;
+
+    @media ${breakpointSizes.mobile} {
+      display: none;
+    }
   }
 
   .join-title {
@@ -27,6 +35,10 @@ const StyledJoin = styled.div`
     color: #fff;
     font-size: 40px;
     margin: 0;
+
+    @media ${breakpointSizes.mobile} {
+      font-size: 30px;
+    }
   }
 
   span {
@@ -39,6 +51,13 @@ const StyledJoin = styled.div`
     text-align: center;
     margin: 10px 0 20px;
     color: #fff;
+
+    @media ${breakpointSizes.mobile} {
+      width: 50vw;
+      font-size: 15px;
+      font-family: Light;
+      /* margin: 0px 0 0 0; */
+    }
   }
 
   .join-form-label {
@@ -51,6 +70,10 @@ const StyledJoin = styled.div`
       color: #afafaf;
       border: none;
       margin: 20px 0;
+
+      @media ${breakpointSizes.mobile} {
+        margin: 10px 0 20px 0;
+      }
     }
 
     .join-submit {
@@ -66,6 +89,13 @@ const StyledJoin = styled.div`
       font-family: regular;
       font-size: 20px;
       padding-left: 22px;
+
+      @media ${breakpointSizes.mobile} {
+        border-radius: 0;
+        width: 60vw;
+        height: 36px;
+        font-size: 16px;
+      }
     }
   }
 `;

@@ -1,6 +1,5 @@
 // import styled from 'styled-components';
 import { createGlobalStyle } from "styled-components";
-// import breakpointSizes from "../constants/breakpointSizes";
 
 const GlobalStyle = createGlobalStyle`
 

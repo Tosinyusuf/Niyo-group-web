@@ -45,7 +45,7 @@ export const StyledHeroSection = styled.div`
     font-size: 64px;
 
     @media ${breakpointSizes.mobile} {
-      width: 80%;
+      width: 90%;
       font-size: 50px;
       /* padding: 70% 0; */
       line-height: 56px;
