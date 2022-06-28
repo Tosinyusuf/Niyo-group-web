@@ -21,6 +21,7 @@ const OurNumbers = () => {
               </h4>
               <p className="tally-text">Partners we work with</p>
             </div>
+
             <div className="numbers-tally">
               <h4 className="tally-title">
                 <span>30,000</span>+{" "}

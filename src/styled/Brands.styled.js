@@ -1,7 +1,11 @@
 import styled from "styled-components";
+import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledBrands = styled.div`
   background-color: #070709;
+
+  /* @media ${breakpointSizes.mobile} {
+  } */
 
   .brands-container {
     display: flex;
@@ -15,6 +19,11 @@ const StyledBrands = styled.div`
       width: 245.5px;
       height: 26px;
       font-size: 16px;
+
+      @media ${breakpointSizes.mobile} {
+        font-size: 18px;
+        padding: 94px 0 24px 0;
+      }
     }
 
     .brands-title {
@@ -23,6 +32,11 @@ const StyledBrands = styled.div`
       font-family: AtypDisplay-Bold;
       font-size: 30px;
       color: #fff;
+
+      @media ${breakpointSizes.mobile} {
+        font-size: 29px;
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -41,6 +55,11 @@ const StyledBrands = styled.div`
     color: #fff;
     padding: 0 10% 4% 10%;
     justify-content: space-between;
+
+    @media ${breakpointSizes.mobile} {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   .individual-card {
@@ -50,6 +69,11 @@ const StyledBrands = styled.div`
     padding: 20px;
     height: 600px;
     position: relative;
+
+    @media ${breakpointSizes.mobile} {
+      width: 90vw;
+      margin-bottom: 40px;
+    }
   }
 
   .card-images {
@@ -58,6 +82,9 @@ const StyledBrands = styled.div`
     background-size: cover;
     border-radius: 15px;
     position: relative;
+
+    @media ${breakpointSizes.mobile} {
+    }
   }
 
   .logo-div {
@@ -92,10 +119,19 @@ const StyledBrands = styled.div`
     font-family: AtypDisplay-Bold;
     margin: 0;
     font-size: 26px;
+
+    @media ${breakpointSizes.mobile} {
+      font-size: 30px;
+    }
   }
 
   .card-text {
     font-family: regular;
+
+    @media ${breakpointSizes.mobile} {
+      font-size: 17px;
+      width: 102%;
+    }
   }
 
   .card-button {
@@ -108,6 +144,13 @@ const StyledBrands = styled.div`
     position: absolute;
     width: 250px;
     bottom: 50px;
+
+    @media ${breakpointSizes.mobile} {
+      height: 50px;
+      width: 260px;
+      border-radius: 20px;
+      font-size: 20px;
+    }
   }
 `;
 
