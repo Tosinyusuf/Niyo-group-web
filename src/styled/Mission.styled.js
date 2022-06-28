@@ -30,9 +30,9 @@ const StyledMission = styled.div`
 
     @media ${breakpointSizes.mobile} {
       order: 2;
-      height: 50%;
+      /* height: 50%; */
       width: 80vw;
-      height: 72vw;
+      height: 76vw;
       border-radius: 20px;
       top: 80px;
     }

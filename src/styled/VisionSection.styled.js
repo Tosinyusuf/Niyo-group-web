@@ -13,7 +13,7 @@ const styledVisionSection = styled.div`
 
   @media ${breakpointSizes.mobile} {
     display: block;
-    height: 710px;
+    height: 810px;
     padding-left: 5%;
   }
 
@@ -43,7 +43,7 @@ const styledVisionSection = styled.div`
     font-size: 14x;
 
     @media ${breakpointSizes.mobile} {
-      font-size: 15px;
+      font-size: 18px;
       padding: 8% 0;
     }
   }
@@ -69,7 +69,7 @@ const styledVisionSection = styled.div`
 
     @media ${breakpointSizes.mobile} {
       width: 60%;
-      font-size: 26px;
+      font-size: 28px;
       line-height: 30px;
     }
   }
@@ -82,7 +82,7 @@ const styledVisionSection = styled.div`
 
     @media ${breakpointSizes.mobile} {
       width: 60%;
-      font-size: 18px;
+      font-size: 19px;
       padding-top: 10px;
     }
   }
@@ -104,7 +104,7 @@ const styledVisionSection = styled.div`
 
     @media ${breakpointSizes.mobile} {
       padding-bottom: 30px;
-      font-size: 16px;
+      font-size: 19px;
     }
   }
 
@@ -125,9 +125,9 @@ const styledVisionSection = styled.div`
     z-index: 10;
 
     @media ${breakpointSizes.mobile} {
-      top: 4%;
+      top: 0%;
       width: 90vw;
-      height: 78vw;
+      height: 83vw;
       border-radius: 20px;
     }
   }
