@@ -72,6 +72,7 @@ const Contact = () => {
                 </label>
 
                 <div className="contact-checkbox-section">
+                  <p>Check box</p>
                   <label>
                     <input
                       type="checkbox"
