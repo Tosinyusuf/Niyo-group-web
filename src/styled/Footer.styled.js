@@ -8,7 +8,7 @@ const StyledFooter = styled.div`
   font-family: Light;
 
   @media ${breakpointSizes.mobile} {
-    height: 260vh;
+    height: 350vh;
     width: 100vw;
   }
 
@@ -43,7 +43,7 @@ const StyledFooter = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 40px;
+      padding-top: 70px;
     }
   }
 
@@ -54,8 +54,9 @@ const StyledFooter = styled.div`
     margin: 0 0 3% 0;
 
     @media ${breakpointSizes.mobile} {
-      padding: 30px 0;
+      padding: 50px 0 40px 0;
       font-size: 20.5px;
+      margin: 0;
     }
   }
 
@@ -69,7 +70,8 @@ const StyledFooter = styled.div`
     margin: 0 0 3% 0;
 
     @media ${breakpointSizes.mobile} {
-      height: 76px;
+      height: 70px;
+      margin: 0;
     }
   }
 
@@ -134,10 +136,19 @@ const StyledFooter = styled.div`
       font-family: semibold;
       font-size: 12px;
       border-top: 2px solid #afafaf;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .company-registration {
       padding: 0 0 4vh 10vw;
+
+      @media ${breakpointSizes.mobile} {
+        width: 56%;
+        padding: 0;
+        align-self: center;
+      }
     }
   }
 `;

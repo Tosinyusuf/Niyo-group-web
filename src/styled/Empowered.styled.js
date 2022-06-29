@@ -10,7 +10,8 @@ const StyledEmpowered = styled.div`
 
   @media ${breakpointSizes.mobile} {
     width: 100vw;
-    height: 74vh;
+    height: 90vh;
+    /* height: 74vh; */
     background-position: center;
   }
 
