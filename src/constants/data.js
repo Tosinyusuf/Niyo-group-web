@@ -27,6 +27,11 @@ import facebook from "../assets/facebook.svg";
 import linkedin from "../assets/linkedin.svg";
 import pinterest from "../assets/pinterest.svg";
 
+import people from "../assets/people.svg";
+import purpose from "../assets/purpose.svg";
+import profit from "../assets/profit.svg";
+import planet from "../assets/planet.svg";
+
 export const ourWorks = [
   {
     id: "one",
@@ -81,4 +86,27 @@ export const ourSocials = [
   { image: facebook },
   { image: linkedin },
   { image: pinterest },
+];
+
+export const ourPriorities = [
+  {
+    image: people,
+    title: "People",
+    text: "We are friendly, we’re making an impact, we  bring  black women into high impact  ecosystems like tech.  We are proud that we are distinct and we are set apart for what we do.",
+  },
+  {
+    image: purpose,
+    title: "Purpose",
+    text: "We are friendly, we’re making an impact, we  bring  black women into high impact  ecosystems like tech.  We are proud that we are distinct and we are set apart for what we do.",
+  },
+  {
+    image: profit,
+    title: "Profit",
+    text: "We are friendly, we’re making an impact, we  bring  black women into high impact  ecosystems like tech.  We are proud that we are distinct and we are set apart for what we do.",
+  },
+  {
+    image: planet,
+    title: "Planet",
+    text: "We are friendly, we’re making an impact, we  bring  black women into high impact  ecosystems like tech.  We are proud that we are distinct and we are set apart for what we do.",
+  },
 ];
