@@ -1,6 +1,7 @@
 import StyledContact from "../styled/Contact.styled";
 import orangeRectangle from "../assets/orange-rectangle.svg";
 import contactImage from "../assets/contact-image.svg";
+import Join from "./Join";
 
 const Contact = () => {
   return (
@@ -107,6 +108,7 @@ const Contact = () => {
           </div>
         </div>
       </StyledContact>
+      <Join />
     </>
   );
 };

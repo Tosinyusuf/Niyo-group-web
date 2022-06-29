@@ -14,7 +14,7 @@ const StyledJoin = styled.div`
   justify-content: center;
 
   @media ${breakpointSizes.mobile} {
-    height: 58vh;
+    height: 76vh;
   }
 
   .join-title:before {
@@ -56,7 +56,6 @@ const StyledJoin = styled.div`
       width: 50vw;
       font-size: 15px;
       font-family: Light;
-      /* margin: 0px 0 0 0; */
     }
   }
 

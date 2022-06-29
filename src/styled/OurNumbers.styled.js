@@ -22,13 +22,19 @@ const StyledOurNumbers = styled.div`
     color: #fff;
 
     @media ${breakpointSizes.mobile} {
+      display: flex;
       align-items: center;
+      justify-content: center;
     }
   }
 
   .numbers-headings {
     margin: 0 0 0 8%;
     font-size: 20px;
+
+    @media ${breakpointSizes.mobile} {
+      margin: 0;
+    }
   }
 
   .rectangle {

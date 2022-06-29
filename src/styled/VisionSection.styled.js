@@ -125,7 +125,7 @@ const styledVisionSection = styled.div`
     z-index: 10;
 
     @media ${breakpointSizes.mobile} {
-      top: 0%;
+      top: 6%;
       width: 90vw;
       height: 83vw;
       border-radius: 20px;
