@@ -8,7 +8,7 @@ const StyledFooter = styled.div`
   font-family: Light;
 
   @media ${breakpointSizes.mobile} {
-    height: 350vh;
+    height: 330vh;
     width: 100vw;
   }
 
@@ -122,31 +122,38 @@ const StyledFooter = styled.div`
   }
 
   .footer-no-icon {
-    margin-left: 8%;
+    padding-left: 8%;
+
+    @media ${breakpointSizes.mobile} {
+      padding-left: 4%;
+    }
   }
 
   .footer-niyo-registration {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     text-align: center;
-    border-top: 1px solid #afafaf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media ${breakpointSizes.mobile} {
-      padding-top: 60px;
+      padding-top: 20px;
       font-family: semibold;
       font-size: 12px;
-      border-top: 2px solid #afafaf;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .company-registration {
-      padding: 0 0 4vh 10vw;
+      padding: 20px 0 4vh 0vw;
+      margin: 0;
+      border-top: 1px solid #afafaf;
+      width: 90%;
+      align-self: center;
 
       @media ${breakpointSizes.mobile} {
-        width: 56%;
-        padding: 0;
+        border-top: 2px solid #afafaf;
+        width: 90%;
+        padding-top: 0%;
         align-self: center;
       }
     }

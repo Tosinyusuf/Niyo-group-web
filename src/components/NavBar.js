@@ -1,5 +1,6 @@
 import { StyledNavBar } from "../styled/NavBar.styled";
 import niyoLogo from "../assets/niyo-logo-white.svg";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -10,18 +11,18 @@ const NavBar = () => {
             <img src={niyoLogo} className="nav-logo" alt="niyo logo" />
           </div>
           <div className="nav-link-container">
-            <a className="nav-link" href="/">
+            <Link className="nav-link" to="/">
               Home
-            </a>
-            <a className="nav-link" href="/">
+            </Link>
+            <Link className="nav-link" to="/">
               About Us
-            </a>
-            <a className="nav-link" href="/">
+            </Link>
+            <Link className="nav-link" to="/">
               Our Brands
-            </a>
-            <a className="nav-link" href="/">
+            </Link>
+            <Link className="nav-link" to="/contact-us">
               Work With Us
-            </a>
+            </Link>
             <button className="nav-button">Join the Niyo Nation</button>
           </div>
         </StyledNavBar>

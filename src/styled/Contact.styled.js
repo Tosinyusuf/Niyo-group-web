@@ -107,10 +107,18 @@ const StyledContact = styled.div`
           padding-bottom: 32px;
         }
 
+        input {
+          padding-left: 20px;
+        }
+
         .contact-names-section {
           display: flex;
           width: 100%;
           justify-content: space-between;
+
+          @media ${breakpointSizes.mobile} {
+            justify-content: flex-start;
+          }
         }
 
         .name-box {
@@ -119,10 +127,16 @@ const StyledContact = styled.div`
           width: 46%;
 
           @media ${breakpointSizes.mobile} {
-            width: 200px;
-            /* padding-right: 4px; */
+            width: 45%;
+            padding-right: 10px;
             justify-content: center;
           }
+
+          /* .name-box:first-of-type {
+            @media ${breakpointSizes.mobile} {
+              margin-right: 50px;
+            }
+          } */
         }
 
         .form-box {
