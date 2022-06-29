@@ -15,7 +15,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/contactus" element={<ContactUs />}></Route>
+          <Route exact path="/contact-us" element={<ContactUs />}></Route>
         </Routes>
         <Footer />
       </Router>
@@ -24,14 +24,3 @@ function App() {
 }
 
 export default App;
-
-/* <ContactUs /> */
-
-/* <Router>
-<NavBar />
-<Routes>
-  <Route path="/" element={Home}>
-    <Home />
-  </Route>
-</Routes>
-</Router> */

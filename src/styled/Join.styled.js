@@ -90,7 +90,7 @@ const StyledJoin = styled.div`
       padding-left: 22px;
 
       @media ${breakpointSizes.mobile} {
-        border-radius: 0;
+        /* border-radius: 0; */
         width: 60vw;
         height: 36px;
         font-size: 16px;
