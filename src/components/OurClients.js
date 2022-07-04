@@ -16,7 +16,7 @@ const OurClients = () => {
               </p>
               <h1 className="clients-title">Who we have worked with</h1>
             </div>
-            <div className="button-container">
+            <div className="button-container top">
               <button className="clients-button">Work with us</button>
             </div>
           </div>
@@ -40,6 +40,9 @@ const OurClients = () => {
                 );
               })}
             </Marquee>
+            <div className="button-container bottom">
+              <button className="clients-button">Work with us</button>
+            </div>
           </div>
         </div>
       </StyledOurClients>

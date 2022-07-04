@@ -7,14 +7,14 @@ const StyledJoin = styled.div`
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   @media ${breakpointSizes.mobile} {
-    height: 76vh;
+    height: 400px;
   }
 
   .join-title:before {
@@ -59,11 +59,11 @@ const StyledJoin = styled.div`
     }
   }
 
-  .join-form-label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .join-form{
+    width:100%;
+    text-align:center ;
 
+  }
     .join-email {
       background-color: #fff;
       color: #afafaf;
@@ -82,7 +82,7 @@ const StyledJoin = styled.div`
     }
 
     .join-button {
-      width: 50vw;
+      width: 40%;
       height: 50px;
       border-radius: 10px;
       font-family: regular;
@@ -91,12 +91,16 @@ const StyledJoin = styled.div`
 
       @media ${breakpointSizes.mobile} {
         /* border-radius: 0; */
-        width: 60vw;
+        width: 70%;
         height: 36px;
         font-size: 16px;
       }
+      @media ${breakpointSizes.desktop} {
+        /* border-radius: 0; */
+        width: 30%;
+      }
     }
-  }
+  
 `;
 
 export default StyledJoin;

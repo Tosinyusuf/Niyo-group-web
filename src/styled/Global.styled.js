@@ -8,6 +8,9 @@ const GlobalStyle = createGlobalStyle`
 
     }
 
+    button{
+        border:none;
+    }
     body {
         height: 100vh;
         width:  100vw;

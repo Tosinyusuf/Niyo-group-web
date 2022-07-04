@@ -10,7 +10,8 @@ export const StyledHeroSection = styled.div`
   height: 120vh;
 
   @media ${breakpointSizes.mobile} {
-    height: 120vh;
+    height: 90vh;
+    background-position: 60%;
   }
 
   .hero-text-container {
@@ -20,6 +21,9 @@ export const StyledHeroSection = styled.div`
     justify-content: center;
     height: 60%;
     width: 100%;
+    @media ${breakpointSizes.mobile} {
+      height: 80%;
+    }
   }
 
   .hero-text:before {
@@ -46,13 +50,27 @@ export const StyledHeroSection = styled.div`
 
     @media ${breakpointSizes.mobile} {
       width: 90%;
-      font-size: 50px;
+      font-size: 40px;
       /* padding: 70% 0; */
       line-height: 56px;
     }
   }
 
-  span {
-    color: #fbaf00;
+  .slide {
+    .word-ani {
+      .word:nth-child(1) {
+        color: #fbaf00;
+      }
+      .word:nth-child(2) {
+        background: linear-gradient(180deg, #ff6fd8 0%, #f39200 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+      .word:nth-child(3) {
+        color: #ff6fd8;
+      }
+    }
   }
 `;

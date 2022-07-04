@@ -6,25 +6,30 @@ const StyledFooter = styled.div`
   background-color: #070909;
   color: #fff;
   font-family: Light;
+  padding:80px 150px 30px 150px;
 
   @media ${breakpointSizes.mobile} {
-    height: 330vh;
+    height: auto;
     width: 100vw;
+    padding:50px 20px 0 20px; 
   }
+  @media ${breakpointSizes.desktop} {
+    padding:80px 250px;
+    }
 
   .footer-links {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
-    padding: 4% 0 4% 0;
+    padding-bottom:30px ;
 
     @media ${breakpointSizes.mobile} {
       flex-direction: column;
     }
+   
   }
 
   .footer-column {
-    width: 18%;
 
     @media ${breakpointSizes.mobile} {
       width: 100vw;
@@ -34,16 +39,16 @@ const StyledFooter = styled.div`
   .footer-column:not(.top-footer) {
     @media ${breakpointSizes.mobile} {
       width: 100vw;
-      padding: 0 0 50px 20px;
+      padding: 0 0 20px 0px;
     }
   }
 
   .top-footer {
+    width:35%;
+    padding-right:60px; ;
     @media ${breakpointSizes.mobile} {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 70px;
+     width:100%;
+     padding-right:00px ;
     }
   }
 
@@ -54,15 +59,18 @@ const StyledFooter = styled.div`
     margin: 0 0 3% 0;
 
     @media ${breakpointSizes.mobile} {
-      padding: 50px 0 40px 0;
-      font-size: 20.5px;
+      padding: 20px 0 20px 0;
+      font-size: 14px;
       margin: 0;
     }
   }
 
-  .legal {
+  .legal,.company, .explore{
+    width:17%;
     @media ${breakpointSizes.mobile} {
       order: 1;
+      width:100%;
+      
     }
   }
 
@@ -70,7 +78,7 @@ const StyledFooter = styled.div`
     margin: 0 0 3% 0;
 
     @media ${breakpointSizes.mobile} {
-      height: 70px;
+      height: 40px;
       margin: 0;
     }
   }
@@ -81,7 +89,7 @@ const StyledFooter = styled.div`
     color: #afafaf;
 
     @media ${breakpointSizes.mobile} {
-      font-size: 22px;
+      font-size: 18px;
       margin: 0;
       padding-bottom: 11px;
     }
@@ -94,7 +102,7 @@ const StyledFooter = styled.div`
     margin: 0 0 3% 0;
 
     @media ${breakpointSizes.mobile} {
-      font-size: 20.5px;
+      font-size: 14;
       padding-bottom: 10px;
       font-family: Light;
     }
@@ -102,8 +110,8 @@ const StyledFooter = styled.div`
 
   .socials-icons-container {
     @media ${breakpointSizes.mobile} {
-      width: 60vw;
-      padding-bottom: 90px;
+      width: 100%;
+      padding-bottom: 40px;
     }
   }
 
@@ -112,7 +120,8 @@ const StyledFooter = styled.div`
     margin: 6% 4% 0 0;
 
     @media ${breakpointSizes.mobile} {
-      height: 38px;
+      height: 30px;
+      margin:0 10px 0 0;
     }
   }
 
@@ -144,17 +153,17 @@ const StyledFooter = styled.div`
     }
 
     .company-registration {
-      padding: 20px 0 4vh 0vw;
+      padding: 20px 0 0px 0vw;
       margin: 0;
       border-top: 1px solid #afafaf;
-      width: 90%;
+      width: 100%;
       align-self: center;
 
       @media ${breakpointSizes.mobile} {
         border-top: 2px solid #afafaf;
         width: 90%;
-        padding-top: 0%;
         align-self: center;
+        padding-bottom:20px ;
       }
     }
   }

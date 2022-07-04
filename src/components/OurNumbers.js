@@ -1,5 +1,7 @@
 import StyledOurNumbers from "../styled/OurNumbers.styled";
 import orangeRectangle from "../assets/orange-rectangle.svg";
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const OurNumbers = () => {
   return (
@@ -16,22 +18,50 @@ const OurNumbers = () => {
 
           <div className="tally-container">
             <div className="numbers-tally">
-              <h4 className="tally-title">
-                <span>10,000</span>+
-              </h4>
+              <VisibilitySensor partialVisibility offset={{ bottom: 50 }}>
+                {({ isVisible }) => (
+                  <h4 className="tally-title">
+                    {isVisible ? (
+                      <span>
+                        <CountUp end={10} decimal="," decimals={3} />
+                      </span>
+                    ) : null}
+                    +
+                  </h4>
+                )}
+              </VisibilitySensor>
               <p className="tally-text">Partners we work with</p>
             </div>
 
             <div className="numbers-tally">
-              <h4 className="tally-title">
-                <span>30,000</span>+{" "}
-              </h4>
+              <VisibilitySensor partialVisibility offset={{ bottom: 50 }}>
+                {({ isVisible }) => (
+                  <h4 className="tally-title">
+                    {isVisible ? (
+                      <span>
+                        <CountUp end={3} decimal="," decimals={3} />
+                      </span>
+                    ) : null}
+                    +
+                  </h4>
+                )}
+              </VisibilitySensor>
+
               <p className="tally-text">Community Members</p>
             </div>
             <div className="numbers-tally">
-              <h4 className="tally-title">
-                <span>100,000</span>+{" "}
-              </h4>
+              <VisibilitySensor partialVisibility offset={{ bottom: 50 }}>
+                {({ isVisible }) => (
+                  <h4 className="tally-title">
+                    {isVisible ? (
+                      <span>
+                        <CountUp end={100} decimal="," decimals={3} />
+                      </span>
+                    ) : null}
+                    +
+                  </h4>
+                )}
+              </VisibilitySensor>
               <p className="tally-text">Upskilled through Niyo Group</p>
             </div>
           </div>
