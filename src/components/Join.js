@@ -11,18 +11,17 @@ const Join = () => {
           Be the first to know about all things at Niyo Group
         </h3>
         <form className="join-form">
-          <label className="join-form-label">
             <input
               className="join-email join-button"
               type="text"
               value="Email Address"
             />
+            <br />
             <input
               className="join-submit join-button"
               type="submit"
               value="Sign Up"
             />
-          </label>
         </form>
       </StyledJoin>
     </>

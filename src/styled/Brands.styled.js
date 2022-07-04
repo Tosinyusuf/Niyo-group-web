@@ -3,32 +3,35 @@ import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledBrands = styled.div`
   background-color: #070709;
-
+padding-bottom:100px ;
   /* @media ${breakpointSizes.mobile} {
   } */
-
+  @media ${breakpointSizes.mobile} {
+        padding-bottom:0%;
+      }
   .brands-container {
     display: flex;
     flex-direction: column;
-    padding: 0% 10%;
+    padding: 100px 0 0 10%;
     width: 100%;
+    height:auto ;
 
     .brands-description {
       font-family: regular;
       color: #fbaf00;
       width: 245.5px;
-      height: 26px;
       font-size: 16px;
 
       @media ${breakpointSizes.mobile} {
         font-size: 18px;
-        padding: 94px 0 24px 0;
       }
+     
     }
 
     .brands-title {
       width: 484px;
-      height: 90px;
+      margin-top:0 ;
+      margin-bottom:40px;
       font-family: AtypDisplay-Bold;
       font-size: 30px;
       color: #fff;
@@ -37,11 +40,19 @@ const StyledBrands = styled.div`
         font-size: 29px;
         margin-bottom: 0;
       }
+
+    }
+    @media ${breakpointSizes.mobile} {
+        padding:30px 0 20px 20px ;
+    }
+    @media ${breakpointSizes.desktop} {
+        padding:60px 0 0 250px ;
     }
   }
 
   .rectangle {
     align-self: center;
+    
     width: 44px;
     margin: 0 2% 0 0;
   }
@@ -49,16 +60,20 @@ const StyledBrands = styled.div`
   .brand-cards {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    height: 100%;
+    height: auto;
     width: 100%;
     color: #fff;
-    padding: 0 10% 4% 10%;
+    padding: 0 150px 50px 150px;
     justify-content: space-between;
 
     @media ${breakpointSizes.mobile} {
       flex-direction: column;
       justify-content: center;
+      padding: 0 20px 50px 20px;
+    }
+    @media ${breakpointSizes.desktop} {
+        padding:0 250px;
+        height:auto ;
     }
   }
 
@@ -71,8 +86,12 @@ const StyledBrands = styled.div`
     position: relative;
 
     @media ${breakpointSizes.mobile} {
-      width: 90vw;
+      width: 100%;
+      height:550px;
       margin-bottom: 40px;
+    }
+    @media ${breakpointSizes.desktop} {
+        width:30%;
     }
   }
 
@@ -84,6 +103,7 @@ const StyledBrands = styled.div`
     position: relative;
 
     @media ${breakpointSizes.mobile} {
+      height:150px ;
     }
   }
 
@@ -121,7 +141,7 @@ const StyledBrands = styled.div`
     font-size: 26px;
 
     @media ${breakpointSizes.mobile} {
-      font-size: 30px;
+      font-size: 24px;
     }
   }
 
@@ -129,7 +149,7 @@ const StyledBrands = styled.div`
     font-family: regular;
 
     @media ${breakpointSizes.mobile} {
-      font-size: 17px;
+      font-size: 14px;
       width: 102%;
     }
   }
@@ -146,10 +166,10 @@ const StyledBrands = styled.div`
     bottom: 50px;
 
     @media ${breakpointSizes.mobile} {
-      height: 50px;
-      width: 260px;
+      height: 45px;
+      width: 200px;
       border-radius: 20px;
-      font-size: 20px;
+      font-size: 14px;
     }
   }
 `;

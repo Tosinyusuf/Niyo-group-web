@@ -3,24 +3,23 @@ import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledIndustries = styled.div`
   background-color: #070909;
-  height: 90vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: auto;
+  width: 100%;
+  padding:100px 150px;
   font-family: regular;
   color: #fff;
 
   @media ${breakpointSizes.mobile} {
-    width: 100vw;
-    height: 820px;
+    padding:50px 20px;
+  }
+  @media ${breakpointSizes.desktop} {
+    padding:150px 250px;
   }
 
   .industries-container {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
 
     .rectangle {
       align-self: center;
@@ -53,8 +52,8 @@ const StyledIndustries = styled.div`
         margin: 1% 0 0 0;
 
         @media ${breakpointSizes.mobile} {
-          width: 50vw;
-          font-size: 30px;
+          width: 90vw;
+          font-size: 24px;
           /* padding-top: 14px; */
         }
       }
@@ -63,8 +62,8 @@ const StyledIndustries = styled.div`
         width: 50%;
 
         @media ${breakpointSizes.mobile} {
-          width: 82vw;
-          font-size: 20px;
+          width: 90vw;
+          font-size: 16px;
         }
       }
     }
@@ -78,7 +77,7 @@ const StyledIndustries = styled.div`
       margin-top: 4%;
 
       @media ${breakpointSizes.mobile} {
-        width: 90vw;
+        width: 95vw;
         flex-wrap: wrap;
       }
     }
@@ -101,15 +100,16 @@ const StyledIndustries = styled.div`
       margin-right: 6%;
 
       @media ${breakpointSizes.mobile} {
-        font-size: 16px;
-        width: 160px;
+        font-size: 14px;
+        width: 120px;
         height: 80px;
       }
 
       :nth-child(3) {
         @media ${breakpointSizes.mobile} {
           align-self: center;
-          flex-basis: 48%;
+          flex-basis: 50%;
+
         }
       }
     }

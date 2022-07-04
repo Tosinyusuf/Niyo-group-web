@@ -4,42 +4,41 @@ import breakpointSizes from "../constants/breakpointSizes";
 const StyledContact = styled.div`
   background-color: #fff;
   font-family: Light;
-  height: 180vh;
+  height: auto;
+  padding:100px 150px;
 
   @media ${breakpointSizes.mobile} {
-    height: 330vh;
+    height: auto;
+    padding:30px 20px;
+  }
+  @media ${breakpointSizes.desktop} {
+    padding:150px 250px ;
   }
 
   .contact-container {
     display: flex;
-    padding-top: 10%;
+    justify-content:space-between ;
 
     @media ${breakpointSizes.mobile} {
       display: flex;
       flex-direction: column;
-      width: 100vw;
-      padding: 5%;
+      width: 100%;
     }
 
     .contact-left-container {
-      width: 45%;
+      width: 50%;
       height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: left;
 
       @media ${breakpointSizes.mobile} {
-        width: 100vw;
-        flex-direction: column;
-        align-items: flex-start;
+        width: 100%;
       }
 
       .contact-left-contents {
         width: 50%;
 
         @media ${breakpointSizes.mobile} {
-          width: 100vw;
+          width: 100%;
         }
       }
 
@@ -62,37 +61,35 @@ const StyledContact = styled.div`
           font-size: 20px;
           font-family: regular;
           color: #070909;
+          width:100%;
           padding-bottom: 10px;
         }
       }
 
       .contact-image {
         height: 400px;
+        @media ${breakpointSizes.mobile} {
+          width:100%;
+        }
       }
     }
 
     .contact-right-container {
-      width: 65%;
+      width: 50%;
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       text-align: left;
       font-family: regular;
 
       @media ${breakpointSizes.mobile} {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
+        width: 100%;
         padding-top: 10%;
       }
 
       .contact-right-contents {
-        width: 80%;
+        width: 100%;
 
         @media ${breakpointSizes.mobile} {
-          width: 100vw;
+          width: 100%;
           align-items: center;
           justify-content: center;
         }
@@ -117,7 +114,6 @@ const StyledContact = styled.div`
           justify-content: space-between;
 
           @media ${breakpointSizes.mobile} {
-            justify-content: flex-start;
           }
         }
 
@@ -128,7 +124,6 @@ const StyledContact = styled.div`
 
           @media ${breakpointSizes.mobile} {
             width: 45%;
-            padding-right: 10px;
             justify-content: center;
           }
 
@@ -144,7 +139,7 @@ const StyledContact = styled.div`
           flex-direction: column;
 
           @media ${breakpointSizes.mobile} {
-            width: 374px;
+            width: 100%;
           }
         }
 
@@ -188,8 +183,8 @@ const StyledContact = styled.div`
           @media ${breakpointSizes.mobile} {
             border-radius: 5px;
             border-color: #070909;
-            height: 58px;
-            width: 200px;
+            height: 50px;
+            width: 150px;
             margin-top: 22px;
             font-size: 20px;
           }

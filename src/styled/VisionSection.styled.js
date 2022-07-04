@@ -23,6 +23,8 @@ const styledVisionSection = styled.div`
     align-items: center;
     justify-content: center;
     width: 50vw;
+
+  padding:0 150px;
     height: 100vh;
 
     @media ${breakpointSizes.mobile} {
@@ -30,8 +32,12 @@ const styledVisionSection = styled.div`
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      height: 70vh;
-      width: 130%;
+      height: 55vh;
+      width:100vw;
+      padding:0 0px;
+    }
+    @media ${breakpointSizes.desktop} {
+        padding:0 250px;
     }
   }
 
@@ -59,7 +65,6 @@ const styledVisionSection = styled.div`
   }
 
   .vision-title {
-    width: 484px;
     height: 90px;
     align-self: center;
     font-family: AtypDisplay-Bold;
@@ -68,22 +73,22 @@ const styledVisionSection = styled.div`
     margin-top: 12px;
 
     @media ${breakpointSizes.mobile} {
-      width: 60%;
+      
       font-size: 28px;
       line-height: 30px;
     }
   }
 
   .vision-text {
-    width: 30vw;
     font-family: regular;
     font-size: 20px;
     line-height: 25px;
 
     @media ${breakpointSizes.mobile} {
-      width: 60%;
-      font-size: 19px;
+    
+      font-size: 16px;
       padding-top: 10px;
+      padding-right:28px;
     }
   }
 
@@ -125,8 +130,8 @@ const styledVisionSection = styled.div`
     z-index: 10;
 
     @media ${breakpointSizes.mobile} {
-      top: 6%;
-      width: 90vw;
+      top: 3%;
+      width: 95%;
       height: 83vw;
       border-radius: 20px;
     }
@@ -138,9 +143,10 @@ const styledVisionSection = styled.div`
     left: -100px;
 
     @media ${breakpointSizes.mobile} {
-      height: 100px;
+      height: 80px;
       top: -50px;
-      left: 250px;
+      float:right;
+      margin-right:-80px; ;
     }
   }
 `;

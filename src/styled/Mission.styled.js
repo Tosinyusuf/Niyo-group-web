@@ -4,7 +4,7 @@ import breakpointSizes from "../constants/breakpointSizes.js";
 
 const StyledMission = styled.div`
   height: 100vh;
-  width: 100vw;
+  width:100%;
   display: flex;
   flex-direction: row;
   background-color: #070909;
@@ -13,8 +13,7 @@ const StyledMission = styled.div`
   @media ${breakpointSizes.mobile} {
     height: 780px;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding:0 20px;
   }
 
   .mission-image-container {
@@ -23,7 +22,6 @@ const StyledMission = styled.div`
     width: 50vw;
     height: 110vh;
     top: -60px;
-    background-size: 600px 1260px;
     background-size: cover;
     background-position: center;
     z-index: 10;
@@ -31,10 +29,10 @@ const StyledMission = styled.div`
     @media ${breakpointSizes.mobile} {
       order: 2;
       /* height: 50%; */
-      width: 80vw;
-      height: 76vw;
+      width: 100%;
+      height: 300px;
       border-radius: 20px;
-      top: 80px;
+      margin-top: 80px;
     }
   }
 
@@ -43,14 +41,19 @@ const StyledMission = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50vw;
+    width: 50%;
+    padding:0 150px;
     height: 100vh;
 
     @media ${breakpointSizes.mobile} {
       height: 50%;
       flex-direction: column;
-      height: 40%;
-      padding-bottom: 94px;
+     width:100%;
+     margin-top:30px ;
+     padding:0 0px;
+    }
+    @media ${breakpointSizes.desktop} {
+        padding:0 250px;
     }
   }
 
@@ -78,23 +81,24 @@ const StyledMission = styled.div`
   }
 
   .mission-title {
-    width: 370px;
     height: 90px;
     align-self: center;
     font-family: AtypDisplay-Bold;
     font-size: 30px;
     line-height: 36px;
     margin: 0 0 14% 0;
+    @media ${breakpointSizes.mobile} {
+      font-size:20px;
+    }
   }
 
   .mission-text {
-    width: 30vw;
     font-family: regular;
     font-size: 20px;
     line-height: 25px;
 
     @media ${breakpointSizes.mobile} {
-      width: 90%;
+      font-size:16px;
     }
   }
 

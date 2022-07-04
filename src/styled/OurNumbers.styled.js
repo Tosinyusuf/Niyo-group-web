@@ -9,7 +9,7 @@ const StyledOurNumbers = styled.div`
   height: 380px;
 
   @media ${breakpointSizes.mobile} {
-    height: 640px;
+    height:600px;
     width: 100vw;
     display: flex;
   }
@@ -29,11 +29,15 @@ const StyledOurNumbers = styled.div`
   }
 
   .numbers-headings {
-    margin: 0 0 0 8%;
+    padding-left:150px; ;
     font-size: 20px;
 
     @media ${breakpointSizes.mobile} {
       margin: 0;
+      padding-left:0px ;
+    }
+    @media ${breakpointSizes.desktop} {
+        padding-left:250px;
     }
   }
 
@@ -49,12 +53,14 @@ const StyledOurNumbers = styled.div`
 
     @media ${breakpointSizes.mobile} {
       font-size: 17px;
+      text-align:left ;
+      align-items:left ;
     }
   }
 
   .numbers-title {
-    font-size: 38px;
-    font-family: AtypDisplay-Bold;
+    font-size: 34px;
+    font-family: semibold;
     margin: 0;
 
     @media ${breakpointSizes.mobile} {
@@ -66,25 +72,24 @@ const StyledOurNumbers = styled.div`
   .tally-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-left: 8%;
+   justify-content:space-between;
+   margin-top:16px;
     width: 100%;
+    padding:0 150px;
     font-family: AtypDisplay-Bold;
 
     @media ${breakpointSizes.mobile} {
       flex-direction: column;
       align-items: center;
-      margin: 0;
+    }
+
+    @media ${breakpointSizes.desktop} {
+        padding:0 250px;
     }
   }
 
   .numbers-tally {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    margin-right: 200px;
 
     @media ${breakpointSizes.mobile} {
       margin: 0;
@@ -97,9 +102,6 @@ const StyledOurNumbers = styled.div`
     padding: 0;
     margin: 0;
 
-    @media ${breakpointSizes.mobile} {
-      font-size: 64px;
-    }
   }
 
   .tally-text {
@@ -108,7 +110,7 @@ const StyledOurNumbers = styled.div`
     margin: 0;
 
     @media ${breakpointSizes.mobile} {
-      font-size: 20px;
+      font-size: 16px;
       font-family: regular;
     }
   }
