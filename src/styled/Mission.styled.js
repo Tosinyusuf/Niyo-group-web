@@ -3,8 +3,8 @@ import missionImage from "../assets/mission-image.svg";
 import breakpointSizes from "../constants/breakpointSizes.js";
 
 const StyledMission = styled.div`
-  height: 100vh;
-  width:100%;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   background-color: #070909;
@@ -13,9 +13,8 @@ const StyledMission = styled.div`
   @media ${breakpointSizes.mobile} {
     height: 780px;
     flex-direction: column;
-    padding:0 20px;
+    padding: 0 20px;
   }
-
   .mission-image-container {
     background-image: url(${missionImage});
     position: relative;
@@ -28,80 +27,68 @@ const StyledMission = styled.div`
 
     @media ${breakpointSizes.mobile} {
       order: 2;
-      /* height: 50%; */
       width: 100%;
       height: 300px;
       border-radius: 20px;
       margin-top: 80px;
     }
   }
-
   .mission-right-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 50%;
-    padding:0 150px;
+    padding: 0 150px;
     height: 100vh;
 
     @media ${breakpointSizes.mobile} {
-      height: 50%;
+      /* height: 50%; */
       flex-direction: column;
-     width:100%;
-     margin-top:30px ;
-     padding:0 0px;
+      width: 100%;
+      margin-top: 30px;
+      padding: 0 0px;
     }
     @media ${breakpointSizes.desktop} {
-        padding:0 250px;
+      padding: 0 250px;
     }
   }
-
   .mission-description {
     font-family: regular;
     color: #fbaf00;
-    height: 26px;
     font-size: 14px;
-
     @media ${breakpointSizes.mobile} {
       padding: 0 0 24px 0;
-      /* padding: 18px 0 24px 0; */
       font-size: 18px;
     }
   }
-
   .rectangle {
     align-self: center;
     width: 70px;
     margin: 0 2% 0 0;
-
     @media ${breakpointSizes.mobile} {
       width: 16%;
     }
   }
-
   .mission-title {
-    height: 90px;
     align-self: center;
     font-family: AtypDisplay-Bold;
     font-size: 30px;
     line-height: 36px;
-    margin: 0 0 14% 0;
+    margin: 0 0 10% 0;
+    /* margin: 0 0 14% 0; */
     @media ${breakpointSizes.mobile} {
-      font-size:20px;
+      font-size: 20px;
     }
   }
-
   .mission-text {
     font-family: regular;
     font-size: 20px;
     line-height: 25px;
-
     @media ${breakpointSizes.mobile} {
-      font-size:16px;
+      font-size: 16px;
     }
   }
-
   .mission-button {
     margin: 32px 0 0 0;
     padding: 0;
@@ -117,7 +104,6 @@ const StyledMission = styled.div`
     font-size: 19px;
     font-family: regular;
   }
-
   .arrow {
     box-sizing: border-box;
     margin-left: 42%;

@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const StyledWho = styled.div`
   background-color: #fff;
-  height: 80vh;
-  width: 100vw;
+  height: 80%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   color: #070909;

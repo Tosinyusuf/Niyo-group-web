@@ -5,19 +5,19 @@ const StyledContact = styled.div`
   background-color: #fff;
   font-family: Light;
   height: auto;
-  padding:100px 150px;
+  padding: 100px 150px;
 
   @media ${breakpointSizes.mobile} {
     height: auto;
-    padding:30px 20px;
+    padding: 30px 20px;
   }
   @media ${breakpointSizes.desktop} {
-    padding:150px 250px ;
+    padding: 150px 250px;
   }
 
   .contact-container {
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
 
     @media ${breakpointSizes.mobile} {
       display: flex;
@@ -61,7 +61,7 @@ const StyledContact = styled.div`
           font-size: 20px;
           font-family: regular;
           color: #070909;
-          width:100%;
+          width: 100%;
           padding-bottom: 10px;
         }
       }
@@ -69,7 +69,7 @@ const StyledContact = styled.div`
       .contact-image {
         height: 400px;
         @media ${breakpointSizes.mobile} {
-          width:100%;
+          width: 100%;
         }
       }
     }

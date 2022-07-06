@@ -1,12 +1,12 @@
-import HeroSection from "../components/HeroSection";
-import VisionSection from "../components/VisionSection";
-import OurNumbers from "../components/OurNumbers";
-import Mission from "../components/Mission";
-import Brands from "../components/Brands";
-import Empowered from "../components/Empowered";
-import Industries from "../components/Industries";
-import OurClients from "../components/OurClients";
-import Join from "../components/Join";
+import HeroSection from "../components/home/HeroSection";
+import VisionSection from "../components/home/VisionSection";
+import OurNumbers from "../components/home/OurNumbers";
+import Mission from "../components/home/Mission";
+import Brands from "../components/home/Brands";
+import Empowered from "../components/home/Empowered";
+import Industries from "../components/home/Industries";
+import OurClients from "../components/home/OurClients";
+import Join from "../components/home/JoinHome";
 
 const Home = () => {
   return (
