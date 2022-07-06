@@ -5,8 +5,8 @@ export const StyledAbout = styled.div`
   background-image: url(${heroImage});
   background-size: cover;
   background-position: center;
-  height: 90vh;
-  width: 100vw;
+  height: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,6 @@ export const StyledAbout = styled.div`
 
   .about-title {
     font-size: 60px;
-    /* font-size: 68px; */
     padding-bottom: 100px;
     line-height: 70px;
   }

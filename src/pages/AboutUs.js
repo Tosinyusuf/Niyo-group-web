@@ -1,6 +1,10 @@
-import About from "../components/About";
-import Who from "../components/Who";
-import Priorities from "../components/Priorities";
+import About from "../components/about/About";
+import Who from "../components/about/Who";
+import Priorities from "../components/about/Priorities";
+import SeeTimeline from "../components/about/SeeTimeline";
+import Timeline from "../components/about/Timeline";
+import MeetTeam from "../components/about/MeetTeam";
+import OpenRoles from "../components/about/OpenRoles";
 
 const AboutUs = () => {
   return (
@@ -8,6 +12,10 @@ const AboutUs = () => {
       <About />
       <Who />
       <Priorities />
+      <SeeTimeline />
+      <Timeline />
+      <MeetTeam />
+      <OpenRoles />
     </>
   );
 };

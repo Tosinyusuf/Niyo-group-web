@@ -39,7 +39,6 @@ const StyledEmpowered = styled.div`
       width: 94vw;
       font-size: 30px;
       line-height: 40px;
-     
     }
   }
 
@@ -58,13 +57,13 @@ const StyledEmpowered = styled.div`
   }
   @media ${breakpointSizes.mobile} {
     @keyframes reveal {
-        80% {
-          letter-spacing: 3px;
-        }
-        100% {
-          background-size: 300% 300%;
-        }
+      80% {
+        letter-spacing: 3px;
       }
+      100% {
+        background-size: 300% 300%;
+      }
+    }
   }
 `;
 

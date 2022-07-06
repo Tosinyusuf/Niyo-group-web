@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const StyledPriorities = styled.div`
   background-color: #070909;
-  width: 100vw;
   font-family: light;
   color: #fff;
 
@@ -32,14 +31,12 @@ const StyledPriorities = styled.div`
 
   .priorities-bottom-container {
     display: flex;
-    width: 100vw;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
     .priorities-block {
       display: flex;
       width: 38%;
-      /* width: 38%; */
       align-items: flex-start;
       height: 250px;
 

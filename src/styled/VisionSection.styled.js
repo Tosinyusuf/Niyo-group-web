@@ -3,8 +3,8 @@ import classroomImage1 from "../assets/classroom-image-1.svg";
 import breakpointSizes from "../constants/breakpointSizes";
 
 const styledVisionSection = styled.div`
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   background-color: #070909;
@@ -22,9 +22,8 @@ const styledVisionSection = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50vw;
-
-  padding:0 150px;
+    width: 50%;
+    padding: 0 150px;
     height: 100vh;
 
     @media ${breakpointSizes.mobile} {
@@ -32,19 +31,17 @@ const styledVisionSection = styled.div`
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      height: 55vh;
-      width:100vw;
-      padding:0 0px;
+      width: 100%;
+      padding: 0 0px;
     }
     @media ${breakpointSizes.desktop} {
-        padding:0 250px;
+      padding: 0 250px;
     }
   }
 
   .vision-description {
     font-family: regular;
     color: #fbaf00;
-    width: 245.5px;
     height: 26px;
     font-size: 14x;
 
@@ -70,10 +67,10 @@ const styledVisionSection = styled.div`
     font-family: AtypDisplay-Bold;
     font-size: 30px;
     line-height: 36px;
-    margin-top: 12px;
+    margin: 12px 0 42px 0;
+    /* margin-top: 12px; */
 
     @media ${breakpointSizes.mobile} {
-      
       font-size: 28px;
       line-height: 30px;
     }
@@ -85,10 +82,9 @@ const styledVisionSection = styled.div`
     line-height: 25px;
 
     @media ${breakpointSizes.mobile} {
-    
       font-size: 16px;
       padding-top: 10px;
-      padding-right:28px;
+      padding-right: 28px;
     }
   }
 
@@ -124,7 +120,7 @@ const styledVisionSection = styled.div`
     height: 100vh;
     background-image: url(${classroomImage1});
     top: -70px;
-    background-size: 600px 1260px;
+    background-size: cover;
     background-size: cover;
     background-position: center;
     z-index: 10;
@@ -145,8 +141,8 @@ const styledVisionSection = styled.div`
     @media ${breakpointSizes.mobile} {
       height: 80px;
       top: -50px;
-      float:right;
-      margin-right:-80px; ;
+      float: right;
+      margin-right: -80px;
     }
   }
 `;
