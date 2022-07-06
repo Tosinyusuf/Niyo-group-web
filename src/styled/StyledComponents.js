@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import orangeRectangle from "../assets/orange-rectangle.svg";
+// import orangeRectangle from "../assets/orange-rectangle.svg";
+import breakpointSizes from "../constants/breakpointSizes";
 
 // UNIVERSAL STYLES
 export const StyledContainer = styled.div`
@@ -17,6 +18,16 @@ export const StyledContainer = styled.div`
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
   padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "0px")};
   padding-top: ${({ paddingTop }) => (paddingTop ? paddingTop : "0px")};
+
+  @media ${breakpointSizes.mobile} {
+    margin: 0;
+    padding-left: 0px;
+    text-align: left;
+  }
+
+  @media ${breakpointSizes.desktop} {
+    padding-left: 250px;
+  }
 `;
 
 export const StyledButton = styled.button`
@@ -31,6 +42,16 @@ export const StyledButton = styled.button`
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "14px")};
   margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "4%")};
   margin-top: ${({ marginTop }) => (marginTop ? marginTop : "4%")};
+
+  @media ${breakpointSizes.mobile} {
+    margin: 0;
+    align-self: flex-start;
+    margin-left: 5%;
+  }
+
+  @media ${breakpointSizes.desktop} {
+    padding-left: 250px;
+  }
 `;
 
 export const StyledTitle = styled.h1`
@@ -47,6 +68,23 @@ export const StyledTitle = styled.h1`
 
   span {
     color: #ffaf00;
+    margin: 0 1.5%;
+  }
+
+  @media ${breakpointSizes.mobile} {
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 44px;
+    text-align: left;
+    font-size: 36px;
+
+    br {
+      display: none;
+    }
+  }
+  @media ${breakpointSizes.desktop} {
+    padding-left: 250px;
   }
 `;
 
@@ -68,12 +106,38 @@ export const StyledParagraph = styled.p`
   padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "4%")};
   margin: ${({ margin }) => (margin ? margin : "0")};
   padding: ${({ padding }) => (padding ? padding : "0px 0px 0px 4%")};
+
+  @media ${breakpointSizes.mobile} {
+    margin: 0;
+    padding: 0 0 10% 0;
+    margin-right: 10%;
+
+    text-align: left;
+    font-size: 14px;
+    font-family: Light;
+
+    br {
+      display: none;
+    }
+  }
+  @media ${breakpointSizes.desktop} {
+    padding-left: 250px;
+  }
 `;
 
 // CUSTOM STYLES
 export const StyledBenefitIcon = styled.img`
   width: ${({ width }) => (width ? width : "80px")};
   height: ${({ height }) => (height ? height : "80px")};
+
+  @media ${breakpointSizes.mobile} {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media ${breakpointSizes.desktop} {
+    padding-left: 250px;
+  }
 `;
 
 export const StyledBenefitCardContainer = styled.div`
@@ -81,11 +145,29 @@ export const StyledBenefitCardContainer = styled.div`
   display: flex;
   flex-wrap: ${({ flexWrap }) => (flexWrap ? flexWrap : "wrap")};
 
+  @media ${breakpointSizes.mobile} {
+    flex-direction: column;
+    padding-left: 5%;
+  }
+
+  @media ${breakpointSizes.desktop} {
+    padding-left: 250px;
+  }
+
   .benefit-card {
     width: 50%;
     display: flex;
     padding: 0 10% 8% 0;
     /* padding-bottom: 6%; */
+
+    @media ${breakpointSizes.mobile} {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    @media ${breakpointSizes.desktop} {
+      padding-left: 250px;
+    }
 
     .benefit-icon-title {
       margin: 0;
@@ -123,8 +205,37 @@ export const StyledDropdown = styled.div`
     margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "0")};
     z-index: 10;
 
+    @media ${breakpointSizes.mobile} {
+      width: 300px;
+      /* width: 300px; */
+    }
+
+    @media ${breakpointSizes.desktop} {
+      padding-left: 250px;
+    }
+
     option {
       height: 200px;
+    }
+
+    .panel-header {
+      @media ${breakpointSizes.mobile} {
+        padding-left: 30px;
+      }
+
+      @media ${breakpointSizes.desktop} {
+        padding-left: 250px;
+      }
+    }
+
+    .panel-text {
+      @media ${breakpointSizes.mobile} {
+        margin-left: 30px;
+      }
+
+      @media ${breakpointSizes.desktop} {
+        padding-left: 250px;
+      }
     }
   }
 `;
@@ -163,5 +274,30 @@ export const StyledAccordion = styled.div`
   .ant-collapse-expand-icon {
     width: ${({ width }) => (width ? width : "10%")};
     float: ${({ float }) => (float ? float : "right")};
+  }
+`;
+
+export const StyledImageInsert = styled.div`
+  z-index: 10;
+  background: ${({ bc }) => (bc ? bc : "#070909")};
+  align-items: ${({ alignItems }) => (alignItems ? alignItems : "center")};
+  justify-content: ${({ justifyContent }) =>
+    justifyContent ? justifyContent : "center"};
+  text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
+
+  .scrolldown-icon {
+    display: none;
+    margin: 0;
+
+    @media ${breakpointSizes.mobile} {
+      display: inline-block;
+      height: 40px;
+      width: 50px;
+      z-index: 10;
+    }
+
+    @media ${breakpointSizes.desktop} {
+      padding-left: 250px;
+    }
   }
 `;
