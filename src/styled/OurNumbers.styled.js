@@ -55,6 +55,7 @@ const StyledOurNumbers = styled.div`
       font-size: 17px;
       text-align:left ;
       align-items:left ;
+      margin-bottom:0;
     }
   }
 
@@ -66,6 +67,7 @@ const StyledOurNumbers = styled.div`
     @media ${breakpointSizes.mobile} {
       font-size: 26px;
       padding: 12px 0 10px 0;
+      margin:0 !important;
     }
   }
 
@@ -93,7 +95,7 @@ const StyledOurNumbers = styled.div`
 
     @media ${breakpointSizes.mobile} {
       margin: 0;
-      padding: 22px 0;
+      padding: 10px 0;
     }
   }
 
@@ -101,7 +103,9 @@ const StyledOurNumbers = styled.div`
     font-size: 48px;
     padding: 0;
     margin: 0;
-
+    @media ${breakpointSizes.mobile} {
+      margin-top:0;
+    }
   }
 
   .tally-text {

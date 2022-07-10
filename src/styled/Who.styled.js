@@ -7,7 +7,7 @@ const StyledWho = styled.div`
   align-items: center;
   justify-content: center;
   color: #070909;
-  font-family: semibold;
+  font-family: regular;
   margin-bottom: 6%;
 
   .who-top-container {
@@ -27,6 +27,7 @@ const StyledWho = styled.div`
       font-family: AtypDisplay-Bold;
       font-size: 36px;
       margin: 0;
+      color:#070909 !important ;
     }
   }
 

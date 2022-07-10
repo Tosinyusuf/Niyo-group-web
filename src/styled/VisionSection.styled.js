@@ -13,7 +13,7 @@ const styledVisionSection = styled.div`
 
   @media ${breakpointSizes.mobile} {
     display: block;
-    height: 810px;
+    height: auto;
     padding-left: 5%;
   }
 
@@ -33,6 +33,7 @@ const styledVisionSection = styled.div`
       align-items: center;
       width: 100%;
       padding: 0 0px;
+      height:70vh ;
     }
     @media ${breakpointSizes.desktop} {
       padding: 0 250px;

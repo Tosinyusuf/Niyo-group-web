@@ -13,14 +13,17 @@ const StyledMeetTeam = styled.div`
     font-size: 70px;
     margin: 0;
     padding: 30px 0 30px 0;
+    color:#000 !important;
   }
 
   .team-name {
     font-size: 36px;
     margin: 0;
-    padding-right: 660px;
+    //padding-right: 660px;
+    text-align:left ;
     padding-bottom: 30px;
     z-index: 2;
+    color:#000 !important;
   }
 
   .team-span {
@@ -47,22 +50,22 @@ const StyledMeetTeam = styled.div`
     justify-content: space-evenly;
 
     .individual-member {
-      width: 28%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 22%;
       padding-bottom: 30px;
       z-index: 1;
       position: relative;
 
       .member-photograph {
-        width: 280px;
+        width: 100%;
+        
+        object-fit:cover ;
       }
 
       .member-bio {
         position: absolute;
         background-color: #cdcdcdad;
         width: 105%;
+        display:none ;
         height: 91%;
         border-radius: 20px;
         z-index: 10;

@@ -51,6 +51,7 @@ const StyledContact = styled.div`
       .contact-title {
         font-family: AtypDisplay-Bold;
         margin: 0;
+        color:#070909 !important;
       }
 
       .contact-text {
