@@ -8,14 +8,14 @@ const HeroSection = () => {
         <p className="hero-text">
           <TextAnimation.Slide
             target="technology"
-            text={["technology", "fashion", "Hair & beauty"]}
+            text={["technology", "fashion", "Hair & Beauty"]}
             animation={{
               duration: 1000,
               delay: 1500,
               timingFunction: "ease-in-out",
             }}
           >
-            Economically empowering black women in technology globally
+            Economically empowering black women in technology globally.
           </TextAnimation.Slide>
         </p>
       </div>

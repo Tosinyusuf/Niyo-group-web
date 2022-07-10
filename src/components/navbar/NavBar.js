@@ -11,6 +11,7 @@ import about from "../../assets/about.svg";
 import planet from "../../assets/planet.svg";
 import work from "../../assets/work.svg";
 import cancel from "../../assets/ cancel.svg";
+import Brands from "../dropdown";
 
 const Bars = styled.img`
   display: none;
@@ -44,9 +45,7 @@ const NavBar = () => {
             <Link className="nav-link" to="/about-us">
               About Us
             </Link>
-            <Link className="nav-link" to="/">
-              Brands
-            </Link>
+           <Brands />
             <Link className="nav-link" to="/contact-us">
               Work With Us
             </Link>

@@ -23,6 +23,20 @@
          url('./fonts/fonts/AtypText-Semibold.ttf') format('opentype');
   }
 
+  h1,h2,h3,h4,h5,h6{
+    color:#fff !important;
+  }
+
+  .ant-dropdown-menu{
+    width:650px;
+    border-radius: 30px !important;
+    padding:20px 10px !important;
+  }
+  .ant-dropdown-menu-item:hover{
+      background-color: #fff !important;
+      cursor: auto;
+  }
+
 /* body {
     font-family: AtypDisplay-Bold;
 } */
