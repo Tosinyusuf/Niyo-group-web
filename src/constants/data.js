@@ -56,7 +56,6 @@ import cashbag from "../assets/benefits/cashbag.svg";
 import umbrella from "../assets/benefits/umbrella.svg";
 import pizza from "../assets/benefits/pizza.svg";
 import currency from "../assets/benefits/currency.svg";
-import cashstack from "../assets/benefits/cashstack.svg";
 
 export const ourWorks = [
   {
@@ -198,25 +197,28 @@ export const ourBenefits = [
   {
     icon: bulb,
     title: "Professional/Personal Development",
-    text: "You grow, and so do we. Get time, and support for your self-development plans.",
+    text: "You grow, and so do we. Get time, and support for your self-development plans. £1,000 annual training budget.",
   },
   {
     icon: cashbag,
     title: "Quarterly Bonus",
     text: "You grow, and so do we. Get time, and support for your self-development plans.",
   },
-  { icon: umbrella, title: "Generous Holidays", text: "Take time to rest" },
+  {
+    icon: umbrella,
+    title: "Generous Holidays",
+    text: "28 days  off + your birthday ",
+  },
   {
     icon: pizza,
     title: "Office Snacks & Freebies",
-    text: "We believe good food is required to do great work and so your lunch is on us",
+    text: "You get birthday gifts from the company and free entry to partners event.",
   },
   {
     icon: currency,
     title: "Subsidized Rate",
-    text: "We give our employee 30% off all Niyo Group products ",
+    text: "We give our employees 30% off all Niyo Group products ",
   },
-  { icon: cashstack, title: "Flex and Funds", text: "" },
 ];
 
 export const ourAvailableJobs = [
