@@ -18,6 +18,8 @@ export const StyledContainer = styled.div`
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
   padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "0px")};
   padding-top: ${({ paddingTop }) => (paddingTop ? paddingTop : "0px")};
+  border-radius: ${({ borderRadius }) => (borderRadius ? borderRadius : "none")}
+    0px;
 
   @media ${breakpointSizes.mobile} {
     margin: 0;
@@ -50,7 +52,6 @@ export const StyledButton = styled.button`
   }
 
   @media ${breakpointSizes.desktop} {
-    padding-left: 250px;
   }
 `;
 
@@ -84,7 +85,6 @@ export const StyledTitle = styled.h1`
     }
   }
   @media ${breakpointSizes.desktop} {
-    padding-left: 250px;
   }
 `;
 
@@ -121,7 +121,6 @@ export const StyledParagraph = styled.p`
     }
   }
   @media ${breakpointSizes.desktop} {
-    padding-left: 250px;
   }
 `;
 
@@ -136,7 +135,6 @@ export const StyledBenefitIcon = styled.img`
   }
 
   @media ${breakpointSizes.desktop} {
-    padding-left: 250px;
   }
 `;
 
@@ -151,7 +149,6 @@ export const StyledBenefitCardContainer = styled.div`
   }
 
   @media ${breakpointSizes.desktop} {
-    padding-left: 250px;
   }
 
   .benefit-card {
@@ -166,7 +163,6 @@ export const StyledBenefitCardContainer = styled.div`
     }
 
     @media ${breakpointSizes.desktop} {
-      padding-left: 250px;
     }
 
     .benefit-icon-title {
@@ -211,7 +207,6 @@ export const StyledDropdown = styled.div`
     }
 
     @media ${breakpointSizes.desktop} {
-      padding-left: 250px;
     }
 
     option {
@@ -224,7 +219,6 @@ export const StyledDropdown = styled.div`
       }
 
       @media ${breakpointSizes.desktop} {
-        padding-left: 250px;
       }
     }
 
@@ -234,7 +228,6 @@ export const StyledDropdown = styled.div`
       }
 
       @media ${breakpointSizes.desktop} {
-        padding-left: 250px;
       }
     }
   }
@@ -297,7 +290,109 @@ export const StyledImageInsert = styled.div`
     }
 
     @media ${breakpointSizes.desktop} {
-      padding-left: 250px;
+    }
+  }
+`;
+
+export const StyledImageContainer = styled.div`
+  width: ${({ width }) => (width ? width : "40%")};
+  height: ${({ height }) => (height ? height : "50%")};
+  background: ${({ bc }) => (bc ? bc : "#070909")};
+  display: flex;
+  flex-direction: ${({ flexDirection }) =>
+    flexDirection ? flexDirection : "column"};
+  align-items: ${({ alignItems }) => (alignItems ? alignItems : "center")};
+  justify-content: ${({ justifyContent }) =>
+    justifyContent ? justifyContent : "center"};
+  color: #070909;
+
+  @media ${breakpointSizes.mobile} {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+  }
+
+  @media ${breakpointSizes.desktop} {
+  }
+
+  .left-top-image-container {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+    margin: 0 6% 2% 0;
+    /* padding: 0 2% 2% 0; */
+
+    @media ${breakpointSizes.mobile} {
+      width: 100%;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    @media ${breakpointSizes.desktop} {
+    }
+  }
+
+  .image-left-top {
+    height: 100%;
+    width: 50%;
+
+    @media ${breakpointSizes.mobile} {
+    }
+
+    @media ${breakpointSizes.desktop} {
+    }
+  }
+
+  .image-left-top:first-child {
+    margin-right: 4%;
+  }
+
+  .left-bottom-image-container {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+    margin: 1% 5% 0 0;
+
+    @media ${breakpointSizes.mobile} {
+      display: none;
+    }
+
+    @media ${breakpointSizes.desktop} {
+    }
+  }
+
+  .right-image-container {
+    width: 100%;
+    height: 100%;
+    padding-left: 2%;
+
+    @media ${breakpointSizes.mobile} {
+      display: none;
+    }
+
+    @media ${breakpointSizes.desktop} {
+    }
+  }
+
+  .career-image {
+    border-radius: ${({ borderRadius }) =>
+      borderRadius ? borderRadius : "15px"};
+    border: 1px solid #fff;
+    background: ${({ bc }) => (bc ? bc : "#fff")};
+    z-index: 5;
+
+    @media ${breakpointSizes.mobile} {
+      width: 300px;
+      height: 600px;
+      /* width: 400px;
+      height: 400px; */
+    }
+
+    @media ${breakpointSizes.desktop} {
     }
   }
 `;
