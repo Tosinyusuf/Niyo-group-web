@@ -3,7 +3,7 @@ import orangeRectangle from "../../assets/orange-rectangle.svg";
 import Arrow from "../../assets/arrow.svg";
 import niyoBadge from "../../assets/niyo-badge-black.svg";
 import "animate.css/animate.min.css";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+//import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const VisionSection = () => {
   return (
