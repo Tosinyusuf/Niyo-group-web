@@ -23,7 +23,7 @@ const Benefits = () => {
           textAlign="left"
           padding="0 0 10px 0"
         >
-          <img src={orangeRectangle} alt="rectangle" /> Our Benefits
+          <img src={orangeRectangle} alt="rectangle" /> Benefits
         </StyledParagraph>
         <StyledTitle
           paddingBottom="60px"

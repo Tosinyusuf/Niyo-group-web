@@ -33,7 +33,7 @@ const styledVisionSection = styled.div`
       align-items: center;
       width: 100%;
       padding: 0 0px;
-      height:70vh ;
+      height: 70vh;
     }
     @media ${breakpointSizes.desktop} {
       padding: 0 250px;
@@ -125,12 +125,12 @@ const styledVisionSection = styled.div`
     background-size: cover;
     background-position: center;
     z-index: 10;
+    border-radius: 20px;
 
     @media ${breakpointSizes.mobile} {
       top: 3%;
       width: 95%;
       height: 83vw;
-      border-radius: 20px;
     }
   }
 

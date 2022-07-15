@@ -50,7 +50,8 @@ export const StyledNavBar = styled.div`
     left: -100%;
     transition: 850ms;
     text-align: center;
-    padding-top: 70px;
+    /* padding-top: 70px; */
+
     .cancel {
       float: right;
       margin-right: 30px;

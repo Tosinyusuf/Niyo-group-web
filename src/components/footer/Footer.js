@@ -66,7 +66,7 @@ const Footer = () => {
 
         <div className="footer-niyo-registration">
           <h2 className="company-registration">
-            COMPANY NO: 11371368. <br></br> © 2022 NIYO GROUP.
+            COMPANY NO: 11371368. © 2022 NIYO GROUP.
           </h2>
         </div>
       </StyledFooter>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledOpenRoles = styled.div`
   height: 90%;
@@ -9,6 +10,14 @@ const StyledOpenRoles = styled.div`
   align-items: center;
   justify-content: center;
   font-family: semibold;
+
+  @media ${breakpointSizes.mobile} {
+    padding: 0 5%;
+    align-items: flex-start;
+  }
+
+  @media ${breakpointSizes.desktop} {
+  }
 
   .roles-description {
     color: #fbaf00;
@@ -27,6 +36,15 @@ const StyledOpenRoles = styled.div`
     line-height: 60px;
     font-size: 60px;
     padding-bottom: 20px;
+
+    br {
+      @media ${breakpointSizes.mobile} {
+        display: none;
+      }
+
+      @media ${breakpointSizes.desktop} {
+      }
+    }
   }
 
   .roles-text {
@@ -35,6 +53,14 @@ const StyledOpenRoles = styled.div`
     font-size: 17px;
     font-family: regular;
     padding-bottom: 26px;
+
+    @media ${breakpointSizes.mobile} {
+      width: 100%;
+      text-align: left;
+    }
+
+    @media ${breakpointSizes.desktop} {
+    }
   }
 
   .roles-button {

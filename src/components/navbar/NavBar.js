@@ -8,7 +8,7 @@ import cardLogo1 from "../../assets/card-logo-1.svg";
 import cardLogo2 from "../../assets/card-logo-2.svg";
 import cardLogo3 from "../../assets/card-logo-3.svg";
 import about from "../../assets/about.svg";
-import planet from "../../assets/planet.svg";
+import planet from "../../assets/priorities/planet.svg";
 import work from "../../assets/work.svg";
 import cancel from "../../assets/ cancel.svg";
 import Brands from "../dropdown";
@@ -45,7 +45,7 @@ const NavBar = () => {
             <Link className="nav-link" to="/about-us">
               About Us
             </Link>
-           <Brands />
+            <Brands />
             <Link className="nav-link" to="/contact-us">
               Work With Us
             </Link>

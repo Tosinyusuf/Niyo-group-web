@@ -6,31 +6,29 @@ const StyledFooter = styled.div`
   background-color: #070909;
   color: #fff;
   font-family: Light;
-  padding:80px 150px 30px 150px;
+  padding: 80px 150px 30px 150px;
 
   @media ${breakpointSizes.mobile} {
     height: auto;
     width: 100vw;
-    padding:50px 20px 0 20px; 
+    padding: 50px 20px 0 20px;
   }
   @media ${breakpointSizes.desktop} {
-    padding:80px 250px;
-    }
+    padding: 80px 250px;
+  }
 
   .footer-links {
     display: flex;
     width: 100%;
     justify-content: center;
-    padding-bottom:30px ;
+    padding-bottom: 30px;
 
     @media ${breakpointSizes.mobile} {
       flex-direction: column;
     }
-   
   }
 
   .footer-column {
-
     @media ${breakpointSizes.mobile} {
       width: 100vw;
     }
@@ -44,11 +42,11 @@ const StyledFooter = styled.div`
   }
 
   .top-footer {
-    width:35%;
-    padding-right:60px; ;
+    width: 35%;
+    padding-right: 60px;
     @media ${breakpointSizes.mobile} {
-     width:100%;
-     padding-right:00px ;
+      width: 100%;
+      padding-right: 00px;
     }
   }
 
@@ -65,12 +63,13 @@ const StyledFooter = styled.div`
     }
   }
 
-  .legal,.company, .explore{
-    width:17%;
+  .legal,
+  .company,
+  .explore {
+    width: 17%;
     @media ${breakpointSizes.mobile} {
       order: 1;
-      width:100%;
-      
+      width: 100%;
     }
   }
 
@@ -121,7 +120,7 @@ const StyledFooter = styled.div`
 
     @media ${breakpointSizes.mobile} {
       height: 30px;
-      margin:0 10px 0 0;
+      margin: 0 10px 0 0;
     }
   }
 
@@ -163,7 +162,7 @@ const StyledFooter = styled.div`
         border-top: 2px solid #afafaf;
         width: 90%;
         align-self: center;
-        padding-bottom:20px ;
+        padding-bottom: 20px;
       }
     }
   }

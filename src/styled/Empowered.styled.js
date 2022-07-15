@@ -25,7 +25,6 @@ const StyledEmpowered = styled.div`
   }
 
   .empowered-title {
-    width: 60%;
     font-size: 86px;
     line-height: 76px;
     text-align: center;

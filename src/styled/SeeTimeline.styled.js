@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import empoweredImage from "../assets/empowered-image.svg";
+import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledSeeTimeline = styled.div`
   background-image: url(${empoweredImage});
@@ -7,9 +8,17 @@ const StyledSeeTimeline = styled.div`
   background-position: center;
   height: 90%;
   width: 100%;
-  display: flex;
+  padding-top: 10%;
   align-items: center;
   justify-content: center;
+
+  @media ${breakpointSizes.mobile} {
+    height: auto;
+    padding: 70% 0;
+  }
+
+  @media ${breakpointSizes.desktop} {
+  }
 
   .see-timeline-title {
     font-family: AtypDisplay-Bold;
@@ -17,6 +26,15 @@ const StyledSeeTimeline = styled.div`
     font-size: 80px;
     line-height: 80px;
     text-align: center;
+
+    @media ${breakpointSizes.mobile} {
+      font-size: 36px;
+      line-height: 30px;
+      padding: 0% 0;
+    }
+
+    @media ${breakpointSizes.desktop} {
+    }
 
     span {
       color: #fbaf00;

@@ -9,7 +9,7 @@ const StyledOurNumbers = styled.div`
   height: 380px;
 
   @media ${breakpointSizes.mobile} {
-    height:600px;
+    height: auto;
     width: 100vw;
     display: flex;
   }
@@ -29,15 +29,18 @@ const StyledOurNumbers = styled.div`
   }
 
   .numbers-headings {
-    padding-left:150px; ;
+    padding-left: 150px;
     font-size: 20px;
 
     @media ${breakpointSizes.mobile} {
       margin: 0;
-      padding-left:0px ;
+      align-items: flex-start;
+      width: 80%;
+      padding-left: 0;
     }
+
     @media ${breakpointSizes.desktop} {
-        padding-left:250px;
+      padding-left: 250px;
     }
   }
 
@@ -53,9 +56,9 @@ const StyledOurNumbers = styled.div`
 
     @media ${breakpointSizes.mobile} {
       font-size: 17px;
-      text-align:left ;
-      align-items:left ;
-      margin-bottom:0;
+      text-align: left;
+      align-items: left;
+      margin-bottom: 0;
     }
   }
 
@@ -67,26 +70,26 @@ const StyledOurNumbers = styled.div`
     @media ${breakpointSizes.mobile} {
       font-size: 26px;
       padding: 12px 0 10px 0;
-      margin:0 !important;
+      margin: 0 !important;
     }
   }
 
   .tally-container {
     display: flex;
     flex-direction: row;
-   justify-content:space-between;
-   margin-top:16px;
+    justify-content: space-between;
+    margin-top: 16px;
     width: 100%;
-    padding:0 150px;
+    padding: 0 150px;
     font-family: AtypDisplay-Bold;
 
     @media ${breakpointSizes.mobile} {
       flex-direction: column;
-      align-items: center;
+      padding: 0 0 0 10%;
     }
 
     @media ${breakpointSizes.desktop} {
-        padding:0 250px;
+      padding: 0 250px;
     }
   }
 
@@ -96,6 +99,7 @@ const StyledOurNumbers = styled.div`
     @media ${breakpointSizes.mobile} {
       margin: 0;
       padding: 10px 0;
+      text-align: left;
     }
   }
 
@@ -104,7 +108,7 @@ const StyledOurNumbers = styled.div`
     padding: 0;
     margin: 0;
     @media ${breakpointSizes.mobile} {
-      margin-top:0;
+      margin-top: 0;
     }
   }
 

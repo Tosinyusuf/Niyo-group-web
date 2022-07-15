@@ -4,6 +4,7 @@ import Priorities from "../components/about/Priorities";
 import SeeTimeline from "../components/about/SeeTimeline";
 import Timeline from "../components/about/Timeline";
 import MeetTeam from "../components/about/MeetTeam";
+import Press from "../components/Press";
 import OpenRoles from "../components/about/OpenRoles";
 
 const AboutUs = () => {
@@ -15,6 +16,7 @@ const AboutUs = () => {
       <SeeTimeline />
       <Timeline />
       <MeetTeam />
+      <Press />
       <OpenRoles />
     </>
   );

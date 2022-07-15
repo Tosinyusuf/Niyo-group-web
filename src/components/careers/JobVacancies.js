@@ -6,9 +6,8 @@ import { StyledSpan } from "../../styled/StyledComponents";
 import { StyledAccordion } from "../../styled/StyledComponents";
 
 import orangeRectangle from "../../assets/orange-rectangle.svg";
-// import orangeArrow from "../../assets/careers/orange-arrow.svg";
-
 import { ourAvailableJobs } from "../../constants/data";
+
 import { Collapse } from "antd";
 const { Panel } = Collapse;
 
@@ -54,6 +53,7 @@ const JobVacancies = () => {
           alignItems="flex-start"
           margin="0"
           paddingLeft="150px"
+          backgroundColor="#070909"
         >
           <StyledTitle textAlign="left" fontSize="40px">
             Growth
