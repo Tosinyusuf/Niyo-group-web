@@ -1,5 +1,6 @@
 import { StyledHeroSection } from "../../styled/HeroSection.styled";
 import TextAnimation from "react-text-animations";
+import downArrow from "../../assets/download-icon.svg";
 
 const HeroSection = () => {
   return (
@@ -18,6 +19,9 @@ const HeroSection = () => {
             Economically empowering black women in technology globally.
           </TextAnimation.Slide>
         </p>
+      </div>
+      <div className="hero-scroll">
+        <img src={downArrow} alt="arrow" />
       </div>
     </StyledHeroSection>
   );

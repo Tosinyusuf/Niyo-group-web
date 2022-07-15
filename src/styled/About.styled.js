@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import heroImage from "../assets/hero-image.svg";
 
+import breakpointSizes from "../constants/breakpointSizes";
+
 export const StyledAbout = styled.div`
   background-image: url(${heroImage});
   background-size: cover;
@@ -14,10 +16,26 @@ export const StyledAbout = styled.div`
   color: #fff;
   font-family: AtypDisplay-Bold;
 
+  @media ${breakpointSizes.mobile} {
+    height: 100%;
+  }
+
+  @media ${breakpointSizes.desktop} {
+  }
+
   .about-title {
     font-size: 60px;
     padding-bottom: 100px;
     line-height: 70px;
+
+    @media ${breakpointSizes.mobile} {
+      font-size: 48px;
+      padding: 0% 4% 20% 4%;
+      line-height: 50px;
+    }
+
+    @media ${breakpointSizes.desktop} {
+    }
   }
 
   .about-title:before {
@@ -30,6 +48,14 @@ export const StyledAbout = styled.div`
   .about-scroll {
     height: 80px;
     padding-bottom: 20px;
+
+    @media ${breakpointSizes.mobile} {
+      height: 60px;
+      margin-bottom: 10%;
+    }
+
+    @media ${breakpointSizes.desktop} {
+    }
   }
 `;
 

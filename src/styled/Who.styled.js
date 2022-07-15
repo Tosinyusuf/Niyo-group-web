@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledWho = styled.div`
   background-color: #fff;
@@ -9,6 +10,13 @@ const StyledWho = styled.div`
   color: #070909;
   font-family: regular;
   margin-bottom: 6%;
+
+  @media ${breakpointSizes.mobile} {
+    height: auto;
+  }
+
+  @media ${breakpointSizes.desktop} {
+  }
 
   .who-top-container {
     padding: 4% 0 0 8%;
@@ -21,13 +29,21 @@ const StyledWho = styled.div`
 
     .who-description {
       color: #fbaf00;
+      font-family: semibold;
+
+      @media ${breakpointSizes.mobile} {
+        flex-direction: column;
+      }
+
+      @media ${breakpointSizes.desktop} {
+      }
     }
 
     .who-title {
       font-family: AtypDisplay-Bold;
       font-size: 36px;
       margin: 0;
-      color:#070909 !important ;
+      color: #070909 !important ;
     }
   }
 
@@ -37,9 +53,26 @@ const StyledWho = styled.div`
     padding-top: 10px;
     height: 80%;
 
+    @media ${breakpointSizes.mobile} {
+      flex-direction: column;
+    }
+
+    @media ${breakpointSizes.desktop} {
+    }
+
     .who-text {
       width: 38%;
       font-size: 16px;
+      font-family: semibold;
+
+      @media ${breakpointSizes.mobile} {
+        width: 100%;
+        padding: 0 9%;
+        font-size: 15px;
+      }
+
+      @media ${breakpointSizes.desktop} {
+      }
     }
   }
 `;

@@ -8,9 +8,10 @@ export const StyledHeroSection = styled.div`
   background-size: cover;
   background-position: center;
   height: 120vh;
+  display: flex;
+  flex-direction: column;
 
   @media ${breakpointSizes.mobile} {
-    height: 90vh;
     background-position: 60%;
   }
 
@@ -71,6 +72,19 @@ export const StyledHeroSection = styled.div`
       .word:nth-child(3) {
         color: #ff6fd8;
       }
+    }
+  }
+
+  .hero-scroll {
+    display: none;
+    height: auto;
+
+    @media ${breakpointSizes.mobile} {
+      /* display: block; */
+      display: flex;
+      padding: 22% 0;
+      /* padding: 24% 0 20% 0; */
+      justify-content: center;
     }
   }
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledMeetTeam = styled.div`
   background-color: #fff;
@@ -8,22 +9,44 @@ const StyledMeetTeam = styled.div`
   font-family: semibold;
   padding-bottom: 50px;
 
+  @media ${breakpointSizes.mobile} {
+    align-items: flex-start;
+    padding-left: 12%;
+  }
+
+  @media ${breakpointSizes.desktop} {
+  }
+
   .meet-title {
     font-family: AtypDisplay-Bold;
     font-size: 70px;
     margin: 0;
     padding: 30px 0 30px 0;
-    color:#000 !important;
+    color: #000 !important;
+
+    @media ${breakpointSizes.mobile} {
+      /* padding-left: 12%; */
+    }
+
+    @media ${breakpointSizes.desktop} {
+    }
   }
 
   .team-name {
     font-size: 36px;
     margin: 0;
-    //padding-right: 660px;
-    text-align:left ;
-    padding-bottom: 30px;
+    text-align: left;
+    padding: 0 0 0 14%;
     z-index: 2;
-    color:#000 !important;
+    color: #000 !important;
+    width: 100%;
+
+    @media ${breakpointSizes.mobile} {
+      padding: 0;
+    }
+
+    @media ${breakpointSizes.desktop} {
+    }
   }
 
   .team-span {
@@ -55,17 +78,24 @@ const StyledMeetTeam = styled.div`
       z-index: 1;
       position: relative;
 
+      @media ${breakpointSizes.mobile} {
+        width: 120px;
+      }
+
+      @media ${breakpointSizes.desktop} {
+      }
+
       .member-photograph {
         width: 100%;
-        
-        object-fit:cover ;
+
+        object-fit: cover;
       }
 
       .member-bio {
         position: absolute;
         background-color: #cdcdcdad;
         width: 105%;
-        display:none ;
+        display: none;
         height: 91%;
         border-radius: 20px;
         z-index: 10;

@@ -4,8 +4,7 @@ import breakpointSizes from "../constants/breakpointSizes";
 const StyledBrands = styled.div`
   background-color: #070709;
   padding-bottom: 100px;
-  /* @media ${breakpointSizes.mobile} {
-  } */
+
   @media ${breakpointSizes.mobile} {
     padding-bottom: 0%;
   }
@@ -21,6 +20,7 @@ const StyledBrands = styled.div`
       color: #fbaf00;
       width: 245.5px;
       font-size: 16px;
+
       @media ${breakpointSizes.mobile} {
         font-size: 18px;
       }
@@ -78,7 +78,8 @@ const StyledBrands = styled.div`
     position: relative;
     @media ${breakpointSizes.mobile} {
       width: 100%;
-      height: 550px;
+      height: 600px;
+      /* height: 550px; */
       margin-bottom: 40px;
     }
     @media ${breakpointSizes.desktop} {
@@ -91,8 +92,9 @@ const StyledBrands = styled.div`
     background-size: cover;
     border-radius: 15px;
     position: relative;
+
     @media ${breakpointSizes.mobile} {
-      height: 150px;
+      height: 220px;
     }
   }
   .logo-div {
@@ -107,6 +109,11 @@ const StyledBrands = styled.div`
   .brand-text-container {
     height: 250px;
     margin-top: 50px;
+
+    @media ${breakpointSizes.mobile} {
+      height: 30%;
+    }
+
     .one {
       background-color: #f39200;
     }
@@ -117,6 +124,7 @@ const StyledBrands = styled.div`
       background: linear-gradient(180deg, #ff6fd8 0%, #f39200 100%);
     }
   }
+
   .card-title {
     font-family: AtypDisplay-Bold;
     margin: 0;
@@ -127,6 +135,7 @@ const StyledBrands = styled.div`
   }
   .card-text {
     font-family: regular;
+
     @media ${breakpointSizes.mobile} {
       font-size: 14px;
       width: 102%;

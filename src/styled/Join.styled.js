@@ -6,15 +6,17 @@ const StyledJoin = styled.div`
   background-image: url(${empoweredImage});
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   @media ${breakpointSizes.mobile} {
-    height: 400px;
+    height: auto;
   }
+
   .join-title:before {
     display: block;
     width: 90px;

@@ -1,10 +1,14 @@
 import styled from "styled-components";
 // import orangeRectangle from "../assets/orange-rectangle.svg";
 import breakpointSizes from "../constants/breakpointSizes";
+import careerBlock1 from "../assets/careers/career-block-1.svg";
 
 // UNIVERSAL STYLES
 export const StyledContainer = styled.div`
   width: 100%;
+  background-image: ${({ backgroundImage }) =>
+    backgroundImage ? backgroundImage : `url(${careerBlock1})`};
+
   background: ${({ bc }) => (bc ? bc : "#070909")};
   height: ${({ height }) => (height ? height : "auto")};
   color: ${({ color }) => (color ? color : "#fff")};
@@ -200,6 +204,7 @@ export const StyledDropdown = styled.div`
     padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "20px")};
     margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "0")};
     z-index: 10;
+    text-align: ${({ textAlign }) => (textAlign ? textAlign : "left")};
 
     @media ${breakpointSizes.mobile} {
       width: 300px;
@@ -211,6 +216,10 @@ export const StyledDropdown = styled.div`
 
     option {
       height: 200px;
+    }
+
+    option:hover {
+      background-color: "#070909";
     }
 
     .panel-header {
@@ -237,6 +246,12 @@ export const StyledAccordion = styled.div`
   color: ${({ color }) => (color ? color : "#fff")};
   padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "0px")};
   width: ${({ width }) => (width ? width : "90%")};
+  background-color: ${({ backgroundColor }) =>
+    backgroundColor ? backgroundColor : "#070909"};
+
+  @media ${breakpointSizes.mobile} {
+    align-self: center;
+  }
 
   .panel-header {
     text-align: ${({ textAlign }) => (textAlign ? textAlign : "left")};
@@ -250,7 +265,6 @@ export const StyledAccordion = styled.div`
     content: "";
     /* background: url(orangeRectangle); */
     background-image: url("../assets/orange-rectangle.svg");
-    /* background-image: url(../assets/orange-rectangle.svg); */
     background-size: 100px 100px;
     width: 60px;
     height: 60px;
@@ -267,6 +281,7 @@ export const StyledAccordion = styled.div`
   .ant-collapse-expand-icon {
     width: ${({ width }) => (width ? width : "10%")};
     float: ${({ float }) => (float ? float : "right")};
+    color: ${({ color }) => (color ? color : "#fff")};
   }
 `;
 
@@ -295,9 +310,10 @@ export const StyledImageInsert = styled.div`
 `;
 
 export const StyledImageContainer = styled.div`
+  background-image: ${({ backgroundImage }) =>
+    backgroundImage ? backgroundImage : `url(${careerBlock1})`};
   width: ${({ width }) => (width ? width : "40%")};
   height: ${({ height }) => (height ? height : "50%")};
-  background: ${({ bc }) => (bc ? bc : "#070909")};
   display: flex;
   flex-direction: ${({ flexDirection }) =>
     flexDirection ? flexDirection : "column"};
@@ -305,6 +321,7 @@ export const StyledImageContainer = styled.div`
   justify-content: ${({ justifyContent }) =>
     justifyContent ? justifyContent : "center"};
   color: #070909;
+  z-index: 1;
 
   @media ${breakpointSizes.mobile} {
     display: flex;

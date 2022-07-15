@@ -24,12 +24,12 @@ const StyledMission = styled.div`
     background-size: cover;
     background-position: center;
     z-index: 10;
+    border-radius: 20px;
 
     @media ${breakpointSizes.mobile} {
       order: 2;
       width: 100%;
       height: 300px;
-      border-radius: 20px;
       margin-top: 80px;
     }
   }
@@ -77,8 +77,9 @@ const StyledMission = styled.div`
     line-height: 36px;
     margin: 0 0 10% 0;
     /* margin: 0 0 14% 0; */
+
     @media ${breakpointSizes.mobile} {
-      font-size: 20px;
+      font-size: 30px;
     }
   }
   .mission-text {
