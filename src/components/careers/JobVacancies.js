@@ -9,6 +9,7 @@ import orangeRectangle from "../../assets/orange-rectangle.svg";
 import { ourAvailableJobs } from "../../constants/data";
 
 import { Collapse } from "antd";
+import { JobVacant } from "./style";
 const { Panel } = Collapse;
 
 const JobVacancies = () => {
@@ -23,8 +24,8 @@ const JobVacancies = () => {
   ];
 
   return (
-    <>
-      <StyledContainer>
+    <JobVacant id="job">
+      <StyledContainer pad="50px 0"> 
         <StyledParagraph paddingBottom="1%" fontFamily="Light" color="#fbaf00">
           <img src={orangeRectangle} alt="icon" />
           Open Roles
@@ -32,7 +33,7 @@ const JobVacancies = () => {
         <StyledTitle className="career-section-title">
           Join our Team<br></br> of executors!
         </StyledTitle>
-        <StyledDropdown marginBottom="10%">
+        <StyledDropdown >
           <select className="dropdown-button">
             {jobTypes.map((item) => (
               <option>{item}</option>
@@ -48,23 +49,17 @@ const JobVacancies = () => {
           </StyledSpan>
         </StyledParagraph>
 
-        <StyledContainer
-          className="yes-jobs"
-          alignItems="flex-start"
-          margin="0"
-          paddingLeft="150px"
-          backgroundColor="#070909"
-        >
+       
+
+          <StyledAccordion>
           <StyledTitle textAlign="left" fontSize="40px">
             Growth
           </StyledTitle>
-
-          <StyledAccordion>
             <Collapse defaultActiveKey={["1"]}>
               {ourAvailableJobs.map((item, index) => {
                 return (
                   <>
-                    <Collapse>
+                  
                       <Panel
                         className="panel-header"
                         header={item.jobTitle}
@@ -72,15 +67,13 @@ const JobVacancies = () => {
                       >
                         <p className="panel-text">{item.jobDescription}</p>
                       </Panel>
-                    </Collapse>
                   </>
                 );
               })}
             </Collapse>
           </StyledAccordion>
-        </StyledContainer>
       </StyledContainer>
-    </>
+    </JobVacant>
   );
 };
 

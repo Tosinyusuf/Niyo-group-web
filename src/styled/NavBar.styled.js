@@ -107,6 +107,14 @@ export const StyledNavBar = styled.div`
     font-size: 16px;
     text-decoration: none;
     color: #fff;
+    transition:ease-in;
+  }
+  .nav-link:hover{
+    background: linear-gradient(180deg, #ff6fd8 0%, #f39200 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
   }
 
   // Keep styling for navigation

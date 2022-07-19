@@ -14,7 +14,7 @@ const styledVisionSection = styled.div`
   @media ${breakpointSizes.mobile} {
     display: block;
     height: auto;
-    padding-left: 5%;
+    padding-left: 20px;
   }
 
   .vision-left-container {
@@ -27,13 +27,9 @@ const styledVisionSection = styled.div`
     height: 100vh;
 
     @media ${breakpointSizes.mobile} {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
       width: 100%;
-      padding: 0 0px;
-      height: 70vh;
+      padding: 20px 0px;
+      height: auto;
     }
     @media ${breakpointSizes.desktop} {
       padding: 0 250px;
@@ -63,7 +59,6 @@ const styledVisionSection = styled.div`
   }
 
   .vision-title {
-    height: 90px;
     align-self: center;
     font-family: AtypDisplay-Bold;
     font-size: 30px;
@@ -74,6 +69,7 @@ const styledVisionSection = styled.div`
     @media ${breakpointSizes.mobile} {
       font-size: 28px;
       line-height: 30px;
+      margin-bottom:5px ;
     }
   }
 

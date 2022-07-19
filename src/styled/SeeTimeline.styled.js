@@ -13,8 +13,8 @@ const StyledSeeTimeline = styled.div`
   justify-content: center;
 
   @media ${breakpointSizes.mobile} {
-    height: auto;
-    padding: 70% 0;
+    height: 300px;
+    padding-top:100px ;
   }
 
   @media ${breakpointSizes.desktop} {

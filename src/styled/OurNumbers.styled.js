@@ -25,6 +25,7 @@ const StyledOurNumbers = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align:center ;
     }
   }
 
@@ -33,9 +34,10 @@ const StyledOurNumbers = styled.div`
     font-size: 20px;
 
     @media ${breakpointSizes.mobile} {
-      margin: 0;
+      margin-top: 20px;
       align-items: flex-start;
       width: 80%;
+      text-align:center ;
       padding-left: 0;
     }
 
@@ -56,7 +58,7 @@ const StyledOurNumbers = styled.div`
 
     @media ${breakpointSizes.mobile} {
       font-size: 17px;
-      text-align: left;
+      text-align: center;
       align-items: left;
       margin-bottom: 0;
     }
@@ -85,7 +87,8 @@ const StyledOurNumbers = styled.div`
 
     @media ${breakpointSizes.mobile} {
       flex-direction: column;
-      padding: 0 0 0 10%;
+      padding: 0;
+      justify-content:center !important ;
     }
 
     @media ${breakpointSizes.desktop} {
@@ -99,7 +102,7 @@ const StyledOurNumbers = styled.div`
     @media ${breakpointSizes.mobile} {
       margin: 0;
       padding: 10px 0;
-      text-align: left;
+      text-align: center;
     }
   }
 

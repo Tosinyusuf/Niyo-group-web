@@ -5,8 +5,12 @@ export const Contain = styled.div`
   font-family:Regular;
   flex-wrap:wrap ;
   justify-content:space-between ;
-  .each{
+  a{
+    color:#070909;
     width:45%;
+  }
+  .each{
+    width:100%;
     margin-top:10px;
     display:flex ;
     cursor: pointer;
@@ -22,6 +26,7 @@ export const Contain = styled.div`
     h2{
         font-family:semibold;
         margin:0 ;
+        color:#070909 !important;
     }
 
   }

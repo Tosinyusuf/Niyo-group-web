@@ -3,7 +3,7 @@ import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledWho = styled.div`
   background-color: #fff;
-  height: 80%;
+  height: auto;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,7 @@ const StyledWho = styled.div`
 
     .who-description {
       color: #fbaf00;
-      font-family: semibold;
+      font-family: regular;
 
       @media ${breakpointSizes.mobile} {
         flex-direction: column;
@@ -51,7 +51,7 @@ const StyledWho = styled.div`
     display: flex;
     justify-content: space-evenly;
     padding-top: 10px;
-    height: 80%;
+    height: auto;
 
     @media ${breakpointSizes.mobile} {
       flex-direction: column;
@@ -63,11 +63,11 @@ const StyledWho = styled.div`
     .who-text {
       width: 38%;
       font-size: 16px;
-      font-family: semibold;
+      font-family: regular;
 
       @media ${breakpointSizes.mobile} {
         width: 100%;
-        padding: 0 9%;
+        padding: 0 20px;
         font-size: 15px;
       }
 

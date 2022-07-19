@@ -7,14 +7,14 @@ import { StyledBenefitIcon } from "../../styled/StyledComponents";
 import { ourBenefits } from "../../constants/data";
 
 import orangeRectangle from "../../assets/orange-rectangle.svg";
+import { CareerBenefits } from "./style";
 
 const Benefits = () => {
   return (
-    <>
+    <CareerBenefits>
       <StyledContainer
-        alignItems="flex-start"
-        paddingLeft="150px"
         textAlign="left"
+        className="contain"
       >
         <StyledParagraph
           fontSize="20px"
@@ -35,7 +35,7 @@ const Benefits = () => {
           <br></br> You enjoy this!
         </StyledTitle>
 
-        <StyledBenefitCardContainer>
+        <StyledBenefitCardContainer className="benefits">
           {ourBenefits.map((item, index) => {
             return (
               <>
@@ -55,7 +55,7 @@ const Benefits = () => {
 
         <></>
       </StyledContainer>
-    </>
+    </ CareerBenefits>
   );
 };
 

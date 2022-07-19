@@ -13,6 +13,8 @@ const menu = (
         label: (
           <>
             <Contain>
+            
+            <a className="nav-link" href="https://niyonetwork.com/">
               <div className="each">
                 <div className="icon">
                     <img src={cardLogo1} alt="" />
@@ -25,6 +27,9 @@ const menu = (
                   </p>
                 </div>
               </div>
+              </a>
+
+              <a className="nav-link" href="https://dapp.niyo.co">
               <div className="each">
                 <div className="icon">
                 <img src={cardLogo3} alt="" />
@@ -38,6 +43,8 @@ const menu = (
                   </p>
                 </div>
               </div>
+              </a>
+              <a className="nav-link" href="https://niyohairandbeauty.com/">
               <div className="each">
                 <div className="icon">
                 <img src={cardLogo2} alt="" />
@@ -50,6 +57,9 @@ const menu = (
                   </p>
                 </div>
               </div>
+              </a>
+
+              <a href="https://blackcodher.com/">
               <div className="each">
                 <div className="icon">
                 <img src={blackcoder} alt="" />
@@ -59,6 +69,7 @@ const menu = (
                   <p>Coding Bootcamp</p>
                 </div>
               </div>
+              </a>
             </Contain>
           </>
         ),

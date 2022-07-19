@@ -1,5 +1,6 @@
 import StyledOpenRoles from "../../styled/OpenRoles.styled";
 import orangeRectangle from "../../assets/orange-rectangle.svg";
+import { Link } from "react-router-dom";
 
 const OpenRoles = () => {
   return (
@@ -17,7 +18,8 @@ const OpenRoles = () => {
           of black women. We are on a mission to ensure every black woman on the
           planet is a producer, builder or creator of high impact ecosystems.
         </p>
-        <button className="roles-button">View Open Roles</button>
+        <Link to="/careers">
+        <button className="roles-button">View Open Roles</button></Link>
       </StyledOpenRoles>
     </>
   );

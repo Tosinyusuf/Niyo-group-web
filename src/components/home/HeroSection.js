@@ -20,9 +20,6 @@ const HeroSection = () => {
           </TextAnimation.Slide>
         </p>
       </div>
-      <div className="hero-scroll">
-        <img src={downArrow} alt="arrow" />
-      </div>
     </StyledHeroSection>
   );
 };
