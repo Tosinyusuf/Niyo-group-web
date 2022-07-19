@@ -3,6 +3,7 @@ import niyoLogo from "../../assets/niyo-logo-white.svg";
 import phone from "../../assets/phone.svg";
 import email from "../../assets/email.svg";
 import { ourSocials } from "../../constants/data";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -36,30 +37,30 @@ const Footer = () => {
 
           <div className="footer-column company">
             <h5 className="footer-column-title">Company</h5>
-            <p className="footer-column-text">Work with Us</p>
-            <p className="footer-column-text">About Us</p>
-            <p className="footer-column-text">Careers</p>
+            <p className="footer-column-text"><Link to="/"> Work with Us </Link></p>
+            <p className="footer-column-text"><Link to="/">About Us </Link></p>
+            <p className="footer-column-text"><Link to="/">Careers </Link></p>
             <p className="footer-column-text">Niyo Planet</p>
-            <p className="footer-column-text">Niyo Network</p>
-            <p className="footer-column-text">Niyo Hair & Beauty</p>
-            <p className="footer-column-text">Niyo Dapp</p>
+            <p className="footer-column-text"><a className="nav-link" href="https://niyonetwork.com/">Niyo Network</a></p>
+            <p className="footer-column-text"><a className="nav-link" href="https://niyohairandbeauty.com/">Niyo Hair & Beauty</a></p>
+            <p className="footer-column-text"><a href="https://dapp.niyo.co" >Niyo Dapp </a></p>
           </div>
 
           <div className="footer-column explore">
             <h5 className="footer-column-title">Explore</h5>
-            <p className="footer-column-text">Blog</p>
+            <p className="footer-column-text"><a href="https://medium.com/niyogroup">Blog </a></p>
           </div>
 
           <div className="footer-column footer-contact">
             <h5 className="footer-column-title">Contact Us</h5>
             <p className="footer-column-text">
-              <img src={phone} alt="phone" className="contact-icon" />
-              +123 056 7983
+            <a href="tel:+44 7429 656777"><img src={phone} alt="phone" className="contact-icon" />
+            +44 7429 656777</a>
             </p>
-            <p className="footer-column-text footer-no-icon"> +123 056 7983</p>
+            <p className="footer-column-text footer-no-icon"> <a href="tel:+44 7429 656777">+123 056 7983 </a></p>
             <p className="footer-column-text">
-              <img src={email} alt="phone" className="contact-icon" />
-              admin@niyogroup
+              <a href="mailto:hello@niyo.co"><img src={email} alt="phone" className="contact-icon" />
+              hello@niyo.co</a>
             </p>
           </div>
         </div>

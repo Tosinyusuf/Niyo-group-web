@@ -3,9 +3,9 @@ import Who from "../components/about/Who";
 import Priorities from "../components/about/Priorities";
 import SeeTimeline from "../components/about/SeeTimeline";
 import Timeline from "../components/about/Timeline";
-import MeetTeam from "../components/about/MeetTeam";
-import Press from "../components/Press";
+import MeetTeam from "../components/about/MeetTeam"
 import OpenRoles from "../components/about/OpenRoles";
+import Press from "../components/about/Press";
 
 const AboutUs = () => {
   return (

@@ -8,10 +8,15 @@ const StyledFooter = styled.div`
   font-family: Light;
   padding: 80px 150px 30px 150px;
 
+  p{
+    a{
+      color:#fff;
+    }
+  }
   @media ${breakpointSizes.mobile} {
     height: auto;
     width: 100vw;
-    padding: 50px 20px 0 20px;
+    padding: 50px 20px 20px 20px;
   }
   @media ${breakpointSizes.desktop} {
     padding: 80px 250px;
@@ -22,9 +27,10 @@ const StyledFooter = styled.div`
     width: 100%;
     justify-content: center;
     padding-bottom: 30px;
+    flex-wrap:wrap ;
 
     @media ${breakpointSizes.mobile} {
-      flex-direction: column;
+      /* flex-direction: column; */
     }
   }
 
@@ -73,6 +79,8 @@ const StyledFooter = styled.div`
     }
   }
 
+  
+
   .niyo-logo {
     margin: 0 0 3% 0;
 
@@ -97,7 +105,6 @@ const StyledFooter = styled.div`
   .footer-column-text {
     font-family: regular;
     font-size: 14px;
-    width: 90%;
     margin: 0 0 3% 0;
 
     @media ${breakpointSizes.mobile} {
@@ -146,7 +153,7 @@ const StyledFooter = styled.div`
     justify-content: center;
 
     @media ${breakpointSizes.mobile} {
-      padding-top: 20px;
+      padding-top: 0px;
       font-family: semibold;
       font-size: 12px;
     }
@@ -157,12 +164,13 @@ const StyledFooter = styled.div`
       border-top: 1px solid #afafaf;
       width: 100%;
       align-self: center;
+      font-size:14px;
 
       @media ${breakpointSizes.mobile} {
         border-top: 2px solid #afafaf;
         width: 90%;
         align-self: center;
-        padding-bottom: 20px;
+
       }
     }
   }

@@ -13,15 +13,9 @@ export const StyledContainer = styled.div`
   height: ${({ height }) => (height ? height : "auto")};
   color: ${({ color }) => (color ? color : "#fff")};
   font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : "semibold")};
-  display: flex;
-  flex-direction: ${({ flexDirection }) =>
-    flexDirection ? flexDirection : "column"};
-  align-items: ${({ alignItems }) => (alignItems ? alignItems : "center")};
-  justify-content: ${({ justifyContent }) =>
-    justifyContent ? justifyContent : "center"};
+ padding: ${({ pad }) => (pad ? pad : "100px 0")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
-  padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "0px")};
-  padding-top: ${({ paddingTop }) => (paddingTop ? paddingTop : "0px")};
+  
   border-radius: ${({ borderRadius }) => (borderRadius ? borderRadius : "none")}
     0px;
 
@@ -65,9 +59,7 @@ export const StyledTitle = styled.h1`
     fontFamily ? fontFamily : "AtypDisplay-Bold"};
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "50px")};
   line-height: ${({ lineHeight }) => (lineHeight ? lineHeight : "60px")};
-  padding-bottom: ${({ paddingBottom }) =>
-    paddingBottom ? paddingBottom : "30px"};
-  padding-top: ${({ paddingTop }) => (paddingTop ? paddingTop : "0%")};
+  
   color: ${({ color }) => (color ? color : "#fff")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
 
@@ -78,10 +70,8 @@ export const StyledTitle = styled.h1`
 
   @media ${breakpointSizes.mobile} {
     margin: 0;
-    padding-left: 5%;
-    padding-right: 5%;
     line-height: 44px;
-    text-align: left;
+    text-align: center;
     font-size: 36px;
 
     br {
@@ -100,23 +90,14 @@ export const StyledSpan = styled.span`
 export const StyledParagraph = styled.p`
   font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : "semibold")};
   color: ${({ color }) => (color ? color : "#fff")};
-  width: ${({ width }) => (width ? width : "80%")};
+ // width: ${({ width }) => (width ? width : "80%")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "17px")};
-  padding-bottom: ${({ paddingBottom }) =>
-    paddingBottom ? paddingBottom : "5%"};
-  padding-top: ${({ paddingTop }) => (paddingTop ? paddingTop : "4%")};
-  margin: ${({ margin }) => (margin ? margin : "0")};
-  padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "4%")};
-  margin: ${({ margin }) => (margin ? margin : "0")};
-  padding: ${({ padding }) => (padding ? padding : "0px 0px 0px 4%")};
 
   @media ${breakpointSizes.mobile} {
-    margin: 0;
-    padding: 0 0 10% 0;
-    margin-right: 10%;
+    
 
-    text-align: left;
+    text-align: center;
     font-size: 14px;
     font-family: Light;
 
@@ -183,32 +164,28 @@ export const StyledBenefitCardContainer = styled.div`
 `;
 
 export const StyledDropdown = styled.div`
+text-align:center ;
   .dropdown-button {
-    display: flex;
-    align-items: ${({ alignItems }) => (alignItems ? alignItems : "center")};
-    justify-content: ${({ justifyContent }) =>
-      justifyContent ? justifyContent : "center"};
-    text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
+   
+    
     background: ${({ background }) => (background ? background : "#141414")};
-    width: ${({ width }) => (width ? width : "40%")};
+    width: ${({ width }) => (width ? width : "30%")};
     border: ${({ border }) => (border ? border : "1px #fff solid")};
     border-top: ${({ borderTop }) =>
       borderTop ? borderTop : "1px #fff solid"};
     border-radius: ${({ borderRadius }) =>
       borderRadius ? borderRadius : "5px"};
-    width: ${({ width }) => (width ? width : "340px")};
-    height: ${({ height }) => (height ? height : "50px")};
+    height: ${({ height }) => (height ? height : "45px")};
     color: ${({ color }) => (color ? color : "#fff")};
     font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : "Light")};
     font-size: ${({ fontSize }) => (fontSize ? fontSize : "16px")};
     padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "20px")};
-    margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "0")};
     z-index: 10;
-    text-align: ${({ textAlign }) => (textAlign ? textAlign : "left")};
+    margin:16px 0 ;
 
     @media ${breakpointSizes.mobile} {
-      width: 300px;
-      /* width: 300px; */
+      width: 250px;
+      
     }
 
     @media ${breakpointSizes.desktop} {
@@ -244,44 +221,47 @@ export const StyledDropdown = styled.div`
 
 export const StyledAccordion = styled.div`
   color: ${({ color }) => (color ? color : "#fff")};
-  padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "0px")};
-  width: ${({ width }) => (width ? width : "90%")};
-  background-color: ${({ backgroundColor }) =>
-    backgroundColor ? backgroundColor : "#070909"};
+  padding: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "0px")};
+  width: ${({ width }) => (width ? width : "100%")};
+  padding:0 150px;
+  display:none ;
+
+  
 
   @media ${breakpointSizes.mobile} {
     align-self: center;
   }
-
-  .panel-header {
-    text-align: ${({ textAlign }) => (textAlign ? textAlign : "left")};
-    font-size: ${({ fontSize }) => (fontSize ? fontSize : "26px")};
-    margin-bottom: ${({ marginBottom }) =>
-      marginBottom ? marginBottom : "20px"};
+.ant-collapse.ant-collapse-icon-position-start{
+  background-color:transparent !important ;
+  border:none;
+  .ant-collapse-item.panel-header{
+    border-bottom: 1px solid #AFAFAF !important;
+  }
+}
+.ant-collapse-content{
+  background-color:transparent ;
+  color:#fff;
+  font-family:Light ;
+}
+.anticon.anticon-right.ant-collapse-arrow{
+  svg{
+    background-color: #FBAF00;
+    border-radius:50% ;
+    color:#000;
+    height:20px;
+    width:20px;
+    padding:5px;
+  }
+}
+  .ant-collapse-header {
+  color:#fff !important;
+   
   }
 
-  .panel-header::before {
-    display: block;
-    content: "";
-    /* background: url(orangeRectangle); */
-    background-image: url("../assets/orange-rectangle.svg");
-    background-size: 100px 100px;
-    width: 60px;
-    height: 60px;
-  }
 
-  .panel-text {
-    border-top: ${({ borderTop }) =>
-      borderTop ? borderTop : "1px #fff solid"};
-    font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : "regular")};
-    padding-top: ${({ paddingTop }) => (paddingTop ? paddingTop : "10px")};
-    font-size: ${({ fontSize }) => (fontSize ? fontSize : "14px")};
-  }
 
-  .ant-collapse-expand-icon {
-    width: ${({ width }) => (width ? width : "10%")};
-    float: ${({ float }) => (float ? float : "right")};
-    color: ${({ color }) => (color ? color : "#fff")};
+  @media ${breakpointSizes.mobile}{
+    padding:0 20px;
   }
 `;
 

@@ -7,6 +7,7 @@ const StyledBrands = styled.div`
 
   @media ${breakpointSizes.mobile} {
     padding-bottom: 0%;
+    padding-top:40px ;
   }
   .brands-container {
     display: flex;
@@ -23,6 +24,7 @@ const StyledBrands = styled.div`
 
       @media ${breakpointSizes.mobile} {
         font-size: 18px;
+        margin-bottom:0 ;
       }
     }
     .brands-title {

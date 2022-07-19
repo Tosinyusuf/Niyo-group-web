@@ -11,7 +11,7 @@ const StyledMission = styled.div`
   color: #fff;
 
   @media ${breakpointSizes.mobile} {
-    height: 780px;
+    height: auto;
     flex-direction: column;
     padding: 0 20px;
   }
@@ -29,8 +29,9 @@ const StyledMission = styled.div`
     @media ${breakpointSizes.mobile} {
       order: 2;
       width: 100%;
-      height: 300px;
-      margin-top: 80px;
+      height: 400px;
+      margin-top:0px ;
+      top:0;
     }
   }
   .mission-right-container {
@@ -44,10 +45,10 @@ const StyledMission = styled.div`
 
     @media ${breakpointSizes.mobile} {
       /* height: 50%; */
-      flex-direction: column;
+      height:auto ;
       width: 100%;
       margin-top: 30px;
-      padding: 0 0px;
+      padding: 20px 0px;
     }
     @media ${breakpointSizes.desktop} {
       padding: 0 250px;
@@ -58,7 +59,7 @@ const StyledMission = styled.div`
     color: #fbaf00;
     font-size: 14px;
     @media ${breakpointSizes.mobile} {
-      padding: 0 0 24px 0;
+      padding: 0 0 0px 0;
       font-size: 18px;
     }
   }

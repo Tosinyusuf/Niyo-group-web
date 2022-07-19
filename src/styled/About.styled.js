@@ -12,12 +12,13 @@ export const StyledAbout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content:center ;
   color: #fff;
   font-family: AtypDisplay-Bold;
 
   @media ${breakpointSizes.mobile} {
-    height: 100%;
+    height: 90%;
+    background-position:60% ;
   }
 
   @media ${breakpointSizes.desktop} {
@@ -25,12 +26,12 @@ export const StyledAbout = styled.div`
 
   .about-title {
     font-size: 60px;
-    padding-bottom: 100px;
+   // padding-bottom: 100px;
     line-height: 70px;
 
     @media ${breakpointSizes.mobile} {
       font-size: 48px;
-      padding: 0% 4% 20% 4%;
+      padding: 0% 4% 0% 4%;
       line-height: 50px;
     }
 

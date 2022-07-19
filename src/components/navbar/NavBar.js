@@ -49,7 +49,7 @@ const NavBar = () => {
             <Link className="nav-link" to="/contact-us">
               Work With Us
             </Link>
-            <button className="nav-button">Join the Niyo Nation</button>
+            <Link to="/careers"><button className="nav-button">Join the Niyo Nation</button></Link>
           </div>
           <Bars src={hamburger} onClick={showSidebar} />
           <div
@@ -70,16 +70,16 @@ const NavBar = () => {
             <Link className="nav-link" to="/contact-us">
               <img src={work} alt="" /> Work With Us
             </Link>
-            <Link className="nav-link" to="/">
-              <img src={cardLogo1} alt="" /> <span>Niyo Network</span>
-            </Link>
-            <Link className="nav-link" to="/">
+            <a className="nav-link" href="https://niyonetwork.com/">
+              <img src={cardLogo1} alt="" /> <span>Niyo Bootcamps</span>
+            </a>
+            <a className="nav-link" href="https://niyohairandbeauty.com/">
               <img src={cardLogo2} alt="" /> <span> Niyo Hair & Beauty</span>
-            </Link>
-            <Link className="nav-link" to="/">
+            </a>
+            <a className="nav-link" href="https://dapp.niyo.co">
               <img src={cardLogo3} alt="" /> <span>Niyo DApp</span>
-            </Link>
-            <button className="nav-button">Join the Niyo Nation</button>
+            </a>
+            <Link to="/careers"><button className="nav-button">Join the Niyo Nation</button></Link>
           </div>
         </StyledNavBar>
       </div>

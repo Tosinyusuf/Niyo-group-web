@@ -15,6 +15,7 @@ const StyledJoin = styled.div`
 
   @media ${breakpointSizes.mobile} {
     height: auto;
+    padding:50px 0;
   }
 
   .join-title:before {

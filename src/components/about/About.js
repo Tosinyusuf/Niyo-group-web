@@ -9,7 +9,7 @@ const About = () => {
           We are a nation of disruptors, <br></br>We are Niyo
         </h1>
 
-        <img src={downloadIcon} className="about-scroll" alt="scroll down" />
+        {/* <img src={downloadIcon} className="about-scroll" alt="scroll down" /> */}
       </StyledAbout>
     </>
   );

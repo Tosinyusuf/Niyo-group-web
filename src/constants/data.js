@@ -51,6 +51,8 @@ import emanuela from "../assets/team/emanuela.svg";
 import floraJoy from "../assets/team/flora-joy.svg";
 import akeiba from "../assets/team/akeiba.svg";
 import adele from "../assets/team/adele.svg";
+import mase from "../assets/team/mase.jpg";
+import ini from "../assets/team/ini.jpg"
 
 import bulb from "../assets/benefits/bulb.svg";
 import cashbag from "../assets/benefits/cashbag.svg";
@@ -73,6 +75,17 @@ import uob from "../assets/press/uob.svg";
 import nottsuni from "../assets/press/nottsuni.svg";
 import birmtech from "../assets/press/birmtech.svg";
 import benterprising from "../assets/press/benterprising.svg";
+
+//timeline
+import timeOne from "../assets/timeline/timeline-one.svg";
+import timeTwo from "../assets/timeline/timeline-two.svg";
+import timeThree from "../assets/timeline/timeline-three.svg";
+import timeFour from "../assets/timeline/timeline-four.svg";
+import timeFive from "../assets/timeline/timeline-five.svg";
+import timeSix from "../assets/timeline/timeline-six.svg";
+import timeSeven from "../assets/timeline/timeline-seven.svg";
+import timeEight from "../assets/timeline/timeline-eight.svg";
+import timeNine from "../assets/timeline/timeline-nine.svg";
 
 // DATA
 
@@ -158,13 +171,18 @@ export const ourPriorities = [
 export const ourCaptains = [
   {
     name: "Oyinkansola Adebayo",
-    role: "Chief Executive Officer",
+    role: "CEO & Founder",
+    funFact:
+      "I have met the founder of Ethereum (Vitalik Buterin) and would be potentially in his documentary.",
     image: oyin,
+    twitterLink:"",
+    Linkedin:"https://www.linkedin.com/in/olaoluwa-dada-622665122/"
   },
-  { name: "Olaoluwa Dada", role: "Chief Operating Officer", image: laolu },
+  { name: "Olaoluwa Dada", role: "Chief Operating Officer", funFact:"I was a ballet dancer", image: laolu },
   {
     name: "Dami Ladipo",
-    role: "Director of Research and Organisational Development",
+    role: "Head of Research & Organisational Development",
+    funFact: "I’ve been able to knit since I was 10 years old.",
     image: dami,
   },
 ];
@@ -172,43 +190,143 @@ export const ourCaptains = [
 export const ourTeamMembers = [
   {
     name: "Sephora Amlan",
-    role: "Partnerships & Employment Lead | EA to CEO",
+    role: "Partnerships & Employability Lead | EA to CEO",
+    funFact: "I played the violin for 2 years ",
     image: sephora,
+    twitterLink:"",
+    Linkedin:""
   },
   {
     name: "Chinazor Kalu",
     role: "Assistant Program Manager",
+    funFact: "I dare, and I am not afraid to be different",
     image: chinazor,
+    twitterLink:"",
+    Linkedin:"https://www.linkedin.com/in/chinazorviviankalu/"
   },
   {
     name: "Hauwa Ottun",
     role: "Bootcamp Lead - Black Codher",
+    funFact:"I love to read and facilitate a book club focussed on works from authors from diverse backgrounds.",
     image: hauwa,
+    twitterLink:"",
+    Linkedin:"https://www.linkedin.com/in/hauwa-kehinde-o-65874aa2?lipi=urn%3Ali%3Apage%3Ad_flagshi[…]ile_view_base_contact_details%3BQbpUnCSXTTOvTJUjvLPIhA%3D%3D"
   },
 
-  { name: "Saby Agama", role: "Brand and Content Manager", image: saby },
-  { name: "Temi Alabi", role: "Brand and Content Manager", image: temi },
-  { name: "Grace Omole", role: "Blockchain App Dev", image: grace },
-  { name: "John Adewunmi", role: "Project Controller", image: john },
-  { name: "Sumaya Dirie", role: "Project Administrator", image: sumaya },
+  {
+    name: "Saby Agama",
+    role: "Brand and Content Manager",
+    funFact: "During university I spent £600 on takeaways in a month 😫",
+    image: saby,
+    twitterLink:"",
+    Linkedin:""
+  },
+  {
+    name: "Temi Alabi",
+    role: "Brand and Content Manager",
+    funFact: "I'm an Artist & Illustrator",
+    image: temi,
+    twitterLink:"",
+    Linkedin:"https://www.linkedin.com/in/temialabi"
+  },
+  {
+    name: "Grace Omole",
+    role: "Tech Lead | Blockchain App Dev",
+    funFact: "I love rapping",
+    image: grace,
+    twitterLink:"https://twitter.com/GraceOmole3",
+    Linkedin:"https://www.linkedin.com/in/grace-omole-a9a37a188/"
+  },
+  {
+    name: "John Adewunmi",
+    role: "Bootcamp Project Lead",
+    funFact: "A Passionate ChelseaFC fan.",
+    image: john,
+    twitterLink:"",
+    Linkedin:""
+  },
+  {
+    name: "Sumaya Dirie",
+    role: "Project Administrator",
+    funFact: "I used to play Badminton",
+    image: sumaya,
+    twitterLink:"",
+    Linkedin:""
+  },
+
   { name: "Tia Johnson-Clarke", role: "", image: tia },
-  { name: "Sofiat Nafiu", role: "Brand and Product Designer", image: sofiat },
+  {
+    name: "Sofiat Nafiu",
+    role: "Brand and Product Designer",
+    funFact: "I'm an introvert and loves food",
+    image: sofiat,
+    twitterLink:"",
+    Linkedin:""
+  },
   {
     name: "Mary Bolawole",
     role: "Office Manager | Events Manager",
+    funFact:
+      "I can't eat a meal without having a piece of meat in there. I make and design clothes",
     image: mary,
+    twitterLink:"",
+    Linkedin:"https://www.linkedin.com/in/mary-bolawole-3596621a6/"
   },
-  { name: "Emanuela Aning", role: "", image: emanuela },
+  {
+    name: "Emanuela Aning",
+    role: "Sale and Customer Engagement Manager ",
+    funFact: "I'm trilingual and I was born in Italy",
+    image: emanuela,
+    twitterLink:"",
+    Linkedin:""
+  },
   {
     name: "Flora-Joy Muzondo ",
     role: "Student and Community Engagement Officer",
+    funFact: "I'm a Dancer!",
     image: floraJoy,
+    twitterLink:"",
+    Linkedin:"www.linkedin.com/in/florajoy"
   },
-  { name: "Akeiba Stevens", role: "Junior Software Developer", image: akeiba },
+  {
+    name: "Akeiba Stevens",
+    role: "Junior Software Developer",
+    funFact: "I was named after MC Hammer's daughter!",
+    image: akeiba,
+    twitterLink:"",
+    Linkedin:"https://www.linkedin.com/in/akeiba-stevens"
+  },
   {
     name: "Adele Khankai",
-    role: "Data Analyst and Student Engagement Officer",
+    role: "Student Programme and Data Analyst",
+    funFact: "I like to bake Children's Character Cakes.",
     image: adele,
+    twitterLink:"",
+    Linkedin:""
+  },
+  {
+    name: "Mase Omoruyi",
+    role: "Partnerships Analyst",
+    funFact: "I celebrated my birthday on the wrong date until my 10th birthday!",
+    image: mase,
+    twitterLink:"",
+    Linkedin:"https://www.linkedin.com/in/maseomoruyi/"
+  },
+  {
+    name: "Hannah Brewster",
+    role: "Careers and Employability Coach",
+    funFact: "I've climbed a volcano and I enjoy being creative",
+    image: mase,
+    twitterLink:"",
+    Linkedin:"https://www.linkedin.com/in/hannah-b-brewster"
+  },
+  {
+    name: "Iniabasi Akpan",
+    role: "HR Operations Lead",
+    funFact: "Love to Paint & Sip!",
+    image: ini,
+    twitterLink:"",
+    Linkedin:"https://www.linkedin.com/in/iniabasi-o-akpan/"
   },
 ];
 
@@ -341,3 +459,57 @@ export const ourPress = [
     text: "Founder of Niyo Enterprise Oyinkansola (Oyin) Adebayo and Olaoluwa (Laolu)Dada have spent two years innovating and empowering women through their women focused brand that uses hair as a tool to economically empower women – Niyo Enterprise.",
   },
 ];
+
+
+export const timeLines = [
+  {
+    year:"Pre 2018",
+    description:"Our founder Oyin served over 100 women, braiding their hair across the west midlands, campaigning for equality  for women and using creative entrepreneurship  tools for that. Niyo was finally born after years of brooding in Oyin. Oyin also met our COO and founding team member Laolu whilst braiding her hair . They got talking about socio economic impact through entrepreneurship and the rest has been history. ",
+    img:timeOne
+
+  },
+  {
+    year:"2018",
+    description:"Beyond Hair 2018, an event of 80 women curated for the 100 women who sat in Oyin’s chair to do something with their ideas. Niyo ,’  was founded  in Oyin’s bedroom.",
+    img:timeTwo
+
+  },
+  {
+    year:"Pre 2019",
+    description:"Oyin had started serving 200 women in her chair, Oyin and Laolu began to run hair braiding courses for women in Nottingham, they empowered 100 women to become their own hair entrepreneurs whilst also empowering  young women at university to teach on the course",
+    img:timeThree
+
+  },
+  {
+    year:"2019",
+    description:"Beyond Hair 2019, we had 150 women, this time to come together to build their products with the support of experts, the women wanted more , so we continued to run afro hair braiding courses and also continued to service what was now 300 women across the midlands with a team of 6 stylists supporting Oyin ",
+    img:timeFour
+
+  }, {
+    year:"Pre 2020",
+    description:"Things changed, Oyin prayed and researched , Oyin and Laolu ran beyond hair 2020 this time with the focus on black women becoming empowered to become technologists ",
+    img:timeFive
+
+  },
+  {
+    year:"2020",
+    description:"Black Codher bootcamp was  launched in partnership with Coding Black Females and sponsored by the West Midlands Combined Authority , we trained 50 black women within a year to become  full stack engineers",
+    img:timeSix
+  },
+  {
+    year:"Pre 2021",
+    description:"Niyo Became more defined, We set up two brands to distinguish the sectors we operate in: Niyo Network and  Niyo Hair and Beauty was birthed. As a result, we set up more technology bootcamps including the Niyo academy formerly known as the black disruptor bootcamps. We trained 250 women to become black women in tech. 70% of them in roles with major companies like KPMg, Zappi and many more",
+    img:timeSeven
+  },
+  {
+    year:"2021",
+    description:"We launched the first product line for Niyo Hair and Beauty  selling high functioning equipment to promote healthy hair for black women.",
+    img:timeEight
+  },
+  {
+    year:"2022",
+    description:"The team grew from a team of 5 to a team of 25+, We are setting up our third brand Niyo Dapp, we have grown by 408% and set to continue to grow over the next few years.",
+    img:timeNine
+  }
+
+]

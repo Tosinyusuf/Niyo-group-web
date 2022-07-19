@@ -26,6 +26,9 @@ const StyledPriorities = styled.div`
       color: #fbaf00;
       font-family: semibold;
       font-size: 20px;
+      @media ${breakpointSizes.mobile} {
+        
+        font-size:16px; ;}
     }
 
     .priorities-title {
@@ -36,7 +39,8 @@ const StyledPriorities = styled.div`
       margin: 0;
 
       @media ${breakpointSizes.mobile} {
-        padding-bottom: 14%;
+        padding-bottom: 10px;
+        font-size:24px; ;
 
         br {
           display: none;
@@ -46,7 +50,11 @@ const StyledPriorities = styled.div`
       @media ${breakpointSizes.desktop} {
       }
     }
-  }
+    @media ${breakpointSizes.mobile} {
+        padding:20px;
+      }
+    }
+  
 
   .priorities-bottom-container {
     display: flex;
@@ -67,7 +75,6 @@ const StyledPriorities = styled.div`
       @media ${breakpointSizes.mobile} {
         width: 100%;
         padding: 0 6%;
-        margin-bottom: 14%;
         flex-direction: column;
       }
 
@@ -101,6 +108,9 @@ const StyledPriorities = styled.div`
       .priorities-text {
         margin: 0;
         font-size: 17px;
+        @media ${breakpointSizes.mobile} {
+          font-size:14px;
+        }
       }
     }
   }

@@ -1,10 +1,11 @@
 import { StyledContainer } from "../../styled/StyledComponents";
 import { StyledTitle } from "../../styled/StyledComponents";
 import { StyledParagraph } from "../../styled/StyledComponents";
+import { CareerEmpower } from "./style";
 const CareersEmpowered = () => {
   return (
-    <>
-      <StyledContainer height="100%">
+    <CareerEmpower>
+      <StyledContainer >
         <StyledTitle>
           You’re not only working with us, <br></br>
           we’ll help you
@@ -21,7 +22,7 @@ const CareersEmpowered = () => {
           Group.
         </StyledParagraph>
       </StyledContainer>
-    </>
+    </CareerEmpower>
   );
 };
 
