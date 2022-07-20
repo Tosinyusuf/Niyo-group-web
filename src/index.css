@@ -27,6 +27,10 @@
     color:#fff !important;
   }
 
+  body{
+    position: relative;
+    min-height: 100vh;
+  }
   .ant-dropdown-menu{
     width:650px;
     border-radius: 30px !important;
@@ -70,12 +74,14 @@ box-shadow: 2px 4px 26px rgba(255, 255, 255, 0.15);
   };
 
   .react-multi-carousel-dot--active button{
-    background:#FFFFFF !important;
+    background:#FFF !important;
  }
 
  button{
   cursor: pointer;
  }
+
+ 
 
 /* body {
     font-family: AtypDisplay-Bold;

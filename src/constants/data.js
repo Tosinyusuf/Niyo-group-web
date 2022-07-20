@@ -53,6 +53,7 @@ import akeiba from "../assets/team/akeiba.svg";
 import adele from "../assets/team/adele.svg";
 import mase from "../assets/team/mase.jpg";
 import ini from "../assets/team/ini.jpg"
+import hannah from "../assets/team/hannah.jpeg"
 
 import bulb from "../assets/benefits/bulb.svg";
 import cashbag from "../assets/benefits/cashbag.svg";
@@ -316,7 +317,7 @@ export const ourTeamMembers = [
     name: "Hannah Brewster",
     role: "Careers and Employability Coach",
     funFact: "I've climbed a volcano and I enjoy being creative",
-    image: mase,
+    image: hannah,
     twitterLink:"",
     Linkedin:"https://www.linkedin.com/in/hannah-b-brewster"
   },
@@ -386,76 +387,91 @@ export const ourPress = [
     brandLogo: voice,
     headline: "Initiative to boost numbers of black women in...........",
     text: "IN RECENT years diversity reports produced by tech giants such as Apple, Facebook, Google, and Microsoft have revealed one consistent fact about the industry as a whole – that the coders, engineers, and data scientists that drive it are overwhelmingly white and male. ",
+    url:"https://www.voice-online.co.uk/news/uk-news/2020/05/09/initiative-to-boost-numbers-of-black-women-in-tech-launched/"
   },
 
   {
     brandLogo: appleIcon,
     headline: "The coding camp for Black women",
+    url:"https://apps.apple.com/gb/story/id1533718661",
     text: "When it comes to the under-representation of Black women in the technology industry, “I have not seen much of a shift in the last decade”. This is the view of Charlene Hunter, the founder of Coding Black Females – a network for Black women in tech.",
   },
   {
     brandLogo: bbcIcon,
     headline: "The black women in tech coding the future",
+    url:"https://www.bbc.co.uk/news/av/uk-england-birmingham-53741421",
     text: "A unique 'boot camp' has been set up in the West Midlands to train black women to become software developers. The aim is to increase digital skills and help create a more diverse workforce in technology, a traditionally male-dominated industry.",
   },
   {
     brandLogo: newstack,
     headline: "How the Tech Community Can Do Better for........",
+    url:"https://thenewstack.io/how-the-tech-community-can-do-better-for-black-women/",
     text: "Technology is omnipresent and almost everyone is a tech consumer. It’s intimate, it’s personal, it’s professional. It’s in our pockets, our homes, our cars, our offices, our schools, our hospitals — it’s everywhere. And it’s for all of us.",
   },
   {
     brandLogo: covuni,
     headline: "Coventry University helps Birmingham-based ",
+    url:"https://www.coventry.ac.uk/business/business-news/coventry-university-helps-birmingham-based-social-enterprise-to-re-define-itself-and-create-jobs/",
     text: "Coventry University, a growth partner of Innovate UK, delivering the Innovate UK EDGE programme in the Midlands, has helped Niyo Enterprise to identify new opportunities for growth, to redefine themselves as a social enterprise and to create twelve new jobs for black female hair stylists and other support roles in the Birmingham area.",
   },
   {
     brandLogo: othernews,
     headline: "Where Women, Beauty, Business and Tech Co-exist .......",
+    url:"https://www.inothernews.uk/thegoodreport/2020/1/5/in-other-news-niyo-enterprise",
     text: "As existing social enterprise founders, Oyin and Laolu took their current model business which focussed on training, teaching and black hair, beauty and business empowerment events, and innovated into a tech business,  and divided into two areas - practical workshops on hair styling, and professional hairdressing services.",
   },
   {
     brandLogo: metro,
     headline: "‘Coding Bootcamp’ offers six months of free ........",
+    url:"https://metro.co.uk/2020/05/22/coding-bootcamp-offering-six-months-free-training-black-women-12744559",
     text: "The Black Codher Coding Bootcamp is offering free six-month training for 40 black women, thanks to funding from West Midlands Combined Authority.",
   },
   {
     brandLogo: editions,
     headline: "BLACK WOMEN IN TECH – 2020",
+    url:"https://editionbhm.com/2020/10/21/black-women-in-tech-2020/",
     text: "Technology has reshaped all forms of communication creating millions of jobs.  The tech industry is largely a man’s world, and a white man’s world at that. According to research, women make up only about 16% of the computer industry in 2019, with Black women only comprising 3% of the total. ",
   },
   {
     brandLogo: chambers,
     headline: "Black women in tech programme invites........",
+    url:"https://www.greaterbirminghamchambers.com/latest-news/news/2020/11/27/black-women-in-tech-programme-invites-employers-to-conference/",
     text: "A programme supporting black women in technology careers will be hosting an employer roundtable conference today, for employers and partners to engage in the programme",
   },
   {
     brandLogo: generations,
     headline: "MEET BLACK CODHER, WHO ARE CHANGING.....",
+    url:"https://www.generation-success.com/blog/meet-black-codher-who-are-changing-the-tech-world",
     text: "From coming up with an idea to start a Coding Bootcamp to being featured on the global broadcasting platform BBC to then being the front page of the UK Apple App Store in October 2020 Black CodHer is giving the opportunity to increase the representation of black females in tech/coding.",
   },
   {
     brandLogo: businnov,
     headline: "FREE CODING BOOTCAMP FOR UNEMPLOYED BLACK.....",
+    url:"https://www.businessinnovationmag.co.uk/free-coding-bootcamp-for-unemployed-black-women-in-west-midlands/",
     text: "Birmingham based Start Ups, Niyo Enterprise and Coding Black Females  have announced the Black Codhers’ programme, a free 6-month coding bootcamp funded by West Midlands Combined Authority (WMCA) for underserved black women. ",
   },
   {
     brandLogo: uob,
     headline: "Niyo Enterprise - Oyin Adebayo and Laolu Dada",
+    url:"https://intranet.birmingham.ac.uk/as/employability/b-enterprising/bstartup/businesses/oyin-adebayo-niyo-enterprise.aspx",
     text: "Niyo Enterprise is a multi-faceted technology organisation that prides itself in using hair, beauty and programmes as tools to economically empower black women. The business was founded by Oyin Adebayo (MA Economics, University of Birmingham) and Laolu Dada (BA Health and Social Care, University of Nottingham Trent). ",
   },
   {
     brandLogo: nottsuni,
     headline: "ESF support for Black-Led Business",
+    url:"https://www.ntu.ac.uk/about-us/news/news-articles/2020/10/esf-support-for-black-led-business",
     text: "The High Level Skills programme supports small and medium-sized enterprises (SMEs) based in Nottinghamshire and Derbyshire with a package of free and subsidised support to help them identify their skills and talent needs, and benefit from graduate talent in the region.",
   },
   {
     brandLogo: birmtech,
     headline: "Oyinkansola Adebayo, CEO & Co-Founder, Niyo......",
+    url:"https://birmingham.tech/tech-week/speakers/oyinkansola-adebayo/",
     text: "Oyinkansola runs a multi-faceted organization called Niyo enterprise, a company that specializes in using creative tools such as hair, beauty, tech and community development to economically empower black women. This organisation currently has two brands: Niyo Hair and Beauty and Niyo Network.",
   },
   {
     brandLogo: benterprising,
     headline: "How women can use technology to change......",
+    url:"https://b-enterprising.blogspot.com/2019/12/how-women-can-use-technology-to-change.html",
     text: "Founder of Niyo Enterprise Oyinkansola (Oyin) Adebayo and Olaoluwa (Laolu)Dada have spent two years innovating and empowering women through their women focused brand that uses hair as a tool to economically empower women – Niyo Enterprise.",
   },
 ];

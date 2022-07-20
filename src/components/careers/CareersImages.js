@@ -20,23 +20,7 @@ const CareersImages = () => {
       <div className="right career-image" style={{backgroundImage:`url(${careerBlock4})`}}>
 
       </div>
-      {/* <StyledContainer height="100%" flexDirection="row">
-        <StyledImageContainer width="50%" height="100%">
-          <div className="left-top-image-container">
-            <div className="image-left-top career-image">image 1</div>
-            <div className="image-left-top career-image">image 2</div>
-          </div>
-          <div className="left-bottom-image-container career-image">
-            image 3
-          </div>
-        </StyledImageContainer>
-
-        <StyledImageContainer
-          width="50%"
-          height="100%"
-          backgroundImage={careerBlock2}
-        ></StyledImageContainer>
-      </StyledContainer> */}
+      
     </CareerImg>
   );
 };

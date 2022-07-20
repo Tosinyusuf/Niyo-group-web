@@ -60,9 +60,13 @@ const StyledTimeline = styled.div`
         .timeline-image{
           height:300px;
           background-size:cover ;
+          border-radius:20px;
+          margin:0 10px ;
           img{
-            margin-top:-30px; ;
-            margin-left:-10px ;
+            margin-top:-350px; ;
+            margin-left:-20px ;
+
+            height:inherit
           }
         }
       }

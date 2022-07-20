@@ -27,7 +27,7 @@ const StyledPriorities = styled.div`
       font-family: semibold;
       font-size: 20px;
       @media ${breakpointSizes.mobile} {
-        
+        margin-bottom:0 ;
         font-size:16px; ;}
     }
 
@@ -74,8 +74,9 @@ const StyledPriorities = styled.div`
 
       @media ${breakpointSizes.mobile} {
         width: 100%;
-        padding: 0 6%;
+        padding: 0  6% 20px 6%;
         flex-direction: column;
+        height:auto;
       }
 
       @media ${breakpointSizes.desktop} {

@@ -93,6 +93,7 @@ export const StyledParagraph = styled.p`
  // width: ${({ width }) => (width ? width : "80%")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "17px")};
+  text-align:${({ textAlign }) => (textAlign ? textAlign : "center")};
 
   @media ${breakpointSizes.mobile} {
     

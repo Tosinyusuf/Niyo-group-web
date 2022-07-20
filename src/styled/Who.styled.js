@@ -33,6 +33,7 @@ const StyledWho = styled.div`
 
       @media ${breakpointSizes.mobile} {
         flex-direction: column;
+        margin-bottom: 0;
       }
 
       @media ${breakpointSizes.desktop} {
@@ -45,6 +46,9 @@ const StyledWho = styled.div`
       margin: 0;
       color: #070909 !important ;
     }
+    @media ${breakpointSizes.mobile} {
+        padding:20px 20px 0 20px
+      }
   }
 
   .who-bottom-container {

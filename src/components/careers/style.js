@@ -2,6 +2,8 @@ import styled from "styled-components";
 import breakpointSizes from "../../constants/breakpointSizes";
 
 export const CareerHero = styled.div`
+
+margin-top:91px ;
   p {
     font-family: regular;
     font-size: 18px;
@@ -75,6 +77,9 @@ export const CareerEmpower = styled.div`
       margin-top: 20px;
       padding: 0 20px;
     }
+    .empower{
+      padding:60px 0;
+    }
   }
 `;
 
@@ -91,9 +96,14 @@ export const CareerBenefits = styled.div`
     }
   }
   @media ${breakpointSizes.mobile} {
+    p{
+      text-align:left ;
+      padding-left:20px;
+    }
     h1{
         font-size:30px ;
         padding:0 20px;
+        text-align:left ;
     }
     .contain {
       padding: 0 0px;

@@ -12,7 +12,7 @@ const StyledOpenRoles = styled.div`
   font-family: semibold;
 
   @media ${breakpointSizes.mobile} {
-    padding: 0 5%;
+    padding: 0  5% 50px 5%;
     align-items: flex-start;
     height:auto ;
   }
@@ -60,6 +60,7 @@ const StyledOpenRoles = styled.div`
       width: 100%;
       text-align: left;
       font-size:14px ;
+      padding-bottom:0;
     }
 
     @media ${breakpointSizes.desktop} {

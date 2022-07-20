@@ -7,6 +7,8 @@ const StyledContact = styled.div`
   height: auto;
   padding: 100px 150px;
 
+  margin-top:91px ;
+
   @media ${breakpointSizes.mobile} {
     height: auto;
     padding: 30px 20px;
