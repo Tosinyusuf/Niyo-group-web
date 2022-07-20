@@ -10,6 +10,7 @@ export const StyledHeroSection = styled.div`
   height: 120vh;
   display: flex;
   flex-direction: column;
+  margin-top:91px ;
 
   @media ${breakpointSizes.mobile} {
     background-position: 60%;

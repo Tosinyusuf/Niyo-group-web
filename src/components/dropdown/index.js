@@ -14,7 +14,7 @@ const menu = (
           <>
             <Contain>
             
-            <a className="nav-link" href="https://niyonetwork.com/">
+            <a className="nav-link" href="https://niyonetwork.com/" target="_blank">
               <div className="each">
                 <div className="icon">
                     <img src={cardLogo1} alt="" />
@@ -29,7 +29,7 @@ const menu = (
               </div>
               </a>
 
-              <a className="nav-link" href="https://dapp.niyo.co">
+              <a className="nav-link" href="https://dapp.niyo.co" target="_blank">
               <div className="each">
                 <div className="icon">
                 <img src={cardLogo3} alt="" />
@@ -44,7 +44,7 @@ const menu = (
                 </div>
               </div>
               </a>
-              <a className="nav-link" href="https://niyohairandbeauty.com/">
+              <a className="nav-link" href="https://niyohairandbeauty.com/" target="_blank">
               <div className="each">
                 <div className="icon">
                 <img src={cardLogo2} alt="" />
@@ -59,7 +59,7 @@ const menu = (
               </div>
               </a>
 
-              <a href="https://blackcodher.com/">
+              <a href="https://blackcodher.com/" target="_blank">
               <div className="each">
                 <div className="icon">
                 <img src={blackcoder} alt="" />

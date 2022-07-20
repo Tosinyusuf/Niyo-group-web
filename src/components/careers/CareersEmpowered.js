@@ -5,7 +5,7 @@ import { CareerEmpower } from "./style";
 const CareersEmpowered = () => {
   return (
     <CareerEmpower>
-      <StyledContainer >
+      <StyledContainer className="empower">
         <StyledTitle>
           You’re not only working with us, <br></br>
           we’ll help you

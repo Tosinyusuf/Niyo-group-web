@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import heroImage from "../assets/hero-image.svg";
+import heroImage from "../assets/aboutImage.jpeg";
 
 import breakpointSizes from "../constants/breakpointSizes";
 
 export const StyledAbout = styled.div`
-  background-image: url(${heroImage});
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(${heroImage});
   background-size: cover;
   background-position: center;
   height: 90%;
@@ -14,6 +14,7 @@ export const StyledAbout = styled.div`
   align-items: center;
   justify-content:center ;
   color: #fff;
+  margin-top:91px ;
   font-family: AtypDisplay-Bold;
 
   @media ${breakpointSizes.mobile} {

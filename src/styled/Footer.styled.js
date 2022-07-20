@@ -27,10 +27,9 @@ const StyledFooter = styled.div`
     width: 100%;
     justify-content: center;
     padding-bottom: 30px;
-    flex-wrap:wrap ;
 
     @media ${breakpointSizes.mobile} {
-      /* flex-direction: column; */
+      flex-direction: column;
     }
   }
 

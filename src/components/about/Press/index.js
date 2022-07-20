@@ -63,7 +63,7 @@ const Press = () => {
                     <p padding="0%" textAlign="left">
                       {item.text}
                     </p>
-                    <a>Read More </a>
+                    <a href={item.url} target="_blank">Read More </a>
                   </div>
                 );
               })}

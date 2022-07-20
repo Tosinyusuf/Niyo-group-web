@@ -2,6 +2,7 @@ import styled from "styled-components";
 import breakpointSizes from "../constants/breakpointSizes";
 
 export const StyledNavBar = styled.div`
+.nav{
   width: 100%;
   height: 91px;
   display: flex;
@@ -130,4 +131,12 @@ export const StyledNavBar = styled.div`
     width: 164px;
     font-family: semibold;
   }
+}
+
+.active{
+  position:fixed ;
+  top:0;
+  z-index:9999;
+  filter:grayscale(0.1) ;
+}
 `;

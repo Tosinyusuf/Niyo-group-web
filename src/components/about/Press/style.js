@@ -44,10 +44,10 @@ export const  PressContainer = styled.div`
             padding:30px 15px;
             height:400px ;
             h2{
-                font-size:16px; ;
+                font-size:18px; ;
             }
             p{
-                font-size:12px !important ;
+                font-size:14px !important ;
             }
             a{
                 left:15px;
