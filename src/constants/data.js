@@ -155,22 +155,22 @@ export const ourPriorities = [
   {
     image: people,
     title: "People",
-    text: "We are friendly, we’re making an impact, we  bring  black women into high impact  ecosystems like tech.  We are proud that we are distinct and we are set apart for what we do.",
+    text: "Our prioritisation of people drives us to provide excellent customer service and top-class employee training.",
   },
   {
     image: purpose,
     title: "Purpose",
-    text: "We are friendly, we’re making an impact, we  bring  black women into high impact  ecosystems like tech.  We are proud that we are distinct and we are set apart for what we do.",
+    text: "We are a purpose-driven company that is on a mission to economically empower Black women, by providing them with upskilling training. We work towards strong and measurable social impact, to efficiently and productively assist the global communities we serve.",
   },
   {
     image: profit,
     title: "Profit",
-    text: "We are friendly, we’re making an impact, we  bring  black women into high impact  ecosystems like tech.  We are proud that we are distinct and we are set apart for what we do.",
+    text: "We are cost-efficient in all that we do, as we aspire to maximise our profit margins and market share.",
   },
   {
     image: planet,
     title: "Planet",
-    text: "We are friendly, we’re making an impact, we  bring  black women into high impact  ecosystems like tech.  We are proud that we are distinct and we are set apart for what we do.",
+    text: "We consider how anything and everything we do will impact humans across the globe, and the planet itself. We are committed to ethically sourcing products, and having a transparent supply chain.",
   },
 ];
 
