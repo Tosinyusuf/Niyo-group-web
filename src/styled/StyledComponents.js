@@ -13,9 +13,9 @@ export const StyledContainer = styled.div`
   height: ${({ height }) => (height ? height : "auto")};
   color: ${({ color }) => (color ? color : "#fff")};
   font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : "semibold")};
- padding: ${({ pad }) => (pad ? pad : "100px 0")};
+  padding: ${({ pad }) => (pad ? pad : "100px 0")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
-  
+
   border-radius: ${({ borderRadius }) => (borderRadius ? borderRadius : "none")}
     0px;
 
@@ -59,7 +59,7 @@ export const StyledTitle = styled.h1`
     fontFamily ? fontFamily : "AtypDisplay-Bold"};
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "50px")};
   line-height: ${({ lineHeight }) => (lineHeight ? lineHeight : "60px")};
-  
+
   color: ${({ color }) => (color ? color : "#fff")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
 
@@ -90,14 +90,12 @@ export const StyledSpan = styled.span`
 export const StyledParagraph = styled.p`
   font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : "semibold")};
   color: ${({ color }) => (color ? color : "#fff")};
- // width: ${({ width }) => (width ? width : "80%")};
+  // width: ${({ width }) => (width ? width : "80%")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "17px")};
-  text-align:${({ textAlign }) => (textAlign ? textAlign : "center")};
+  text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
 
   @media ${breakpointSizes.mobile} {
-    
-
     text-align: center;
     font-size: 14px;
     font-family: Light;
@@ -165,10 +163,8 @@ export const StyledBenefitCardContainer = styled.div`
 `;
 
 export const StyledDropdown = styled.div`
-text-align:center ;
+  text-align: center;
   .dropdown-button {
-   
-    
     background: ${({ background }) => (background ? background : "#141414")};
     width: ${({ width }) => (width ? width : "30%")};
     border: ${({ border }) => (border ? border : "1px #fff solid")};
@@ -182,11 +178,10 @@ text-align:center ;
     font-size: ${({ fontSize }) => (fontSize ? fontSize : "16px")};
     padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "20px")};
     z-index: 10;
-    margin:16px 0 ;
+    margin: 16px 0;
 
     @media ${breakpointSizes.mobile} {
       width: 250px;
-      
     }
 
     @media ${breakpointSizes.desktop} {
@@ -224,45 +219,40 @@ export const StyledAccordion = styled.div`
   color: ${({ color }) => (color ? color : "#fff")};
   padding: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "0px")};
   width: ${({ width }) => (width ? width : "100%")};
-  padding:0 150px;
-  display:none ;
-
-  
+  padding: 0 150px;
+  display: none;
 
   @media ${breakpointSizes.mobile} {
     align-self: center;
   }
-.ant-collapse.ant-collapse-icon-position-start{
-  background-color:transparent !important ;
-  border:none;
-  .ant-collapse-item.panel-header{
-    border-bottom: 1px solid #AFAFAF !important;
+  .ant-collapse.ant-collapse-icon-position-start {
+    background-color: transparent !important ;
+    border: none;
+    .ant-collapse-item.panel-header {
+      border-bottom: 1px solid #afafaf !important;
+    }
   }
-}
-.ant-collapse-content{
-  background-color:transparent ;
-  color:#fff;
-  font-family:Light ;
-}
-.anticon.anticon-right.ant-collapse-arrow{
-  svg{
-    background-color: #FBAF00;
-    border-radius:50% ;
-    color:#000;
-    height:20px;
-    width:20px;
-    padding:5px;
+  .ant-collapse-content {
+    background-color: transparent;
+    color: #fff;
+    font-family: Light;
   }
-}
+  .anticon.anticon-right.ant-collapse-arrow {
+    svg {
+      background-color: #fbaf00;
+      border-radius: 50%;
+      color: #000;
+      height: 20px;
+      width: 20px;
+      padding: 5px;
+    }
+  }
   .ant-collapse-header {
-  color:#fff !important;
-   
+    color: #fff !important;
   }
 
-
-
-  @media ${breakpointSizes.mobile}{
-    padding:0 20px;
+  @media ${breakpointSizes.mobile} {
+    padding: 0 20px;
   }
 `;
 

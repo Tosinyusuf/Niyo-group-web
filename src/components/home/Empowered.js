@@ -6,7 +6,8 @@ const Empowered = () => {
       <StyledEmpowered>
         <div className="empowered-text">
           <h1 className="empowered-title">
-            Feel <span>Empowered</span>, <br></br> Be <span>Empowered</span>
+            Feel <span margin="0">Empowered</span>, <br></br> Be{" "}
+            <span>Empowered</span>.
           </h1>
         </div>
       </StyledEmpowered>

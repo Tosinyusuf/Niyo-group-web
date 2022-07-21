@@ -15,7 +15,7 @@ const Mission = () => {
               We are on a Mission
             </p>
             <h1 className="mission-title">
-              Changing the narrative for black female disruptors globally..
+              Changing the narrative for Black female DisruptHers globally...
             </h1>
             <p className="mission-text">
               To build ecosystems for ambitious black women who have a passion

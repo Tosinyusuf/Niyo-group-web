@@ -8,9 +8,9 @@ const StyledFooter = styled.div`
   font-family: Light;
   padding: 80px 150px 30px 150px;
 
-  p{
-    a{
-      color:#fff;
+  p {
+    a {
+      color: #fff;
     }
   }
   @media ${breakpointSizes.mobile} {
@@ -35,13 +35,13 @@ const StyledFooter = styled.div`
 
   .footer-column {
     @media ${breakpointSizes.mobile} {
-      width: 100vw;
+      width: 100%;
     }
   }
 
   .footer-column:not(.top-footer) {
     @media ${breakpointSizes.mobile} {
-      width: 100vw;
+      width: 100%;
       padding: 0 0 20px 0px;
     }
   }
@@ -70,15 +70,14 @@ const StyledFooter = styled.div`
 
   .legal,
   .company,
-  .explore {
+  .explore,
+  .footer-contact {
     width: 17%;
     @media ${breakpointSizes.mobile} {
       order: 1;
       width: 100%;
     }
   }
-
-  
 
   .niyo-logo {
     margin: 0 0 3% 0;
@@ -93,6 +92,7 @@ const StyledFooter = styled.div`
     font-family: semibold;
     margin: 0 0 6% 0;
     color: #afafaf;
+    font-size: 14px;
 
     @media ${breakpointSizes.mobile} {
       font-size: 18px;
@@ -105,9 +105,10 @@ const StyledFooter = styled.div`
     font-family: regular;
     font-size: 14px;
     margin: 0 0 3% 0;
+    width: auto;
 
     @media ${breakpointSizes.mobile} {
-      font-size: 14;
+      font-size: 14px;
       padding-bottom: 10px;
       font-family: Light;
     }
@@ -163,13 +164,12 @@ const StyledFooter = styled.div`
       border-top: 1px solid #afafaf;
       width: 100%;
       align-self: center;
-      font-size:14px;
+      font-size: 14px;
 
       @media ${breakpointSizes.mobile} {
         border-top: 2px solid #afafaf;
         width: 90%;
         align-self: center;
-
       }
     }
   }
