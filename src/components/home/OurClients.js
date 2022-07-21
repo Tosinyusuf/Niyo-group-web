@@ -2,6 +2,7 @@ import { ourClientsLogos } from "../../constants/data";
 import Marquee from "react-fast-marquee";
 import orangeRectangle from "../../assets/orange-rectangle.svg";
 import StyledOurClients from "../../styled/OurClients.styled";
+import { Link } from "react-router-dom";
 
 const OurClients = () => {
   return (
@@ -17,7 +18,7 @@ const OurClients = () => {
               <h1 className="clients-title">Who we have worked with</h1>
             </div>
             <div className="button-container top">
-              <button className="clients-button">Work with us</button>
+            <button className="clients-button"><Link to="/contact-us">Work with us</Link></button>
             </div>
           </div>
 
@@ -41,7 +42,7 @@ const OurClients = () => {
               })}
             </Marquee>
             <div className="button-container bottom">
-              <button className="clients-button">Work with us</button>
+              <button className="clients-button"><Link to="/contact-us">Work with us</Link></button>
             </div>
           </div>
         </div>

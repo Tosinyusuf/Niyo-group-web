@@ -2,6 +2,7 @@ import StyledVisionSection from "../../styled/VisionSection.styled";
 import orangeRectangle from "../../assets/orange-rectangle.svg";
 import Arrow from "../../assets/arrow.svg";
 import niyoBadge from "../../assets/niyo-badge-black.svg";
+import { Link } from "react-router-dom";
 // import ScrollAnimation from "react-animate-on-scroll";
 // import "animate.css/animate.min.css";
 
@@ -23,12 +24,12 @@ const VisionSection = () => {
               A nation of brands where ambitious Black women build and create
               products that shape the face of culture.
             </p>
-            <button className="vision-button">
+           <Link to="/about-us"><button className="vision-button">
               Learn More{" "}
               <span>
                 <img src={Arrow} alt="symbol" className="arrow" />
               </span>
-            </button>
+            </button></Link> 
             {/* </ScrollAnimation> */}
           </div>
         </div>

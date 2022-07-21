@@ -1,6 +1,7 @@
 import StyledMission from "../../styled/Mission.styled";
 import orangeRectangle from "../../assets/orange-rectangle.svg";
 import arrow from "../../assets/arrow.svg";
+import { Link } from "react-router-dom";
 
 const Mission = () => {
   return (
@@ -22,12 +23,12 @@ const Mission = () => {
               to build and create disruptive ideas and technologies that drive
               society forward.{" "}
             </p>
-            <button className="mission-button">
+            <Link to="/about-us"><button className="mission-button">
               Read More{" "}
               <span>
                 <img src={arrow} alt="symbol" className="arrow" />
               </span>
-            </button>
+            </button></Link>
           </div>
         </div>
       </StyledMission>
