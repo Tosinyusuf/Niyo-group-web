@@ -5,7 +5,7 @@ const Join = () => {
     <>
       <StyledJoin>
         <h1 className="join-title">
-          Join Niyo <span>Family</span>
+          Join the Niyo <span>Family</span>
         </h1>
         <h3 className="join-text">
           Be the first to know about all things at Niyo Group

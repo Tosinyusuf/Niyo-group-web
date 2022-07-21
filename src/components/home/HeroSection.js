@@ -16,7 +16,7 @@ const HeroSection = () => {
               timingFunction: "ease-in-out",
             }}
           >
-            Economically empowering black women in technology globally.
+            Economically empowering Black women in technology globally.
           </TextAnimation.Slide>
         </p>
       </div>

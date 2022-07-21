@@ -12,7 +12,7 @@ const Priorities = () => {
             Our Priorities
           </p>
           <h1 className="priorities-title">
-            We value the people & <br></br>community
+            We value people and <br></br>community
           </h1>
         </div>
 

@@ -52,8 +52,8 @@ import floraJoy from "../assets/team/flora-joy.svg";
 import akeiba from "../assets/team/akeiba.svg";
 import adele from "../assets/team/adele.svg";
 import mase from "../assets/team/mase.jpg";
-import ini from "../assets/team/ini.jpg"
-import hannah from "../assets/team/hannah.jpeg"
+import ini from "../assets/team/ini.jpg";
+import hannah from "../assets/team/hannah.jpeg";
 
 import bulb from "../assets/benefits/bulb.svg";
 import cashbag from "../assets/benefits/cashbag.svg";
@@ -88,6 +88,11 @@ import timeSeven from "../assets/timeline/timeline-seven.svg";
 import timeEight from "../assets/timeline/timeline-eight.svg";
 import timeNine from "../assets/timeline/timeline-nine.svg";
 
+import badge18 from "../assets/timeline/badge18.svg";
+import badge19 from "../assets/timeline/badge19.svg";
+import badge20 from "../assets/timeline/badge20.svg";
+import badge21 from "../assets/timeline/badge21.svg";
+
 // DATA
 
 export const ourWorks = [
@@ -95,9 +100,9 @@ export const ourWorks = [
     id: "one",
     image: cardImage1,
     logo: cardLogo1,
-    title: "Niyo Network",
+    title: "Niyo Bootcamps",
     description:
-      "The training ground for the best black women in tech and its intersections with other high impact industries. We run  bootcamps focused on tech careers, entrepreneurship, and hair and beauty.",
+      "The training ground for the best Black women in tech and its intersections with other high impact industries. We run  bootcamps focused on tech careers, entrepreneurship, and hair and beauty.",
     button: "Discover our Bootcamps",
   },
   {
@@ -176,10 +181,15 @@ export const ourCaptains = [
     funFact:
       "I have met the founder of Ethereum (Vitalik Buterin) and would be potentially in his documentary.",
     image: oyin,
-    twitterLink:"",
-    Linkedin:"https://www.linkedin.com/in/olaoluwa-dada-622665122/"
+    twitterLink: "",
+    Linkedin: "https://www.linkedin.com/in/olaoluwa-dada-622665122/",
   },
-  { name: "Olaoluwa Dada", role: "Chief Operating Officer", funFact:"I was a ballet dancer", image: laolu },
+  {
+    name: "Olaoluwa Dada",
+    role: "Chief Operating Officer",
+    funFact: "I was a ballet dancer",
+    image: laolu,
+  },
   {
     name: "Dami Ladipo",
     role: "Head of Research & Organisational Development",
@@ -194,24 +204,26 @@ export const ourTeamMembers = [
     role: "Partnerships & Employability Lead | EA to CEO",
     funFact: "I played the violin for 2 years ",
     image: sephora,
-    twitterLink:"",
-    Linkedin:""
+    twitterLink: "",
+    Linkedin: "",
   },
   {
     name: "Chinazor Kalu",
     role: "Assistant Program Manager",
     funFact: "I dare, and I am not afraid to be different",
     image: chinazor,
-    twitterLink:"",
-    Linkedin:"https://www.linkedin.com/in/chinazorviviankalu/"
+    twitterLink: "",
+    Linkedin: "https://www.linkedin.com/in/chinazorviviankalu/",
   },
   {
     name: "Hauwa Ottun",
     role: "Bootcamp Lead - Black Codher",
-    funFact:"I love to read and facilitate a book club focussed on works from authors from diverse backgrounds.",
+    funFact:
+      "I love to read and facilitate a book club focussed on works from authors from diverse backgrounds.",
     image: hauwa,
-    twitterLink:"",
-    Linkedin:"https://www.linkedin.com/in/hauwa-kehinde-o-65874aa2?lipi=urn%3Ali%3Apage%3Ad_flagshi[…]ile_view_base_contact_details%3BQbpUnCSXTTOvTJUjvLPIhA%3D%3D"
+    twitterLink: "",
+    Linkedin:
+      "https://www.linkedin.com/in/hauwa-kehinde-o-65874aa2?lipi=urn%3Ali%3Apage%3Ad_flagshi[…]ile_view_base_contact_details%3BQbpUnCSXTTOvTJUjvLPIhA%3D%3D",
   },
 
   {
@@ -219,40 +231,40 @@ export const ourTeamMembers = [
     role: "Brand and Content Manager",
     funFact: "During university I spent £600 on takeaways in a month 😫",
     image: saby,
-    twitterLink:"",
-    Linkedin:""
+    twitterLink: "",
+    Linkedin: "",
   },
   {
     name: "Temi Alabi",
     role: "Brand and Content Manager",
     funFact: "I'm an Artist & Illustrator",
     image: temi,
-    twitterLink:"",
-    Linkedin:"https://www.linkedin.com/in/temialabi"
+    twitterLink: "",
+    Linkedin: "https://www.linkedin.com/in/temialabi",
   },
   {
     name: "Grace Omole",
     role: "Tech Lead | Blockchain App Dev",
     funFact: "I love rapping",
     image: grace,
-    twitterLink:"https://twitter.com/GraceOmole3",
-    Linkedin:"https://www.linkedin.com/in/grace-omole-a9a37a188/"
+    twitterLink: "https://twitter.com/GraceOmole3",
+    Linkedin: "https://www.linkedin.com/in/grace-omole-a9a37a188/",
   },
   {
     name: "John Adewunmi",
     role: "Bootcamp Project Lead",
     funFact: "A Passionate ChelseaFC fan.",
     image: john,
-    twitterLink:"",
-    Linkedin:""
+    twitterLink: "",
+    Linkedin: "",
   },
   {
     name: "Sumaya Dirie",
     role: "Project Administrator",
     funFact: "I used to play Badminton",
     image: sumaya,
-    twitterLink:"",
-    Linkedin:""
+    twitterLink: "",
+    Linkedin: "",
   },
 
   { name: "Tia Johnson-Clarke", role: "", image: tia },
@@ -261,8 +273,8 @@ export const ourTeamMembers = [
     role: "Brand and Product Designer",
     funFact: "I'm an introvert and loves food",
     image: sofiat,
-    twitterLink:"",
-    Linkedin:""
+    twitterLink: "",
+    Linkedin: "",
   },
   {
     name: "Mary Bolawole",
@@ -270,64 +282,65 @@ export const ourTeamMembers = [
     funFact:
       "I can't eat a meal without having a piece of meat in there. I make and design clothes",
     image: mary,
-    twitterLink:"",
-    Linkedin:"https://www.linkedin.com/in/mary-bolawole-3596621a6/"
+    twitterLink: "",
+    Linkedin: "https://www.linkedin.com/in/mary-bolawole-3596621a6/",
   },
   {
     name: "Emanuela Aning",
     role: "Sale and Customer Engagement Manager ",
     funFact: "I'm trilingual and I was born in Italy",
     image: emanuela,
-    twitterLink:"",
-    Linkedin:""
+    twitterLink: "",
+    Linkedin: "",
   },
   {
     name: "Flora-Joy Muzondo ",
     role: "Student and Community Engagement Officer",
     funFact: "I'm a Dancer!",
     image: floraJoy,
-    twitterLink:"",
-    Linkedin:"www.linkedin.com/in/florajoy"
+    twitterLink: "",
+    Linkedin: "www.linkedin.com/in/florajoy",
   },
   {
     name: "Akeiba Stevens",
     role: "Junior Software Developer",
     funFact: "I was named after MC Hammer's daughter!",
     image: akeiba,
-    twitterLink:"",
-    Linkedin:"https://www.linkedin.com/in/akeiba-stevens"
+    twitterLink: "",
+    Linkedin: "https://www.linkedin.com/in/akeiba-stevens",
   },
   {
     name: "Adele Khankai",
     role: "Student Programme and Data Analyst",
     funFact: "I like to bake Children's Character Cakes.",
     image: adele,
-    twitterLink:"",
-    Linkedin:""
+    twitterLink: "",
+    Linkedin: "",
   },
   {
     name: "Mase Omoruyi",
     role: "Partnerships Analyst",
-    funFact: "I celebrated my birthday on the wrong date until my 10th birthday!",
+    funFact:
+      "I celebrated my birthday on the wrong date until my 10th birthday!",
     image: mase,
-    twitterLink:"",
-    Linkedin:"https://www.linkedin.com/in/maseomoruyi/"
+    twitterLink: "",
+    Linkedin: "https://www.linkedin.com/in/maseomoruyi/",
   },
   {
     name: "Hannah Brewster",
     role: "Careers and Employability Coach",
     funFact: "I've climbed a volcano and I enjoy being creative",
     image: hannah,
-    twitterLink:"",
-    Linkedin:"https://www.linkedin.com/in/hannah-b-brewster"
+    twitterLink: "",
+    Linkedin: "https://www.linkedin.com/in/hannah-b-brewster",
   },
   {
     name: "Iniabasi Akpan",
     role: "HR Operations Lead",
     funFact: "Love to Paint & Sip!",
     image: ini,
-    twitterLink:"",
-    Linkedin:"https://www.linkedin.com/in/iniabasi-o-akpan/"
+    twitterLink: "",
+    Linkedin: "https://www.linkedin.com/in/iniabasi-o-akpan/",
   },
 ];
 
@@ -387,145 +400,157 @@ export const ourPress = [
     brandLogo: voice,
     headline: "Initiative to boost numbers of black women in...........",
     text: "IN RECENT years diversity reports produced by tech giants such as Apple, Facebook, Google, and Microsoft have revealed one consistent fact about the industry as a whole – that the coders, engineers, and data scientists that drive it are overwhelmingly white and male. ",
-    url:"https://www.voice-online.co.uk/news/uk-news/2020/05/09/initiative-to-boost-numbers-of-black-women-in-tech-launched/"
+    url: "https://www.voice-online.co.uk/news/uk-news/2020/05/09/initiative-to-boost-numbers-of-black-women-in-tech-launched/",
   },
 
   {
     brandLogo: appleIcon,
     headline: "The coding camp for Black women",
-    url:"https://apps.apple.com/gb/story/id1533718661",
+    url: "https://apps.apple.com/gb/story/id1533718661",
     text: "When it comes to the under-representation of Black women in the technology industry, “I have not seen much of a shift in the last decade”. This is the view of Charlene Hunter, the founder of Coding Black Females – a network for Black women in tech.",
   },
   {
     brandLogo: bbcIcon,
     headline: "The black women in tech coding the future",
-    url:"https://www.bbc.co.uk/news/av/uk-england-birmingham-53741421",
+    url: "https://www.bbc.co.uk/news/av/uk-england-birmingham-53741421",
     text: "A unique 'boot camp' has been set up in the West Midlands to train black women to become software developers. The aim is to increase digital skills and help create a more diverse workforce in technology, a traditionally male-dominated industry.",
   },
   {
     brandLogo: newstack,
     headline: "How the Tech Community Can Do Better for........",
-    url:"https://thenewstack.io/how-the-tech-community-can-do-better-for-black-women/",
+    url: "https://thenewstack.io/how-the-tech-community-can-do-better-for-black-women/",
     text: "Technology is omnipresent and almost everyone is a tech consumer. It’s intimate, it’s personal, it’s professional. It’s in our pockets, our homes, our cars, our offices, our schools, our hospitals — it’s everywhere. And it’s for all of us.",
   },
   {
     brandLogo: covuni,
     headline: "Coventry University helps Birmingham-based ",
-    url:"https://www.coventry.ac.uk/business/business-news/coventry-university-helps-birmingham-based-social-enterprise-to-re-define-itself-and-create-jobs/",
+    url: "https://www.coventry.ac.uk/business/business-news/coventry-university-helps-birmingham-based-social-enterprise-to-re-define-itself-and-create-jobs/",
     text: "Coventry University, a growth partner of Innovate UK, delivering the Innovate UK EDGE programme in the Midlands, has helped Niyo Enterprise to identify new opportunities for growth, to redefine themselves as a social enterprise and to create twelve new jobs for black female hair stylists and other support roles in the Birmingham area.",
   },
   {
     brandLogo: othernews,
     headline: "Where Women, Beauty, Business and Tech Co-exist .......",
-    url:"https://www.inothernews.uk/thegoodreport/2020/1/5/in-other-news-niyo-enterprise",
+    url: "https://www.inothernews.uk/thegoodreport/2020/1/5/in-other-news-niyo-enterprise",
     text: "As existing social enterprise founders, Oyin and Laolu took their current model business which focussed on training, teaching and black hair, beauty and business empowerment events, and innovated into a tech business,  and divided into two areas - practical workshops on hair styling, and professional hairdressing services.",
   },
   {
     brandLogo: metro,
     headline: "‘Coding Bootcamp’ offers six months of free ........",
-    url:"https://metro.co.uk/2020/05/22/coding-bootcamp-offering-six-months-free-training-black-women-12744559",
+    url: "https://metro.co.uk/2020/05/22/coding-bootcamp-offering-six-months-free-training-black-women-12744559",
     text: "The Black Codher Coding Bootcamp is offering free six-month training for 40 black women, thanks to funding from West Midlands Combined Authority.",
   },
   {
     brandLogo: editions,
     headline: "BLACK WOMEN IN TECH – 2020",
-    url:"https://editionbhm.com/2020/10/21/black-women-in-tech-2020/",
-    text: "Technology has reshaped all forms of communication creating millions of jobs.  The tech industry is largely a man’s world, and a white man’s world at that. According to research, women make up only about 16% of the computer industry in 2019, with Black women only comprising 3% of the total. ",
+    url: "https://editionbhm.com/2020/10/21/black-women-in-tech-2020/",
+    text: "Technology has reshaped all forms of communication creating millions of jobs.  The tech industry is largely a man’s world, and a white man’s world at that. According to research, women make up only about 16% of the computer industry in 2019, with Black women only comprising 3% of the total.",
   },
   {
     brandLogo: chambers,
     headline: "Black women in tech programme invites........",
-    url:"https://www.greaterbirminghamchambers.com/latest-news/news/2020/11/27/black-women-in-tech-programme-invites-employers-to-conference/",
-    text: "A programme supporting black women in technology careers will be hosting an employer roundtable conference today, for employers and partners to engage in the programme",
+    url: "https://www.greaterbirminghamchambers.com/latest-news/news/2020/11/27/black-women-in-tech-programme-invites-employers-to-conference/",
+    text: "A programme supporting black women in technology careers will be hosting an employer roundtable conference today, for employers and partners to engage in the programme.",
   },
   {
     brandLogo: generations,
     headline: "MEET BLACK CODHER, WHO ARE CHANGING.....",
-    url:"https://www.generation-success.com/blog/meet-black-codher-who-are-changing-the-tech-world",
+    url: "https://www.generation-success.com/blog/meet-black-codher-who-are-changing-the-tech-world",
     text: "From coming up with an idea to start a Coding Bootcamp to being featured on the global broadcasting platform BBC to then being the front page of the UK Apple App Store in October 2020 Black CodHer is giving the opportunity to increase the representation of black females in tech/coding.",
   },
   {
     brandLogo: businnov,
     headline: "FREE CODING BOOTCAMP FOR UNEMPLOYED BLACK.....",
-    url:"https://www.businessinnovationmag.co.uk/free-coding-bootcamp-for-unemployed-black-women-in-west-midlands/",
-    text: "Birmingham based Start Ups, Niyo Enterprise and Coding Black Females  have announced the Black Codhers’ programme, a free 6-month coding bootcamp funded by West Midlands Combined Authority (WMCA) for underserved black women. ",
+    url: "https://www.businessinnovationmag.co.uk/free-coding-bootcamp-for-unemployed-black-women-in-west-midlands/",
+    text: "Birmingham based Start Ups, Niyo Enterprise and Coding Black Females  have announced the Black Codhers’ programme, a free 6-month coding bootcamp funded by West Midlands Combined Authority (WMCA) for underserved black women.",
   },
   {
     brandLogo: uob,
     headline: "Niyo Enterprise - Oyin Adebayo and Laolu Dada",
-    url:"https://intranet.birmingham.ac.uk/as/employability/b-enterprising/bstartup/businesses/oyin-adebayo-niyo-enterprise.aspx",
-    text: "Niyo Enterprise is a multi-faceted technology organisation that prides itself in using hair, beauty and programmes as tools to economically empower black women. The business was founded by Oyin Adebayo (MA Economics, University of Birmingham) and Laolu Dada (BA Health and Social Care, University of Nottingham Trent). ",
+    url: "https://intranet.birmingham.ac.uk/as/employability/b-enterprising/bstartup/businesses/oyin-adebayo-niyo-enterprise.aspx",
+    text: "Niyo Enterprise is a multi-faceted technology organisation that prides itself in using hair, beauty and programmes as tools to economically empower black women. The business was founded by Oyin Adebayo (MA Economics, University of Birmingham) and Laolu Dada (BA Health and Social Care, University of Nottingham Trent).",
   },
   {
     brandLogo: nottsuni,
     headline: "ESF support for Black-Led Business",
-    url:"https://www.ntu.ac.uk/about-us/news/news-articles/2020/10/esf-support-for-black-led-business",
+    url: "https://www.ntu.ac.uk/about-us/news/news-articles/2020/10/esf-support-for-black-led-business",
     text: "The High Level Skills programme supports small and medium-sized enterprises (SMEs) based in Nottinghamshire and Derbyshire with a package of free and subsidised support to help them identify their skills and talent needs, and benefit from graduate talent in the region.",
   },
   {
     brandLogo: birmtech,
     headline: "Oyinkansola Adebayo, CEO & Co-Founder, Niyo......",
-    url:"https://birmingham.tech/tech-week/speakers/oyinkansola-adebayo/",
+    url: "https://birmingham.tech/tech-week/speakers/oyinkansola-adebayo/",
     text: "Oyinkansola runs a multi-faceted organization called Niyo enterprise, a company that specializes in using creative tools such as hair, beauty, tech and community development to economically empower black women. This organisation currently has two brands: Niyo Hair and Beauty and Niyo Network.",
   },
   {
     brandLogo: benterprising,
     headline: "How women can use technology to change......",
-    url:"https://b-enterprising.blogspot.com/2019/12/how-women-can-use-technology-to-change.html",
+    url: "https://b-enterprising.blogspot.com/2019/12/how-women-can-use-technology-to-change.html",
     text: "Founder of Niyo Enterprise Oyinkansola (Oyin) Adebayo and Olaoluwa (Laolu)Dada have spent two years innovating and empowering women through their women focused brand that uses hair as a tool to economically empower women – Niyo Enterprise.",
   },
 ];
 
-
 export const timeLines = [
   {
-    year:"Pre 2018",
-    description:"Our founder Oyin served over 100 women, braiding their hair across the west midlands, campaigning for equality  for women and using creative entrepreneurship  tools for that. Niyo was finally born after years of brooding in Oyin. Oyin also met our COO and founding team member Laolu whilst braiding her hair . They got talking about socio economic impact through entrepreneurship and the rest has been history. ",
-    img:timeOne
-
+    year: "Pre 2018",
+    description:
+      "Our founder Oyin served over 100 women, braiding their hair across the West Midlands, campaigning for equality  for women and using creative entrepreneurship tools for that. Niyo was finally born after years of brooding in Oyin. Oyin also met our COO and founding team member Laolu whilst braiding her hair. They got talking about socio economic impact through entrepreneurship and the rest has been history.",
+    img: timeOne,
+    badge: badge18,
   },
   {
-    year:"2018",
-    description:"Beyond Hair 2018, an event of 80 women curated for the 100 women who sat in Oyin’s chair to do something with their ideas. Niyo ,’  was founded  in Oyin’s bedroom.",
-    img:timeTwo
-
+    year: "2018",
+    description:
+      "Beyond Hair 2018, an event of 80 women curated for the 100 women who sat in Oyin’s chair to do something with their ideas. Niyo was founded in Oyin’s bedroom.",
+    img: timeTwo,
+    badge: badge18,
   },
   {
-    year:"Pre 2019",
-    description:"Oyin had started serving 200 women in her chair, Oyin and Laolu began to run hair braiding courses for women in Nottingham, they empowered 100 women to become their own hair entrepreneurs whilst also empowering  young women at university to teach on the course",
-    img:timeThree
-
+    year: "Pre 2019",
+    description:
+      "Oyin had started serving 200 women in her chair, Oyin and Laolu began to run hair braiding courses for women in Nottingham. They empowered 100 women to become their own hair entrepreneurs, whilst also empowering young women at University to teach on the course.",
+    img: timeThree,
+    badge: badge18,
   },
   {
-    year:"2019",
-    description:"Beyond Hair 2019, we had 150 women, this time to come together to build their products with the support of experts, the women wanted more , so we continued to run afro hair braiding courses and also continued to service what was now 300 women across the midlands with a team of 6 stylists supporting Oyin ",
-    img:timeFour
-
-  }, {
-    year:"Pre 2020",
-    description:"Things changed, Oyin prayed and researched , Oyin and Laolu ran beyond hair 2020 this time with the focus on black women becoming empowered to become technologists ",
-    img:timeFive
-
+    year: "2019",
+    description:
+      "Beyond Hair 2019, we had 150 women, this time to come together to build their products with the support of experts. The women wanted more, so we continued to run afro hair braiding courses, and also continued to service what was now 300 women across the Midlands with a team of 6 stylists supporting Oyin.",
+    img: timeFour,
+    badge: badge19,
   },
   {
-    year:"2020",
-    description:"Black Codher bootcamp was  launched in partnership with Coding Black Females and sponsored by the West Midlands Combined Authority , we trained 50 black women within a year to become  full stack engineers",
-    img:timeSix
+    year: "Pre 2020",
+    description:
+      "Things changed, Oyin prayed and researched. Oyin and Laolu ran Beyond Hair 2020, this time with the focus on Black women becoming empowered to become technologists.",
+    img: timeFive,
+    badge: badge19,
   },
   {
-    year:"Pre 2021",
-    description:"Niyo Became more defined, We set up two brands to distinguish the sectors we operate in: Niyo Network and  Niyo Hair and Beauty was birthed. As a result, we set up more technology bootcamps including the Niyo academy formerly known as the black disruptor bootcamps. We trained 250 women to become black women in tech. 70% of them in roles with major companies like KPMg, Zappi and many more",
-    img:timeSeven
+    year: "2020",
+    description:
+      "Black Codher bootcamp was launched in partnership with Coding Black Females and sponsored by the West Midlands Combined Authority. We trained 50 Black women to become Full Stack Developers in 6 months",
+    img: timeSix,
+    badge: badge20,
   },
   {
-    year:"2021",
-    description:"We launched the first product line for Niyo Hair and Beauty  selling high functioning equipment to promote healthy hair for black women.",
-    img:timeEight
+    year: "Pre 2021",
+    description:
+      "Niyo Became more defined, we set up two brands to distinguish the sectors we operate in; Niyo Network and Niyo Hair and Beauty were birthed. As a result, we set up more technology bootcamps including the Niyo Academy formerly known as the Black DisruptHer bootcamp. We trained 250 women to become Black women in tech, and 70% of them went into roles with major companies like KPMg, Zappi and many more.",
+    img: timeSeven,
+    badge: badge20,
   },
   {
-    year:"2022",
-    description:"The team grew from a team of 5 to a team of 25+, We are setting up our third brand Niyo Dapp, we have grown by 408% and set to continue to grow over the next few years.",
-    img:timeNine
-  }
-
-]
+    year: "2021",
+    description:
+      "We launched the first product line for Niyo Hair and Beauty selling high functioning equipment, to promote healthy hair for black women.",
+    img: timeEight,
+    badge: badge21,
+  },
+  {
+    year: "2022",
+    description:
+      "The team grew from a team of 5, to a team of 25+. We are setting up our third brand Niyo Dapp. We have grown by 408% and are set to continue to grow over the next few years.",
+    img: timeNine,
+    badge: badge21,
+  },
+];
