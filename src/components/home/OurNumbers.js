@@ -23,7 +23,7 @@ const OurNumbers = () => {
                   <h4 className="tally-title">
                     {isVisible ? (
                       <span>
-                        <CountUp end={3} decimal="," decimals={3} />
+                        <CountUp end={15} />
                       </span>
                     ) : null}
                     +
@@ -39,7 +39,7 @@ const OurNumbers = () => {
                   <h4 className="tally-title">
                     {isVisible ? (
                       <span>
-                        <CountUp end={30} decimal="," decimals={3} />
+                        <CountUp end={3} decimal="," decimals={3} />
                       </span>
                     ) : null}
                     +
@@ -71,3 +71,5 @@ const OurNumbers = () => {
 };
 
 export default OurNumbers;
+
+/* <CountUp end={3} decimal="," decimals={3} /> */
