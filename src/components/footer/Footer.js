@@ -38,13 +38,13 @@ const Footer = () => {
           <div className="footer-column company">
             <h5 className="footer-column-title">Company</h5>
             <p className="footer-column-text">
-              <Link to="/"> Work with Us </Link>
+              <Link to="/contact-us"> Work with Us </Link>
             </p>
             <p className="footer-column-text">
-              <Link to="/">About Us </Link>
+              <Link to="/about-us">About Us </Link>
             </p>
             <p className="footer-column-text">
-              <Link to="/">Careers </Link>
+              <Link to="/careers">Careers </Link>
             </p>
             <p className="footer-column-text">Niyo Planet</p>
             <p className="footer-column-text">
@@ -76,9 +76,6 @@ const Footer = () => {
                 <img src={phone} alt="phone" className="contact-icon" />
                 +44 121 2956645
               </a>
-            </p>
-            <p className="footer-column-text footer-no-icon">
-              <a href="tel:0121 295 6645">0121 295 6645 </a>
             </p>
             <p className="footer-column-text">
               <a href="mailto:hello@niyo.co">

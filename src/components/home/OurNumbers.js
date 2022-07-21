@@ -54,7 +54,7 @@ const OurNumbers = () => {
                   <h4 className="tally-title">
                     {isVisible ? (
                       <span>
-                        <CountUp end={100} decimal="," decimals={3} />
+                        <CountUp end={350} decimal="," decimals={0} />
                       </span>
                     ) : null}
                     +

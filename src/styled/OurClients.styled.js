@@ -92,12 +92,16 @@ const StyledOurClients = styled.div`
   }
 
   .clients-button {
-    height: 30%;
+    height: 40px;
     width: 30%;
     background-color: #fbaf00;
     border: none;
     border-radius: 15px;
     font-family: semibold;
+    color:#fff;
+    a{
+      color:#000;
+    }
 
     @media ${breakpointSizes.mobile} {
       order: 2;

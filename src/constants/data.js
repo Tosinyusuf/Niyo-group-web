@@ -104,6 +104,7 @@ export const ourWorks = [
     description:
       "The training ground for the best Black women in tech and its intersections with other high impact industries. We run  bootcamps focused on tech careers, entrepreneurship, and hair and beauty.",
     button: "Discover our Bootcamps",
+    url:"https://niyonetwork.com/"
   },
   {
     id: "two",
@@ -113,6 +114,7 @@ export const ourWorks = [
     description:
       "Niyo Hair and beauty is the one stop shop for all healthy afro hair and beauty needs.",
     button: "Innovative Hair & Beauty",
+    url:"https://www.niyohairandbeauty.com/"
   },
   {
     id: "three",
@@ -122,6 +124,7 @@ export const ourWorks = [
     description:
       "Niyo Dapp is  where creators, brands and users get rewarded in crypto for creating killer content through turning their content into NFTs and physical products.",
     button: "NFT for Beauty & Fashion",
+    url:"https://dapp.niyo.co/"
   },
 ];
 

@@ -34,9 +34,9 @@ const Brands = () => {
                   <div className="brand-text-container">
                     <h1 className="card-title">{item.title}</h1>
                     <p className="card-text">{item.description}</p>
-                    <button className={`${item.id} card-button`}>
+                    <a href={item.url} target="_blank"><button className={`${item.id} card-button`}>
                       {item.button}
-                    </button>
+                    </button></a>
                   </div>
                 </div>
               </>
