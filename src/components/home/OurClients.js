@@ -18,7 +18,9 @@ const OurClients = () => {
               <h1 className="clients-title">Who we have worked with</h1>
             </div>
             <div className="button-container top">
-            <button className="clients-button"><Link to="/contact-us">Work with us</Link></button>
+              <button className="clients-button">
+                <Link to="/contact-us">Work with us</Link>
+              </button>
             </div>
           </div>
 
@@ -31,18 +33,20 @@ const OurClients = () => {
             >
               {ourClientsLogos.map((item, index) => {
                 return (
-                  <>
+                  <div key={index}>
                     <img
                       src={item.image}
                       className="individual-client-logo"
                       alt="client logo"
                     />
-                  </>
+                  </div>
                 );
               })}
             </Marquee>
             <div className="button-container bottom">
-              <button className="clients-button"><Link to="/contact-us">Work with us</Link></button>
+              <button className="clients-button">
+                <Link to="/contact-us">Work with us</Link>
+              </button>
             </div>
           </div>
         </div>

@@ -17,29 +17,29 @@ const Brands = () => {
         <div className="brand-cards">
           {ourWorks.map((item, index) => {
             return (
-              <>
-                <div className="individual-card" key={index}>
-                  <div
-                    className="card-images"
-                    style={{ backgroundImage: `url(${item.image})` }}
-                  >
-                    <div className="logo-div">
-                      <img
-                        src={item.logo}
-                        className="card-niyo-logo"
-                        alt="niyo logo"
-                      ></img>
-                    </div>
-                  </div>
-                  <div className="brand-text-container">
-                    <h1 className="card-title">{item.title}</h1>
-                    <p className="card-text">{item.description}</p>
-                    <a href={item.url} target="_blank"><button className={`${item.id} card-button`}>
-                      {item.button}
-                    </button></a>
+              <div className="individual-card" key={index}>
+                <div
+                  className="card-images"
+                  style={{ backgroundImage: `url(${item.image})` }}
+                >
+                  <div className="logo-div">
+                    <img
+                      src={item.logo}
+                      className="card-niyo-logo"
+                      alt="niyo logo"
+                    ></img>
                   </div>
                 </div>
-              </>
+                <div className="brand-text-container">
+                  <h1 className="card-title">{item.title}</h1>
+                  <p className="card-text">{item.description}</p>
+                  <a href={item.url} target="_blank">
+                    <button className={`${item.id} card-button`}>
+                      {item.button}
+                    </button>
+                  </a>
+                </div>
+              </div>
             );
           })}
         </div>
