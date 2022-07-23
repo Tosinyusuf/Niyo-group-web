@@ -1,8 +1,8 @@
 import StyledMeetTeam from "../../styled/MeetTeam.styled";
 import { ourCaptains } from "../../constants/data";
 import { ourTeamMembers } from "../../constants/data";
-import twitter from "../../assets/team/twitter-yello.svg"
-import linkedin from "../../assets/team/linkedin-yello.svg"
+import twitter from "../../assets/team/twitter-yello.svg";
+import linkedin from "../../assets/team/linkedin-yello.svg";
 import { Link } from "react-router-dom";
 
 const MeetTeam = () => {
@@ -20,8 +20,11 @@ const MeetTeam = () => {
           {ourCaptains.map((item, index) => {
             return (
               <>
-                <div className="individual-member" style={{backgroundImage:`url(${item.image})`}}>
-                 
+                <div
+                  className="individual-member"
+                  style={{ backgroundImage: `url(${item.image})` }}
+                  key={index}
+                >
                   <div className="member-bio">
                     <h1 className="member-name">{item.name}</h1>
                     <p className="member-role">{item.role}</p>
@@ -53,8 +56,10 @@ const MeetTeam = () => {
           {ourTeamMembers.map((item, index) => {
             return (
               <>
-                <div className="individual-member" style={{backgroundImage:`url(${item.image})`}}>
-                
+                <div
+                  className="individual-member"
+                  style={{ backgroundImage: `url(${item.image})` }}
+                >
                   <div className="member-bio">
                     <h1 className="member-name">{item.name}</h1>
                     <p className="member-role">{item.role}</p>
@@ -63,7 +68,7 @@ const MeetTeam = () => {
                       <p>{item.funFact}.</p>
                     </div>
                     <div className="member-socials">
-                    <a href={item.twitterLink}>
+                      <a href={item.twitterLink}>
                         <img src={twitter} alt="Twitter Logo" />
                       </a>
                       <a href={item.LinkedIn}>
