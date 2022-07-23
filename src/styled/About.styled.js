@@ -20,7 +20,9 @@ export const StyledAbout = styled.div`
   @media ${breakpointSizes.mobile} {
     height: 90%;
     background-position:60% ;
+    margin-top:64px;
   }
+
 
   @media ${breakpointSizes.desktop} {
   }

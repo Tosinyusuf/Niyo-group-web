@@ -39,7 +39,7 @@ const Benefits = () => {
           {ourBenefits.map((item, index) => {
             return (
               <>
-                <div className="benefit-card">
+                <div className="benefit-card" key={index}>
                   <div>
                     <StyledBenefitIcon src={item.icon} />
                   </div>

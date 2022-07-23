@@ -1,3 +1,4 @@
+import React from "react";
 import About from "../components/about/About";
 import Who from "../components/about/Who";
 import Priorities from "../components/about/Priorities";
@@ -7,14 +8,17 @@ import MeetTeam from "../components/about/MeetTeam"
 import OpenRoles from "../components/about/OpenRoles";
 import Press from "../components/about/Press";
 
+
 const AboutUs = () => {
+  
+
   return (
     <>
       <About />
       <Who />
       <Priorities />
       <SeeTimeline />
-      <Timeline />
+      <Timeline/>
       <MeetTeam />
       <Press />
       <OpenRoles />

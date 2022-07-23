@@ -35,8 +35,8 @@ const JobVacancies = () => {
         </StyledTitle>
         <StyledDropdown >
           <select className="dropdown-button">
-            {jobTypes.map((item) => (
-              <option>{item}</option>
+            {jobTypes.map((item, index) => (
+              <option key={index}>{item}</option>
             ))}
           </select>
         </StyledDropdown>
@@ -63,7 +63,7 @@ const JobVacancies = () => {
                       <Panel
                         className="panel-header"
                         header={item.jobTitle}
-                        key={item.index}
+                        key={index}
                       >
                         <p className="panel-text">{item.jobDescription}</p>
                       </Panel>

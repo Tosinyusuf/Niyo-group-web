@@ -10,6 +10,7 @@ margin-top:91px ;
     margin-top: 30px;
   }
   @media ${breakpointSizes.mobile} {
+    margin-top:64px;
     p {
       font-size: 14px;
       margin-top: 20px;

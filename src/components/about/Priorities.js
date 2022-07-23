@@ -20,7 +20,7 @@ const Priorities = () => {
           {ourPriorities.map((item, index) => {
             return (
               <>
-                <div className="priorities-block">
+                <div className="priorities-block" key={index}>
                   <img
                     src={item.image}
                     className="priorities-icon"

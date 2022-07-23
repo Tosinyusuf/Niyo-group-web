@@ -361,12 +361,12 @@ export const ourBenefits = [
   {
     icon: umbrella,
     title: "Generous Holidays",
-    text: "28 days  off + your birthday ",
+    text: "28 days + your birthday off",
   },
   {
     icon: pizza,
     title: "Office Snacks & Freebies",
-    text: "You get birthday gifts from the company and free entry to partners event.",
+    text: "You get birthday gifts from the company, funded counselling and well-being support and free entry to partners event.",
   },
   {
     icon: currency,

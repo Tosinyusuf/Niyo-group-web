@@ -14,13 +14,13 @@ const CareersHome = () => {
     <CareerHero>
       <StyledContainer style={{ textAlign: "center" }}>
         <StyledTitle>
-          Join the team of <span>executors</span>
+          Join the team of<span>executors</span>
           <br></br> and build with us
         </StyledTitle>
 
         <StyledParagraph>
-          Join our team of exceptional people focused on the <br></br> economic
-          empowerment of black women.
+          Niyo, where the best get better. Join our team of exceptional people
+          focused on the <br></br> economic empowerment of black women.
         </StyledParagraph>
 
         <Link to="job" spy={true} smooth={true}>
