@@ -63,12 +63,15 @@ const StyledJoin = styled.div`
   }
   .join-email {
     background-color: #fff;
-    color: #afafaf;
+    color: #000;
     border: none;
     margin: 20px 0;
     @media ${breakpointSizes.mobile} {
       margin: 10px 0 20px 0;
     }
+  }
+  ::placeholder{
+    color: #afafaf;
   }
   .join-submit {
     background-color: #070909;

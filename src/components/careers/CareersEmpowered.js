@@ -7,8 +7,7 @@ const CareersEmpowered = () => {
     <CareerEmpower>
       <StyledContainer className="empower">
         <StyledTitle>
-          You’re not only working with us, <br></br>
-          we’ll help you
+        Niyo is the place where <br />the best gets better. <br />You'll
           <span>
             Feel Empowered, <br></br>
             Be Empowered.

@@ -21,11 +21,10 @@ const MeetTeam = () => {
             return (
               <>
                 <div
-                  className="individual-member"
+                  className="individual-member" key={index}
                   style={{ backgroundImage: `url(${item.image})` }}
-                  key={index}
                 >
-                  <div className="member-bio">
+                  <div className="member-bio" >
                     <h1 className="member-name">{item.name}</h1>
                     <p className="member-role">{item.role}</p>
                     <div className="fact">
@@ -57,6 +56,7 @@ const MeetTeam = () => {
             return (
               <>
                 <div
+                  key={index}
                   className="individual-member"
                   style={{ backgroundImage: `url(${item.image})` }}
                 >

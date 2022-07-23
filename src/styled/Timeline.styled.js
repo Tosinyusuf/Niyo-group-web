@@ -6,6 +6,17 @@ const StyledTimeline = styled.div`
   height: auto;
   padding:30px 0;
 
+  ::-webkit-scrollbar {
+    display:none ;
+  }
+
+  ::-webkit-scrollbar-track {
+    display:none ;
+  }
+  ::-webkit-scrollbar-thumb {
+   display:none ;
+  } 
+
   h1 {
     margin: 0;
   }
@@ -63,7 +74,7 @@ const StyledTimeline = styled.div`
           border-radius:20px;
           margin:0 10px ;
           img{
-            margin-top:-350px; ;
+            margin-top:-300px; ;
             margin-left:-20px ;
 
             height:inherit

@@ -15,6 +15,7 @@ export const StyledHeroSection = styled.div`
   @media ${breakpointSizes.mobile} {
     background-position: 60%;
     height:90% ;
+    margin-top:64px;
   }
 
   .hero-text-container {

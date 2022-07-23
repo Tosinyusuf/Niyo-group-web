@@ -20,6 +20,7 @@ const Footer = () => {
               {ourSocials.map((item, index) => {
                 return (
                   <img
+                    key={index}
                     src={item.image}
                     className="socials-icon"
                     alt="social media icon"
