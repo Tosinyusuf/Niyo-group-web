@@ -27,22 +27,10 @@ const Bars = styled.img`
 `;
 const NavBar = () => {
   const [sidebar, setSidebar] = useState(false);
-  const [navbar, setNavbar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
 
-  const changePosition = () => {
-    if(window.innerHeight == 91){
-        setNavbar(true);
-        alert("hello");
-    } else {
-      setNavbar(false);
-    }
-    
-  };
   
-
-  window.addEventListener('scroll', changePosition);
 
 
   return (
@@ -86,13 +74,13 @@ const NavBar = () => {
             <Link className="nav-link" to="/contact-us">
               <img src={work} alt="" /> Work With Us
             </Link>
-            <a className="nav-link" href="https://niyonetwork.com/" target="_blank">
+            <a className="nav-link" href="https://niyonetwork.com/" target="_blank" rel="noreferrer">
               <img src={cardLogo1} alt="" /> <span>Niyo Bootcamps</span>
             </a>
-            <a className="nav-link" href="https://niyohairandbeauty.com/" target="_blank">
+            <a className="nav-link" href="https://niyohairandbeauty.com/" target="_blank" rel="noreferrer">
               <img src={cardLogo2} alt="" /> <span> Niyo Hair & Beauty</span>
             </a>
-            <a className="nav-link" href="https://dapp.niyo.co" target="_blank">
+            <a className="nav-link" href="https://dapp.niyo.co" target="_blank" rel="noreferrer">
               <img src={cardLogo3} alt="" /> <span>Niyo DApp</span>
             </a>
             <Link to="/careers"><button className="nav-button">Join the Niyo Nation</button></Link>
