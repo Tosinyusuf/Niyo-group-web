@@ -1,9 +1,7 @@
-import StyledMeetTeam from "../../styled/MeetTeam.styled";
-import { ourCaptains } from "../../constants/data";
-import { ourTeamMembers } from "../../constants/data";
-import twitter from "../../assets/team/twitter-yello.svg";
 import linkedin from "../../assets/team/linkedin-yello.svg";
-import { Link } from "react-router-dom";
+import twitter from "../../assets/team/twitter-yello.svg";
+import { ourCaptains, ourTeamMembers } from "../../constants/data";
+import StyledMeetTeam from "../../styled/MeetTeam.styled";
 
 const MeetTeam = () => {
   return (
@@ -32,10 +30,10 @@ const MeetTeam = () => {
                       <p>{item.funFact}</p>
                     </div>
                     <div className="member-socials">
-                      <a href={item.twitterLink}>
+                      <a href={item.twitterLink} rel="noreferrer" target="_blank">
                         <img src={twitter} alt="Twitter Logo" />
                       </a>
-                      <a href={item.LinkedIn}>
+                      <a href={item.LinkedIn} rel="noreferrer" target="_blank">
                         <img src={linkedin} alt="LinkedIn Logo" />
                       </a>
                     </div>
@@ -68,10 +66,10 @@ const MeetTeam = () => {
                       <p>{item.funFact}.</p>
                     </div>
                     <div className="member-socials">
-                      <a href={item.twitterLink}>
+                      <a href={item.twitterLink} rel="noreferrer" target="_blank">
                         <img src={twitter} alt="Twitter Logo" />
                       </a>
-                      <a href={item.LinkedIn}>
+                      <a href={item.LinkedIn} rel="noreferrer" target="_blank">
                         <img src={linkedin} alt="LinkedIn Logo" />
                       </a>
                     </div>

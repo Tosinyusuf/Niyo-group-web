@@ -1,15 +1,14 @@
-import { useState } from "react";
 import axios from "axios";
-import StyledJoin from "../../styled/Join.styled";
-import { ToastContainer, toast } from "react-toastify";
+import { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import slack from "../../assets/slack.png";
+import StyledJoin from "../../styled/Join.styled";
 
 import { Modal } from "antd";
 import { Message } from "./style";
 
 const Join = () => {
-  const [datal, setData] = useState(0);
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -27,7 +26,7 @@ const Join = () => {
       })
       .then((res) => {
         console.log(res.data.message);
-        setData(res.data);
+       
         setIsModalVisible(true);
         setLoading(false);
       })
@@ -89,7 +88,7 @@ const Join = () => {
             welcome email shortly, and right now we recommend introducing
             yourself to our friendly community on slack.
           </p>
-          <a href="https://join.slack.com/t/niyofamily/shared_invite/zt-1csrxss03-ppiaWG0hF6ks~VlP8JXL0A" target="_blank"><button> <img src={slack} alt="Slack Logo" />Join Niyo Slack</button></a>
+          <a href="https://join.slack.com/t/niyofamily/shared_invite/zt-1csrxss03-ppiaWG0hF6ks~VlP8JXL0A" target="_blank" rel="noreferrer" ><button> <img src={slack} alt="Slack Logo" />Join Niyo Slack</button></a>
         </Message>
       </Modal>
     </>

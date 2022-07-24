@@ -49,24 +49,24 @@ const Footer = () => {
             </p>
             <p className="footer-column-text">Niyo Planet</p>
             <p className="footer-column-text">
-              <a className="nav-link" href="https://niyonetwork.com/">
+              <a className="nav-link" href="https://niyonetwork.com/" rel="noreferrer" target="_blank">
                 Niyo Bootcamps
               </a>
             </p>
             <p className="footer-column-text">
-              <a className="nav-link" href="https://niyohairandbeauty.com/">
+              <a className="nav-link" href="https://niyohairandbeauty.com/" rel="noreferrer" target="_blank">
                 Niyo Hair & Beauty
               </a>
             </p>
             <p className="footer-column-text">
-              <a href="https://dapp.niyo.co">Niyo Dapp </a>
+              <a href="https://dapp.niyo.co" rel="noreferrer" target="_blank">Niyo Dapp </a>
             </p>
           </div>
 
           <div className="footer-column explore">
             <h5 className="footer-column-title">Explore</h5>
             <p className="footer-column-text">
-              <a href="https://medium.com/niyogroup">Blog </a>
+              <a href="https://medium.com/niyogroup" rel="noreferrer" target="_blank" >Blog </a>
             </p>
           </div>
 

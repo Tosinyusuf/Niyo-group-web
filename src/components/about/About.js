@@ -1,5 +1,4 @@
 import StyledAbout from "../../styled/About.styled";
-import downloadIcon from "../../assets/download-icon.svg";
 
 const About = () => {
   return (

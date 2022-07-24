@@ -1,6 +1,5 @@
-import { StyledHeroSection } from "../../styled/HeroSection.styled";
 import TextAnimation from "react-text-animations";
-import downArrow from "../../assets/download-icon.svg";
+import { StyledHeroSection } from "../../styled/HeroSection.styled";
 
 const HeroSection = () => {
   return (

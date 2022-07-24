@@ -1,9 +1,6 @@
 
-import React, { useRef, useEffect, useState } from "react";
 import { timeLines } from "../../constants/data";
 import StyledTimeline from "../../styled/Timeline.styled";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Timeline = () => {
 

@@ -1,10 +1,9 @@
-import { Button, Dropdown, Menu } from "antd";
-import React from "react";
-import { Contain } from "./style";
+import { Dropdown, Menu } from "antd";
+import blackcoder from "../../assets/black.svg";
 import cardLogo1 from "../../assets/card-logo-1.svg";
 import cardLogo2 from "../../assets/card-logo-2.svg";
 import cardLogo3 from "../../assets/card-logo-3.svg";
-import blackcoder from "../../assets/black.svg";
+import { Contain } from "./style";
 const menu = (
   <Menu
     items={[
@@ -17,6 +16,7 @@ const menu = (
                 className="nav-link"
                 href="https://niyonetwork.com/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div className="each">
                   <div className="icon">
@@ -36,6 +36,7 @@ const menu = (
                 className="nav-link"
                 href="https://dapp.niyo.co"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div className="each">
                   <div className="icon">
@@ -55,6 +56,7 @@ const menu = (
                 className="nav-link"
                 href="https://niyohairandbeauty.com/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div className="each">
                   <div className="icon">
@@ -70,7 +72,7 @@ const menu = (
                 </div>
               </a>
 
-              <a href="https://blackcodher.com/" target="_blank">
+              <a href="https://blackcodher.com/" target="_blank" rel="noreferrer">
                 <div className="each">
                   <div className="icon">
                     <img src={blackcoder} alt="" />

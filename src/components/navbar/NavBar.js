@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { StyledNavBar } from "../../styled/NavBar.styled";
-import niyoLogo from "../../assets/niyo-logo-white.svg";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import hamburger from "../../assets/hamburger.svg";
+import cancel from "../../assets/ cancel.svg";
+import about from "../../assets/about.svg";
 import cardLogo1 from "../../assets/card-logo-1.svg";
 import cardLogo2 from "../../assets/card-logo-2.svg";
 import cardLogo3 from "../../assets/card-logo-3.svg";
-import about from "../../assets/about.svg";
+import hamburger from "../../assets/hamburger.svg";
+import niyoLogo from "../../assets/niyo-logo-white.svg";
 import planet from "../../assets/priorities/planet.svg";
 import work from "../../assets/work.svg";
-import cancel from "../../assets/ cancel.svg";
+import { StyledNavBar } from "../../styled/NavBar.styled";
 import Brands from "../dropdown";
 
 const Bars = styled.img`
