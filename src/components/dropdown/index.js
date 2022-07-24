@@ -95,8 +95,8 @@ const Brands = () => (
   <>
     <Dropdown overlay={menu} placement="bottom" arrow trigger={["click"]}>
       <a
-        onClick={(e) => e.preventDefault()}
-        style={{ color: "#fff", fontSize: "16px" }}
+        onClick={(e) => e.preventDefault()} href="" 
+        style={{ color: "#fff", fontSize: "16px", cursor:"pointer", marginBottom:"0" }}
       >
         Brands
       </a>
