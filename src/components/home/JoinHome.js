@@ -46,7 +46,7 @@ const Join = () => {
           Join the Niyo <span>Family</span>
         </h1>
         <h3 className="join-text">
-          Be the first to know about all <br />things at Niyo Group
+          Be the first to know about <br />all things at Niyo Group
         </h3>
 
         <form className="join-form" onSubmit={(e) => Submit(e)}>
