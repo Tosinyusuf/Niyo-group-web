@@ -3,9 +3,6 @@ import orangeRectangle from "../../assets/orange-rectangle.svg";
 import Arrow from "../../assets/arrow.svg";
 import niyoBadge from "../../assets/niyo-badge-black.svg";
 import { Link } from "react-router-dom";
-// import ScrollAnimation from "react-animate-on-scroll";
-// import "animate.css/animate.min.css";
-
 const VisionSection = () => {
   return (
     <>
