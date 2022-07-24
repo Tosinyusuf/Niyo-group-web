@@ -12,6 +12,7 @@ import planet from "../../assets/priorities/planet.svg";
 import work from "../../assets/work.svg";
 import { StyledNavBar } from "../../styled/NavBar.styled";
 import Brands from "../dropdown";
+import JoinFamily from "../modal/JoinFamily";
 
 const Bars = styled.img`
   display: none;
@@ -50,10 +51,13 @@ const NavBar = () => {
               About Us
             </Link>
             <Brands />
-            <Link className="nav-link" to="/contact-us">
+            <Link className="nav-link" to="/careers">
               Work With Us
             </Link>
-            <Link to="/careers"><button className="nav-button">Join the Niyo Nation</button></Link>
+            <Link className="nav-link" to="/contact-us">
+              Partner With Us
+            </Link>
+            <button className="nav-button"><JoinFamily /></button>
           </div>
           <Bars src={hamburger} onClick={showSidebar} />
           <div
@@ -71,8 +75,11 @@ const NavBar = () => {
               <img src={planet} alt="" /> Niyo Planet
             </Link>
 
-            <Link className="nav-link" to="/contact-us">
+            <Link className="nav-link" to="/careers">
               <img src={work} alt="" /> Work With Us
+            </Link>
+            <Link className="nav-link" to="/contact-us">
+              <img src={work} alt="" /> Partner With Us
             </Link>
             <a className="nav-link" href="https://niyonetwork.com/" target="_blank" rel="noreferrer">
               <img src={cardLogo1} alt="" /> <span>Niyo Bootcamps</span>
@@ -83,7 +90,7 @@ const NavBar = () => {
             <a className="nav-link" href="https://dapp.niyo.co" target="_blank" rel="noreferrer">
               <img src={cardLogo3} alt="" /> <span>Niyo DApp</span>
             </a>
-            <Link to="/careers"><button className="nav-button">Join the Niyo Nation</button></Link>
+            <button className="nav-button"><JoinFamily /></button>
           </div>
         </div>
       </StyledNavBar>

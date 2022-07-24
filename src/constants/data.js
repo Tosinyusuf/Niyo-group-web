@@ -147,11 +147,11 @@ export const ourClientsLogos = [
 ];
 
 export const ourSocials = [
-  { image: instagram },
-  { image: twitter },
-  { image: facebook },
-  { image: linkedin },
-  { image: pinterest },
+  { image: instagram, url:"https://www.instagram.com/niyo.group/"},
+  { image: twitter, url:"https://twitter.com/NiyoGroup" },
+  { image: facebook, url:"https://www.facebook.com/Niyogroupltd"},
+  { image: linkedin,url:"https://www.linkedin.com/school/niyogroup/" },
+  { image: pinterest,url:"https://pin.it/5J5pFiV" },
 ];
 
 export const ourPriorities = [
