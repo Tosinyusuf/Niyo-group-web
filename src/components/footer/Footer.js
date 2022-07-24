@@ -19,12 +19,14 @@ const Footer = () => {
             <div className="socials-icons-container">
               {ourSocials.map((item, index) => {
                 return (
+                  <a href={item.url} target="_blank" rel="noreferrer">
                   <img
                     key={index}
                     src={item.image}
                     className="socials-icon"
                     alt="social media icon"
                   />
+                  </a>
                 );
               })}
             </div>
@@ -39,14 +41,18 @@ const Footer = () => {
           <div className="footer-column company">
             <h5 className="footer-column-title">Company</h5>
             <p className="footer-column-text">
-              <Link to="/contact-us"> Work with Us </Link>
-            </p>
-            <p className="footer-column-text">
               <Link to="/about-us">About Us </Link>
             </p>
             <p className="footer-column-text">
               <Link to="/careers">Careers </Link>
             </p>
+            <p className="footer-column-text">
+              <Link to="/careers"> Work with Us </Link>
+            </p>
+            <p className="footer-column-text">
+              <Link to="/contact-us"> Partner with us </Link>
+            </p>
+            
             <p className="footer-column-text">Niyo Planet</p>
             <p className="footer-column-text">
               <a className="nav-link" href="https://niyonetwork.com/" rel="noreferrer" target="_blank">

@@ -97,7 +97,7 @@ export const StyledNavBar = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 70%;
 
     @media ${breakpointSizes.mobile} {
       display: none;
@@ -136,7 +136,6 @@ export const StyledNavBar = styled.div`
 .active{
   position:fixed ;
   top:0;
-  z-index:9999;
-  filter:grayscale(0.1) ;
+  z-index:99;
 }
 `;

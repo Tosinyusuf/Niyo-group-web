@@ -6,6 +6,8 @@ const StyledJoin = styled.div`
   background-image: url(${empoweredImage});
   background-size: cover;
   background-position: center;
+  padding: ${({ pad }) => (pad ? pad : "0 0")};
+  border-radius: ${({ radius }) => (radius ? radius : "none")};
   height: 100%;
   width: 100%;
   display: flex;
@@ -43,7 +45,6 @@ const StyledJoin = styled.div`
   }
   .join-text {
     font-family: regular;
-    width: 24%;
     text-align: center;
     margin: 10px 0 20px;
     color: #fff;
