@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import orangeRectangle from "../assets/orange-rectangle.svg";
 import breakpointSizes from "../constants/breakpointSizes";
 import careerBlock1 from "../assets/careers/career-block-1.svg";
 

@@ -1,11 +1,9 @@
-import { StyledContainer } from "../../styled/StyledComponents";
-import { StyledImageContainer } from "../../styled/StyledComponents";
 
-import careerBlock2 from "../../assets/careers/career-block-2.svg";
 import careerBlock1 from "../../assets/careers/career-block-1.svg";
-import { CareerImg } from "./style";
+import careerBlock2 from "../../assets/careers/career-block-2.svg";
 import careerBlock3 from "../../assets/careers/career-block-3.svg";
 import careerBlock4 from "../../assets/careers/career-block-4.svg";
+import { CareerImg } from "./style";
 
 const CareersImages = () => {
   return (

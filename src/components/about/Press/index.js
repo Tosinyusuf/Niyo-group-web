@@ -1,15 +1,14 @@
-import orangeRectangle from "../../../assets/orange-rectangle.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import orangeRectangle from "../../../assets/orange-rectangle.svg";
 
 import { ourPress } from "../../../constants/data";
-import { PressContainer } from "./style";
 import {
-  StyledButton,
   StyledContainer,
   StyledParagraph,
-  StyledTitle,
+  StyledTitle
 } from "../../../styled/StyledComponents";
+import { PressContainer } from "./style";
 
 const Press = () => {
   const responsive = {
@@ -62,7 +61,7 @@ const Press = () => {
                 <p padding="0%" textAlign="left">
                   {item.text}
                 </p>
-                <a href={item.url} target="_blank">
+                <a href={item.url} target="_blank" rel="noreferrer">
                   Read More{" "}
                 </a>
               </div>
