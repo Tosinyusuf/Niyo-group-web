@@ -8,7 +8,7 @@ import Home from "./pages/Home.js";
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import CareersPage from "./pages/CareersPage";
-import "antd/dist/antd.css";
+import "antd/dist/antd.min.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loading from "./pages/Loading";
