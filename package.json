@@ -1,5 +1,6 @@
 {
   "name": "niyo-group-website",
+  "homepage": "https://www.niyo.co",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
