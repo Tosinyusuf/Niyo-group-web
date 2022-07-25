@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import empoweredImage from "../assets/empowered-image.svg";
+import empoweredImage from "../assets/empowered-image.jpeg";
 import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledSeeTimeline = styled.div`

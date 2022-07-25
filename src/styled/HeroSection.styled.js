@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import heroImage from "../assets/hero-image.svg";
+import heroImage from "../assets/hero-image.jpeg";
 import breakpointSizes from "../constants/breakpointSizes";
 
 export const StyledHeroSection = styled.div`
