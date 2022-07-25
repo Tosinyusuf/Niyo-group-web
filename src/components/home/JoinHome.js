@@ -21,7 +21,7 @@ const Join = () => {
     e.preventDefault();
     setLoading(true);
     axios
-      .post("http://34.142.13.112/v1/niyogroup/signup-email-list", {
+      .post("https://dapp-api.niyo.co/v1/niyogroup/signup-email-list", {
         email: email,
       })
       .then((res) => {
