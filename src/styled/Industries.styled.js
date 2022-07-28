@@ -5,15 +5,15 @@ const StyledIndustries = styled.div`
   background-color: #070909;
   height: auto;
   width: 100%;
-  padding:100px 150px;
+  padding: 100px 150px;
   font-family: regular;
   color: #fff;
 
   @media ${breakpointSizes.mobile} {
-    padding:50px 20px;
+    padding: 50px 20px;
   }
   @media ${breakpointSizes.desktop} {
-    padding:150px 250px;
+    padding: 150px 250px;
   }
 
   .industries-container {
@@ -77,17 +77,10 @@ const StyledIndustries = styled.div`
       margin-top: 4%;
 
       @media ${breakpointSizes.mobile} {
-        width: 95vw;
+        width: 95%;
         flex-wrap: wrap;
       }
     }
-
-    // .industries-boxes::before {
-    //     content:
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    // }
 
     .individual-box {
       display: flex;
@@ -101,15 +94,14 @@ const StyledIndustries = styled.div`
 
       @media ${breakpointSizes.mobile} {
         font-size: 14px;
-        width: 120px;
+        width: 44%;
         height: 80px;
       }
 
       :nth-child(3) {
         @media ${breakpointSizes.mobile} {
           align-self: center;
-          flex-basis: 50%;
-
+          margin: 0 20% 4% 12%;
         }
       }
     }
