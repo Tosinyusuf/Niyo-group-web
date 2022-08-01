@@ -21,12 +21,6 @@ const StyledWho = styled.div`
   .who-top-container {
     padding: 4% 0 0 8%;
 
-    .rectangle {
-      width: 42px;
-      height: 10px;
-      padding-right: 4px;
-    }
-
     .who-description {
       color: #fbaf00;
       font-family: regular;
@@ -47,8 +41,8 @@ const StyledWho = styled.div`
       color: #070909 !important ;
     }
     @media ${breakpointSizes.mobile} {
-        padding:20px 20px 0 20px
-      }
+      padding: 20px 20px 0 20px;
+    }
   }
 
   .who-bottom-container {

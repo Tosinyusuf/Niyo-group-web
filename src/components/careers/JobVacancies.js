@@ -5,7 +5,6 @@ import { StyledDropdown } from "../../styled/StyledComponents";
 import { StyledSpan } from "../../styled/StyledComponents";
 import { StyledAccordion } from "../../styled/StyledComponents";
 
-import orangeRectangle from "../../assets/orange-rectangle.svg";
 import { ourAvailableJobs } from "../../constants/data";
 
 import { Collapse } from "antd";
@@ -25,15 +24,14 @@ const JobVacancies = () => {
 
   return (
     <JobVacant id="job">
-      <StyledContainer pad="50px 0"> 
+      <StyledContainer pad="50px 0">
         <StyledParagraph paddingBottom="1%" fontFamily="Light" color="#fbaf00">
-          <img src={orangeRectangle} alt="icon" />
           Open Roles
         </StyledParagraph>
         <StyledTitle className="career-section-title">
           Join our Team<br></br> of executors!
         </StyledTitle>
-        <StyledDropdown >
+        <StyledDropdown>
           <select className="dropdown-button">
             {jobTypes.map((item, index) => (
               <option key={index}>{item}</option>
@@ -49,29 +47,26 @@ const JobVacancies = () => {
           </StyledSpan>
         </StyledParagraph>
 
-       
-
-          <StyledAccordion>
+        <StyledAccordion>
           <StyledTitle textAlign="left" fontSize="40px">
             Growth
           </StyledTitle>
-            <Collapse defaultActiveKey={["1"]}>
-              {ourAvailableJobs.map((item, index) => {
-                return (
-                  <>
-                  
-                      <Panel
-                        className="panel-header"
-                        header={item.jobTitle}
-                        key={index}
-                      >
-                        <p className="panel-text">{item.jobDescription}</p>
-                      </Panel>
-                  </>
-                );
-              })}
-            </Collapse>
-          </StyledAccordion>
+          <Collapse defaultActiveKey={["1"]}>
+            {ourAvailableJobs.map((item, index) => {
+              return (
+                <>
+                  <Panel
+                    className="panel-header"
+                    header={item.jobTitle}
+                    key={index}
+                  >
+                    <p className="panel-text">{item.jobDescription}</p>
+                  </Panel>
+                </>
+              );
+            })}
+          </Collapse>
+        </StyledAccordion>
       </StyledContainer>
     </JobVacant>
   );

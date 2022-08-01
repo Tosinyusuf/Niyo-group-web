@@ -104,7 +104,7 @@ export const ourWorks = [
     description:
       "The training ground for the best Black women in tech and its intersections with other high impact industries. We run  bootcamps focused on tech careers, entrepreneurship, and hair and beauty.",
     button: "Discover our Bootcamps",
-    url:"https://niyonetwork.com/"
+    url: "https://niyonetwork.com/",
   },
   {
     id: "two",
@@ -114,7 +114,7 @@ export const ourWorks = [
     description:
       "Niyo Hair and beauty is the one stop shop for all healthy afro hair and beauty needs.",
     button: "Innovative Hair & Beauty",
-    url:"https://www.niyohairandbeauty.com/"
+    url: "https://www.niyohairandbeauty.com/",
   },
   {
     id: "three",
@@ -124,7 +124,7 @@ export const ourWorks = [
     description:
       "Niyo Dapp is  where creators, brands and users get rewarded in crypto for creating killer content through turning their content into NFTs and physical products.",
     button: "NFT for Beauty & Fashion",
-    url:"https://dapp.niyo.co/"
+    url: "https://dapp.niyo.co/",
   },
 ];
 
@@ -147,11 +147,11 @@ export const ourClientsLogos = [
 ];
 
 export const ourSocials = [
-  { image: instagram, url:"https://www.instagram.com/niyo.group/"},
-  { image: twitter, url:"https://twitter.com/NiyoGroup" },
-  { image: facebook, url:"https://www.facebook.com/Niyogroupltd"},
-  { image: linkedin,url:"https://www.linkedin.com/school/niyogroup/" },
-  { image: pinterest,url:"https://pin.it/5J5pFiV" },
+  { image: instagram, url: "https://www.instagram.com/niyo.group/" },
+  { image: twitter, url: "https://twitter.com/NiyoGroup" },
+  { image: facebook, url: "https://www.facebook.com/Niyogroupltd" },
+  { image: linkedin, url: "https://www.linkedin.com/school/niyogroup/" },
+  { image: pinterest, url: "https://pin.it/5J5pFiV" },
 ];
 
 export const ourPriorities = [
@@ -161,15 +161,16 @@ export const ourPriorities = [
     text: "Our prioritisation of people drives us to provide excellent customer service and top-class employee training.",
   },
   {
-    image: purpose,
-    title: "Purpose",
-    text: "We are a purpose-driven company that is on a mission to economically empower Black women, by providing them with upskilling training. We work towards strong and measurable social impact, to efficiently and productively assist the global communities we serve.",
-  },
-  {
     image: profit,
     title: "Profit",
     text: "We are cost-efficient in all that we do, as we aspire to maximise our profit margins and market share.",
   },
+  {
+    image: purpose,
+    title: "Purpose",
+    text: "We are a purpose-driven company that is on a mission to economically empower Black women, by providing them with upskilling training. We work towards strong and measurable social impact, to efficiently and productively assist the global communities we serve.",
+  },
+
   {
     image: planet,
     title: "Planet",
@@ -350,7 +351,7 @@ export const ourTeamMembers = [
 export const ourBenefits = [
   {
     icon: bulb,
-    title: "Professional/Personal Development",
+    title: "Professional / Personal Development",
     text: "You grow, and so do we. Get time, and support for your self-development plans. £1,000 annual training budget.",
   },
   {
