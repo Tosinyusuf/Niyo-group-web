@@ -72,13 +72,17 @@ const menu = (
                 </div>
               </a>
 
-              <a href="https://blackcodher.com/" target="_blank" rel="noreferrer">
+              <a
+                href="https://blackcodher.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="each">
                   <div className="icon">
                     <img src={blackcoder} alt="" />
                   </div>
                   <div className="text">
-                    <h2>Blackcodher</h2>
+                    <h2>Black CodHer</h2>
                     <p>Coding Bootcamp</p>
                   </div>
                 </div>
@@ -93,10 +97,15 @@ const menu = (
 
 const Brands = () => (
   <>
-    <Dropdown overlay={menu} placement="bottom" arrow >
+    <Dropdown overlay={menu} placement="bottom" arrow>
       <p
-        onClick={(e) => e.preventDefault()} 
-        style={{ color: "#fff", fontSize: "16px", cursor:"pointer", marginBottom:"0" }}
+        onClick={(e) => e.preventDefault()}
+        style={{
+          color: "#fff",
+          fontSize: "16px",
+          cursor: "pointer",
+          marginBottom: "0",
+        }}
       >
         Brands
       </p>

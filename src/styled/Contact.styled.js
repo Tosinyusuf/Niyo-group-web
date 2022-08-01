@@ -7,7 +7,7 @@ const StyledContact = styled.div`
   height: auto;
   padding: 100px 150px;
 
-  margin-top:91px ;
+  margin-top: 91px;
 
   @media ${breakpointSizes.mobile} {
     height: auto;
@@ -48,17 +48,18 @@ const StyledContact = styled.div`
         color: #fbaf00;
         font-family: semibold;
         font-size: 16px;
+        margin-bottom: 1%;
       }
 
       .contact-title {
         font-family: AtypDisplay-Bold;
+        font-size: 34px;
         margin: 0;
-        color:#070909 !important;
+        color: #070909 !important;
       }
 
       .contact-text {
-        width: 90%;
-        right: 100px;
+        font-size: 13.5px;
 
         @media ${breakpointSizes.mobile} {
           font-size: 20px;
@@ -191,6 +192,11 @@ const StyledContact = styled.div`
             margin-top: 22px;
             font-size: 20px;
           }
+        }
+
+        .contact-submit-button:hover {
+          background-color: #fbaf00;
+          color: #fff;
         }
       }
     }

@@ -21,12 +21,6 @@ const StyledIndustries = styled.div`
     flex-direction: column;
     width: 100%;
 
-    .rectangle {
-      align-self: center;
-      width: 50px;
-      margin: 0 1% 0 0;
-    }
-
     .industries-description {
       margin: 0;
       color: #fbaf00;
@@ -74,7 +68,9 @@ const StyledIndustries = styled.div`
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+      /* align-self: center; */
       margin-top: 4%;
+      width: 100%;
 
       @media ${breakpointSizes.mobile} {
         width: 95%;
@@ -88,9 +84,11 @@ const StyledIndustries = styled.div`
       align-items: center;
       border: 1px solid #fff;
       border-radius: 15px;
-      height: 100px;
-      width: 200px;
-      margin-right: 6%;
+      /* height: 80%; */
+      height: 80px;
+      width: 20%;
+      /* width: 200px; */
+      margin: 0 6% 4% 0;
 
       @media ${breakpointSizes.mobile} {
         font-size: 14px;

@@ -1,5 +1,4 @@
 import StyledContact from "../../styled/Contact.styled";
-import orangeRectangle from "../../assets/orange-rectangle.svg";
 import contactImage from "../../assets/contact-image.svg";
 import Join from "../home/JoinHome";
 
@@ -10,14 +9,7 @@ const Contact = () => {
         <div className="contact-container">
           <div className="contact-left-container">
             <div className="contact-left-contents">
-              <p className="contact-description">
-                <img
-                  src={orangeRectangle}
-                  className="rectangle"
-                  alt="rectangle"
-                />
-                Let's hear from you
-              </p>
+              <p className="contact-description">Let's hear from you</p>
               <h1 className="contact-title">Work with us!</h1>
               <p className="contact-text">
                 We’d love to hear from you or want to get in touch with us about

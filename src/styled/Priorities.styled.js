@@ -16,19 +16,14 @@ const StyledPriorities = styled.div`
   .priorities-top-container {
     padding: 4% 0 0 8%;
 
-    .rectangle {
-      width: 42px;
-      height: 10px;
-      padding-right: 4px;
-    }
-
     .priorities-description {
       color: #fbaf00;
       font-family: semibold;
       font-size: 20px;
       @media ${breakpointSizes.mobile} {
-        margin-bottom:0 ;
-        font-size:16px; ;}
+        margin-bottom: 0;
+        font-size: 16px;
+      }
     }
 
     .priorities-title {
@@ -40,7 +35,7 @@ const StyledPriorities = styled.div`
 
       @media ${breakpointSizes.mobile} {
         padding-bottom: 10px;
-        font-size:24px; ;
+        font-size: 24px;
 
         br {
           display: none;
@@ -51,15 +46,15 @@ const StyledPriorities = styled.div`
       }
     }
     @media ${breakpointSizes.mobile} {
-        padding:20px;
-      }
+      padding: 20px;
     }
-  
+  }
 
   .priorities-bottom-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: 4%;
 
     @media ${breakpointSizes.mobile} {
     }
@@ -70,13 +65,14 @@ const StyledPriorities = styled.div`
     .priorities-block {
       width: 38%;
       align-items: flex-start;
-      height: 250px;
+      height: 200px;
+      display: flex;
 
       @media ${breakpointSizes.mobile} {
         width: 100%;
-        padding: 0  6% 20px 6%;
+        padding: 0 6% 20px 6%;
         flex-direction: column;
-        height:auto;
+        height: auto;
       }
 
       @media ${breakpointSizes.desktop} {
@@ -95,8 +91,9 @@ const StyledPriorities = styled.div`
 
       .priorities-header {
         margin: 0;
-        padding: 6px 0 10px 0;
+        padding: 0 0 10px 0;
         font-size: 23px;
+        font-family: semibold;
 
         @media ${breakpointSizes.mobile} {
           font-family: semibold;
@@ -108,9 +105,11 @@ const StyledPriorities = styled.div`
 
       .priorities-text {
         margin: 0;
-        font-size: 17px;
+        font-size: 16px;
+        width: 90%;
+
         @media ${breakpointSizes.mobile} {
-          font-size:14px;
+          font-size: 14px;
         }
       }
     }

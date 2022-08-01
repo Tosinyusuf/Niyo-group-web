@@ -48,16 +48,6 @@ const styledVisionSection = styled.div`
     }
   }
 
-  .rectangle {
-    align-self: center;
-    width: 70px;
-    margin: 0 5% 0 0;
-
-    @media ${breakpointSizes.mobile} {
-      width: 50px;
-    }
-  }
-
   .vision-title {
     align-self: center;
     font-family: AtypDisplay-Bold;
@@ -69,7 +59,7 @@ const styledVisionSection = styled.div`
     @media ${breakpointSizes.mobile} {
       font-size: 28px;
       line-height: 30px;
-      margin-bottom:5px ;
+      margin-bottom: 5px;
     }
   }
 
@@ -121,7 +111,7 @@ const styledVisionSection = styled.div`
     background-size: cover;
     background-position: center;
     z-index: 10;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
 
     @media ${breakpointSizes.mobile} {
       top: 3%;

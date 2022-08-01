@@ -24,14 +24,14 @@ const StyledMission = styled.div`
     background-size: cover;
     background-position: center;
     z-index: 10;
-    border-radius: 20px;
+    border-radius: 0 20px 20px 0;
 
     @media ${breakpointSizes.mobile} {
       order: 2;
       width: 100%;
       height: 400px;
-      margin-top:0px ;
-      top:0;
+      margin-top: 0px;
+      top: 0;
     }
   }
   .mission-right-container {
@@ -45,7 +45,7 @@ const StyledMission = styled.div`
 
     @media ${breakpointSizes.mobile} {
       /* height: 50%; */
-      height:auto ;
+      height: auto;
       width: 100%;
       margin-top: 30px;
       padding: 20px 0px;
@@ -63,14 +63,7 @@ const StyledMission = styled.div`
       font-size: 18px;
     }
   }
-  .rectangle {
-    align-self: center;
-    width: 70px;
-    margin: 0 2% 0 0;
-    @media ${breakpointSizes.mobile} {
-      width: 16%;
-    }
-  }
+
   .mission-title {
     align-self: center;
     font-family: AtypDisplay-Bold;
