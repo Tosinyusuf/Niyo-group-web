@@ -32,7 +32,7 @@ const Contact = () => {
                     <input
                       className=" contact-details-capture "
                       type="text"
-                      value="Your first name"
+                      placeholder="Your first name"
                     />
                   </label>
 
@@ -41,7 +41,7 @@ const Contact = () => {
                     <input
                       className="contact-details-capture"
                       type="text"
-                      value="Your last name"
+                      placeholder="Your last name"
                     />
                   </label>
                 </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                   <input
                     className="email-address contact-details-capture"
                     type="text"
-                    value="Enter your email address here"
+                    placeholder="Enter your email address here"
                   />
                 </label>
 
@@ -60,7 +60,7 @@ const Contact = () => {
                   <input
                     className="contact-subject contact-details-capture"
                     type="text"
-                    value=""
+                    defaultValue=""
                   />
                 </label>
 
@@ -90,7 +90,7 @@ const Contact = () => {
                   <input
                     className="message-comments contact-details-capture"
                     type="text"
-                    value=""
+                    defaultValue=""
                   />
                 </label>
 

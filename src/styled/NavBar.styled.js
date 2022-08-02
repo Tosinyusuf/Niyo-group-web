@@ -15,11 +15,11 @@ export const StyledNavBar = styled.div`
     padding: 0 150px;
 
     @media ${breakpointSizes.mobile} {
-      height: 10vh;
+      height: 10%;
       padding: 0 20px;
     }
     @media ${breakpointSizes.desktop} {
-      height: 10vh;
+      height: 10%;
       padding: 0 250px;
     }
 
@@ -43,7 +43,7 @@ export const StyledNavBar = styled.div`
     .nav-menu {
       background-color: #000;
       width: 100%;
-      height: 100vh;
+      height: 100%;
       padding-top: 30px;
       z-index: 9999;
       position: fixed;
