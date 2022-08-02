@@ -91,7 +91,7 @@ const StyledPriorities = styled.div`
 
       .priorities-header {
         margin: 0;
-        padding: 0 0 10px 0;
+        padding: 0 0 6px 0;
         font-size: 23px;
         font-family: semibold;
 

@@ -130,12 +130,6 @@ const StyledContact = styled.div`
             width: 45%;
             justify-content: center;
           }
-
-          /* .name-box:first-of-type {
-            @media ${breakpointSizes.mobile} {
-              margin-right: 50px;
-            }
-          } */
         }
 
         .form-box {
@@ -156,6 +150,10 @@ const StyledContact = styled.div`
           height: 44px;
           margin-top: 10px;
 
+          placeholder {
+            color: #d9d9d9;
+          }
+
           @media ${breakpointSizes.mobile} {
             font-size: 10px;
           }
@@ -167,7 +165,7 @@ const StyledContact = styled.div`
           padding-bottom: 20px;
 
           .checkbox {
-            margin-bottom: 10px;
+            margin: 0% 1.5% 0% 0;
           }
         }
 

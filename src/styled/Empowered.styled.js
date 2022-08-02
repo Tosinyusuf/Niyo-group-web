@@ -6,12 +6,11 @@ const StyledEmpowered = styled.div`
   // background-color: blue;
   background-image: url(${empoweredImage});
   background-size: cover;
-  height: 90vh;
+  height: 90%;
 
   @media ${breakpointSizes.mobile} {
     width: 100vw;
     height: 350px;
-    /* height: 74vh; */
     background-position: center;
   }
 
