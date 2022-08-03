@@ -10,12 +10,11 @@ export const StyledHeroSection = styled.div`
   height: 120%;
   display: flex;
   flex-direction: column;
-  margin-top: 91px;
+  padding-top: 10%;
 
   @media ${breakpointSizes.mobile} {
     background-position: 60%;
     height: 90%;
-    margin-top: 64px;
   }
 
   .hero-text-container {
