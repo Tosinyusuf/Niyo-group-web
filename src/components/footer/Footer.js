@@ -19,13 +19,17 @@ const Footer = () => {
             <div className="socials-icons-container">
               {ourSocials.map((item, index) => {
                 return (
-                  <a href={item.url} target="_blank" rel="noreferrer">
-                  <img
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noreferrer"
                     key={index}
-                    src={item.image}
-                    className="socials-icon"
-                    alt="social media icon"
-                  />
+                  >
+                    <img
+                      src={item.image}
+                      className="socials-icon"
+                      alt="social media icon"
+                    />
                   </a>
                 );
               })}
@@ -52,27 +56,45 @@ const Footer = () => {
             <p className="footer-column-text">
               <Link to="/contact-us"> Partner with us </Link>
             </p>
-            
+
             <p className="footer-column-text">Niyo Planet</p>
             <p className="footer-column-text">
-              <a className="nav-link" href="https://niyonetwork.com/" rel="noreferrer" target="_blank">
+              <a
+                className="nav-link"
+                href="https://niyonetwork.com/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 Niyo Bootcamps
               </a>
             </p>
             <p className="footer-column-text">
-              <a className="nav-link" href="https://niyohairandbeauty.com/" rel="noreferrer" target="_blank">
+              <a
+                className="nav-link"
+                href="https://niyohairandbeauty.com/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 Niyo Hair & Beauty
               </a>
             </p>
             <p className="footer-column-text">
-              <a href="https://dapp.niyo.co" rel="noreferrer" target="_blank">Niyo Dapp </a>
+              <a href="https://dapp.niyo.co" rel="noreferrer" target="_blank">
+                Niyo Dapp{" "}
+              </a>
             </p>
           </div>
 
           <div className="footer-column explore">
             <h5 className="footer-column-title">Explore</h5>
             <p className="footer-column-text">
-              <a href="https://medium.com/niyogroup" rel="noreferrer" target="_blank" >Blog </a>
+              <a
+                href="https://medium.com/niyogroup"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Blog{" "}
+              </a>
             </p>
           </div>
 

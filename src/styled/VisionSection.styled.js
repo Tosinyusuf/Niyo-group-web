@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import classroomImage1 from "../assets/classroom-image-1.svg";
 import breakpointSizes from "../constants/breakpointSizes";
+import backgroundLine1 from "../assets/background/background-line-1.png";
 
 const styledVisionSection = styled.div`
   height: 100%;
@@ -8,6 +9,10 @@ const styledVisionSection = styled.div`
   display: flex;
   flex-direction: row;
   background-color: #070909;
+  background-image: url(${backgroundLine1});
+  background-position: 15% 45%;
+  /* background-position: left; */
+  background-repeat: no-repeat;
   z-index: -1;
   color: #fff;
 
@@ -24,7 +29,7 @@ const styledVisionSection = styled.div`
     justify-content: center;
     width: 50%;
     padding: 0 150px;
-    height: 100vh;
+    height: 100%;
 
     @media ${breakpointSizes.mobile} {
       width: 100%;
@@ -48,16 +53,6 @@ const styledVisionSection = styled.div`
     }
   }
 
-  .rectangle {
-    align-self: center;
-    width: 70px;
-    margin: 0 5% 0 0;
-
-    @media ${breakpointSizes.mobile} {
-      width: 50px;
-    }
-  }
-
   .vision-title {
     align-self: center;
     font-family: AtypDisplay-Bold;
@@ -69,7 +64,7 @@ const styledVisionSection = styled.div`
     @media ${breakpointSizes.mobile} {
       font-size: 28px;
       line-height: 30px;
-      margin-bottom:5px ;
+      margin-bottom: 5px;
     }
   }
 
@@ -114,14 +109,14 @@ const styledVisionSection = styled.div`
   .vision-image-container {
     position: relative;
     width: 50vw;
-    height: 100vh;
+    height: 100%;
     background-image: url(${classroomImage1});
     top: -70px;
     background-size: cover;
-    background-size: cover;
     background-position: center;
     z-index: 10;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
+    margin-bottom: 20%;
 
     @media ${breakpointSizes.mobile} {
       top: 3%;

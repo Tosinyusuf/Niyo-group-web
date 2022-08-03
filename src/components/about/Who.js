@@ -1,15 +1,11 @@
 import StyledWho from "../../styled/Who.styled";
-import orangeRectangle from "../../assets/orange-rectangle.svg";
 
 const Who = () => {
   return (
     <>
       <StyledWho>
         <div className="who-top-container">
-          <p className="who-description">
-            <img src={orangeRectangle} className="rectangle" alt="rectangle" />
-            Get to know us
-          </p>
+          <p className="who-description">Get to know us</p>
           <h1 className="who-title">Who we are</h1>
         </div>
 

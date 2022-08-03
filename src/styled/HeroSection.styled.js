@@ -4,18 +4,18 @@ import breakpointSizes from "../constants/breakpointSizes";
 
 export const StyledHeroSection = styled.div`
   background-image: url(${heroImage});
-  background-size: 100vw 100vh;
+  background-size: 100% 100%;
   background-size: cover;
   background-position: center;
-  height: 120vh;
+  height: 120%;
   display: flex;
   flex-direction: column;
-  margin-top:91px ;
+  margin-top: 91px;
 
   @media ${breakpointSizes.mobile} {
     background-position: 60%;
-    height:90% ;
-    margin-top:64px;
+    height: 90%;
+    margin-top: 64px;
   }
 
   .hero-text-container {

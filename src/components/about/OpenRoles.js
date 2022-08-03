@@ -1,15 +1,11 @@
 import StyledOpenRoles from "../../styled/OpenRoles.styled";
-import orangeRectangle from "../../assets/orange-rectangle.svg";
 import { Link } from "react-router-dom";
 
 const OpenRoles = () => {
   return (
     <>
       <StyledOpenRoles>
-        <p className="roles-description">
-          <img src={orangeRectangle} className="rectangle" alt="rectangle" />
-          Open Roles
-        </p>
+        <p className="roles-description">Open Roles</p>
         <h1 className="roles-title">
           Join our Team <br></br>of executors!
         </h1>
@@ -19,7 +15,8 @@ const OpenRoles = () => {
           planet is a producer, builder or creator of high impact ecosystems.
         </p>
         <Link to="/careers">
-        <button className="roles-button">View Open Roles</button></Link>
+          <button className="roles-button">View Open Roles</button>
+        </Link>
       </StyledOpenRoles>
     </>
   );

@@ -7,9 +7,11 @@ const CareersEmpowered = () => {
     <CareerEmpower>
       <StyledContainer className="empower">
         <StyledTitle>
-        Niyo is the place where <br />the best gets better. <br />You'll
-          <span>
-            Feel Empowered, <br></br>
+          Niyo is the place where the best <br />
+          gets better. You'll{" "}
+          <span margin="0%">
+            {" "}
+            Feel Empowered, <br />
             Be Empowered.
           </span>
         </StyledTitle>

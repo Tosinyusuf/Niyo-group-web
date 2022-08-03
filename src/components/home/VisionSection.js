@@ -1,5 +1,4 @@
 import StyledVisionSection from "../../styled/VisionSection.styled";
-import orangeRectangle from "../../assets/orange-rectangle.svg";
 import Arrow from "../../assets/arrow.svg";
 import niyoBadge from "../../assets/niyo-badge-black.svg";
 import { Link } from "react-router-dom";
@@ -10,10 +9,7 @@ const VisionSection = () => {
         <div className="vision-left-container">
           <div className="vision-text-container">
             {/* <ScrollAnimation animateIn="bounceIn"> */}
-            <p className="vision-description">
-              <img src={orangeRectangle} alt="symbol" className="rectangle" />
-              Our Vision
-            </p>
+            <p className="vision-description">Our Vision</p>
             <h1 className="vision-title">
               #1 Destination for Black DisruptHers Globally!
             </h1>
@@ -21,12 +17,14 @@ const VisionSection = () => {
               A nation of brands where ambitious Black women build and create
               products that shape the face of culture.
             </p>
-           <Link to="/about-us"><button className="vision-button">
-              Learn More{" "}
-              <span>
-                <img src={Arrow} alt="symbol" className="arrow" />
-              </span>
-            </button></Link> 
+            <Link to="/about-us">
+              <button className="vision-button">
+                Learn More{" "}
+                <span>
+                  <img src={Arrow} alt="symbol" className="arrow" />
+                </span>
+              </button>
+            </Link>
             {/* </ScrollAnimation> */}
           </div>
         </div>

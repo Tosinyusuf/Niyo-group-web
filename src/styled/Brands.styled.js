@@ -7,8 +7,9 @@ const StyledBrands = styled.div`
 
   @media ${breakpointSizes.mobile} {
     padding-bottom: 0%;
-    padding-top:40px ;
+    padding-top: 40px;
   }
+
   .brands-container {
     display: flex;
     flex-direction: column;
@@ -24,7 +25,7 @@ const StyledBrands = styled.div`
 
       @media ${breakpointSizes.mobile} {
         font-size: 18px;
-        margin-bottom:0 ;
+        margin-bottom: 0;
       }
     }
     .brands-title {
@@ -47,12 +48,7 @@ const StyledBrands = styled.div`
       padding: 60px 0 0 250px;
     }
   }
-  .rectangle {
-    align-self: center;
 
-    width: 44px;
-    margin: 0 2% 0 0;
-  }
   .brand-cards {
     display: flex;
     flex-direction: row;
@@ -61,6 +57,8 @@ const StyledBrands = styled.div`
     color: #fff;
     padding: 0 150px 50px 150px;
     justify-content: space-between;
+    z-index: 10;
+
     @media ${breakpointSizes.mobile} {
       flex-direction: column;
       justify-content: center;
