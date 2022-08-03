@@ -138,6 +138,7 @@ const StyledMeetTeam = styled.div`
       }
     }
     .individual-member:hover {
+    
         .member-bio{
           display:block ;
         }
