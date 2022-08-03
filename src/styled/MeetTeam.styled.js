@@ -90,7 +90,6 @@ const StyledMeetTeam = styled.div`
       padding-bottom: 30px;
       z-index: 1;
       height: 240px;
-      /* height: 220px; */
       margin-right: 2%;
       background-size: cover;
       border-radius: 15px;
