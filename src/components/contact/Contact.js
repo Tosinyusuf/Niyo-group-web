@@ -1,5 +1,4 @@
 import StyledContact from "../../styled/Contact.styled";
-import orangeRectangle from "../../assets/orange-rectangle.svg";
 import contactImage from "../../assets/contact-image.svg";
 import Join from "../home/JoinHome";
 
@@ -10,14 +9,7 @@ const Contact = () => {
         <div className="contact-container">
           <div className="contact-left-container">
             <div className="contact-left-contents">
-              <p className="contact-description">
-                <img
-                  src={orangeRectangle}
-                  className="rectangle"
-                  alt="rectangle"
-                />
-                Let's hear from you
-              </p>
+              <p className="contact-description">Let's hear from you</p>
               <h1 className="contact-title">Work with us!</h1>
               <p className="contact-text">
                 We’d love to hear from you or want to get in touch with us about
@@ -40,7 +32,7 @@ const Contact = () => {
                     <input
                       className=" contact-details-capture "
                       type="text"
-                      value="Your first name"
+                      placeholder="Your first name"
                     />
                   </label>
 
@@ -49,7 +41,7 @@ const Contact = () => {
                     <input
                       className="contact-details-capture"
                       type="text"
-                      value="Your last name"
+                      placeholder="Your last name"
                     />
                   </label>
                 </div>
@@ -59,7 +51,7 @@ const Contact = () => {
                   <input
                     className="email-address contact-details-capture"
                     type="text"
-                    value="Enter your email address here"
+                    placeholder="Enter your email address here"
                   />
                 </label>
 
@@ -68,7 +60,7 @@ const Contact = () => {
                   <input
                     className="contact-subject contact-details-capture"
                     type="text"
-                    value=""
+                    defaultValue=""
                   />
                 </label>
 
@@ -98,7 +90,7 @@ const Contact = () => {
                   <input
                     className="message-comments contact-details-capture"
                     type="text"
-                    value=""
+                    defaultValue=""
                   />
                 </label>
 

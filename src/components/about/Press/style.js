@@ -7,7 +7,8 @@ export const PressContainer = styled.div`
 
   background-color: #070909;
   .react-multi-carousel-dot-list {
-    margin-top: 40px !important;
+    margin-top: 50px !important;
+    z-index: 8;
   }
   .each-press {
     background-color: #141414;

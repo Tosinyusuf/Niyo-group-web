@@ -12,9 +12,9 @@ const StyledOpenRoles = styled.div`
   font-family: semibold;
 
   @media ${breakpointSizes.mobile} {
-    padding: 0  5% 50px 5%;
+    padding: 0 5% 50px 5%;
     align-items: flex-start;
-    height:auto ;
+    height: auto;
   }
 
   @media ${breakpointSizes.desktop} {
@@ -23,12 +23,6 @@ const StyledOpenRoles = styled.div`
   .roles-description {
     color: #fbaf00;
     font-size: 20px;
-
-    .rectangle {
-      width: 42px;
-      height: 10px;
-      padding-right: 4px;
-    }
   }
 
   .roles-title {
@@ -38,15 +32,13 @@ const StyledOpenRoles = styled.div`
     font-size: 60px;
     padding-bottom: 20px;
 
-    
-      @media ${breakpointSizes.mobile} {
-        font-size:35px;
-        line-height:30px ;
-      }
+    @media ${breakpointSizes.mobile} {
+      font-size: 35px;
+      line-height: 30px;
+    }
 
-      @media ${breakpointSizes.desktop} {
-      }
-  
+    @media ${breakpointSizes.desktop} {
+    }
   }
 
   .roles-text {
@@ -59,8 +51,8 @@ const StyledOpenRoles = styled.div`
     @media ${breakpointSizes.mobile} {
       width: 100%;
       text-align: left;
-      font-size:14px ;
-      padding-bottom:0;
+      font-size: 14px;
+      padding-bottom: 0;
     }
 
     @media ${breakpointSizes.desktop} {
@@ -76,6 +68,11 @@ const StyledOpenRoles = styled.div`
     width: 170px;
     font-family: semibold;
     font-size: 14px;
+  }
+
+  .roles-button:hover {
+    background-color: #fbaf00;
+    color: #fff;
   }
 `;
 
