@@ -3,16 +3,11 @@ import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledMeetTeam = styled.div`
   background-color: #fff;
-
   font-family: semibold;
   padding-bottom: 50px;
 
   @media ${breakpointSizes.mobile} {
     align-items: flex-start;
-    //padding-left: 12%;
-  }
-
-  @media ${breakpointSizes.desktop} {
   }
 
   .meet-title {
@@ -27,9 +22,6 @@ const StyledMeetTeam = styled.div`
       font-size: 35px;
       text-align: center;
     }
-
-    @media ${breakpointSizes.desktop} {
-    }
   }
 
   .team-name {
@@ -40,12 +32,10 @@ const StyledMeetTeam = styled.div`
     z-index: 2;
     color: #000 !important;
     width: 100%;
+
     @media ${breakpointSizes.mobile} {
       padding: 0 20px;
       font-size: 28px;
-    }
-
-    @media ${breakpointSizes.desktop} {
     }
   }
 
@@ -89,14 +79,19 @@ const StyledMeetTeam = styled.div`
     .individual-member {
       padding-bottom: 30px;
       z-index: 1;
-      height: 240px;
+      height: 280px;
+      /* height: 240px; */
       margin-right: 2%;
-      background-size: cover;
+      background-size: 240px 280px;
       border-radius: 15px;
       margin-bottom: 20px;
       transition: 0.2s ease-in-out;
       cursor: pointer;
       background-position: center;
+
+      @media ${breakpointSizes.mobile} {
+        background-size: 190px 200px;
+      }
 
       .member-bio {
         background: linear-gradient(
