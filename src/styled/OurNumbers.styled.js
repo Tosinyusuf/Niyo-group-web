@@ -25,7 +25,7 @@ const StyledOurNumbers = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align:center ;
+      text-align: center;
     }
   }
 
@@ -37,18 +37,13 @@ const StyledOurNumbers = styled.div`
       margin-top: 20px;
       align-items: flex-start;
       width: 80%;
-      text-align:center ;
+      text-align: center;
       padding-left: 0;
     }
 
     @media ${breakpointSizes.desktop} {
       padding-left: 250px;
     }
-  }
-
-  .rectangle {
-    width: 70px;
-    margin: 0 1% 0 0;
   }
 
   .numbers-description {
@@ -88,7 +83,7 @@ const StyledOurNumbers = styled.div`
     @media ${breakpointSizes.mobile} {
       flex-direction: column;
       padding: 0;
-      justify-content:center !important ;
+      justify-content: center !important ;
     }
 
     @media ${breakpointSizes.desktop} {

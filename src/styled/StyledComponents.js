@@ -14,7 +14,6 @@ export const StyledContainer = styled.div`
   font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : "semibold")};
   padding: ${({ pad }) => (pad ? pad : "100px 0")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
-
   border-radius: ${({ borderRadius }) => (borderRadius ? borderRadius : "none")}
     0px;
 
@@ -31,8 +30,8 @@ export const StyledContainer = styled.div`
 
 export const StyledButton = styled.button`
   border: ${({ border }) => (border ? border : "none")};
-  border-radius: ${({ borderRadius }) => (borderRadius ? borderRadius : "none")}
-    20px;
+  border-radius: ${({ borderRadius }) =>
+    borderRadius ? borderRadius : "none"};
   background: ${({ background }) => (background ? background : "#fff")};
   color: ${({ color }) => (color ? color : "#070909")};
   height: ${({ height }) => (height ? height : "50px")};
@@ -41,6 +40,11 @@ export const StyledButton = styled.button`
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "14px")};
   margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "4%")};
   margin-top: ${({ marginTop }) => (marginTop ? marginTop : "4%")};
+
+  &:hover {
+    background-color: #fbaf00;
+    color: #fff;
+  }
 
   @media ${breakpointSizes.mobile} {
     margin: 0;
@@ -58,13 +62,13 @@ export const StyledTitle = styled.h1`
     fontFamily ? fontFamily : "AtypDisplay-Bold"};
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "50px")};
   line-height: ${({ lineHeight }) => (lineHeight ? lineHeight : "60px")};
-
   color: ${({ color }) => (color ? color : "#fff")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
+  padding: ${({ padding }) => (padding ? padding : "0px 0px 0px 0px")};
 
   span {
     color: #ffaf00;
-    margin: 0 1.5%;
+    margin: ${({ margin }) => (margin ? margin : "1.5%")};
   }
 
   @media ${breakpointSizes.mobile} {
@@ -89,10 +93,10 @@ export const StyledSpan = styled.span`
 export const StyledParagraph = styled.p`
   font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : "semibold")};
   color: ${({ color }) => (color ? color : "#fff")};
-  // width: ${({ width }) => (width ? width : "80%")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
   font-size: ${({ fontSize }) => (fontSize ? fontSize : "17px")};
-  text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
+  padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "0px")};
+  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "1em")};
 
   @media ${breakpointSizes.mobile} {
     text-align: center;
@@ -109,12 +113,14 @@ export const StyledParagraph = styled.p`
 
 // CUSTOM STYLES
 export const StyledBenefitIcon = styled.img`
-  width: ${({ width }) => (width ? width : "80px")};
-  height: ${({ height }) => (height ? height : "80px")};
+  width: ${({ width }) => (width ? width : "50px")};
+  height: ${({ height }) => (height ? height : "50px")};
 
   @media ${breakpointSizes.mobile} {
-    width: 40px;
-    height: 40px;
+    width: 10%;
+    height: 10%;
+    /* width: 40px;
+    height: 40px; */
   }
 
   @media ${breakpointSizes.desktop} {
@@ -125,6 +131,7 @@ export const StyledBenefitCardContainer = styled.div`
   width: ${({ width }) => (width ? width : "100%")};
   display: flex;
   flex-wrap: ${({ flexWrap }) => (flexWrap ? flexWrap : "wrap")};
+  padding-top: 4%;
 
   @media ${breakpointSizes.mobile} {
     flex-direction: column;
@@ -137,7 +144,7 @@ export const StyledBenefitCardContainer = styled.div`
   .benefit-card {
     width: 50%;
     display: flex;
-    padding: 0 10% 8% 0;
+    padding: 0 6% 8% 0;
     /* padding-bottom: 6%; */
 
     @media ${breakpointSizes.mobile} {
@@ -151,6 +158,8 @@ export const StyledBenefitCardContainer = styled.div`
     .benefit-icon-title {
       margin: 0;
       padding-left: 10px;
+      font-size: 18px;
+      /* font-size: 20px; */
     }
 
     .benefit-icon-text {

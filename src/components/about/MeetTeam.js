@@ -19,10 +19,11 @@ const MeetTeam = () => {
             return (
               <>
                 <div
-                  className="individual-member" key={index}
+                  className="individual-member captains-person"
+                  key={index}
                   style={{ backgroundImage: `url(${item.image})` }}
                 >
-                  <div className="member-bio" >
+                  <div className="member-bio">
                     <h1 className="member-name">{item.name}</h1>
                     <p className="member-role">{item.role}</p>
                     <div className="fact">
@@ -30,7 +31,11 @@ const MeetTeam = () => {
                       <p>{item.funFact}</p>
                     </div>
                     <div className="member-socials">
-                      <a href={item.twitterLink} rel="noreferrer" target="_blank">
+                      <a
+                        href={item.twitterLink}
+                        rel="noreferrer"
+                        target="_blank"
+                      >
                         <img src={twitter} alt="Twitter Logo" />
                       </a>
                       <a href={item.LinkedIn} rel="noreferrer" target="_blank">
@@ -55,7 +60,7 @@ const MeetTeam = () => {
               <>
                 <div
                   key={index}
-                  className="individual-member"
+                  className="individual-member executors-person"
                   style={{ backgroundImage: `url(${item.image})` }}
                 >
                   <div className="member-bio">
@@ -66,7 +71,11 @@ const MeetTeam = () => {
                       <p>{item.funFact}.</p>
                     </div>
                     <div className="member-socials">
-                      <a href={item.twitterLink} rel="noreferrer" target="_blank">
+                      <a
+                        href={item.twitterLink}
+                        rel="noreferrer"
+                        target="_blank"
+                      >
                         <img src={twitter} alt="Twitter Logo" />
                       </a>
                       <a href={item.LinkedIn} rel="noreferrer" target="_blank">

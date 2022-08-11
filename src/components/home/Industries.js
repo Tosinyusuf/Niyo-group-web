@@ -1,15 +1,11 @@
 import StyledIndustries from "../../styled/Industries.styled";
-import orangeRectangle from "../../assets/orange-rectangle.svg";
 
 const Industries = () => {
   return (
     <>
       <StyledIndustries>
         <div className="industries-container">
-          <p className="industries-description">
-            <img src={orangeRectangle} alt="symbol" className="rectangle" />
-            Our Strength
-          </p>
+          <p className="industries-description">Our Strength</p>
           <div className="industries-title-container">
             <h1 className="industries-title">Industries We Work In</h1>
             <p className="industries-title-text">

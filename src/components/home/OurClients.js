@@ -1,6 +1,5 @@
 import { ourClientsLogos } from "../../constants/data";
 import Marquee from "react-fast-marquee";
-import orangeRectangle from "../../assets/orange-rectangle.svg";
 import StyledOurClients from "../../styled/OurClients.styled";
 import { Link } from "react-router-dom";
 
@@ -11,10 +10,7 @@ const OurClients = () => {
         <div className="clients-container">
           <div className="clients-headers">
             <div className="clients-text-container">
-              <p className="clients-description">
-                <img src={orangeRectangle} alt="symbol" className="rectangle" />
-                Our Clients
-              </p>
+              <p className="clients-description">Our Clients</p>
               <h1 className="clients-title">Who we have worked with</h1>
             </div>
             <div className="button-container top">

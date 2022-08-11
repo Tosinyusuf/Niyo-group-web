@@ -1,5 +1,4 @@
 import StyledOurNumbers from "../../styled/OurNumbers.styled";
-import orangeRectangle from "../../assets/orange-rectangle.svg";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
@@ -9,10 +8,7 @@ const OurNumbers = () => {
       <StyledOurNumbers>
         <div className="numbers-text-container">
           <div className="numbers-headings">
-            <p className="numbers-description">
-              <img src={orangeRectangle} className="rectangle" alt="symbol" />
-              Our Numbers
-            </p>
+            <p className="numbers-description">Our Numbers</p>
             <h1 className="numbers-title">Niyo in numbers</h1>
           </div>
 

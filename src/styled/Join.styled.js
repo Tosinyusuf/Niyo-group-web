@@ -17,7 +17,7 @@ const StyledJoin = styled.div`
 
   @media ${breakpointSizes.mobile} {
     height: auto;
-    padding:50px 0;
+    padding: 50px 0;
   }
 
   .join-title:before {
@@ -31,6 +31,7 @@ const StyledJoin = styled.div`
       display: none;
     }
   }
+
   .join-title {
     font-family: AtypDisplay-Bold;
     color: #fff;
@@ -40,9 +41,11 @@ const StyledJoin = styled.div`
       font-size: 30px;
     }
   }
+
   span {
     color: #fbaf00;
   }
+
   .join-text {
     font-family: regular;
     text-align: center;
@@ -54,6 +57,7 @@ const StyledJoin = styled.div`
       font-family: Light;
     }
   }
+
   .join-form {
     width: 100%;
     text-align: center;
@@ -62,6 +66,7 @@ const StyledJoin = styled.div`
     align-items: center;
     justify-content: center;
   }
+
   .join-email {
     background-color: #fff;
     color: #000;
@@ -71,13 +76,20 @@ const StyledJoin = styled.div`
       margin: 10px 0 20px 0;
     }
   }
-  ::placeholder{
+
+  ::placeholder {
     color: #afafaf;
   }
+
   .join-submit {
     background-color: #070909;
     color: #fff;
     border: none;
+  }
+
+  .join-submit:hover {
+    background-color: #fbaf00;
+    color: #fff;
   }
   .join-button {
     width: 40%;
