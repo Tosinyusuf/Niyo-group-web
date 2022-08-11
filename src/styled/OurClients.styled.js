@@ -5,13 +5,13 @@ const StyledOurClients = styled.div`
   background-color: #070909;
   height: auto;
   width: 100%;
-  padding:70px 150px ;
+  padding: 70px 150px;
 
   @media ${breakpointSizes.mobile} {
-    padding:50px 20px
+    padding: 50px 20px;
   }
   @media ${breakpointSizes.desktop} {
-    padding:50px 250px ;
+    padding: 50px 250px;
   }
 
   .clients-container {
@@ -23,12 +23,6 @@ const StyledOurClients = styled.div`
   .clients-headers {
     display: flex;
     flex-direction: row;
-  }
-
-  .rectangle {
-    align-self: center;
-    width: 50px;
-    margin: 0 3% 0 0;
   }
 
   .clients-text-container {
@@ -56,7 +50,7 @@ const StyledOurClients = styled.div`
     //margin: 1% 0 10% 0;
 
     @media ${breakpointSizes.mobile} {
-     width: 90vw;
+      width: 90vw;
       font-size: 24px;
       padding-top: 00px;
     }
@@ -69,25 +63,23 @@ const StyledOurClients = styled.div`
     align-items: flex-start;
     justify-content: flex-end;
     /* margin-top: 3%; */
-
-    
   }
-  .top{
+  .top {
     @media ${breakpointSizes.mobile} {
-      display:none ;
+      display: none;
     }
   }
-  .bottom{
-    display:none ;
-    margin-top:30px ;
-    text-align:center ;
-    width:100%;
+  .bottom {
+    display: none;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
     .clients-button {
-      height:40px;
-      width:180px;
+      height: 40px;
+      width: 180px;
     }
     @media ${breakpointSizes.mobile} {
-        display:inline-block ;
+      display: inline-block;
     }
   }
 
@@ -98,9 +90,9 @@ const StyledOurClients = styled.div`
     border: none;
     border-radius: 15px;
     font-family: semibold;
-    color:#fff;
-    a{
-      color:#000;
+    color: #fff;
+    a {
+      color: #000;
     }
 
     @media ${breakpointSizes.mobile} {
@@ -110,8 +102,12 @@ const StyledOurClients = styled.div`
     }
   }
 
+  .clients-button:hover {
+    background-color: #fff;
+    color: #070909;
+  }
+
   .clients-logos-container {
-    
     margin-bottom: 8%;
     @media ${breakpointSizes.mobile} {
       padding-top: 20px;
@@ -125,7 +121,7 @@ const StyledOurClients = styled.div`
 
     @media ${breakpointSizes.mobile} {
       width: 100px;
-      margin-right:30px;
+      margin-right: 30px;
     }
   }
 `;

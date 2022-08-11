@@ -6,16 +6,12 @@ import { StyledBenefitIcon } from "../../styled/StyledComponents";
 
 import { ourBenefits } from "../../constants/data";
 
-import orangeRectangle from "../../assets/orange-rectangle.svg";
 import { CareerBenefits } from "./style";
 
 const Benefits = () => {
   return (
     <CareerBenefits>
-      <StyledContainer
-        textAlign="left"
-        className="contain"
-      >
+      <StyledContainer textAlign="left" className="contain">
         <StyledParagraph
           fontSize="20px"
           fontFamily="regular"
@@ -23,7 +19,7 @@ const Benefits = () => {
           textAlign="left"
           padding="0 0 10px 0"
         >
-          <img src={orangeRectangle} alt="rectangle" /> Benefits
+          Benefits
         </StyledParagraph>
         <StyledTitle
           paddingBottom="60px"
@@ -55,7 +51,7 @@ const Benefits = () => {
 
         <></>
       </StyledContainer>
-    </ CareerBenefits>
+    </CareerBenefits>
   );
 };
 

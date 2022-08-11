@@ -7,7 +7,7 @@ const StyledContact = styled.div`
   height: auto;
   padding: 100px 150px;
 
-  margin-top:91px ;
+  margin-top: 91px;
 
   @media ${breakpointSizes.mobile} {
     height: auto;
@@ -48,17 +48,18 @@ const StyledContact = styled.div`
         color: #fbaf00;
         font-family: semibold;
         font-size: 16px;
+        margin-bottom: 1%;
       }
 
       .contact-title {
         font-family: AtypDisplay-Bold;
+        font-size: 34px;
         margin: 0;
-        color:#070909 !important;
+        color: #070909 !important;
       }
 
       .contact-text {
-        width: 90%;
-        right: 100px;
+        font-size: 13.5px;
 
         @media ${breakpointSizes.mobile} {
           font-size: 20px;
@@ -129,12 +130,6 @@ const StyledContact = styled.div`
             width: 45%;
             justify-content: center;
           }
-
-          /* .name-box:first-of-type {
-            @media ${breakpointSizes.mobile} {
-              margin-right: 50px;
-            }
-          } */
         }
 
         .form-box {
@@ -155,6 +150,10 @@ const StyledContact = styled.div`
           height: 44px;
           margin-top: 10px;
 
+          placeholder {
+            color: #d9d9d9;
+          }
+
           @media ${breakpointSizes.mobile} {
             font-size: 10px;
           }
@@ -166,7 +165,7 @@ const StyledContact = styled.div`
           padding-bottom: 20px;
 
           .checkbox {
-            margin-bottom: 10px;
+            margin: 0% 1.5% 0% 0;
           }
         }
 
@@ -191,6 +190,11 @@ const StyledContact = styled.div`
             margin-top: 22px;
             font-size: 20px;
           }
+        }
+
+        .contact-submit-button:hover {
+          background-color: #fbaf00;
+          color: #fff;
         }
       }
     }

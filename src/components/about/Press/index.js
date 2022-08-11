@@ -1,12 +1,11 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import orangeRectangle from "../../../assets/orange-rectangle.svg";
 
 import { ourPress } from "../../../constants/data";
 import {
   StyledContainer,
   StyledParagraph,
-  StyledTitle
+  StyledTitle,
 } from "../../../styled/StyledComponents";
 import { PressContainer } from "./style";
 
@@ -40,16 +39,18 @@ const Press = () => {
         pad="00px 0"
       >
         <StyledParagraph
-          fontSize="20px"
+          fontSize="24px"
           fontFamily="regular"
           color="#fbaf00"
           textAlign="left"
-          paddingBottom="1%"
-          style={{ paddingBottom: "5px" }}
+          paddingLeft="12%"
+          marginBottom="1%"
         >
-          <img src={orangeRectangle} alt="rectangle" /> Niyo in the news
+          Niyo in the news
         </StyledParagraph>
-        <StyledTitle paddingBottom="10px">Press & News</StyledTitle>
+        <StyledTitle textAlign="left" padding="0px 0px 0px 12%">
+          Press & News
+        </StyledTitle>
       </StyledContainer>
       <PressContainer>
         <Carousel showDots={true} swipeable={true} responsive={responsive}>
