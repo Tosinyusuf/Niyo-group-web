@@ -122,6 +122,8 @@ const styledVisionSection = styled.div`
       top: 3%;
       width: 95%;
       height: 83vw;
+      border-radius: 20px;
+      margin: 0;
     }
   }
 
