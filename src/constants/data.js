@@ -33,27 +33,30 @@ import purpose from "../assets/priorities/purpose.svg";
 import profit from "../assets/priorities/profit.svg";
 import planet from "../assets/priorities/planet.svg";
 
-import oyin from "../assets/team/oyin.svg";
-import laolu from "../assets/team/laolu.svg";
-import dami from "../assets/team/dami.svg";
-import sephora from "../assets/team/sephora.svg";
-import chinazor from "../assets/team/chinazor.svg";
-import hauwa from "../assets/team/hauwa.svg";
-import saby from "../assets/team/saby.svg";
-import temi from "../assets/team/temi.svg";
+import oyin from "../assets/team/professional/oyin-professional.jpg";
+import laolu from "../assets/team/professional/laolu-professional.jpg";
+import dami from "../assets/team/professional/dami-professional.jpg";
+import daniella from "../assets/team/professional/daniella-professional.jpg";
+import sephora from "../assets/team/professional/sephora-professional.jpg";
+import chinazor from "../assets/team/professional/chinazor-professional.jpg";
+import hauwa from "../assets/team/professional/hauwa-professional.jpg";
+import saby from "../assets/team/professional/saby-professional.jpg";
+import temi from "../assets/team/professional/temi-professional.jpg";
 import grace from "../assets/team/grace.svg";
-import john from "../assets/team/john.svg";
-import sumaya from "../assets/team/sumaya.svg";
-import tia from "../assets/team/tia.svg";
+import john from "../assets/team/professional/john-professional.jpg";
+import sumaya from "../assets/team/professional/sumaya-professional.jpg";
+import tia from "../assets/team/professional/tia-professional.jpg";
 import sofiat from "../assets/team/sofiat.svg";
-import mary from "../assets/team/mary.svg";
-import emanuela from "../assets/team/emanuela.svg";
-import floraJoy from "../assets/team/flora-joy.svg";
-import akeiba from "../assets/team/akeiba.svg";
-import adele from "../assets/team/adele.svg";
-import mase from "../assets/team/mase.jpg";
-import ini from "../assets/team/ini.jpg";
-import hannah from "../assets/team/hannah.jpeg";
+import mary from "../assets/team/professional/mary-professional.jpg";
+import emanuela from "../assets/team/professional/emanuela-professional.jpg";
+import floraJoy from "../assets/team/professional/flora-joy-professional.jpg";
+import akeiba from "../assets/team/professional/akeiba-professional.jpg";
+import adele from "../assets/team/professional/adele-professional.jpg";
+import mase from "../assets/team/professional/mase-professional.jpg";
+import ini from "../assets/team/professional/ini-professional.jpg";
+import hannah from "../assets/team/professional/hannah-professional.jpg";
+import shari from "../assets/team/professional/shari-professional.jpg";
+import victoria from "../assets/team/professional/victoria-professional.jpg";
 
 import bulb from "../assets/benefits/bulb.svg";
 import cashbag from "../assets/benefits/cashbag.svg";
@@ -92,6 +95,7 @@ import badge18 from "../assets/timeline/badge18.svg";
 import badge19 from "../assets/timeline/badge19.svg";
 import badge20 from "../assets/timeline/badge20.svg";
 import badge21 from "../assets/timeline/badge21.svg";
+import badge22 from "../assets/timeline/badge22.svg";
 
 // DATA
 
@@ -203,6 +207,14 @@ export const ourCaptains = [
 ];
 
 export const ourTeamMembers = [
+  {
+    name: "Daniella Genas",
+    role: "Assistant Programme Manager",
+    funFact: "",
+    image: daniella,
+    twitterLink: "",
+    Linkedin: "",
+  },
   {
     name: "Sephora Amlan",
     role: "Partnerships & Employability Lead | EA to CEO",
@@ -345,6 +357,22 @@ export const ourTeamMembers = [
     image: ini,
     twitterLink: "",
     Linkedin: "https://www.linkedin.com/in/iniabasi-o-akpan/",
+  },
+  {
+    name: "Shari",
+    role: "",
+    funFact: "",
+    image: shari,
+    twitterLink: "",
+    Linkedin: "",
+  },
+  {
+    name: "Victoria Sogbesan",
+    role: "Assistant Programme Manager",
+    funFact: "",
+    image: victoria,
+    twitterLink: "",
+    Linkedin: "",
   },
 ];
 
@@ -555,6 +583,6 @@ export const timeLines = [
     description:
       "The team grew from a team of 5, to a team of 25+. We are setting up our third brand Niyo Dapp. We have grown by 408% and are set to continue to grow over the next few years.",
     img: timeNine,
-    badge: badge21,
+    badge: badge22,
   },
 ];

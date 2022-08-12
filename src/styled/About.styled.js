@@ -4,7 +4,8 @@ import heroImage from "../assets/aboutImage.jpeg";
 import breakpointSizes from "../constants/breakpointSizes";
 
 export const StyledAbout = styled.div`
-  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(${heroImage});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(${heroImage});
   background-size: cover;
   background-position: center;
   height: 90%;
@@ -12,24 +13,19 @@ export const StyledAbout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center ;
+  justify-content: center;
   color: #fff;
-  margin-top:91px ;
+  margin-top: 91px;
   font-family: AtypDisplay-Bold;
 
   @media ${breakpointSizes.mobile} {
     height: 90%;
-    background-position:60% ;
-    margin-top:64px;
-  }
-
-
-  @media ${breakpointSizes.desktop} {
+    background-position: 60%;
+    margin-top: 40px;
   }
 
   .about-title {
     font-size: 60px;
-   // padding-bottom: 100px;
     line-height: 70px;
 
     @media ${breakpointSizes.mobile} {
