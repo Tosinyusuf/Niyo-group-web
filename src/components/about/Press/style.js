@@ -9,7 +9,14 @@ export const PressContainer = styled.div`
   .react-multi-carousel-dot-list {
     margin-top: 50px !important;
     z-index: 8;
+    height: auto;
   }
+
+  .react-multi-carousel-dot {
+    padding-bottom: 1%;
+    height: 120px;
+  }
+
   .each-press {
     background-color: #141414;
     padding: 30px;

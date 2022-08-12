@@ -37,6 +37,7 @@ const StyledMission = styled.div`
       height: 400px;
       margin-top: 0px;
       top: 0;
+      border-radius: 20px;
     }
   }
 
