@@ -2,7 +2,54 @@ import StyledContact from "../../styled/Contact.styled";
 import contactImage from "../../assets/contact-image.svg";
 import Join from "../home/JoinHome";
 
+import axios from "axios";
+import { useState } from "react";
+// import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+  const [userData, setUserData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: "",
+    isPartnerShip: false,
+    isGeneralEnquiry: false,
+  });
+
+  const submitForm = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    console.log(userData);
+    console.log(userData.firstName);
+
+    axios
+      .post("https://api.niyo.co/v1/contact/partner-with-us", {
+        firstName: userData.firstName,
+        lastName: userData.lastName,
+        email: userData.email,
+        subject: userData.subject,
+        message: userData.message,
+        isPartnerShip: userData.isPartnerShip,
+        isGeneralEnquiry: userData.isGeneralEnquiry,
+      })
+      .then((resp) => {
+        console.log(resp.userData);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.log("Error!");
+      });
+  };
+
+  const handleSubmit = (e) => {
+    const newUserData = { ...userData };
+    newUserData[e.target.id] = e.target.value;
+    setUserData(newUserData);
+  };
+
   return (
     <>
       <StyledContact>
@@ -25,7 +72,7 @@ const Contact = () => {
 
           <div className="contact-right-container">
             <div className="contact-right-contents">
-              <form className="contact-form">
+              <form onSubmit={(e) => submitForm(e)} className="contact-form">
                 <div className="contact-names-section">
                   <label className="contact-form-label name-box">
                     First Name
@@ -33,6 +80,9 @@ const Contact = () => {
                       className=" contact-details-capture "
                       type="text"
                       placeholder="Your first name"
+                      onChange={(e) => handleSubmit(e)}
+                      id="firstName"
+                      value={userData.firstName}
                     />
                   </label>
 
@@ -42,6 +92,9 @@ const Contact = () => {
                       className="contact-details-capture"
                       type="text"
                       placeholder="Your last name"
+                      onChange={(e) => handleSubmit(e)}
+                      id="lastName"
+                      value={userData.lastName}
                     />
                   </label>
                 </div>
@@ -52,6 +105,9 @@ const Contact = () => {
                     className="email-address contact-details-capture"
                     type="text"
                     placeholder="Enter your email address here"
+                    onChange={(e) => handleSubmit(e)}
+                    id="email"
+                    value={userData.email}
                   />
                 </label>
 
@@ -60,7 +116,10 @@ const Contact = () => {
                   <input
                     className="contact-subject contact-details-capture"
                     type="text"
-                    defaultValue=""
+                    // placeholder=""
+                    onChange={(e) => handleSubmit(e)}
+                    id="text"
+                    value={userData.text}
                   />
                 </label>
 
@@ -71,6 +130,9 @@ const Contact = () => {
                       type="checkbox"
                       className="partnerships-checkbox checkbox"
                       name="partnerships-checkbox"
+                      onChange={(e) => handleSubmit(e)}
+                      id="isPartnerShip"
+                      value={userData.isPartnerShip}
                     />
                     Partnerships
                   </label>
@@ -80,6 +142,9 @@ const Contact = () => {
                       type="checkbox"
                       className="enquiry-checkbox checkbox"
                       name="enquiry-checkbox"
+                      onChange={(e) => handleSubmit(e)}
+                      id="isGeneralEnqiry"
+                      value={userData.isGeneralEnquiry}
                     />
                     General Enquiry
                   </label>
@@ -87,10 +152,13 @@ const Contact = () => {
 
                 <label className="contact-form-label form-box">
                   Message/Comments
-                  <input
+                  <textarea
                     className="message-comments contact-details-capture"
                     type="text"
-                    defaultValue=""
+                    // placeholder=""
+                    onChange={(e) => handleSubmit(e)}
+                    id="message"
+                    value={userData.message}
                   />
                 </label>
 

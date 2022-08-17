@@ -2,15 +2,16 @@ import styled from "styled-components";
 import breakpointSizes from "../../constants/breakpointSizes";
 
 export const CareerHero = styled.div`
+  margin-top: 91px;
 
-margin-top:91px ;
   p {
     font-family: regular;
     font-size: 18px;
     margin-top: 30px;
   }
   @media ${breakpointSizes.mobile} {
-    margin-top:64px;
+    margin-top: 30px;
+
     p {
       font-size: 14px;
       margin-top: 20px;
@@ -68,18 +69,18 @@ export const CareerEmpower = styled.div`
     font-size: 18px;
     margin-top: 30px;
   }
-  @media ${breakpointSizes.mobile}{
-    h1{
-        font-size:30px ;
-        padding: 0 20px;
+  @media ${breakpointSizes.mobile} {
+    h1 {
+      font-size: 30px;
+      padding: 0 20px;
     }
     p {
       font-size: 14px;
       margin-top: 20px;
       padding: 0 20px;
     }
-    .empower{
-      padding:60px 0;
+    .empower {
+      padding: 60px 0;
     }
   }
 `;
@@ -97,30 +98,28 @@ export const CareerBenefits = styled.div`
     }
   }
   @media ${breakpointSizes.mobile} {
-    p{
-      text-align:left ;
-      padding-left:20px;
+    p {
+      text-align: left;
+      padding-left: 20px;
     }
-    h1{
-        font-size:30px ;
-        padding:0 20px;
-        text-align:left ;
+    h1 {
+      font-size: 30px;
+      padding: 0 20px;
+      text-align: left;
     }
     .contain {
       padding: 0 0px;
-      .benefit-card{
-
+      .benefit-card {
       }
     }
   }
 `;
 
 export const JobVacant = styled.div`
-  
   @media ${breakpointSizes.mobile} {
-    text-align:center ;
-    select{
-        margin:auto ;
+    text-align: center;
+    select {
+      margin: auto;
     }
     p {
       font-size: 14px;

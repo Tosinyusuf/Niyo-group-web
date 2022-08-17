@@ -7,7 +7,6 @@ export const StyledContainer = styled.div`
   width: 100%;
   background-image: ${({ backgroundImage }) =>
     backgroundImage ? backgroundImage : `url(${careerBlock1})`};
-
   background: ${({ bc }) => (bc ? bc : "#070909")};
   height: ${({ height }) => (height ? height : "auto")};
   color: ${({ color }) => (color ? color : "#fff")};

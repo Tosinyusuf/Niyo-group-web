@@ -19,7 +19,7 @@ const MeetTeam = () => {
             return (
               <>
                 <div
-                  className="individual-member captains-person"
+                  className="individual-member"
                   key={index}
                   style={{ backgroundImage: `url(${item.image})` }}
                 >
@@ -60,7 +60,7 @@ const MeetTeam = () => {
               <>
                 <div
                   key={index}
-                  className="individual-member executors-person"
+                  className="individual-member"
                   style={{ backgroundImage: `url(${item.image})` }}
                 >
                   <div className="member-bio">

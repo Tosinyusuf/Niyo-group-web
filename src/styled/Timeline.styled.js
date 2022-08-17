@@ -21,22 +21,33 @@ const StyledTimeline = styled.div`
   h1 {
     margin: 0;
   }
+
   .each-timeline {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     .text {
       width: 51%;
-      /* width: 42%; */
       padding: 80px;
       color: #fff;
+
       h2 {
         font-family: AtypDisplay-Bold;
+
+        @media ${breakpointSizes.mobile} {
+          padding: 0 3% 0 12%;
+        }
       }
+
       p {
         color: #fff !important;
         font-family: Light;
         font-size: 18px;
+
+        @media ${breakpointSizes.mobile} {
+          padding: 0 3% 0 12%;
+          width: 100%;
+        }
       }
     }
     .timeline-image {
@@ -49,8 +60,9 @@ const StyledTimeline = styled.div`
         margin-top: -50px;
         margin-left: -55px;
 
-        /* margin-top: -30px;
-        margin-left: -40px; */
+        @media ${breakpointSizes.mobile} {
+          margin: 0;
+        }
       }
     }
   }
@@ -82,12 +94,6 @@ const StyledTimeline = styled.div`
         background-size: cover;
         border-radius: 20px;
         margin: 0 10px;
-        img {
-          margin-top: -300px;
-          margin-left: -20px;
-
-          height: inherit;
-        }
       }
     }
     .each-timeline:nth-child(2n) {
