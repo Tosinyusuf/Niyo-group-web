@@ -6,7 +6,6 @@ const StyledContact = styled.div`
   font-family: Light;
   height: auto;
   padding: 100px 150px;
-
   margin-top: 91px;
 
   @media ${breakpointSizes.mobile} {
@@ -110,6 +109,7 @@ const StyledContact = styled.div`
 
         input {
           padding-left: 20px;
+          /* color: #d9d9d9; */
         }
 
         .contact-names-section {
@@ -144,7 +144,8 @@ const StyledContact = styled.div`
         .contact-details-capture {
           background-color: #f5f5f5;
           font-family: semibold;
-          color: #d9d9d9;
+          color: #757575;
+          /* color: #d9d9d9; */
           border: 1px solid #d9d9d9;
           border-radius: 5px;
           height: 44px;

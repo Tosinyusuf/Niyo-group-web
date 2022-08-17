@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import breakpointSizes from "../constants/breakpointSizes";
+import backgroundLines from "../assets/background/industries-lines.png";
+import backgroundLines2 from "../assets/background/industries-lines-2.png";
 
 const StyledIndustries = styled.div`
   background-color: #070909;
@@ -8,6 +10,10 @@ const StyledIndustries = styled.div`
   padding: 100px 150px;
   font-family: regular;
   color: #fff;
+
+  background-image: url(${backgroundLines}), url(${backgroundLines2});
+  background-position: 8% 84%, 84% 80%;
+  background-repeat: no-repeat;
 
   @media ${breakpointSizes.mobile} {
     padding: 50px 20px;
@@ -48,7 +54,6 @@ const StyledIndustries = styled.div`
         @media ${breakpointSizes.mobile} {
           width: 90vw;
           font-size: 24px;
-          /* padding-top: 14px; */
         }
       }
 
@@ -68,7 +73,6 @@ const StyledIndustries = styled.div`
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      /* align-self: center; */
       margin-top: 4%;
       width: 100%;
 
@@ -84,10 +88,8 @@ const StyledIndustries = styled.div`
       align-items: center;
       border: 1px solid #fff;
       border-radius: 15px;
-      /* height: 80%; */
-      height: 80px;
+      height: 90px;
       width: 20%;
-      /* width: 200px; */
       margin: 0 6% 4% 0;
 
       @media ${breakpointSizes.mobile} {

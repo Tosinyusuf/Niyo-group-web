@@ -37,27 +37,25 @@ import oyin from "../assets/team/professional/oyin-professional.jpg";
 import laolu from "../assets/team/professional/laolu-professional.jpg";
 import dami from "../assets/team/professional/dami-professional.jpg";
 import daniella from "../assets/team/professional/daniella-professional.jpg";
-import sephora from "../assets/team/professional/sephora-professional.jpg";
-import chinazor from "../assets/team/professional/chinazor-professional.jpg";
-import hauwa from "../assets/team/professional/hauwa-professional.jpg";
-import saby from "../assets/team/professional/saby-professional.jpg";
-import temi from "../assets/team/professional/temi-professional.jpg";
+
+import ini from "../assets/team/professional/ini-professional.jpg";
 import grace from "../assets/team/grace.svg";
-import john from "../assets/team/professional/john-professional.jpg";
-import sumaya from "../assets/team/professional/sumaya-professional.jpg";
-import tia from "../assets/team/professional/tia-professional.jpg";
-import sofiat from "../assets/team/sofiat.svg";
 import mary from "../assets/team/professional/mary-professional.jpg";
+import sephora from "../assets/team/professional/sephora-professional.jpg";
+import hauwa from "../assets/team/professional/hauwa-professional.jpg";
+import chinazor from "../assets/team/professional/chinazor-professional.jpg";
+import john from "../assets/team/professional/john-professional.jpg";
 import emanuela from "../assets/team/professional/emanuela-professional.jpg";
+import tia from "../assets/team/professional/tia-professional.jpg";
+import temi from "../assets/team/professional/temi-professional.jpg";
+import sofiat from "../assets/team/sofiat.svg";
+import sumaya from "../assets/team/professional/sumaya-professional.jpg";
 import floraJoy from "../assets/team/professional/flora-joy-professional.jpg";
 import akeiba from "../assets/team/professional/akeiba-professional.jpg";
 import adele from "../assets/team/professional/adele-professional.jpg";
 import mase from "../assets/team/professional/mase-professional.jpg";
-import ini from "../assets/team/professional/ini-professional.jpg";
 import hannah from "../assets/team/professional/hannah-professional.jpg";
-import shari from "../assets/team/professional/shari-professional.jpg";
 import victoria from "../assets/team/professional/victoria-professional.jpg";
-
 import bulb from "../assets/benefits/bulb.svg";
 import cashbag from "../assets/benefits/cashbag.svg";
 import umbrella from "../assets/benefits/umbrella.svg";
@@ -204,16 +202,41 @@ export const ourCaptains = [
     funFact: "I’ve been able to knit since I was 10 years old.",
     image: dami,
   },
-];
-
-export const ourTeamMembers = [
   {
     name: "Daniella Genas",
-    role: "Assistant Programme Manager",
+    role: "Executive Advisor",
     funFact: "",
     image: daniella,
     twitterLink: "",
     Linkedin: "",
+  },
+];
+
+export const ourTeamMembers = [
+  {
+    name: "Iniabasi Akpan",
+    role: "HR Operations Lead",
+    funFact: "Love to Paint & Sip!",
+    image: ini,
+    twitterLink: "",
+    Linkedin: "https://www.linkedin.com/in/iniabasi-o-akpan/",
+  },
+  {
+    name: "Grace Omole",
+    role: "Tech Lead | Blockchain App Dev",
+    funFact: "I love rapping",
+    image: grace,
+    twitterLink: "https://twitter.com/GraceOmole3",
+    Linkedin: "https://www.linkedin.com/in/grace-omole-a9a37a188/",
+  },
+  {
+    name: "Mary Bolawole",
+    role: "Office Manager | Events Executive",
+    funFact:
+      "I can't eat a meal without having a piece of meat in there. I make and design clothes",
+    image: mary,
+    twitterLink: "",
+    Linkedin: "https://www.linkedin.com/in/mary-bolawole-3596621a6/",
   },
   {
     name: "Sephora Amlan",
@@ -224,6 +247,16 @@ export const ourTeamMembers = [
     Linkedin: "",
   },
   {
+    name: "Hauwa Ottun",
+    role: "Bootcamp Lead - Black Codher & Niyo FoundHer",
+    funFact:
+      "I love to read and facilitate a book club focussed on works from authors from diverse backgrounds.",
+    image: hauwa,
+    twitterLink: "",
+    Linkedin:
+      "https://www.linkedin.com/in/hauwa-kehinde-o-65874aa2?lipi=urn%3Ali%3Apage%3Ad_flagshi[…]ile_view_base_contact_details%3BQbpUnCSXTTOvTJUjvLPIhA%3D%3D",
+  },
+  {
     name: "Chinazor Kalu",
     role: "Assistant Program Manager",
     funFact: "I dare, and I am not afraid to be different",
@@ -232,21 +265,26 @@ export const ourTeamMembers = [
     Linkedin: "https://www.linkedin.com/in/chinazorviviankalu/",
   },
   {
-    name: "Hauwa Ottun",
-    role: "Bootcamp Lead - Black Codher",
-    funFact:
-      "I love to read and facilitate a book club focussed on works from authors from diverse backgrounds.",
-    image: hauwa,
+    name: "John Adewunmi",
+    role: "Bootcamp Project Lead",
+    funFact: "A Passionate ChelseaFC fan.",
+    image: john,
     twitterLink: "",
-    Linkedin:
-      "https://www.linkedin.com/in/hauwa-kehinde-o-65874aa2?lipi=urn%3Ali%3Apage%3Ad_flagshi[…]ile_view_base_contact_details%3BQbpUnCSXTTOvTJUjvLPIhA%3D%3D",
+    Linkedin: "",
   },
-
   {
-    name: "Saby Agama",
-    role: "Brand and Content Manager",
-    funFact: "During university I spent £600 on takeaways in a month 😫",
-    image: saby,
+    name: "Emanuela Aning",
+    role: "Sales and Customer Engagement Manager ",
+    funFact: "I'm trilingual and I was born in Italy",
+    image: emanuela,
+    twitterLink: "",
+    Linkedin: "",
+  },
+  {
+    name: "Tia Johnson-Clarke",
+    role: "",
+    funFact: "",
+    image: tia,
     twitterLink: "",
     Linkedin: "",
   },
@@ -259,32 +297,6 @@ export const ourTeamMembers = [
     Linkedin: "https://www.linkedin.com/in/temialabi",
   },
   {
-    name: "Grace Omole",
-    role: "Tech Lead | Blockchain App Dev",
-    funFact: "I love rapping",
-    image: grace,
-    twitterLink: "https://twitter.com/GraceOmole3",
-    Linkedin: "https://www.linkedin.com/in/grace-omole-a9a37a188/",
-  },
-  {
-    name: "John Adewunmi",
-    role: "Bootcamp Project Lead",
-    funFact: "A Passionate ChelseaFC fan.",
-    image: john,
-    twitterLink: "",
-    Linkedin: "",
-  },
-  {
-    name: "Sumaya Dirie",
-    role: "Project Administrator",
-    funFact: "I used to play Badminton",
-    image: sumaya,
-    twitterLink: "",
-    Linkedin: "",
-  },
-
-  { name: "Tia Johnson-Clarke", role: "", image: tia },
-  {
     name: "Sofiat Nafiu",
     role: "Brand and Product Designer",
     funFact: "I'm an introvert and loves food",
@@ -293,19 +305,10 @@ export const ourTeamMembers = [
     Linkedin: "",
   },
   {
-    name: "Mary Bolawole",
-    role: "Office Manager | Events Manager",
-    funFact:
-      "I can't eat a meal without having a piece of meat in there. I make and design clothes",
-    image: mary,
-    twitterLink: "",
-    Linkedin: "https://www.linkedin.com/in/mary-bolawole-3596621a6/",
-  },
-  {
-    name: "Emanuela Aning",
-    role: "Sale and Customer Engagement Manager ",
-    funFact: "I'm trilingual and I was born in Italy",
-    image: emanuela,
+    name: "Sumaya Dirie",
+    role: "Project Administrator",
+    funFact: "I used to play Badminton",
+    image: sumaya,
     twitterLink: "",
     Linkedin: "",
   },
@@ -351,26 +354,17 @@ export const ourTeamMembers = [
     Linkedin: "https://www.linkedin.com/in/hannah-b-brewster",
   },
   {
-    name: "Iniabasi Akpan",
-    role: "HR Operations Lead",
-    funFact: "Love to Paint & Sip!",
-    image: ini,
-    twitterLink: "",
-    Linkedin: "https://www.linkedin.com/in/iniabasi-o-akpan/",
-  },
-  {
-    name: "Shari",
-    role: "",
-    funFact: "",
-    image: shari,
-    twitterLink: "",
-    Linkedin: "",
-  },
-  {
     name: "Victoria Sogbesan",
     role: "Assistant Programme Manager",
     funFact: "",
     image: victoria,
+    twitterLink: "",
+    Linkedin: "",
+  },
+  {
+    name: "Destiny Sunday",
+    role: "Backend Developer",
+    funFact: "",
     twitterLink: "",
     Linkedin: "",
   },

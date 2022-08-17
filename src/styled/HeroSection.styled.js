@@ -11,6 +11,7 @@ export const StyledHeroSection = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 10%;
+  align-items: center;
 
   @media ${breakpointSizes.mobile} {
     background-position: 60%;
@@ -22,8 +23,8 @@ export const StyledHeroSection = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60%;
     width: 100%;
+
     @media ${breakpointSizes.mobile} {
       height: 80%;
     }
@@ -44,7 +45,8 @@ export const StyledHeroSection = styled.div`
   .hero-text {
     z-index: 2;
     color: #fff;
-    width: 1045px;
+    /* width: 1045px; */
+    width: 74%;
     height: 140px;
     font-family: AtypDisplay-Bold;
     font-style: normal;
@@ -82,10 +84,8 @@ export const StyledHeroSection = styled.div`
     height: auto;
 
     @media ${breakpointSizes.mobile} {
-      /* display: block; */
       display: flex;
       padding: 22% 0;
-      /* padding: 24% 0 20% 0; */
       justify-content: center;
     }
   }

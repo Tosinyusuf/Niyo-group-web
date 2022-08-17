@@ -67,26 +67,17 @@ const StyledMeetTeam = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 150px;
-
-    .captains-person {
-      width: 31%;
-    }
-
-    .executors-person {
-      width: 23%;
-    }
-
     .individual-member {
       padding-bottom: 30px;
       z-index: 1;
       height: 280px;
-      /* height: 240px; */
+      width: 23%;
       margin-right: 2%;
       background-size: cover;
       border-radius: 15px;
       margin-bottom: 20px;
       transition: 0.2s ease-in-out;
-      border:2px solid #FBAF01;
+      border: 2px solid #fbaf01;
       cursor: pointer;
       background-position: top;
 
@@ -139,10 +130,6 @@ const StyledMeetTeam = styled.div`
           }
         }
       }
-    }
-
-    .captains-cards {
-      border: 10px solid black;
     }
 
     .individual-member:hover {

@@ -1,40 +1,10 @@
-
 import { timeLines } from "../../constants/data";
 import StyledTimeline from "../../styled/Timeline.styled";
 
 const Timeline = () => {
-
-  // const ref = useRef(null);
-  // const [tween, setTween] = useState(null);
-
-  // useEffect(() => {
-  //   if (tween) return;
-
-  //   gsap.registerPlugin(ScrollTrigger);
-  //   let scrollTween = gsap.to(ref.current, {
-  //     ease: "none",
-  //     backgroundColor: "#DAF7A6",
-  //     scrollTrigger: {
-  //       trigger: ref.current,
-  //       pin: true,
-  //       anticipatePin: 1,
-  //       invalidateOnRefresh: true,
-  //       refreshPriority: 1,
-  //       start: "top 0%",
-  //       scrub: 1,
-  //       end: "+=100%",
-  //       markers: false,
-  //       toggleActions: "play reset play reset",
-  //       // onUpdate: (self) => {
-  //       // }
-  //     }
-  //   });
-
-  //   setTween(scrollTween);
-  // }, []);
   return (
     <>
-      <StyledTimeline> 
+      <StyledTimeline>
         {timeLines.map((item, index) => {
           return (
             <>
@@ -48,7 +18,7 @@ const Timeline = () => {
                   className="timeline-image"
                   style={{ backgroundImage: `url(${item.img})` }}
                 >
-                  <img src={item.badge} alt="" />
+                  <img src={item.badge} alt="" className="timeline-bar" />
                 </div>
               </div>
             </>

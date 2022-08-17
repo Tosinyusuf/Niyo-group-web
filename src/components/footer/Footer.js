@@ -96,6 +96,11 @@ const Footer = () => {
                 Blog{" "}
               </a>
             </p>
+            <p className="footer-column-text">
+              <a href="" rel="noreferrer" target="_blank">
+                Niyo Events
+              </a>
+            </p>
           </div>
 
           <div className="footer-column footer-contact">
