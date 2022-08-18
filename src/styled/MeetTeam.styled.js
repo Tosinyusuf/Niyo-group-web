@@ -82,7 +82,7 @@ const StyledMeetTeam = styled.div`
       background-position: top;
 
       @media ${breakpointSizes.mobile} {
-        background-size: 190px 200px;
+        background-size: 150%
       }
 
       .member-bio {
