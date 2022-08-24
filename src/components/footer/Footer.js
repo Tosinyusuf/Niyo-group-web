@@ -97,7 +97,7 @@ const Footer = () => {
               </a>
             </p>
             <p className="footer-column-text">
-              <a href="" rel="noreferrer" target="_blank">
+              <a href="https://events.niyo.co" rel="noreferrer" target="_blank">
                 Niyo Events
               </a>
             </p>
