@@ -162,7 +162,14 @@ const Contact = () => {
                   />
                 </label>
 
-                <button className="contact-submit-button">Send</button>
+                <button className="contact-submit-button">{loading ? (
+              <>
+                {" "}
+                <i className="fas fa-spinner fa-spin"></i>
+              </>
+            ) : (
+              "Send"
+            )}{" "}</button>
               </form>
             </div>
           </div>
