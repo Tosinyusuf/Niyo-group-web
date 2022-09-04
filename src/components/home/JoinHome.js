@@ -17,11 +17,20 @@ const Join = () => {
     setIsModalVisible(false);
   };
 
+  // function isValidEmail(email) {
+  //   return /\S+@\S+\.\S+/.test(email);
+  // }
+
   const Submit = (e) => {
     e.preventDefault();
     setLoading(true);
+    // if (!isValidEmail(e.target.value)) {
+    //   toast('Email is invalid');
+    // } else {
+    //   toast(null)
+    // }
     axios
-      .post("https://dapp-api.niyo.co/v1/niyogroup/signup-email-list", {
+      .post("https://api.niyo.co/v1/email/signup-email-list", {
         email: email,
       })
       .then((res) => {
@@ -31,7 +40,10 @@ const Join = () => {
         setLoading(false);
       })
       .catch((error) => {
-        toast(error.message);
+       // toast(error.message);
+        if(error.status = 400){
+          toast("Ops!!! You already signed up for our mailing list, stay tuned.");
+       }
         setLoading(false);
       });
   };
@@ -52,7 +64,7 @@ const Join = () => {
         <form className="join-form" onSubmit={(e) => Submit(e)}>
           <input
             className="join-email join-button"
-            type="text"
+            type="email"
             onChange={(e) => handleChange(e)}
             value={email}
             placeholder="Email Address"

@@ -54,7 +54,7 @@ const JobVacancies = () => {
           <Collapse defaultActiveKey={["1"]}>
             {ourAvailableJobs.map((item, index) => {
               return (
-                <>
+              
                   <Panel
                     className="panel-header"
                     header={item.jobTitle}
@@ -62,7 +62,7 @@ const JobVacancies = () => {
                   >
                     <p className="panel-text">{item.jobDescription}</p>
                   </Panel>
-                </>
+               
               );
             })}
           </Collapse>

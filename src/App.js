@@ -12,10 +12,14 @@ import "antd/dist/antd.min.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loading from "./pages/Loading";
+import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
+
+console.log(getCookieConsentValue());
 
 function App() {
   const [loading, setLoading] = useState(true);
-
+ 
+ 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -39,6 +43,9 @@ function App() {
             </Routes>
             <Footer />
           </Router>
+          <CookieConsent debug={true}>
+            This site uses cookies
+          </CookieConsent>
         </>
       )}
     </>

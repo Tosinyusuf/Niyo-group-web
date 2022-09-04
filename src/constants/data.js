@@ -283,10 +283,10 @@ export const ourTeamMembers = [
   {
     name: "Tia Johnson-Clarke",
     role: "",
-    funFact: "",
+    funFact: "I have a passion for Interior Design",
     image: tia,
     twitterLink: "",
-    Linkedin: "",
+    Linkedin: "https://www.linkedin.com/in/tia-johnson-clarke-558a2320b",
   },
   {
     name: "Temi Alabi",
