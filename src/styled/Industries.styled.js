@@ -17,6 +17,7 @@ const StyledIndustries = styled.div`
 
   @media ${breakpointSizes.mobile} {
     padding: 50px 20px;
+    background-image:none;
   }
   @media ${breakpointSizes.desktop} {
     padding: 150px 250px;

@@ -24,6 +24,8 @@ export const StyledHeroSection = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+    height:70vh ;
+    //border:1px solid #fff;
 
     @media ${breakpointSizes.mobile} {
       height: 80%;

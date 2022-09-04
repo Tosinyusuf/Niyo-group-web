@@ -34,7 +34,7 @@ const Benefits = () => {
         <StyledBenefitCardContainer className="benefits">
           {ourBenefits.map((item, index) => {
             return (
-              <>
+              
                 <div className="benefit-card" key={index}>
                   <div>
                     <StyledBenefitIcon src={item.icon} />
@@ -44,7 +44,7 @@ const Benefits = () => {
                     <p className="benefit-icon-text">{item.text}</p>
                   </div>
                 </div>
-              </>
+            
             );
           })}
         </StyledBenefitCardContainer>
