@@ -13,8 +13,8 @@ const Footer = () => {
           <div className="footer-column top-footer">
             <img src={niyoLogo} alt="Niyo Logo" className="niyo-logo" />
             <p className="top-text">
-              The Niyo Group is a group of distinct brands focused on the
-              economic empowerment of black women in high impact industries.
+              The Niyo Group is a group of<br /> distinct brands focused on<br /> the
+              economic empowerment<br /> of black women in high <br />impact industries.
             </p>
             <div className="socials-icons-container">
               {ourSocials.map((item, index) => {

@@ -116,10 +116,9 @@ export const StyledBenefitIcon = styled.img`
   height: ${({ height }) => (height ? height : "50px")};
 
   @media ${breakpointSizes.mobile} {
-    width: 10%;
-    height: 10%;
-    /* width: 40px;
-    height: 40px; */
+    width:40px;
+    height: 40px;
+    margin-bottom:10px ;
   }
 
   @media ${breakpointSizes.desktop} {
