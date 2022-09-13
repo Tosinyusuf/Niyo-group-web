@@ -3,7 +3,7 @@ import breakpointSizes from "../constants/breakpointSizes";
 
 const StyledFooter = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
-  background-color: #070909;
+  background-color: #141414;
   color: #fff;
   font-family: Light;
   padding: 80px 150px 30px 150px;
@@ -47,7 +47,7 @@ const StyledFooter = styled.div`
   }
 
   .top-footer {
-    width: 35%;
+    width: 30%;
     padding-right: 60px;
     @media ${breakpointSizes.mobile} {
       width: 100%;
@@ -72,7 +72,7 @@ const StyledFooter = styled.div`
   .company,
   .explore,
   .footer-contact {
-    width: 17%;
+    width: 18%;
     @media ${breakpointSizes.mobile} {
       order: 1;
       width: 100%;
@@ -91,7 +91,7 @@ const StyledFooter = styled.div`
   .footer-column-title {
     font-family: semibold;
     margin: 0 0 6% 0;
-    color: #afafaf;
+    color: #AFAFAF;
     font-size: 14px;
 
     @media ${breakpointSizes.mobile} {
