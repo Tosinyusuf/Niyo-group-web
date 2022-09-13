@@ -2,13 +2,14 @@ import { StyledContainer } from "../../styled/StyledComponents";
 import { StyledParagraph } from "../../styled/StyledComponents";
 import { StyledTitle } from "../../styled/StyledComponents";
 import { StyledDropdown } from "../../styled/StyledComponents";
-import { StyledSpan } from "../../styled/StyledComponents";
+// import { StyledSpan } from "../../styled/StyledComponents";
 import { StyledAccordion } from "../../styled/StyledComponents";
 
 import { ourAvailableJobs } from "../../constants/data";
 
 import { Collapse } from "antd";
 import { JobVacant } from "./style";
+import { Link } from "react-router-dom";
 const { Panel } = Collapse;
 
 const JobVacancies = () => {
@@ -21,6 +22,10 @@ const JobVacancies = () => {
     "Legal",
     "Customer Excellence",
   ];
+
+  const onChange = (key) => {
+    console.log(key);
+  };
 
   return (
     <JobVacant id="job">
@@ -38,31 +43,29 @@ const JobVacancies = () => {
             ))}
           </select>
         </StyledDropdown>
-        <StyledParagraph className="no-jobs" fontFamily="Light">
+        {/* <StyledParagraph className="no-jobs" fontFamily="Light">
           We’re currently not recruiting but if you think you’ve got <br></br>{" "}
           what it takes to work with the executors, Let’s us know <br></br> what
           you can do:{" "}
           <StyledSpan color="#fff" fontFamily="semibold">
             careers@niyo.co
           </StyledSpan>
-        </StyledParagraph>
+        </StyledParagraph> */}
 
         <StyledAccordion>
-          <StyledTitle textAlign="left" fontSize="40px">
-            Growth
-          </StyledTitle>
-          <Collapse defaultActiveKey={["1"]}>
+          
+          <Collapse defaultActiveKey={['1']} onChange={onChange}>
             {ourAvailableJobs.map((item, index) => {
               return (
-              
+                
                   <Panel
                     className="panel-header"
                     header={item.jobTitle}
-                    key={index}
+                    key={item.id}
                   >
-                    <p className="panel-text">{item.jobDescription}</p>
+                    <p className="panel-text">{item.jobDescription} <Link to={item.url}>See More</Link></p>
                   </Panel>
-               
+                 
               );
             })}
           </Collapse>

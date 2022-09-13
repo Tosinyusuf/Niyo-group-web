@@ -13,6 +13,9 @@ import "antd/dist/antd.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loading from "./pages/Loading";
 import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
+import FrontendDeveloper from "./pages/Careers/FrontendDeveloper";
+import GrowthMarketer from "./pages/Careers/GrowthMarketer";
+import ContentMarketer from "./pages/Careers/ContentMarketer";
 
 console.log(getCookieConsentValue());
 
@@ -40,6 +43,9 @@ function App() {
               <Route exact path="/contact-us" element={<ContactUs />}></Route>
               <Route exact path="about-us" element={<AboutUs />}></Route>
               <Route exact path="careers" element={<CareersPage />}></Route>
+              <Route exact path="/careers/frontend-developer" element={<FrontendDeveloper />}></Route>
+              <Route exact path="/careers/growth-marketer" element={<GrowthMarketer />}></Route>
+              <Route exact path="/careers/content-marketer" element={<ContentMarketer />}></Route>
             </Routes>
             <Footer />
           </Router>

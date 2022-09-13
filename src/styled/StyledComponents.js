@@ -224,24 +224,32 @@ export const StyledDropdown = styled.div`
 
 export const StyledAccordion = styled.div`
   color: ${({ color }) => (color ? color : "#fff")};
-  padding: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "0px")};
   width: ${({ width }) => (width ? width : "100%")};
   padding: 0 150px;
-  display: none;
+  margin-top:50px;
+
+  .panel-text{
+    font-size:16px;
+    a{
+      color:#FBAF00;
+    }
+  }
 
   @media ${breakpointSizes.mobile} {
-    align-self: center;
+    align-self: left;
   }
   .ant-collapse.ant-collapse-icon-position-start {
     background-color: transparent !important ;
     border: none;
     .ant-collapse-item.panel-header {
-      border-bottom: 1px solid #afafaf !important;
+      border-bottom: 1px solid #afafaf !important; 
+      font-size:20px;
     }
   }
   .ant-collapse-content {
     background-color: transparent;
     color: #fff;
+    text-align:left ;
     font-family: Light;
   }
   .anticon.anticon-right.ant-collapse-arrow {

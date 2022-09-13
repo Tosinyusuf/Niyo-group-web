@@ -400,22 +400,30 @@ export const ourBenefits = [
 
 export const ourAvailableJobs = [
   {
-    jobTitle: "Growth Lead",
+    jobTitle: "Growth Marketer",
+    url:'/careers/growth-marketer',
+    id:"1",
     jobDescription:
-      "Niyo group is a distinct brands focused on the economic empowerment of black women. We are on a mission to ensure every black woman on the planet is a producer , builder or creator of high impact ecosystems. We are looking for a Growth Lead to help build and extend different customer-facing and internal API services. You will be working with a small team of frontend engineers, blockchain engineers, and designers to build highly impactful products in the fast-growing blockchain technology space... Apply for this role",
+      "As a growth marketer, you are data driven, passionate about running tests and finding the highest-impact, lowest-lift growth opportunities, wherever they are. This person is like a ‘CMO-lite’  as they are marketing generalists with deep expertise in a single ‘distribution’ channel (this may be technical or in content disruption). Their role is to optimise marketing funnels by running A/B tests via ads , exploring new marketing channels, and scale paid digital spend efficiently.",
   },
   {
-    jobTitle: "Tech Team",
+    jobTitle: "Frontend Developer",
+    url:'/careers/frontend-developer',
+    id:"2",
     jobDescription:
-      "Niyo group is a distinct brands focused on the economic empowerment of black women. We are on a mission to ensure every black woman on the planet is a producer , builder or creator of high impact ecosystems. We are looking for a Growth Lead to help build and extend different customer-facing and internal API services. You will be working with a small team of frontend engineers, blockchain engineers, and designers to build highly impactful products in the fast-growing blockchain technology space... Apply for this role",
+      "We are looking for a Frontend  Web Developer who is motivated to combine the art of design with the art of programming. Responsibilities will include translation of the UI/UX design wireframes to actual code that will produce visual elements of the application. You will work with the UI/UX designer and bridge the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
   },
   {
-    jobTitle: "Marketing Team",
+    jobTitle: "Content Marketer",
+    url:'/careers/content-marketer',
+    id:"3",
     jobDescription:
-      "Niyo group is a distinct brands focused on the economic empowerment of black women. We are on a mission to ensure every black woman on the planet is a producer , builder or creator of high impact ecosystems. We are looking for a Growth Lead to help build and extend different customer-facing and internal API services. You will be working with a small team of frontend engineers, blockchain engineers, and designers to build highly impactful products in the fast-growing blockchain technology space... Apply for this role",
+      "We are looking for an experienced Content Marketer to join our team. If you love creating high-quality and engaging content and drive business success with it, we want you on our team! As a Content Marketer, you will be responsible for developing and implementing the overall content strategy based on our specific goals and objectives. You will also be responsible for inbound marketing strategies to build a brand identity and online presence through the creation and dissemination of multimedia content online. This involves developing content strategies, growing an online community, and tracking that community’s growth.",
   },
   {
-    jobTitle: "Student Engagement",
+    jobTitle: "Program Manager",
+    url:'/careers/program-manager',
+    id:"4",
     jobDescription:
       "Niyo group is a distinct brands focused on the economic empowerment of black women. We are on a mission to ensure every black woman on the planet is a producer , builder or creator of high impact ecosystems. We are looking for a Growth Lead to help build and extend different customer-facing and internal API services. You will be working with a small team of frontend engineers, blockchain engineers, and designers to build highly impactful products in the fast-growing blockchain technology space... Apply for this role",
   },

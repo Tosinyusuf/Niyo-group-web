@@ -41,7 +41,7 @@ const Join = () => {
       })
       .catch((error) => {
        // toast(error.message);
-        if(error.status = 400){
+        if(error.status === 400){
           toast("Ops!!! You already signed up for our mailing list, stay tuned.");
        }
         setLoading(false);
