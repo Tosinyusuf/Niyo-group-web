@@ -155,7 +155,7 @@ const FrontendDeveloper = () => {
           <li>Free entry to company and partner events</li>
         </ul>
 
-        <p style={{marginTop:"40px"}}>To apply, kindly click <a href="https://airtable.com/shrVXyhDTpMrOaSVd" target="_blank">
+        <p style={{marginTop:"40px"}}>To apply, kindly click <a href="https://airtable.com/shrVXyhDTpMrOaSVd" target="_blank" rel="noreferrer">
             here
           </a></p>
       </DetailsContainer>
