@@ -425,7 +425,14 @@ export const ourAvailableJobs = [
     url:'/careers/program-manager',
     id:"4",
     jobDescription:
-      "Niyo group is a distinct brands focused on the economic empowerment of black women. We are on a mission to ensure every black woman on the planet is a producer , builder or creator of high impact ecosystems. We are looking for a Growth Lead to help build and extend different customer-facing and internal API services. You will be working with a small team of frontend engineers, blockchain engineers, and designers to build highly impactful products in the fast-growing blockchain technology space... Apply for this role",
+      "This role is centred on ensuring that we successfully launch our afro hair and beauty bootcamp. You will be the primary program manager of our bootcamp launch and be responsible for ensuring that our hair studio is fit for use. You will be responsible for the interior design of our hair studio.       ",
+  },
+  {
+    jobTitle: "Executive Adminstrator",
+    url:'/careers/executive-administrator',
+    id:"5",
+    jobDescription:
+      "As an Executive Administrator, your  major responsibility will be to provide exceptional administrative support to the CEO and COO. You will work closely with the CEO and COO on an individual basis, reporting directly to them. You'll be in charge of special projects, liaison work with the board of directors and management staff, and organising and leading administrative outreach and external relations efforts. ",
   },
 ];
 
