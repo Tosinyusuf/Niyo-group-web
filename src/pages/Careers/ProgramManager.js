@@ -227,7 +227,7 @@ const ProgramManager = () => {
 
         <p style={{ marginTop: "40px" }}>
           To apply, kindly click{" "}
-          <a href="https://airtable.com/shrVXyhDTpMrOaSVd" target="_blank">
+          <a href="https://airtable.com/shrVXyhDTpMrOaSVd" target="_blank" rel="noreferrer">
             here
           </a>
         </p>
