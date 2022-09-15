@@ -16,6 +16,8 @@ import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 import FrontendDeveloper from "./pages/Careers/FrontendDeveloper";
 import GrowthMarketer from "./pages/Careers/GrowthMarketer";
 import ContentMarketer from "./pages/Careers/ContentMarketer";
+import ProgramManager from "./pages/Careers/ProgramManager";
+import ExcutiveAsssitant from "./pages/Careers/ExcutiveAsssitant";
 
 console.log(getCookieConsentValue());
 
@@ -46,6 +48,8 @@ function App() {
               <Route exact path="/careers/frontend-developer" element={<FrontendDeveloper />}></Route>
               <Route exact path="/careers/growth-marketer" element={<GrowthMarketer />}></Route>
               <Route exact path="/careers/content-marketer" element={<ContentMarketer />}></Route>
+              <Route exact path="/careers/program-manager" element={<ProgramManager />}></Route>
+              <Route exact path="/careers/executive-administrator" element={<ExcutiveAsssitant />}></Route>
             </Routes>
             <Footer />
           </Router>

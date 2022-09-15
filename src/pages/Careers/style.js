@@ -61,11 +61,12 @@ export const DetailsContainer = styled.div`
 
     ul{
         padding-left:15px ;
-        font-family:Light;
+        
         li{
             font-size:16px;
             margin-bottom:10px;
             color:#fff;
+            font-family:Light;
         }
     }
 

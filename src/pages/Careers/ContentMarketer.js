@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Join from "../../components/home/JoinHome";
 import { DetailsContainer, JobContainer } from "./style";
 
@@ -156,7 +155,9 @@ const ContentMarketer = () => {
         </ul>
 
         <p style={{ marginTop: "40px" }}>
-          To apply, kindly click <Link to="">here</Link>
+          To apply, kindly click  <a href="https://airtable.com/shrVXyhDTpMrOaSVd" target="_blank">
+            here
+          </a>
         </p>
       </DetailsContainer>
       <Join />
