@@ -12,7 +12,6 @@ import {
   StyledParagraph,
   StyledTitle,
 } from "../styled/StyledComponents";
-import { Link } from "react-scroll";
 
 const CareersPage = () => {
   const ref = useRef(null);
