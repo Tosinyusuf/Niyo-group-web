@@ -49,6 +49,9 @@ export const DetailsContainer = styled.div`
         font-family:AtypDisplay-Bold ;
         margin-bottom:10px ;
     }
+    h4{
+      margin-top:20px;
+    }
     p{
         font-family:Light;
         color:#fff;
@@ -57,6 +60,11 @@ export const DetailsContainer = styled.div`
             color:#FBAF00;
             font-family:semibold;
         }
+    }
+    i{
+      color:#fff;
+      font-family:light;
+      font-size:12px;
     }
 
     ul{
