@@ -31,13 +31,10 @@ const NavBar = () => {
 
   const showSidebar = () => setSidebar(!sidebar);
 
-  
-
-
   return (
     <>
       <StyledNavBar>
-        <div className='nav active'>
+        <div className="nav active">
           <div className="nav-logo-container">
             <Link to="/">
               <img src={niyoLogo} className="nav-logo" alt="niyo logo" />
@@ -51,13 +48,17 @@ const NavBar = () => {
               About Us
             </Link>
             <Brands />
-            <Link className="nav-link" to="/careers">
+            <Link className="nav-link urgent" to="/careers">
+              <div class="pulse"></div>
+              <div class="marker"></div>
               Work With Us
             </Link>
             <Link className="nav-link" to="/contact-us">
               Partner With Us
             </Link>
-            <button className="nav-button"><JoinFamily /></button>
+            <button className="nav-button">
+              <JoinFamily />
+            </button>
           </div>
           <Bars src={hamburger} onClick={showSidebar} />
           <div
@@ -68,29 +69,59 @@ const NavBar = () => {
             <Link className="nav-link" to="/">
               <img src={about} alt="" /> Home
             </Link>
+            <br />
             <Link className="nav-link" to="/about-us">
               <img src={about} alt="" /> About Us
             </Link>
+            <br />
             <Link className="nav-link" to="/">
               <img src={planet} alt="" /> Niyo Planet
             </Link>
+            <br />
 
-            <Link className="nav-link" to="/careers">
+            <Link className="nav-link urgent" to="/careers">
+              <div class="pulse"></div>
+              <div class="marker"></div>
               <img src={work} alt="" /> Work With Us
             </Link>
+            <br />
             <Link className="nav-link" to="/contact-us">
               <img src={work} alt="" /> Partner With Us
             </Link>
-            <a className="nav-link" href="https://niyonetwork.com/" target="_blank" rel="noreferrer">
+            <br />
+            <a
+              className="nav-link"
+              href="https://niyonetwork.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={cardLogo1} alt="" /> <span>Niyo Bootcamps</span>
             </a>
-            <a className="nav-link" href="https://niyohairandbeauty.com/" target="_blank" rel="noreferrer">
+            <br />
+            <a
+              className="nav-link"
+              href="https://niyohairandbeauty.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={cardLogo2} alt="" /> <span> Niyo Hair & Beauty</span>
             </a>
-            <a className="nav-link" href="https://dapp.niyo.co" target="_blank" rel="noreferrer">
+            <br />
+            <a
+              className="nav-link"
+              href="https://dapp.niyo.co"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={cardLogo3} alt="" /> <span>Niyo DApp</span>
             </a>
-            <button className="nav-button"><JoinFamily /></button>
+            <br />
+
+            <div className="join-family">
+              <button className="nav-button">
+                <JoinFamily />
+              </button>
+            </div>
           </div>
         </div>
       </StyledNavBar>

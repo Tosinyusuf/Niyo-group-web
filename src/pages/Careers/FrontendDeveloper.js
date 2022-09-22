@@ -19,12 +19,14 @@ const FrontendDeveloper = () => {
       <DetailsContainer>
         <h2>Role Purpose 🚀</h2>
         <p>
-          We are looking for a Frontend Web Developer who is motivated to
-          combine the art of design with the art of programming.
-          Responsibilities will include translation of the UI/UX design
-          wireframes to actual code that will produce visual elements of the
-          application. You will work with the UI/UX designer and bridge the gap
-          between graphical design and technical implementation, taking an
+          We are looking for a Frontend Web Developer. Someone who is passionate
+          about code, curious and eager to learn. You’ll be working alongside
+          other talented people in the tech department. You’ll solve problems
+          with technology to make us, and the industry, smarter and better for
+          customers. <br /> <br /> Responsibilities will include translation of the UI/UX
+          design wireframes to actual code that will produce visual elements of
+          the application. You will work with the UI/UX designer and bridge the
+          gap between graphical design and technical implementation, taking an
           active role on both sides and defining how the application looks as
           well as how it works.
         </p>
@@ -36,11 +38,16 @@ const FrontendDeveloper = () => {
           <li>Contract type: Full-Time</li>
           <li>Starting: Immediately</li>
           <li>Location: Niyo HQ Birmingham (Partly remote)</li>
-          <li>Job title: Front End Developer</li>
           <li>Reporting to: Tech Lead</li>
-          <li>Deadline to apply: September 25th, 2022</li>
+          <li>Deadline to apply:12th October, 2022</li>
         </ul>
       </DetailsContainer>
+
+      <DetailsContainer>
+        <h2>Who Are You Working With? 👥 </h2>
+        <p>You will be part of a small fast growing international team. Daily you will work closely with the Tech team and the CEO on projects. There will be unlimited opportunities to learn from and share with very talented people… oh and have fun! </p>
+
+        </DetailsContainer>
 
       <DetailsContainer>
         <h2>Duties and Key Responsibilities</h2>
@@ -77,6 +84,9 @@ const FrontendDeveloper = () => {
             Proficient understanding of cross-browser compatibility issues and
             ways to work around them
           </li>
+          <li>Can create code that works consistently across different browsers and platforms </li>
+<li>Can take Photoshop/Sketch designs and bring them to life in code</li>
+<li>Know how to develop websites that meet AAA accessibility guidelines.</li>
           <li>
             Proficient understanding of code versioning tools, such as Git.
           </li>
@@ -113,51 +123,46 @@ const FrontendDeveloper = () => {
       </DetailsContainer>
 
       <DetailsContainer>
-        <h2>Benefits & Compensation🤝</h2>
+        <h2>What Do We Offer🤝</h2>
         <ul>
           <li>
-            Work with a super friendly,close-knit,collaborative team and
-            actually make a difference to people’s lives
+            29 days holiday package (inclusive of bank holidays) & 1 day for
+            your birthday
           </li>
-          <li>Generous bonus scheme</li>
-          <li>28 days holiday + your birthday off</li>
-          <li>
-            Generous time and budget allocated to relevant professional learning
-            and certifications
-          </li>
+          <li>Professional learning and certifications</li>
           <li>3% Nest Pension Scheme</li>
-          <li>Regular socials… in person and remote</li>
+          <li>Regular socials…in person and remote</li>
           <li>
             1-1 Coaching to support your wellbeing, personal and professional
             development
           </li>
-          <li>
-            The opportunity to be at the heart of an exciting and socially
-            conscious organisation, and help it scale to truly change people’s
-            lives
-          </li>
-          <li>
-            Ability to grow and move up the company very fast depending on your
-            commitment.
-          </li>
-          <li>
-            Work in an environment where your voice is heard and see the
-            feedback you give develop the organisation
-          </li>
-          <li>Weekly team wellbeing catch ups and engaging feedback culture</li>
-          <li>
-            Fantastic rewards for when you become our employee of the month
-          </li>
-          <li>Generous birthday presents</li>
-          <li>Working remotely 2-3 days a week</li>
-          <li>Office Snacks</li>
-          <li>30% off all Niyo Enterprise products</li>
-          <li>Free entry to company and partner events</li>
+          <li>30% discount on Niyo Products</li>
+          <li>Free entry to company and partner events and many other perks</li>
         </ul>
 
-        <p style={{marginTop:"40px"}}>To apply, kindly click <a href="https://airtable.com/shrVXyhDTpMrOaSVd" target="_blank" rel="noreferrer">
+        <p style={{ marginTop: "40px" }}>
+          To apply, kindly click{" "}
+          <a
+            href="https://airtable.com/shrbGoydH47y63arn"
+            target="_blank"
+            rel="noreferrer"
+          >
             here
-          </a></p>
+          </a>
+        </p>
+
+        <i>
+          Studies have shown that some groups of people are less likely to apply
+          to a role unless they meet 100% of the job requirements. Whoever you
+          are, if you like one of our jobs, we encourage you to apply as you
+          might just be the candidate we hire. Across Niyo Group, we're looking
+          for genuinely decent people who are honest and empathetic. Our people
+          are our strongest asset and the unique skills and perspectives people
+          bring to the team are the driving force of our success. As an equal
+          opportunity employer, we do not discriminate on the basis of any
+          protected attribute. Our commitment is to provide equal opportunities,
+          an inclusive work environment, and fairness for everyone.
+        </i>
       </DetailsContainer>
 
       <Join />

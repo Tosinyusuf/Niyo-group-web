@@ -26,7 +26,14 @@ const GrowthMarketer = () => {
           ‘distribution’ channel (this may be technical or in content
           disruption). Their role is to optimise marketing funnels by running
           A/B tests via ads , exploring new marketing channels, and scale paid
-          digital spend efficiently.
+          digital spend efficiently. <br /> <br /> This is an amazing opportunity for someone
+          starting as a (growth) marketer that wants to get his/her hands dirty
+          and to learn in an international and dynamic environment as you will
+          work on a bunch of different projects so you can expect a steep
+          learning curve and access to a diverse set of tools. You will be an
+          integral part of the Niyo’s Marketing team, delivering growth
+          marketing campaigns on different platforms that deliver tangible value
+          for our clients.
         </p>
       </DetailsContainer>
 
@@ -36,12 +43,16 @@ const GrowthMarketer = () => {
           <li>Contract type: Full-Time</li>
           <li>Starting: Immediately</li>
           <li>Location: Niyo HQ Birmingham (Hybrid; 2 WFH)</li>
-          <li>Job title: Growth Marketer</li>
           <li>Reporting to: CEO</li>
-          <li>Deadline to apply: September 25th, 2022</li>
+          <li>Deadline to apply: October 12th, 2022
+</li>
         </ul>
       </DetailsContainer>
+      <DetailsContainer>
+        <h2>Who Are You Working With? 👥 </h2>
+        <p>You will be part of a small fast growing international team. Daily you will work closely with the Marketing team and the CEO on projects. There will be unlimited opportunities to learn from very talented people… oh and have fun! </p>
 
+        </DetailsContainer>
       <DetailsContainer>
         <h2>Duties and Key Responsibilities</h2>
         <ul>
@@ -90,6 +101,10 @@ const GrowthMarketer = () => {
       <DetailsContainer>
         <h2>Skills and Qualifications</h2>
         <ul>
+          <li>You are curious and have a desire to learn.
+
+</li>
+<li>A growth mindset.</li>
           <li>
             Strong and Proven track record of driving consistent growth, with
             samples and results of past campaigns
@@ -100,7 +115,7 @@ const GrowthMarketer = () => {
             with cross-functional partners, prioritise high impact activities,
             and keep complex projects moving forward.
           </li>
-          <li>3+ years experience in SEO and growth marketing</li>
+          <li>2+ years experience in SEO and growth marketing</li>
           <li>
             Knowledge of HTML, CSS, Google Analytics, Google Adwords, Drip,
             Airtable,Social Media ad creation ( Facebook, Instagram, Youtube).
@@ -149,53 +164,46 @@ const GrowthMarketer = () => {
       </DetailsContainer>
 
       <DetailsContainer>
-        <h2>Benefits & Compensation🤝</h2>
+        <h2>What Do We Offer🤝</h2>
         <ul>
           <li>
-            Work with a super friendly,close-knit,collaborative team and
-            actually make a difference to people’s lives
+            29 days holiday package (inclusive of bank holidays) & 1 day for
+            your birthday
           </li>
-          <li>Generous bonus scheme</li>
-          <li>28 days holiday + your birthday off</li>
-          <li>
-            Generous time and budget allocated to relevant professional learning
-            and certifications
-          </li>
+          <li>Professional learning and certifications</li>
           <li>3% Nest Pension Scheme</li>
-          <li>Regular socials… in person and remote</li>
+          <li>Regular socials…in person and remote</li>
           <li>
             1-1 Coaching to support your wellbeing, personal and professional
             development
           </li>
-          <li>
-            The opportunity to be at the heart of an exciting and socially
-            conscious organisation, and help it scale to truly change people’s
-            lives
-          </li>
-          <li>
-            Ability to grow and move up the company very fast depending on your
-            commitment.
-          </li>
-          <li>
-            Work in an environment where your voice is heard and see the
-            feedback you give develop the organisation
-          </li>
-          <li>Weekly team wellbeing catch ups and engaging feedback culture</li>
-          <li>
-            Fantastic rewards for when you become our employee of the month
-          </li>
-          <li>Generous birthday presents</li>
-          <li>Working remotely 2-3 days a week</li>
-          <li>Office Snacks</li>
-          <li>30% off all Niyo Enterprise products</li>
-          <li>Free entry to company and partner events</li>
+          <li>30% discount on Niyo Products</li>
+          <li>Free entry to company and partner events and many other perks</li>
         </ul>
 
         <p style={{ marginTop: "40px" }}>
-          To apply, kindly click  <a href="https://airtable.com/shrVXyhDTpMrOaSVd" target="_blank" rel="noreferrer">
+          To apply, kindly click{" "}
+          <a
+            href="https://airtable.com/shrbGoydH47y63arn"
+            target="_blank"
+            rel="noreferrer"
+          >
             here
           </a>
         </p>
+
+        <i>
+          Studies have shown that some groups of people are less likely to apply
+          to a role unless they meet 100% of the job requirements. Whoever you
+          are, if you like one of our jobs, we encourage you to apply as you
+          might just be the candidate we hire. Across Niyo Group, we're looking
+          for genuinely decent people who are honest and empathetic. Our people
+          are our strongest asset and the unique skills and perspectives people
+          bring to the team are the driving force of our success. As an equal
+          opportunity employer, we do not discriminate on the basis of any
+          protected attribute. Our commitment is to provide equal opportunities,
+          an inclusive work environment, and fairness for everyone.
+        </i>
       </DetailsContainer>
       <Join />
     </>

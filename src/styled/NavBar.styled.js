@@ -44,13 +44,13 @@ export const StyledNavBar = styled.div`
       background-color: #000;
       width: 100%;
       height: 100%;
-      padding-top: 30px;
+      padding-top: 50px;
       z-index: 9999;
       position: fixed;
       top: 0;
       left: -100%;
       transition: 850ms;
-      text-align: center;
+      text-align: left;
 
       .cancel {
         float: right;
@@ -61,11 +61,11 @@ export const StyledNavBar = styled.div`
       a {
         color: #fff;
         text-decoration: none;
-        display: block;
+        display: inline-block;
         font-size: 16px;
         font-family: regular;
         text-align: left;
-        width: 100%;
+        width:auto;
         margin-left: 30px;
         margin-top: 30px;
         img {
@@ -77,11 +77,15 @@ export const StyledNavBar = styled.div`
           margin-top: -3px;
         }
       }
+      .join-family{
+        text-align:center ;
+      }
       button {
         height: 40px;
         border-radius: 20px;
         width: 145px;
         font-size: 12px;
+        text-align:center ;
         border-radius: 15px;
         margin-top: 35px;
       }

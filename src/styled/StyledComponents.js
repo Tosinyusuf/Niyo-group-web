@@ -129,7 +129,7 @@ export const StyledBenefitCardContainer = styled.div`
   width: ${({ width }) => (width ? width : "100%")};
   display: flex;
   flex-wrap: ${({ flexWrap }) => (flexWrap ? flexWrap : "wrap")};
-  padding-top: 4%;
+  padding-top: 1%;
 
   @media ${breakpointSizes.mobile} {
     flex-direction: column;
@@ -142,7 +142,7 @@ export const StyledBenefitCardContainer = styled.div`
   .benefit-card {
     width: 50%;
     display: flex;
-    padding: 0 6% 8% 0;
+    padding: 0 6% 4% 0;
     /* padding-bottom: 6%; */
 
     @media ${breakpointSizes.mobile} {

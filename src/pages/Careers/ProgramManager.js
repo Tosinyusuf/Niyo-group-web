@@ -7,10 +7,11 @@ const ProgramManager = () => {
     <>
       <JobContainer>
         <div>
-          <h1>Program Manager</h1>
+          <h1>Programme Manager</h1>
           <p>
-          We are currently operating within the technology education <br />and hair and beauty spaces through our award-winning and<br /> innovative brands Niyo Network and Niyo Hair and Beauty.
-
+            We are currently operating within the technology education <br />
+            and hair and beauty spaces through our award-winning and
+            <br /> innovative brands Niyo Network and Niyo Hair and Beauty.
           </p>
         </div>
       </JobContainer>
@@ -38,10 +39,19 @@ const ProgramManager = () => {
           <li>Contract type: Full-Time permanent</li>
           <li>Starting: ASAP</li>
           <li>Location: Niyo HQ Birmingham (Hybrid; 2 WFH)</li>
-          <li>Job title: Program Manager</li>
-          <li>Reporting to: CEO & NHB Operations Manager </li>
-          <li>Deadline to apply: September 26th, 2022</li>
+          <li>Reporting to: CEO </li>
+          <li>Deadline to apply: 12th October, 2022</li>
         </ul>
+      </DetailsContainer>
+
+      <DetailsContainer>
+        <h2>Who Are You Working With? 👥 </h2>
+        <p>
+          You will be part of a small fast growing international team. Daily you
+          will work closely with the CEO and other programme managers. There
+          will be unlimited opportunities to learn from very talented people… oh
+          and have fun!
+        </p>
       </DetailsContainer>
 
       <DetailsContainer>
@@ -176,61 +186,53 @@ const ProgramManager = () => {
         <ul>
           <li>Online application</li>
           <li>Test (Case Study) and scenario-based challenge</li>
-          <li>Face to face Interview</li>
+          <li>Zoom Interview</li>
           <li>References</li>
           <li>Meet the team</li>
         </ul>
       </DetailsContainer>
 
       <DetailsContainer>
-        <h2>Benefits & Compensation🤝</h2>
+        <h2>What Do We Offer🤝</h2>
         <ul>
           <li>
-            Work with a super friendly,close-knit,collaborative team and
-            actually make a difference to people’s lives
+            29 days holiday package (inclusive of bank holidays) & 1 day for
+            your birthday
           </li>
-          <li>Generous bonus scheme</li>
-          <li>28 days holiday + your birthday off</li>
-          <li>
-            Generous time and budget allocated to relevant professional learning
-            and certifications
-          </li>
+          <li>Professional learning and certifications</li>
           <li>3% Nest Pension Scheme</li>
-          <li>Regular socials… in person and remote</li>
+          <li>Regular socials…in person and remote</li>
           <li>
             1-1 Coaching to support your wellbeing, personal and professional
             development
           </li>
-          <li>
-            The opportunity to be at the heart of an exciting and socially
-            conscious organisation, and help it scale to truly change people’s
-            lives
-          </li>
-          <li>
-            Ability to grow and move up the company very fast depending on your
-            commitment.
-          </li>
-          <li>
-            Work in an environment where your voice is heard and see the
-            feedback you give develop the organisation
-          </li>
-          <li>Weekly team wellbeing catch ups and engaging feedback culture</li>
-          <li>
-            Fantastic rewards for when you become our employee of the month
-          </li>
-          <li>Generous birthday presents</li>
-          <li>Working remotely 2-3 days a week</li>
-          <li>Office Snacks</li>
-          <li>30% off all Niyo Enterprise products</li>
-          <li>Free entry to company and partner events</li>
+          <li>30% discount on Niyo Products</li>
+          <li>Free entry to company and partner events and many other perks</li>
         </ul>
 
         <p style={{ marginTop: "40px" }}>
           To apply, kindly click{" "}
-          <a href="https://airtable.com/shrVXyhDTpMrOaSVd" target="_blank" rel="noreferrer">
+          <a
+            href="https://airtable.com/shrbGoydH47y63arn"
+            target="_blank"
+            rel="noreferrer"
+          >
             here
           </a>
         </p>
+
+        <i>
+          Studies have shown that some groups of people are less likely to apply
+          to a role unless they meet 100% of the job requirements. Whoever you
+          are, if you like one of our jobs, we encourage you to apply as you
+          might just be the candidate we hire. Across Niyo Group, we're looking
+          for genuinely decent people who are honest and empathetic. Our people
+          are our strongest asset and the unique skills and perspectives people
+          bring to the team are the driving force of our success. As an equal
+          opportunity employer, we do not discriminate on the basis of any
+          protected attribute. Our commitment is to provide equal opportunities,
+          an inclusive work environment, and fairness for everyone.
+        </i>
       </DetailsContainer>
       <Join />
     </>

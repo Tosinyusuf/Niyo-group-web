@@ -1,3 +1,4 @@
+import React from "react";
 import { StyledContainer } from "../../styled/StyledComponents";
 import { StyledParagraph } from "../../styled/StyledComponents";
 import { StyledTitle } from "../../styled/StyledComponents";
@@ -15,12 +16,13 @@ const { Panel } = Collapse;
 const JobVacancies = () => {
   const jobTypes = [
     "All Departments",
-    "Growth",
-    "HR",
-    "Design",
-    "Engineering",
-    "Legal",
-    "Customer Excellence",
+    "Marketing",
+    "People & Admin",
+    "Operations",
+    "Tech",
+    "Partnerships",
+    "Customer Happiness",
+    "Legal"
   ];
 
   const onChange = (key) => {
@@ -28,7 +30,7 @@ const JobVacancies = () => {
   };
 
   return (
-    <JobVacant id="job">
+    <JobVacant >
       <StyledContainer pad="50px 0">
         <StyledParagraph paddingBottom="1%" fontFamily="Light" color="#fbaf00">
           Open Roles
