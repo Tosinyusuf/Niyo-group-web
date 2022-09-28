@@ -49,6 +49,7 @@ import emanuela from "../assets/team/professional/emanuela-professional.jpg";
 import tia from "../assets/team/professional/tia-professional.jpg";
 import temi from "../assets/team/professional/temi-professional.jpg";
 import sofiat from "../assets/team/sofiat.svg";
+import  destiny from "../assets/team/destiny.jpg"
 import sumaya from "../assets/team/professional/sumaya-professional.jpg";
 import floraJoy from "../assets/team/professional/flora-joy-professional.jpg";
 import akeiba from "../assets/team/professional/akeiba-professional.jpg";
@@ -364,6 +365,7 @@ export const ourTeamMembers = [
   {
     name: "Destiny Sunday",
     role: "Backend Developer",
+    image: destiny,
     funFact: "",
     twitterLink: "",
     Linkedin: "",
