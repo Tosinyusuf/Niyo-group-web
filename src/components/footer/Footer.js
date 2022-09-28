@@ -4,6 +4,7 @@ import phone from "../../assets/phone.svg";
 import email from "../../assets/email.svg";
 import { ourSocials } from "../../constants/data";
 import { Link } from "react-router-dom";
+import badge from "../../assets/badge.svg"
 
 const Footer = () => {
   return (
@@ -112,11 +113,13 @@ const Footer = () => {
               </a>
             </p>
             <p className="footer-column-text">
-              <a href="mailto:hello@niyo.co">
+              <a href="mailto:admin@niyo.co">
                 <img src={email} alt="phone" className="contact-icon" />
-                hello@niyo.co
+                admin@niyo.co
               </a>
             </p>
+
+            <img src={badge} alt=""  style={{width:"70px", marginTop:"20px"}}/>
           </div>
         </div>
 
