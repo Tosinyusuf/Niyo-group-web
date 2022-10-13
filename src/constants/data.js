@@ -378,11 +378,11 @@ export const ourBenefits = [
     title: "Professional / Personal Development",
     text: "You grow, and so do we. Get time, and support for your self-development plans. £1,000 annual training budget.",
   },
-  {
-    icon: cashbag,
-    title: "Quarterly Bonus",
-    text: "You grow, and so do we. Get time, and support for your self-development plans.",
-  },
+  // {
+  //   icon: cashbag,
+  //   title: "Quarterly Bonus",
+  //   text: "You grow, and so do we. Get time, and support for your self-development plans.",
+  // },
   {
     icon: umbrella,
     title: "Generous Holidays",
@@ -416,14 +416,14 @@ export const ourAvailableJobs = [
       "We are looking for a Frontend  Web Developer who is motivated to combine the art of design with the art of programming. Responsibilities will include translation of the UI/UX design wireframes to actual code that will produce visual elements of the application. You will work with the UI/UX designer and bridge the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
   },
   {
-    jobTitle: "Content Marketer",
+    jobTitle: "Social Media and Content Marketer",
     url:'/careers/content-marketer',
     id:"3",
     jobDescription:
       "We are looking for an experienced Content Marketer to join our team. If you love creating high-quality and engaging content and drive business success with it, we want you on our team! As a Content Marketer, you will be responsible for developing and implementing the overall content strategy based on our specific goals and objectives. You will also be responsible for inbound marketing strategies to build a brand identity and online presence through the creation and dissemination of multimedia content online. This involves developing content strategies, growing an online community, and tracking that community’s growth.",
   },
   {
-    jobTitle: "Program Manager",
+    jobTitle: "Programme Manager",
     url:'/careers/program-manager',
     id:"4",
     jobDescription:
