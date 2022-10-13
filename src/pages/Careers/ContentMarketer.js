@@ -19,22 +19,11 @@ const ContentMarketer = () => {
       <DetailsContainer>
         <h2>Role Purpose 🚀</h2>
         <p>
-          We are looking for an experienced Content Marketer to join our team.
-          If you love creating high-quality and engaging content and drive
-          business success with it, we want you on our team! As a Content
-          Marketer, you will be responsible for developing and implementing the
-          overall content strategy based on our specific goals and objectives.
-          You will also also have a deep knowledge of writing for SEO and what
-          it takes to get a piece of content to appear at the top of the SERP.
+        Are a social media guru who is always on top of the latest trends and what's happening in the industry? We want you to join our team so that you can propel our content marketing initiatives forward. 
+
           <br />
           <br />
-          You will be responsible for inbound marketing strategies to build a
-          brand identity and online presence through the creation and
-          dissemination of multimedia content online. This involves developing
-          content strategies, growing an online community, and tracking that
-          community’s growth. The ideal candidate is someone who is proactive,
-          full of content ideas and happy to help with anything that needs
-          writing.
+          The ideal candidate will have at least one to two years of experience managing online communities across numerous platforms, developing communities, and expanding our channels through performance marketing initiatives. You will act as the brand's voice  and the engine that drives marketing efforts, assisting in the development of strategy and content for a diverse and interesting range of products and services across all group verticals. You have an inherent curiosity for social media, a penchant for keeping up with the newest trends, and a dedication to actively participating in the evolution of various platforms. 
         </p>
       </DetailsContainer>
 
@@ -42,10 +31,11 @@ const ContentMarketer = () => {
         <h2>Job Overview</h2>
         <ul>
           <li>Contract type: Full-Time</li>
+          <li>Salary Range: £25,000-31,000</li>
           <li>Starting: Immediately</li>
           <li>Location: Niyo HQ Birmingham (2 days WFH)</li>
           <li>Reporting to: CEO & COO</li>
-          <li>Deadline to apply: October 12th, 2022</li>
+          <li>Deadline to apply: October 31th, 2022</li>
         </ul>
       </DetailsContainer>
 
@@ -143,7 +133,7 @@ const ContentMarketer = () => {
         <p style={{ marginTop: "40px" }}>
           To apply, kindly click{" "}
           <a
-            href="https://airtable.com/shrbGoydH47y63arn"
+            href="https://airtable.com/shrVXyhDTpMrOaSVd"
             target="_blank"
             rel="noreferrer"
           >
