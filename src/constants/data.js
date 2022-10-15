@@ -406,7 +406,7 @@ export const ourAvailableJobs = [
     url:'/careers/growth-marketer',
     id:"1",
     jobDescription:
-      "As a growth marketer, you are data driven, passionate about running tests and finding the highest-impact, lowest-lift growth opportunities, wherever they are. This person is like a ‘CMO-lite’  as they are marketing generalists with deep expertise in a single ‘distribution’ channel (this may be technical or in content disruption). Their role is to optimise marketing funnels by running A/B tests via ads , exploring new marketing channels, and scale paid digital spend efficiently.",
+      "Are you data-driven? Do you like running tests and finding the highest-impact yet lowest-lift growth opportunities? The ideal candidate is a ‘CMO-lite’ as they are marketing generalists with deep expertise in a single ‘distribution’ channel (this may be technical or in content disruption). Their role requires optimising marketing funnels by running A/B tests via ads, exploring new marketing channels, and scaling paid digital spending efficiently.",
   },
   {
     jobTitle: "Frontend Developer",
@@ -420,14 +420,14 @@ export const ourAvailableJobs = [
     url:'/careers/content-marketer',
     id:"3",
     jobDescription:
-      "We are looking for an experienced Content Marketer to join our team. If you love creating high-quality and engaging content and drive business success with it, we want you on our team! As a Content Marketer, you will be responsible for developing and implementing the overall content strategy based on our specific goals and objectives. You will also be responsible for inbound marketing strategies to build a brand identity and online presence through the creation and dissemination of multimedia content online. This involves developing content strategies, growing an online community, and tracking that community’s growth.",
+      "Are a social media guru who is always on top of the latest trends and what's happening in the industry? We want you to join our team so that you can propel our content marketing initiatives forward.",
   },
   {
     jobTitle: "Programme Manager",
     url:'/careers/program-manager',
     id:"4",
     jobDescription:
-      "This role is centred on ensuring that we successfully launch our afro hair and beauty bootcamp. You will be the primary program manager of our bootcamp launch and be responsible for ensuring that our hair studio is fit for use. You will be responsible for the interior design of our hair studio.       ",
+      "This role is centred on ensuring that we successfully launch our afro hair and beauty bootcamp. You will be the primary programme manager of our bootcamp launch and be responsible for ensuring that our hair studio is fit for use. You will have a knack for tech, beauty and fashion programmes that are in the pipeline ot be launched.      ",
   },
   {
     jobTitle: "Executive Adminstrator",

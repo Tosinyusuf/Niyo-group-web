@@ -17,6 +17,19 @@ const ExcutiveAsssitant = () => {
       </JobContainer>
 
       <DetailsContainer>
+        <h2>Job Overview</h2>
+        <ul>
+          <li>Contract type: Full-Time</li>
+          <li>Salary Range: £25,000-36,000</li>
+          <li>Starting: Immediately</li>
+          <li>Location: Niyo HQ Birmingham (2 days WFH)</li>
+          <li>Working Arrangement: Truly flexible hybrid culture</li>
+          <li>Reporting to: CEO & COO</li>
+          <li>Deadline to apply: October 31th, 2022</li>
+        </ul>
+      </DetailsContainer>
+
+      <DetailsContainer>
         <h2>Role Purpose 🚀</h2>
         <p>
           As an Executive Administrator, your major responsibility will be to
@@ -34,13 +47,21 @@ const ExcutiveAsssitant = () => {
       </DetailsContainer>
 
       <DetailsContainer>
-        <h2>Job Overview</h2>
+        <h2>What Do We Offer🤝</h2>
         <ul>
-          <li>Contract type: Full-Time</li>
-          <li>Starting: Immediately</li>
-          <li>Location: Niyo HQ Birmingham (Hybrid; 2 WFH)</li>
-          <li>Reporting to: CEO & COO</li>
-          <li>Deadline to apply: October 12th, 2022</li>
+          <li>
+            29 days holiday package (inclusive of bank holidays) & 1 day for
+            your birthday
+          </li>
+          <li>Professional learning and certifications</li>
+          <li>3% Nest Pension Scheme</li>
+          <li>Regular socials…in person and remote</li>
+          <li>
+            1-1 Coaching to support your wellbeing, personal and professional
+            development
+          </li>
+          <li>30% discount on Niyo Products</li>
+          <li>Free entry to company and partner events and many other perks</li>
         </ul>
       </DetailsContainer>
 
@@ -64,10 +85,7 @@ const ExcutiveAsssitant = () => {
             Keeping the Niyo Group's executive team and staff up-to-date and
             informed
           </li>
-          <li>
-            Work with the Content Manager to handle posts on the CEO/COO pages
-            of social media sites.
-          </li>
+         
           <li>
             Scheduling and organising meetings for the CEO and COO aka Master
             Scheduler
@@ -158,6 +176,8 @@ const ExcutiveAsssitant = () => {
           <li>
             Knows how to handle fundamental financial and accounting needs.
           </li>
+          <li>Has early-stage start-up experience or launched a new product to market.
+</li>
         </ul>
 
         <h4 style={{ color: "#fff", fontSize: "18px", fontFamily: "semibold" }}>
@@ -175,6 +195,7 @@ const ExcutiveAsssitant = () => {
 
       <DetailsContainer>
         <h2>Skills and Qualifications</h2>
+        <p>The following requirements must be met: </p>
         <ul>
           <li>Previous job experience in similar role</li>
           <li>
@@ -212,25 +233,6 @@ const ExcutiveAsssitant = () => {
           <li>References</li>
           <li>Meet the team</li>
         </ul>
-      </DetailsContainer>
-
-      <DetailsContainer>
-        <h2>What Do We Offer🤝</h2>
-        <ul>
-          <li>
-            29 days holiday package (inclusive of bank holidays) & 1 day for
-            your birthday
-          </li>
-          <li>Professional learning and certifications</li>
-          <li>3% Nest Pension Scheme</li>
-          <li>Regular socials…in person and remote</li>
-          <li>
-            1-1 Coaching to support your wellbeing, personal and professional
-            development
-          </li>
-          <li>30% discount on Niyo Products</li>
-          <li>Free entry to company and partner events and many other perks</li>
-        </ul>
 
         <p style={{ marginTop: "40px" }}>
           To apply, kindly click{" "}
@@ -256,6 +258,7 @@ const ExcutiveAsssitant = () => {
           an inclusive work environment, and fairness for everyone.
         </i>
       </DetailsContainer>
+
       <Join />
     </>
   );
