@@ -15,34 +15,53 @@ const ProgramManager = () => {
           </p>
         </div>
       </JobContainer>
+      <DetailsContainer>
+        <h2>Job Overview</h2>
+        <ul>
+          <li>Contract type: Full-Time</li>
+          <li>Salary Range: £26,000-36,000</li>
+          <li>Starting: ASAP</li>
+          <li>Location: Niyo HQ Birmingham (2 days WFH)</li>
+          <li>Working Arrangement: Truly flexible hybrid culture</li>
+          <li>Reporting to: CEO</li>
+          <li>Deadline to apply: October 31th, 2022</li>
+        </ul>
+      </DetailsContainer>
 
       <DetailsContainer>
         <h2>Role Purpose 🚀</h2>
         <p>
-          This role is centred on ensuring that we successfully launch our afro
-          hair and beauty bootcamp. You will be the primary program manager of
-          our bootcamp launch and be responsible for ensuring that our hair
-          studio is fit for use. You will be responsible for the interior design
-          of our hair studio. <br />
+        This role is centred on ensuring that we successfully launch our afro hair and beauty bootcamp. You will be the primary programme manager of our bootcamp launch and be responsible for ensuring that our hair studio is fit for use. You will have a knack for tech, beauty and fashion programmes that are in the pipeline ot be launched.
+ <br />
           <br />
-          You will also develop the graphics for our pre-written course content
-          and ensure that the content meets the standard that would allow any
-          student to become accredited. You will take full charge of our Niyo
-          Hair and Beauty bootcamp through managing course administration,
-          ensuring partner needs are met and monitoring student progress.
+          You will also develop the graphics for our pre-written course content and ensure that the content meets the standard that would allow any student to become accredited. You will take full charge of Niyo Group programmes/ bootcamps through managing course administration, ensuring partner needs are met and monitoring student progress. 
+
         </p>
       </DetailsContainer>
 
+
       <DetailsContainer>
-        <h2>Job Overview</h2>
+        <h2>What Do We Offer🤝</h2>
         <ul>
-          <li>Contract type: Full-Time permanent</li>
-          <li>Starting: ASAP</li>
-          <li>Location: Niyo HQ Birmingham (Hybrid; 2 WFH)</li>
-          <li>Reporting to: CEO </li>
-          <li>Deadline to apply: 12th October, 2022</li>
+          <li>
+            29 days holiday package (inclusive of bank holidays) & 1 day for
+            your birthday
+          </li>
+          <li>Professional learning and certifications</li>
+          <li>3% Nest Pension Scheme</li>
+          <li>Regular socials…in person and remote</li>
+          <li>
+            1-1 Coaching to support your wellbeing, personal and professional
+            development
+          </li>
+          <li>30% discount on Niyo Products</li>
+          <li>Free entry to company and partner events and many other perks</li>
         </ul>
+
+       
       </DetailsContainer>
+
+     
 
       <DetailsContainer>
         <h2>Who Are You Working With? 👥 </h2>
@@ -67,10 +86,6 @@ const ProgramManager = () => {
             management system and actively feedback on improvements to the Niyo
             Hair and Beauty Team to ensure Niyo Hair and Beauty stays at the
             forefront of adult learning principles.
-          </li>
-          <li>
-            Create innovative interior designs for our Niyo Hair and Beauty
-            learning space.
           </li>
           <li>
             Project manage the revamp of our Niyo Hair and Beauty learning
@@ -105,9 +120,8 @@ const ProgramManager = () => {
             appropriately.
           </li>
           <li>
-            Engage and manage relevant internal and external resources, ensuring
-            they meet the milestones set in the overall project timeline and in
-            line with Niyo Hair and Beauty's ethos.
+          Engage and manage relevant internal and external resources, ensuring they meet the milestones set in the overall project timeline and in line with Niyo Group’s ethos.
+
           </li>
           <li>
             Ensure all milestones are achieved on time and maintain good client
@@ -118,8 +132,7 @@ const ProgramManager = () => {
             management and the operations team frequently.
           </li>
           <li>
-            Creating an innovative marketing strategy for our afro hair and
-            beauty bootcamp.
+          Creating an innovative marketing strategy for our afro hair and beauty bootcamp as well as other bootcamps/programmes across board.
           </li>
           <li>
             Creating innovative social media content that informs our community
@@ -132,9 +145,6 @@ const ProgramManager = () => {
       <DetailsContainer>
         <h2>Skills and Qualifications</h2>
         <ul>
-          <li>
-            Mission-driven and ambitious, with a clear vision and strategy.
-          </li>
           <li>
             Customer-oriented and able to design, manage and market world-class
             products for our community.
@@ -190,25 +200,6 @@ const ProgramManager = () => {
           <li>References</li>
           <li>Meet the team</li>
         </ul>
-      </DetailsContainer>
-
-      <DetailsContainer>
-        <h2>What Do We Offer🤝</h2>
-        <ul>
-          <li>
-            29 days holiday package (inclusive of bank holidays) & 1 day for
-            your birthday
-          </li>
-          <li>Professional learning and certifications</li>
-          <li>3% Nest Pension Scheme</li>
-          <li>Regular socials…in person and remote</li>
-          <li>
-            1-1 Coaching to support your wellbeing, personal and professional
-            development
-          </li>
-          <li>30% discount on Niyo Products</li>
-          <li>Free entry to company and partner events and many other perks</li>
-        </ul>
 
         <p style={{ marginTop: "40px" }}>
           To apply, kindly click{" "}
@@ -234,6 +225,7 @@ const ProgramManager = () => {
           an inclusive work environment, and fairness for everyone.
         </i>
       </DetailsContainer>
+
       <Join />
     </>
   );

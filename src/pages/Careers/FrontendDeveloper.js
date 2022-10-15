@@ -17,6 +17,19 @@ const FrontendDeveloper = () => {
       </JobContainer>
 
       <DetailsContainer>
+        <h2>Job Overview</h2>
+        <ul>
+          <li>Contract type: Full-Time</li>
+          <li>Salary Range: £28,000-35,000</li>
+          <li>Starting: Immediately</li>
+          <li>Location: Niyo HQ Birmingham (2 days WFH)</li>
+          <li>Working Arrangement: Remote</li>
+          <li>Reporting to: Tech Lead</li>
+          <li>Deadline to apply: October 12th, 2022</li>
+        </ul>
+      </DetailsContainer>
+
+      <DetailsContainer>
         <h2>Role Purpose 🚀</h2>
         <p>
           We are looking for a Frontend Web Developer. Someone who is passionate
@@ -33,15 +46,27 @@ const FrontendDeveloper = () => {
       </DetailsContainer>
 
       <DetailsContainer>
-        <h2>Job Overview</h2>
+        <h2>What Do We Offer🤝</h2>
         <ul>
-          <li>Contract type: Full-Time</li>
-          <li>Starting: Immediately</li>
-          <li>Location: Niyo HQ Birmingham (Partly remote)</li>
-          <li>Reporting to: Tech Lead</li>
-          <li>Deadline to apply:12th October, 2022</li>
+          <li>
+            29 days holiday package (inclusive of bank holidays) & 1 day for
+            your birthday
+          </li>
+          <li>Professional learning and certifications</li>
+          <li>3% Nest Pension Scheme</li>
+          <li>Regular socials…in person and remote</li>
+          <li>
+            1-1 Coaching to support your wellbeing, personal and professional
+            development
+          </li>
+          <li>30% discount on Niyo Products</li>
+          <li>Free entry to company and partner events and many other perks</li>
         </ul>
+
+       
       </DetailsContainer>
+
+     
 
       <DetailsContainer>
         <h2>Who Are You Working With? 👥 </h2>
@@ -120,25 +145,6 @@ const FrontendDeveloper = () => {
           <li>References</li>
           <li>Meet the team</li>
         </ul>
-      </DetailsContainer>
-
-      <DetailsContainer>
-        <h2>What Do We Offer🤝</h2>
-        <ul>
-          <li>
-            29 days holiday package (inclusive of bank holidays) & 1 day for
-            your birthday
-          </li>
-          <li>Professional learning and certifications</li>
-          <li>3% Nest Pension Scheme</li>
-          <li>Regular socials…in person and remote</li>
-          <li>
-            1-1 Coaching to support your wellbeing, personal and professional
-            development
-          </li>
-          <li>30% discount on Niyo Products</li>
-          <li>Free entry to company and partner events and many other perks</li>
-        </ul>
 
         <p style={{ marginTop: "40px" }}>
           To apply, kindly click{" "}
@@ -164,6 +170,8 @@ const FrontendDeveloper = () => {
           an inclusive work environment, and fairness for everyone.
         </i>
       </DetailsContainer>
+
+     
 
       <Join />
     </>
