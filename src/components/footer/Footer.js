@@ -5,6 +5,7 @@ import email from "../../assets/email.svg";
 import { ourSocials } from "../../constants/data";
 import { Link } from "react-router-dom";
 import badge from "../../assets/badge.svg"
+import pdf from "../../assets/privacy-notice.pdf";
 
 const Footer = () => {
   return (
@@ -39,7 +40,7 @@ const Footer = () => {
 
           <div className="footer-column legal">
             <h5 className="footer-column-title ">Legal</h5>
-            <p className="footer-column-text">Privacy</p>
+            <p className="footer-column-text"> <a href={pdf}>Privacy Notice</a></p>
             <p className="footer-column-text">Terms of service</p>
           </div>
 
