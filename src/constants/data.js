@@ -58,7 +58,7 @@ import mase from "../assets/team/professional/mase-professional.jpg";
 import hannah from "../assets/team/professional/hannah-professional.jpg";
 import victoria from "../assets/team/professional/victoria-professional.jpg";
 import bulb from "../assets/benefits/bulb.svg";
-import cashbag from "../assets/benefits/cashbag.svg";
+// import cashbag from "../assets/benefits/cashbag.svg";
 import umbrella from "../assets/benefits/umbrella.svg";
 import pizza from "../assets/benefits/pizza.svg";
 import currency from "../assets/benefits/currency.svg";
