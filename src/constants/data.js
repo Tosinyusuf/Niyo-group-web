@@ -408,13 +408,13 @@ export const ourAvailableJobs = [
     jobDescription:
       "Are you data-driven? Do you like running tests and finding the highest-impact yet lowest-lift growth opportunities? The ideal candidate is a ‘CMO-lite’ as they are marketing generalists with deep expertise in a single ‘distribution’ channel (this may be technical or in content disruption). Their role requires optimising marketing funnels by running A/B tests via ads, exploring new marketing channels, and scaling paid digital spending efficiently.",
   },
-  {
-    jobTitle: "Frontend Developer",
-    url:'/careers/frontend-developer',
-    id:"2",
-    jobDescription:
-      "We are looking for a Frontend  Web Developer who is motivated to combine the art of design with the art of programming. Responsibilities will include translation of the UI/UX design wireframes to actual code that will produce visual elements of the application. You will work with the UI/UX designer and bridge the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
-  },
+  // {
+  //   jobTitle: "Frontend Developer",
+  //   url:'/careers/frontend-developer',
+  //   id:"2",
+  //   jobDescription:
+  //     "We are looking for a Frontend  Web Developer who is motivated to combine the art of design with the art of programming. Responsibilities will include translation of the UI/UX design wireframes to actual code that will produce visual elements of the application. You will work with the UI/UX designer and bridge the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.",
+  // },
   {
     jobTitle: "Social Media and Content Marketer",
     url:'/careers/content-marketer',
