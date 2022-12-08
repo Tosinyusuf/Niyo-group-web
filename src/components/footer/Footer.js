@@ -110,7 +110,7 @@ const Footer = () => {
             <p className="footer-column-text">
               <a href="tel: +44 121 2956645">
                 <img src={phone} alt="phone" className="contact-icon" />
-                +44 121 2956645
+                07726 286348
               </a>
             </p>
             <p className="footer-column-text">
