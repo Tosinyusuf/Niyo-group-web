@@ -1,8 +1,29 @@
+import { useState, useEffect } from "react";
 import StyledOurNumbers from "../../styled/OurNumbers.styled";
 import CountUp from "react-countup";
+import axios from "axios";
 import VisibilitySensor from "react-visibility-sensor";
 
 const OurNumbers = () => {
+  const [partnersCounts, setPartnersCounts] = useState(null)
+  const [upskillCounts, setUpskillCounts] = useState(null)
+  const [communityMember, setCommunityMember] = useState(null)
+
+  useEffect(() => {
+    async function fetchData() {
+      await axios
+      .get("https://niyogroupapi-wtushxuzaa-lm.a.run.app/api/v1/dashboard-overview")
+      .then((res) => {
+        setPartnersCounts(res.data.data.partnersCount)
+        setUpskillCounts(res.data.data.upskillCount)
+        setCommunityMember(res.data.data.communityMembers)
+      })
+        .catch((error) => {
+        console.log(error)
+      });
+    }
+    fetchData()
+  })
   return (
     <>
       <StyledOurNumbers>
@@ -19,7 +40,7 @@ const OurNumbers = () => {
                   <h4 className="tally-title">
                     {isVisible ? (
                       <span>
-                        <CountUp end={15} />
+                        <CountUp end={partnersCounts} />
                       </span>
                     ) : null}
                     +
@@ -35,7 +56,7 @@ const OurNumbers = () => {
                   <h4 className="tally-title">
                     {isVisible ? (
                       <span>
-                        <CountUp end={3500} decimal="," decimals={0} />
+                        <CountUp end={communityMember} decimal="," decimals={0} />
                       </span>
                     ) : null}
                     +
@@ -50,7 +71,7 @@ const OurNumbers = () => {
                   <h4 className="tally-title">
                     {isVisible ? (
                       <span>
-                        <CountUp end={350} decimal="," decimals={0} />
+                        <CountUp end={upskillCounts} decimal="," decimals={0} />
                       </span>
                     ) : null}
                     +
