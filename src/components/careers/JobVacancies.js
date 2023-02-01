@@ -1,53 +1,52 @@
-import React, { useState, useEffect } from "react";
-import { StyledContainer } from "../../styled/StyledComponents";
-import { StyledParagraph } from "../../styled/StyledComponents";
-import { StyledTitle } from "../../styled/StyledComponents";
-import axios from "axios";
-import { StyledDropdown } from "../../styled/StyledComponents";
+import React, { useState, useEffect } from 'react'
+import { StyledContainer } from '../../styled/StyledComponents'
+import { StyledParagraph } from '../../styled/StyledComponents'
+import { StyledTitle } from '../../styled/StyledComponents'
+import axios from 'axios'
+import { StyledDropdown } from '../../styled/StyledComponents'
 // import { StyledSpan } from "../../styled/StyledComponents";
-import { StyledAccordion } from "../../styled/StyledComponents";
+import { StyledAccordion } from '../../styled/StyledComponents'
 
 // import { ourAvailableJobs } from "../../constants/data";
 
-import { Collapse } from "antd";
-import { JobVacant } from "./style";
-import { Link } from "react-router-dom";
-const { Panel } = Collapse;
+import { Collapse } from 'antd'
+import { JobVacant } from './style'
+import { Link } from 'react-router-dom'
+const { Panel } = Collapse
 
 const JobVacancies = () => {
   const jobTypes = [
-    "All Departments",
-    "Marketing",
-    "People & Admin",
-    "Operations",
-    "Tech",
-    "Partnerships",
-    "Customer Happiness",
-    "Legal"
-  ];
+    'All Departments',
+    'Marketing',
+    'People & Admin',
+    'Operations',
+    'Tech',
+    'Partnerships',
+    'Customer Happiness',
+    'Legal',
+  ]
 
   const onChange = (key) => {
-    console.log(key);
-  };
+    console.log(key)
+  }
 
   const [ourAvailableJobs, setOurAvailableJobs] = useState(null)
   useEffect(() => {
     async function fetchData() {
       await axios
-      .get("https://niyogroupapi-wtushxuzaa-lm.a.run.app/api/v1/job")
-      .then((res) => {
-        setOurAvailableJobs(res.data.data)
-       
-      })
+        .get('https://niyogroupapi-wtushxuzaa-lm.a.run.app/api/v1/job')
+        .then((res) => {
+          setOurAvailableJobs(res.data.data)
+        })
         .catch((error) => {
-        console.log(error)
-      });
+          console.log(error)
+        })
     }
     fetchData()
-  })
+  }, [])
 
   return (
-    <JobVacant >
+    <JobVacant>
       <StyledContainer pad="50px 0">
         <StyledParagraph paddingBottom="1%" fontFamily="Light" color="#fbaf00">
           Open Roles
@@ -72,28 +71,34 @@ const JobVacancies = () => {
         </StyledParagraph> */}
 
         <StyledAccordion>
-          
           <Collapse defaultActiveKey={['1']} onChange={onChange}>
             {ourAvailableJobs?.map((item, index) => {
-              const url =item.title.replace(/\s+/g, '-').toLowerCase()
+              const url = item.title.replace(/\s+/g, '-').toLowerCase()
+              const regex = /(<([^>]+)>)/gi
+              const description = item?.description
               return (
-                
-                  <Panel
-                    className="panel-header"
-                    header={item.title}
-                    key={item.id}
+                <Panel
+                  className="panel-header"
+                  header={item.title}
+                  key={item.id}
                 >
-                  <p className="panel-text" dangerouslySetInnerHTML={{ __html: item.description  }} />
-                    <p className="panel-text"><Link to={`/careers/${url}`}>See More</Link></p>
-                  </Panel>
-                 
-              );
+                  <p
+                    className="panel-text"
+                    dangerouslySetInnerHTML={{ __html: `${description
+                      .replace(regex, '')
+                      .substring(0, 200)}....` }}
+                  />
+                  <p className="panel-text">
+                    <Link to={`/careers/${url}`}>See More</Link>
+                  </p>
+                </Panel>
+              )
             })}
           </Collapse>
         </StyledAccordion>
       </StyledContainer>
     </JobVacant>
-  );
-};
+  )
+}
 
-export default JobVacancies;
+export default JobVacancies
