@@ -44,7 +44,7 @@ const JobVacancies = () => {
     }
     fetchData()
   }, [])
-
+  console.log(ourAvailableJobs?.length, 'ourAvailableJobs')
   return (
     <JobVacant>
       <StyledContainer pad="50px 0">
