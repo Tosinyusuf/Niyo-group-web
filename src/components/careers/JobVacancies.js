@@ -101,7 +101,6 @@ const JobVacancies = () => {
             </Collapse>
           </StyledAccordion>
         )}
-
       </StyledContainer>
     </JobVacant>
   )
