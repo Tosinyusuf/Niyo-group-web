@@ -29,8 +29,6 @@ const JobVacancies = () => {
   const onChange = (key) => {
     console.log(key)
   }
-<<<<<<< HEAD
-=======
 
   const [ourAvailableJobs, setOurAvailableJobs] = useState(null)
   useEffect(() => {
@@ -46,23 +44,7 @@ const JobVacancies = () => {
     }
     fetchData()
   }, [])
->>>>>>> 6488eec (sync admin to niyo website (#4))
 
-  const [ourAvailableJobs, setOurAvailableJobs] = useState(null)
-  useEffect(() => {
-    async function fetchData() {
-      await axios
-        .get('https://niyogroupapi-wtushxuzaa-lm.a.run.app/api/v1/job')
-        .then((res) => {
-          setOurAvailableJobs(res.data.data)
-        })
-        .catch((error) => {
-          console.log(error)
-        })
-    }
-    fetchData()
-  }, [])
-  console.log(ourAvailableJobs?.length, 'ourAvailableJobs')
   return (
     <JobVacant>
       <StyledContainer pad="50px 0">
