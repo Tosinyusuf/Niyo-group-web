@@ -107,7 +107,7 @@ export const ourWorks = [
     description:
       "The training ground for the best Black women in tech and its intersections with other high impact industries. We run  bootcamps focused on tech careers, entrepreneurship, and hair and beauty.",
     button: "Discover our Bootcamps",
-    url: "https://niyonetwork.com/",
+    url: "https://bootcamps.niyo.co",
   },
   {
     id: "two",
