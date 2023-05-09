@@ -25,6 +25,14 @@ const MeetTeam = () => {
     }
     fetchData()
   })
+
+  const reverseData =
+  ourTeamMembers &&
+  ourTeamMembers
+    .map((obj) => {
+      return { ...obj, date: new Date(obj?.updatedAt) }
+    })
+    .sort((a, b) => a?.date -  b?.date)
   return (
     <>
       <StyledMeetTeam>
@@ -76,7 +84,7 @@ const MeetTeam = () => {
           </h4>
         </div>
         <div className="members-cards">
-          {ourTeamMembers?.map((item, index) => {
+          {reverseData?.map((item, index) => {
             return (
               <>
                 <div

@@ -44,6 +44,7 @@ export const DetailsContainer = styled.div`
     padding:30px 150px;
     height:auto;
     background-color:#070909 ;
+    color: white !important;
     h2{
         font-size:35px;
         font-family:AtypDisplay-Bold ;
@@ -54,12 +55,15 @@ export const DetailsContainer = styled.div`
     }
     p{
         font-family:Light;
-        color:#fff;
+        color:#fff !important;
         font-size:16px ;
         a{
             color:#FBAF00;
             font-family:semibold;
         }
+    }
+    span {
+      color:#fff !important;
     }
     i{
       color:#fff;
@@ -73,7 +77,7 @@ export const DetailsContainer = styled.div`
         li{
             font-size:16px;
             margin-bottom:10px;
-            color:#fff;
+            color:#fff !important;
             font-family:Light;
         }
     }
