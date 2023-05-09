@@ -23,7 +23,7 @@ const OurNumbers = () => {
       });
     }
     fetchData()
-  })
+  }, [])
   return (
     <>
       <StyledOurNumbers>
