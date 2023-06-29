@@ -3,8 +3,6 @@ import cardImage1 from "../assets/card-image-1.svg";
 import cardLogo1 from "../assets/card-logo-1.svg";
 import cardImage2 from "../assets/card-image-2.svg";
 import cardLogo2 from "../assets/card-logo-2.svg";
-import cardImage3 from "../assets/card-image-3.svg";
-import cardLogo3 from "../assets/card-logo-3.svg";
 
 import northropGrumman from "../assets/northrop.svg";
 import goldman from "../assets/goldman.svg";
@@ -101,16 +99,16 @@ export const ourWorks = [
     button: "Innovative Hair & Beauty",
     url: "https://www.niyohairandbeauty.com/",
   },
-  {
-    id: "three",
-    image: cardImage3,
-    logo: cardLogo3,
-    title: "Niyo Dapp",
-    description:
-      "Niyo Dapp is  where creators, brands and users get rewarded in crypto for creating killer content through turning their content into NFTs and physical products.",
-    button: "NFT for Beauty & Fashion",
-    url: "https://dapp.niyo.co/",
-  },
+  // {
+  //   id: "three",
+  //   image: cardImage3,
+  //   logo: cardLogo3,
+  //   title: "Niyo Dapp",
+  //   description:
+  //     "Niyo Dapp is  where creators, brands and users get rewarded in crypto for creating killer content through turning their content into NFTs and physical products.",
+  //   button: "NFT for Beauty & Fashion",
+  //   url: "https://dapp.niyo.co/",
+  // },
 ];
 
 export const ourClientsLogos = [
