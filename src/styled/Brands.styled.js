@@ -56,7 +56,7 @@ const StyledBrands = styled.div`
     width: 100%;
     color: #fff;
     padding: 0 150px 50px 150px;
-    justify-content: space-between;
+    //justify-content: ;
     z-index: 10;
 
     @media ${breakpointSizes.mobile} {
@@ -75,6 +75,7 @@ const StyledBrands = styled.div`
     border-radius: 15px;
     padding: 20px;
     height: 600px;
+    margin-right:30px;
     position: relative;
     @media ${breakpointSizes.mobile} {
       width: 100%;

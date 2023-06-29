@@ -2,7 +2,6 @@ import { Dropdown, Menu } from "antd";
 import blackcoder from "../../assets/black.svg";
 import cardLogo1 from "../../assets/card-logo-1.svg";
 import cardLogo2 from "../../assets/card-logo-2.svg";
-import cardLogo3 from "../../assets/card-logo-3.svg";
 import { Contain } from "./style";
 const menu = (
   <Menu
@@ -14,7 +13,7 @@ const menu = (
             <Contain>
               <a
                 className="nav-link"
-                href="https://niyonetwork.com/"
+                href="https://bootcamps.niyo.co"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -32,7 +31,7 @@ const menu = (
                 </div>
               </a>
 
-              <a
+              {/* <a
                 className="nav-link"
                 href="https://dapp.niyo.co"
                 target="_blank"
@@ -51,7 +50,7 @@ const menu = (
                     </p>
                   </div>
                 </div>
-              </a>
+              </a> */}
               <a
                 className="nav-link"
                 href="https://niyohairandbeauty.com/"
