@@ -1,23 +1,19 @@
-import TextAnimation from "react-text-animations";
+
 import { StyledHeroSection } from "../../styled/HeroSection.styled";
 
 const HeroSection = () => {
   return (
     <StyledHeroSection>
       <div className="hero-text-container">
-        <p className="hero-text">
-          <TextAnimation.Slide
-            target="technology"
-            text={["technology", "fashion", "Hair & Beauty"]}
-            animation={{
-              duration: 1000,
-              delay: 1500,
-              timingFunction: "ease-in-out",
-            }}
-          >
-            Economically empowering Black women in technology globally.
-          </TextAnimation.Slide>
-        </p>
+        <h1 className="hero-text">
+
+          Coming Soon...
+
+        
+        </h1>
+        <p>We are a  group of consumer tech brands <br />that disrupt industries.</p>
+
+        <a href="mailto:admin@niyo.co"><button>Contact Us</button></a>
       </div>
     </StyledHeroSection>
   );

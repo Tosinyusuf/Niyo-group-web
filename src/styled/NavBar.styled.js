@@ -98,9 +98,9 @@ export const StyledNavBar = styled.div`
     .nav-link-container {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: right;
       width: 70%;
+    
 
       @media ${breakpointSizes.mobile} {
         display: none;

@@ -2,17 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import cancel from "../../assets/ cancel.svg";
-import about from "../../assets/about.svg";
-import cardLogo1 from "../../assets/card-logo-1.svg";
-import cardLogo2 from "../../assets/card-logo-2.svg";
-import cardLogo3 from "../../assets/card-logo-3.svg";
 import hamburger from "../../assets/hamburger.svg";
 import niyoLogo from "../../assets/niyo-logo-white.svg";
-import planet from "../../assets/priorities/planet.svg";
 import work from "../../assets/work.svg";
 import { StyledNavBar } from "../../styled/NavBar.styled";
-import Brands from "../dropdown";
-import JoinFamily from "../modal/JoinFamily";
 
 const Bars = styled.img`
   display: none;
@@ -41,24 +34,24 @@ const NavBar = () => {
             </Link>
           </div>
           <div className="nav-link-container desktop">
-            <Link className="nav-link" to="/">
+            {/* <Link className="nav-link" to="/">
               Home
             </Link>
             <Link className="nav-link" to="/about-us">
               About Us
             </Link>
-            <Brands />
+            <Brands /> */}
             <Link className="nav-link urgent" to="/careers">
               <div class="pulse"></div>
               <div class="marker"></div>
               Work With Us
             </Link>
-            <Link className="nav-link" to="/contact-us">
+            {/* <Link className="nav-link" to="/contact-us">
               Partner With Us
-            </Link>
-            <button className="nav-button">
+            </Link> */}
+            {/* <button className="nav-button">
               <JoinFamily />
-            </button>
+            </button> */}
           </div>
           <Bars src={hamburger} onClick={showSidebar} />
           <div
@@ -66,10 +59,10 @@ const NavBar = () => {
             onClick={showSidebar}
           >
             <img src={cancel} className="cancel" alt="" onClick={showSidebar} />
-            <Link className="nav-link" to="/">
+            {/* <Link className="nav-link" to="/">
               <img src={about} alt="" /> Home
-            </Link>
-            <br />
+            </Link> */}
+            {/* <br />
             <Link className="nav-link" to="/about-us">
               <img src={about} alt="" /> About Us
             </Link>
@@ -77,51 +70,19 @@ const NavBar = () => {
             <Link className="nav-link" to="/">
               <img src={planet} alt="" /> Niyo Planet
             </Link>
-            <br />
+            <br /> */}
 
             <Link className="nav-link urgent" to="/careers">
               <div class="pulse"></div>
               <div class="marker"></div>
               <img src={work} alt="" /> Work With Us
             </Link>
-            <br />
+            {/* <br />
             <Link className="nav-link" to="/contact-us">
               <img src={work} alt="" /> Partner With Us
-            </Link>
+            </Link> */}
             <br />
-            <a
-              className="nav-link"
-              href="https://niyonetwork.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={cardLogo1} alt="" /> <span>Niyo Bootcamps</span>
-            </a>
-            <br />
-            <a
-              className="nav-link"
-              href="https://niyohairandbeauty.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={cardLogo2} alt="" /> <span> Niyo Hair & Beauty</span>
-            </a>
-            <br />
-            <a
-              className="nav-link"
-              href="https://dapp.niyo.co"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={cardLogo3} alt="" /> <span>Niyo DApp</span>
-            </a>
-            <br />
-
-            <div className="join-family">
-              <button className="nav-button">
-                <JoinFamily />
-              </button>
-            </div>
+           
           </div>
         </div>
       </StyledNavBar>

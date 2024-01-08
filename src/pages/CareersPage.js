@@ -3,7 +3,7 @@ import CareersImages from "../components/careers/CareersImages";
 import CareersEmpowered from "../components/careers/CareersEmpowered";
 import Benefits from "../components/careers/Benefits";
 import JobVacancies from "../components/careers/JobVacancies";
-import Join from "../components/home/JoinHome";
+// import Join from "../components/home/JoinHome";
 import { CareerHero } from "../components/careers/style";
 import arrow from "../assets/black-arrow.svg";
 import {
@@ -49,7 +49,7 @@ const CareersPage = () => {
       <div ref={ref}>
         <JobVacancies />
       </div>
-      <Join />
+      {/* <Join /> */}
     </>
   );
 };
