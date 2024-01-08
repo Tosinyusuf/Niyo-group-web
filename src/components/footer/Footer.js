@@ -15,8 +15,7 @@ const Footer = () => {
           <div className="footer-column top-footer">
             <img src={niyoLogo} alt="Niyo Logo" className="niyo-logo" />
             <p className="top-text">
-              The Niyo Group is a group of<br /> distinct brands focused on<br /> the
-              economic empowerment<br /> of black women in high <br />impact industries.
+              The Niyo Group is a group of<br /> distinct tech brands revolutionizing the world of education and beauty.
             </p>
             <div className="socials-icons-container">
               {ourSocials.map((item, index) => {
@@ -39,27 +38,15 @@ const Footer = () => {
           </div>
 
           <div className="footer-column legal">
-            <h5 className="footer-column-title ">Legal</h5>
             <p className="footer-column-text"> <a href={pdf}>Privacy Notice</a></p>
-            <p className="footer-column-text">Terms of service</p>
           </div>
 
           <div className="footer-column company">
             <h5 className="footer-column-title">Company</h5>
-            <p className="footer-column-text">
-              <Link to="/about-us">About Us </Link>
-            </p>
+        
             <p className="footer-column-text">
               <Link to="/careers">Careers </Link>
             </p>
-            <p className="footer-column-text">
-              <Link to="/careers"> Work with Us </Link>
-            </p>
-            <p className="footer-column-text">
-              <Link to="/contact-us"> Partner with us </Link>
-            </p>
-
-            <p className="footer-column-text">Niyo Planet</p>
             <p className="footer-column-text">
               <a
                 className="nav-link"
@@ -80,11 +67,7 @@ const Footer = () => {
                 Niyo Hair & Beauty
               </a>
             </p>
-            <p className="footer-column-text">
-              <a href="https://dapp.niyo.co" rel="noreferrer" target="_blank">
-                Niyo Dapp{" "}
-              </a>
-            </p>
+            
           </div>
 
           <div className="footer-column explore">

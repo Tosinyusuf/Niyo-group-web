@@ -3,15 +3,12 @@ import heroImage from "../assets/hero-image.jpeg";
 import breakpointSizes from "../constants/breakpointSizes";
 
 export const StyledHeroSection = styled.div`
-  background-image: url(${heroImage});
+  background-image:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(${heroImage});
   background-size: 100% 100%;
   background-size: cover;
   background-position: center;
-  height: 120%;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
   padding-top: 10%;
-  align-items: center;
 
   @media ${breakpointSizes.mobile} {
     background-position: 60%;
@@ -25,41 +22,60 @@ export const StyledHeroSection = styled.div`
     justify-content: center;
     width: 100%;
     height:70vh ;
+    margin:auto;
     //border:1px solid #fff;
 
+    
+
+    p{
+      color:#fff;
+      font-family: Regular;
+      font-size:24px;
+      margin-top: -60px;text-align:center;
+    }
+    button{
+      width:200px;
+      height:50px;
+      border-radius:25px;
+      font-family: AtypDisplay-Bold;;
+      color:#000;
+    }
+
     @media ${breakpointSizes.mobile} {
-      height: 80%;
+      height: 100%;
+      p{
+        margin-top:-20px;
+        font-size:18px;
+      }
     }
   }
 
-  .hero-text:before {
-    display: block;
-    width: 160px;
-    content: "";
-    border-top: 3px solid #fbaf00;
-    z-index: 2;
-
-    @media ${breakpointSizes.mobile} {
-      width: 108px;
-    }
-  }
+ 
 
   .hero-text {
     z-index: 2;
     color: #fff;
     /* width: 1045px; */
     width: 74%;
-    height: 140px;
+    height: auto;
     font-family: AtypDisplay-Bold;
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 120px;
+    text-align: center;
+    background: linear-gradient(180deg, #ff6fd8 0%, #f39200 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+ 
 
     @media ${breakpointSizes.mobile} {
       width: 90%;
-      font-size: 40px;
+      height:auto;
+      font-size: 80px;
       /* padding: 70% 0; */
-      line-height: 56px;
+      line-height: 80px;
     }
   }
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Join from '../../components/home/JoinHome'
+// import Join from '../../components/home/JoinHome'
 import axios from 'axios'
 import { DetailsContainer, JobContainer } from './style'
 import { useLocation } from 'react-router-dom'
@@ -61,7 +61,7 @@ const JobDescription = () => {
         return <div />;
       })}
 
-      <Join />
+      {/* <Join /> */}
     </>
   )
 }
