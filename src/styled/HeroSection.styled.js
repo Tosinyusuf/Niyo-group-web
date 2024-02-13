@@ -128,3 +128,4 @@ export const StyledHeroSection = styled.div`
     }
   }
 `;
+
