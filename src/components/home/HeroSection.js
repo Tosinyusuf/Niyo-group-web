@@ -20,7 +20,7 @@ const HeroSection = () => {
 
     
         <a href="https://www.niyohairandbeauty.com/" target="_blank" rel="noreferrer"> <img src={button3} alt="NHB button" /></a>
-        <a href="https://bootcamps.niyo.co/" target="_blank" rel="noreferrer"> <img src={button2} alt="Niyo bootcamps button" /></a>
+        <a href="https://labs.niyo.co" target="_blank" rel="noreferrer"> <img src={button2} alt="Niyo bootcamps button" /></a>
 
         </div>
       </div>
