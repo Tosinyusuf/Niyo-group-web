@@ -112,6 +112,8 @@ export const StyledNavBar = styled.div`
       text-decoration: none;
       color: #fff;
       transition: ease-in;
+      margin-right: 25px;
+      margin-top:7px;
     }
     .nav-link:hover {
       background: linear-gradient(180deg, #ff6fd8 0%, #f39200 100%);
@@ -127,17 +129,18 @@ export const StyledNavBar = styled.div`
   } */
 
     .nav-button {
-      background-color: #fff;
-      color: #070909;
-      height: 50px;
+      background-color: transparent;
+      border:2px solid #fff;
+      color: #fff;
+      height: 40px;
       border-radius: 20px;
       width: 164px;
       font-family: semibold;
     }
 
     .nav-button:hover {
-      background-color: #fbaf00;
-      color: #fff;
+      background-color: #fff;
+      color: #000;
     }
   }
 

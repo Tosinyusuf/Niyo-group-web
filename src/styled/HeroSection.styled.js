@@ -23,6 +23,24 @@ export const StyledHeroSection = styled.div`
     width: 100%;
     height:70vh ;
     margin:auto;
+
+    .brands{
+      display:flex;
+         a{
+          margin-left:25px;
+         
+      img{
+          height: 50px;
+          :hover{
+            transform:translateY(-3px);
+            transition:ease-in .3s;
+
+          }
+      }
+    }
+    }
+   
+  
     //border:1px solid #fff;
 
     
@@ -56,26 +74,28 @@ export const StyledHeroSection = styled.div`
     z-index: 2;
     color: #fff;
     /* width: 1045px; */
-    width: 74%;
+    width: 80%;
     height: auto;
     font-family: AtypDisplay-Bold;
     font-style: normal;
     font-weight: 400;
-    font-size: 120px;
+    text-transform:uppercase;
+    font-size: 90px;
+    line-height:90px;
     text-align: center;
-    background: linear-gradient(180deg, #ff6fd8 0%, #f39200 100%);
+    /* background: linear-gradient(180deg, #ff6fd8 0%, #f39200 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
+        text-fill-color: transparent; */
  
 
     @media ${breakpointSizes.mobile} {
-      width: 90%;
+      width: 98%;
       height:auto;
-      font-size: 80px;
+      font-size: 50px;
       /* padding: 70% 0; */
-      line-height: 80px;
+      line-height: 50px;
     }
   }
 

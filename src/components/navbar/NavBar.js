@@ -4,7 +4,7 @@ import styled from "styled-components";
 import cancel from "../../assets/ cancel.svg";
 import hamburger from "../../assets/hamburger.svg";
 import niyoLogo from "../../assets/niyo-logo-white.svg";
-import work from "../../assets/work.svg";
+import report from "../../assets/report.pdf"
 import { StyledNavBar } from "../../styled/NavBar.styled";
 
 const Bars = styled.img`
@@ -40,18 +40,25 @@ const NavBar = () => {
             <Link className="nav-link" to="/about-us">
               About Us
             </Link>
+
+            <a href="mailto:admin@niyo.co">
             <Brands /> */}
+            
             <Link className="nav-link urgent" to="/careers">
               <div class="pulse"></div>
               <div class="marker"></div>
               Work With Us
             </Link>
+            <a className="nav-link"  href="mailto:admin@niyo.co">
+              Contact Us
+            </a>
             {/* <Link className="nav-link" to="/contact-us">
               Partner With Us
             </Link> */}
-            {/* <button className="nav-button">
-              <JoinFamily />
-            </button> */}
+            <a href={report} target="_black" rel="noreferrer">
+            <button className="nav-button">
+              Download Report
+            </button> </a>
           </div>
           <Bars src={hamburger} onClick={showSidebar} />
           <div
@@ -75,8 +82,15 @@ const NavBar = () => {
             <Link className="nav-link urgent" to="/careers">
               <div class="pulse"></div>
               <div class="marker"></div>
-              <img src={work} alt="" /> Work With Us
+              Work With Us
             </Link>
+            <a className="nav-link"  href="mailto:admin@niyo.co">
+              Contact Us
+            </a>
+            <a href={report} target="_black" rel="noreferrer">
+            <button className="nav-button">
+              Download Report
+            </button> </a>
             {/* <br />
             <Link className="nav-link" to="/contact-us">
               <img src={work} alt="" /> Partner With Us
