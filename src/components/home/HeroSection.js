@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="hero-text-container">
         <h1 className="hero-text">
 
-        A group of disruptive technology brands.
+        A group of disruptive technology brands
 
         
         </h1>
