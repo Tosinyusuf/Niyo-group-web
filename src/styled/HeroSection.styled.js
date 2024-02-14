@@ -26,6 +26,7 @@ export const StyledHeroSection = styled.div`
 
     .brands{
       display:flex;
+      margin-top:30px;
          a{
           margin-left:25px;
          
@@ -74,7 +75,7 @@ export const StyledHeroSection = styled.div`
     z-index: 2;
     color: #fff;
     /* width: 1045px; */
-    width: 80%;
+    width: 50%;
     height: auto;
     font-family: AtypDisplay-Bold;
     font-style: normal;
