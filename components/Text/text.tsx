@@ -11,9 +11,6 @@ const Text = ({
   children,
   ...props
 }: TextProps<validElements>) => {
-
-
-
   const textStyle = `${variants[textVariant]} ${className}`;
 
   const dynamicStyle = {
@@ -29,32 +26,41 @@ const Text = ({
 
 const variants = {
   h1Large: `
-    md:text-[64px]
+    md:text-[76px]
     text-[40px]
-    md:leading-[48px]
+    md:leading-[56px]
     leading-[72px]
     font-normal 
-    font-stacion
-    tracking-[-3px]
+    font-figtree
+    tracking-[-1.24px]
+    `,
+  h1medium: `
+    md:text-[62px]
+    text-[40px]
+    md:leading-[56px]
+    leading-[72px]
+    font-normal 
+    font-figtree
+    tracking-[-1.24px]
     `,
   h1: `
-    md:text-[40px]
-    text-[36px]
-    md:leading-[48px]
-    leading-[44px]
+    md:text-[62px]
+    text-[40px]
+    md:leading-[61.6px]
+    leading-[61.6px]
     font-normal 
-    font-stacion
-    tracking-[-2%]
+    font-figtree
+    tracking-[-1.68px]
     `,
 
   h2: `
-    md:text-[36px]
-    text-[32px]
-    md:leading-[44px]
+    md:text-[56px]
+    text-[24px]
+    md:leading-[61.6px]
     leading-[40px]
     font-normal 
-    font-stacion
-    tracking-[-2%]
+    font-figtree
+    tracking-[-1.68px]
     `,
 
   h3: `
@@ -101,7 +107,7 @@ const variants = {
   p16: `
 
     text-[16px]
-    leading-[24px]
+    leading-normal
     `,
   p14: `
     text-[14px]
@@ -129,7 +135,8 @@ const validElements = [
   "p14",
   "p16",
   "p18",
-  "h1Large"
+  "h1Large",
+  "h1medium",
 ];
 type validElements =
   | "h1"
@@ -143,7 +150,8 @@ type validElements =
   | "p14"
   | "p16"
   | "p18"
-  | "h1Large";
+  | "h1Large"
+  | "h1medium";
 
 Text.propTypes = {
   value: PropTypes.string,

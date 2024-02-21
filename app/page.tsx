@@ -5,6 +5,9 @@ import { navLinks } from '@/configs/landing'
 import FooterSection from '@/templates/footer'
 import HeroSection from '@/templates/hero'
 import Section2 from '@/templates/section2'
+import Office from '@/templates/offices'
+import Media from '@/templates/media'
+import Awards from '@/templates/awards'
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -13,10 +16,15 @@ export default function Home() {
   }, [])
   return (
     <main>
-      <LandingHeader navLinks={navLinks} waitlist='kojij' />
-      <HeroSection />
-      <Section2 />
-      <FooterSection />
+      <div className='max-w-[1440px] my-0 mx-auto'>
+        <LandingHeader navLinks={navLinks} waitlist="kojij" />
+        <HeroSection />
+        <Section2 />
+        <Awards />
+        <Office />
+        <Media />
+        <FooterSection />
+      </div>
     </main>
-  )
+  );
 }
