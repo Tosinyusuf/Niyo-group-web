@@ -19,7 +19,7 @@ function Section3() {
     const tl2 = gsap.timeline({
       scrollTrigger: {
         trigger: ".section-3",
-        start: "top 30%%",
+        start: "top 30%",
         // scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
         id: "timeline3", // Setting ID for the second ScrollTrigger
       },
@@ -33,8 +33,15 @@ function Section3() {
           yPercent: -50,
           transformStyle: "preserve-3d",
         },
-        { autoAlpha: 1, yPercent: 0, opacity: 1, ease: "easeOut", onStart: () => desktopInstance.play(), }
-      ).fromTo(
+        {
+          autoAlpha: 1,
+          yPercent: 0,
+          opacity: 1,
+          ease: "easeOut",
+          onStart: () => desktopInstance.play(),
+        }
+      )
+      .fromTo(
         ".niyolabs-subtext",
         {
           opacity: 0,
@@ -55,7 +62,6 @@ function Section3() {
         { autoAlpha: 1, yPercent: 0, opacity: 1, ease: "easeOut" }
       );
 
-
     // Return clean up function here
     return () => {
       desktopInstance.destroy();
@@ -66,36 +72,38 @@ function Section3() {
     };
   }, [desktopContainer]);
   return (
-    <section className="md:py-[128px] pt-[50px] px-4 bg-[#161616] section-3 pb-[300px]">
-      <div className="flex flex-col gap-6 items-center">
-        <div className="niyolabs-header">
-          <Text variant="h1" value="Niyolabs" />
-        </div>
-        <div className="md:max-w-[600px] max-w-[364px] text-center niyolabs-subtext">
-          <Text
-            variant="p16"
-            value="Niyo Labs redefines learning by integrating education with real-world rewards. As a pioneering 'learn to earn' platform, we offer an immersive educational experience that extends beyond traditional boundaries."
-            weight={400}
+    <section className="md:py-[128px] py-[50px] px-4 bg-[#161616] section-3 ">
+      <div className="max-w-[1550px] mx-auto w-full">
+        <div className="flex flex-col gap-6 items-center">
+          <div className="niyolabs-header">
+            <Text variant="h1" value="Niyolabs" />
+          </div>
+          <div className="md:max-w-[600px] max-w-[364px] text-center niyolabs-subtext">
+            <Text
+              variant="p16"
+              value="Niyo Labs redefines learning by integrating education with real-world rewards. As a pioneering 'learn to earn' platform, we offer an immersive educational experience that extends beyond traditional boundaries."
+              weight={400}
+            />
+          </div>
+          <Button2
+            label="NiyoLabs"
+            rounded
+            className=" !bg-gd-lemon-400 text-black niyolabs-cta"
+            iconRight={{
+              set: "icon",
+              name: "ph:arrow-line-up-right",
+              size: "32px",
+              color: "#fff",
+              style: {
+                backgroundColor: "#000",
+                borderRadius: "100px",
+                padding: "5px",
+              },
+            }}
           />
         </div>
-        <Button2
-          label="NiyoLabs"
-          rounded
-          className=" !bg-gd-lemon-400 text-black niyolabs-cta"
-          iconRight={{
-            set: "icon",
-            name: "ph:arrow-line-up-right",
-            size: "32px",
-            color: "#fff",
-            style: {
-              backgroundColor: "#000",
-              borderRadius: "100px",
-              padding: "5px",
-            },
-          }}
-        />
+        <div ref={desktopContainer}></div>
       </div>
-      <div ref={desktopContainer}></div>
     </section>
   );
 }

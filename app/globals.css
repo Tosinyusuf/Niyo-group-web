@@ -152,8 +152,7 @@ body {
 }
 
 @layer utilities {
-  .bg-core-values {
-    background-image: radial-gradient(closest-side at top right, #0a0c1d 0%, #1c1f4a 100%);
-
-}
+  section > div {
+    /* @apply md:!px-[50px]  */
+  }
 }

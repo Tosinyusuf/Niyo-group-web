@@ -53,45 +53,47 @@ const OfficeLocations: FC = () => {
   };
 
   return (
-    <div className="bg-gray-100 text-center w-full">
-      <div className="md:px-28 px-6 py-[128px]">
-        <Text
-          variant="h1"
-          value="Our Offices"
-          color="generic-black"
-          weight={700}
-          className="pb-[22px]"
-        />
-        <Text
-          variant="p16"
-          value="We are located in the Birmingham and Lagos"
-          color="generic-black"
-          weight={400}
-        />
-        <div className="flex flex-wrap justify-between gap-8 mt-8">
-          {locations.map((location) => (
-            <LocationCard key={location.name} {...location} />
-          ))}
-        </div>
-        <div className="flex flex-wrap justify-center mt-[48px]">
-          <Button2
-            //   rounded
-            className=" !bg-generic-black "
-            label="View Our Careers"
-            size= "md"
-            iconRight={{
-              set: "icon",
-              name: "ph:arrow-line-up-right",
-              size: "32px",
-              style: {
-                borderRadius: "100px",
-                padding: "5px",
-              },
-            }}
+    <section className="bg-gray-100 text-center w-full">
+      <div className="mx-auto w-full max-w-[1550px]">
+        <div className="md:px-28 px-6 py-[128px]">
+          <Text
+            variant="h1"
+            value="Our Offices"
+            color="generic-black"
+            weight={700}
+            className="pb-[22px]"
           />
+          <Text
+            variant="p16"
+            value="We are located in the Birmingham and Lagos"
+            color="generic-black"
+            weight={400}
+          />
+          <div className="flex flex-wrap justify-between gap-8 mt-8">
+            {locations.map((location) => (
+              <LocationCard key={location.name} {...location} />
+            ))}
+          </div>
+          <div className="flex flex-wrap justify-center mt-[48px]">
+            <Button2
+              //   rounded
+              className=" !bg-generic-black "
+              label="View Our Careers"
+              size="md"
+              iconRight={{
+                set: "icon",
+                name: "ph:arrow-line-up-right",
+                size: "32px",
+                style: {
+                  borderRadius: "100px",
+                  padding: "5px",
+                },
+              }}
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

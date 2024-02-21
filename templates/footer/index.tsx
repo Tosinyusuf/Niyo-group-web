@@ -112,7 +112,7 @@ const FooterColumn: React.FC<FooterColumnProps> = ({ title, links }) => {
 
 const Footer: React.FC<FooterProps> = ({ title, columns, bottomText }) => {
   return (
-    <footer className="bg-footer bg-cover bg-center text-white px-0">
+    <footer className="max-w-[1550px] w-full mx-auto">
       <div className=" md:px-28 px-6 mx-auto mt-[110px]">
         <div className="text-center mb-[164px] w-full md:w-[65%] mx-auto">
           <Text variant="h2" value={title} color="shades-50" weight={400} />
@@ -145,7 +145,7 @@ const Footer: React.FC<FooterProps> = ({ title, columns, bottomText }) => {
 };
 const FooterSection: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-footer bg-cover bg-center text-white px-0">
       <Footer {...footerData} />
     </div>
   );

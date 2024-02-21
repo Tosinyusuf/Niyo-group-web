@@ -12,8 +12,8 @@ function LandingHeader({
   waitlist: string;
 }) {
   return (
-    <section className="absolute top-0 z-10 w-full ">
-      <header className="py-8 md:px-28 px-6 ">
+    <section className="absolute top-0 z-10  w-full ">
+      <header className="py-8 md:px-28 px-6 w-full mx-auto  max-w-[1512px]">
         <nav className=" items-center flex justify-between">
           <Logo />
           <ul className="flex items-center md:gap-16">

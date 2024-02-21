@@ -1,6 +1,7 @@
- import { gsap } from "gsap";
+import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { IO } from "./observer";
+import SplitType from "split-type";
 
 export const split = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -14,7 +15,72 @@ export const split = () => {
   const rtl = document.querySelectorAll("[data-animation='rtl']");
   const upBeat = document.querySelectorAll("[data-animation='up-beat']");
 
-  upDown.forEach(item => {
+  const cardNeon = document.querySelectorAll("[data-animation='card']");
+
+  cardNeon.forEach((item) => {
+    const cardTitle = item.querySelector(".card-title");
+    const cardImg = item.querySelector(".card-img");
+    const cardDescription = item.querySelector(".card-description");
+
+    const titleText = new SplitType(cardTitle as any, { types: ["chars"] });
+    const descriptionText = new SplitType(cardDescription as any, { types: ["chars"] });
+  
+    item.addEventListener('mouseover', function() {
+        gsap.to(cardImg, { duration: 0.5, scale: 1.2 });
+    });
+
+    // Mouseout event to scale the image back down
+    item.addEventListener('mouseout', function() {
+        gsap.to(cardImg, { duration: 0.5, scale: 1 });
+    });
+
+    gsap.set(cardImg, {
+      opacity: 0,
+      scale: 0,
+      transformStyle: "preserve-3d",
+    });
+    gsap.set(titleText.chars, {
+      opacity: 0,
+      y: "-30px",
+    });
+    gsap.set(descriptionText.chars, {
+      opacity: 0,
+      y: "-10px",
+    });
+    IO(item).then(
+      () => {
+        const tl = gsap.timeline();
+
+        tl.to(cardImg, {
+          opacity: 1,
+          duration: 1,
+          scale: 1,
+          ease: "easeOut",
+        }).to(titleText.chars, {
+          opacity: 1,
+          stagger: 0.05,
+          duration: 0.4,
+          ease: "power4.out",
+          y: 0
+        }).to(descriptionText.chars, {
+          opacity: 1,
+          stagger: 0.05,
+          duration: 0.2,
+          ease: "power4.out",
+          y: 0
+        })
+        // gsap.to(item, {
+        //   opacity: 1,
+        //   duration: 1,
+        //   scale: 1,
+        //   ease: "easeOut",
+        // });
+      }
+      // { threshold: 1 }
+    );
+  });
+
+  upDown.forEach((item) => {
     gsap.set(item, {
       opacity: 0,
       autoAlpha: 0,
@@ -30,11 +96,11 @@ export const split = () => {
           duration: 1,
           ease: "easeOut",
         });
-      },
+      }
       // { threshold: 1 }
     );
   });
-  f.forEach(item => {
+  f.forEach((item) => {
     gsap.set(item, {
       opacity: 0,
       autoAlpha: 0,
@@ -50,31 +116,29 @@ export const split = () => {
           duration: 1,
           ease: "easeOut",
         });
-      },
+      }
       // { threshold: 1 }
     );
   });
 
-  g.forEach(item => {
+  g.forEach((item) => {
     gsap.set(item, {
       autoAlpha: 0,
       opacity: 1,
       xPercent: 50,
       transformStyle: "preserve-3d",
     });
-    IO(item).then(
-      () => {
-        gsap.to(item, {
-          autoAlpha: 1,
-          xPercent: 0,
-          duration: 1,
-          ease: "easeOut",
-        });
-      }, 
-    );
+    IO(item).then(() => {
+      gsap.to(item, {
+        autoAlpha: 1,
+        xPercent: 0,
+        duration: 1,
+        ease: "easeOut",
+      });
+    });
   });
 
-  rtl.forEach(item => {
+  rtl.forEach((item) => {
     gsap.set(item, {
       autoAlpha: 0,
       opacity: 1,
@@ -89,11 +153,11 @@ export const split = () => {
           duration: 1,
           ease: "easeOut",
         });
-      },
+      }
       // { threshold: 1 }
     );
   });
-  ltr.forEach(item => {
+  ltr.forEach((item) => {
     gsap.set(item, {
       autoAlpha: 0,
       opacity: 1,
@@ -108,11 +172,11 @@ export const split = () => {
           duration: 1,
           ease: "easeOut",
         });
-      },
+      }
       // { threshold: 1 }
     );
   });
-  j.forEach(item => {
+  j.forEach((item) => {
     gsap.set(item, {
       autoAlpha: 1,
       opacity: 0.3,
@@ -134,7 +198,7 @@ export const split = () => {
     });
   });
 
-  upBeat.forEach(item => {
+  upBeat.forEach((item) => {
     gsap.set(item, {
       autoAlpha: 1,
       // rotateX: -90,
@@ -166,7 +230,7 @@ export const split = () => {
           skewX: -20,
           duration: 1.5,
         });
-      },
+      }
       // { threshold: 1 }
     );
   });

@@ -107,7 +107,7 @@ function Section2() {
 
   return (
     <section className="md:pt-[128px] pt-[50px] px-4 section-2">
-      <div className="flex flex-col gap-6 items-center">
+      <div className="flex flex-col gap-6 items-center max-w-[1550px] mx-auto w-full">
         <div className="nhb-header">
           <Text variant="h1" value="Niyo Hair and beauty" />
         </div>
@@ -146,21 +146,21 @@ function Section2() {
             alt="NHB Desktop"
             width={258}
             height={285}
-            className="absolute top-0 md:top-[-80px] md:left-[-150px] right-0 playcare-desktop"
+            className="absolute top-[-50px] md:top-[-80px] md:left-[-150px] !scale-75 md:!scale-100 right-[-50px] playcare-desktop"
           />
           <Image
             src={HairColorDesktop}
             alt="NHB Desktop"
             width={576}
             height={150}
-            className="absolute  top-[280px] md:right-[-295px] right-0 haircolor-desktop"
+            className="absolute !scale-75 md:!scale-100  top-[280px] md:right-[-295px] right-[-50px] haircolor-desktop"
           />
           <Image
             src={AfroHairDesktop}
             alt="NHB Desktop"
             width={684}
             height={236}
-            className="absolute  bottom-[160px] md:left-[-245px] left-0 afrohair-desktop"
+            className="absolute  md:bottom-[160px] bottom-0 !scale-75 md:!scale-100 md:left-[-245px] left-[-50px] afrohair-desktop"
           />
         </div>
       </div>
