@@ -1,4 +1,4 @@
-export const IO = (item: any, options?: IntersectionObserverInit) => {
+  export const IO = (item: any, options?: IntersectionObserverInit) => {
   return new Promise<void>((resolve) => {
     const observer = new window.IntersectionObserver((entries) => {
       entries.forEach((entry) => {
