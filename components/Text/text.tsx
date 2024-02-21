@@ -6,15 +6,16 @@ const Text = ({
   value,
   variant: textVariant,
   weight,
-  color = "neutral-500",
+  color = "generic-white",
   className,
   children,
+  center,
   ...props
 }: TextProps<validElements>) => {
 
 
 
-  const textStyle = `${variants[textVariant]} ${className}`;
+  const textStyle = `${variants[textVariant]} ${className} ${center && "!text-center"}`;
 
   const dynamicStyle = {
     color: `var(--${color})`,
@@ -34,36 +35,37 @@ const variants = {
     md:leading-[48px]
     leading-[72px]
     font-normal 
-    font-stacion
+    font-figtree
     tracking-[-3px]
     `,
   h1: `
-    md:text-[40px]
-    text-[36px]
-    md:leading-[48px]
+    md:text-[76px]
+    text-[32px]
+    md:leading-[56px]
     leading-[44px]
-    font-normal 
-    font-stacion
-    tracking-[-2%]
+    font-bold 
+    font-figtree
+    md:tracking-[-1.56px]
+    tracking-[0.64px]
     `,
 
   h2: `
-    md:text-[36px]
+    md:text-[56px]
     text-[32px]
-    md:leading-[44px]
-    leading-[40px]
-    font-normal 
-    font-stacion
-    tracking-[-2%]
+    md:leading-[61px]
+    leading-[50px]
+    font-figtree
+    md:tracking-[-1.68px]
+    tracking-[-0.96px]
     `,
 
   h3: `
     md:text-[32px]
-    text-[28px]
+    text-[24px]
     md:leading-[40px]
     leading-[36px]
     font-normal 
-    font-stacion
+    font-figtree
     tracking-[-2%]
     `,
   h4: `
@@ -72,7 +74,7 @@ const variants = {
     md:leading-[36px]
     leading-[32px]
     font-normal 
-    font-stacion
+    font-figtree
     md:tracking-[-2%]
     `,
   h5: `
@@ -81,7 +83,7 @@ const variants = {
     md:leading-[32px]
     leading-[28px]
     font-normal 
-    font-stacion
+    font-figtree
     md:tracking-[-2%]
     `,
   h6: `
@@ -90,7 +92,7 @@ const variants = {
     md:leading-[28px]
     leading-[24px]
     font-normal
-    font-stacion
+    font-figtree
     md:tracking-[-2%]
     `,
   p18: `

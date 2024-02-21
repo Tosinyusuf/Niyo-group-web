@@ -24,6 +24,7 @@
       "pngs/*": ["./assets/pngs/*"],
       "types/*": ["./types/*"],
       "config/*": ["./config/*"],
+      "animation/*": ["./animation/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
