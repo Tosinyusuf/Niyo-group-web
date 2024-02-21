@@ -8,7 +8,7 @@ function HeroSection() {
     <section className="relative md:h-[100vh]">
       <Spline scene="https://prod.spline.design/c2nECsws6qjdMl6l/scene.splinecode" />
       <div className="absolute bottom-0 w-full ">
-      <div className="md:flex-row flex flex-col justify-center gap-6" data-animation="h">
+      <div className="flex-row flex justify-center gap-6" data-animation="h">
         <Button2
           rounded
           className=" !bg-rdr-pink-500 text-black"

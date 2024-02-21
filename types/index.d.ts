@@ -16,6 +16,7 @@ export interface TextProps<T> {
   weight?: number | string;
   color?: string;
   className?: string;
+  center?: boolean
   children?: React.ReactNode;
 }
 

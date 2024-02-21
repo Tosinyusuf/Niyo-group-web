@@ -5,7 +5,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./templates/**/*.{js,ts,jsx,tsx}"
+    "./templates/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -13,6 +13,9 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        section4: "url('../assets/pngs/section4/bg.png')",
+        values: "url('../assets/pngs/section4/core-values/bg.png')",
+        "values-career": "url('../assets/pngs/section4/core-values/bg-white.png')",
       },
       colors: {
         primary: {
@@ -140,7 +143,7 @@ const config: Config = {
     },
     fontFamily: {
       figtree: ["var(--figtree)"],
-      inter: ["var(--inter)"],
+      inter: ["var(--instrument-sans)"],
     },
   },
   plugins: [],
