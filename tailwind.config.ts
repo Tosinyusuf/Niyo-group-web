@@ -13,9 +13,11 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        section4: "url('../assets/pngs/section4/bg.png')",
+        section4: "url('../assets/png/Our-Partners.png')",
         values: "url('../assets/pngs/section4/core-values/bg.png')",
         "values-career": "url('../assets/pngs/section4/core-values/bg-white.png')",
+        footer: "url('../assets/png/Footer.png')",
+        media: "url('../assets/png/Media.png')"
       },
       colors: {
         primary: {

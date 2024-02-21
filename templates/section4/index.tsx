@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import partner1 from "pngs/section4/partners/Northrop_Grumman.png";
 import partner2 from "pngs/section4/partners/Goldman_Sachs.png";
 import partner3 from "pngs/section4/partners/GCHQ.png";
+import Awards from "../awards";
 import partner4 from "pngs/section4/partners/microsoft-corporation.png";
 import partner5 from "pngs/section4/partners/kpmg.png";
 import neon1 from "pngs/section4/core-values/neon_1.png";
@@ -117,6 +118,7 @@ function Section4() {
           </div>
         </div>
       </div>
+      <Awards />
     </section>
   );
 }

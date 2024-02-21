@@ -37,9 +37,8 @@ const Awards: FC = () => {
     },
   ];
   return (
-    <Lines>
-      <div className="bg-dark-100 text-center w-full">
-        <div className="md:px-28 px-6 py-[80px]">
+      <div className="text-center w-full">
+        <div className="">
           <div className="flex items-center justify-center">
             <div className="w-[40px] md:w-[70px]">
               <Image
@@ -81,7 +80,6 @@ const Awards: FC = () => {
           </div>
         </div>
       </div>
-    </Lines>
   );
 };
 

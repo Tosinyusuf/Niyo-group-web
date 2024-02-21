@@ -55,13 +55,13 @@ const NiyoMedia: FC = () => {
     );
   };
   return (
-    <div className="bg-gray-100">
+    <div className="bg-media bg-cover bg-center">
         <div className=" md:px-28 px-6 pb-[180px] pt-[100px]">
 
       <div className="flex justify-between overflow-hidden my-0">
         <div className="flex gap-3">
-          <Text variant="h1" value="Niyo" color="generic-black" weight={400} />
-          <Text variant="h1" value="Media" color="generic-black" weight={600} />
+          <Text variant="h1medium" value="Niyo" color="generic-black" weight={400} />
+          <Text variant="h1medium" value="Media" color="generic-black" weight={600} />
         </div>
         <Button2 rounded className=" !bg-generic-black " label="Read More" />
       </div>
