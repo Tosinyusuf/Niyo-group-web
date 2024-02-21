@@ -56,7 +56,7 @@ const OfficeLocations: FC = () => {
     <div className="bg-gray-100 text-center w-full">
       <div className="md:px-28 px-6 py-[128px]">
         <Text
-          variant="h1Large"
+          variant="h1"
           value="Our Offices"
           color="generic-black"
           weight={700}

@@ -2,7 +2,9 @@
 import React from "react";
 import Logo from "svgs/logos/Logo.svg";
 import { Text, Lines } from "@/components";
+import BackgroundFooter from "@/assets/png/Footer.png";
 import Foundation from "svgs/logos/badge.svg";
+import Image, { StaticImageData } from "next/image";
 
 interface FooterProps {
   title: string;
@@ -110,24 +112,22 @@ const FooterColumn: React.FC<FooterColumnProps> = ({ title, links }) => {
 
 const Footer: React.FC<FooterProps> = ({ title, columns, bottomText }) => {
   return (
-    <footer className="bg-black text-white px-0">
-      <Lines>
-        <div className=" md:px-28 px-6 mx-auto mt-[110px]">
-          <div className="text-center mb-[164px] w-full md:w-[65%] mx-auto">
-            <Text variant="h2" value={title} color="shades-50" weight={400} />
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-7 gap-8">
-            {columns.map((column, index) => (
-              <FooterColumn
-                key={index}
-                title={column.title}
-                links={column.links}
-              />
-            ))}
-          </div>
-          <Foundation />
+    <footer className="bg-footer bg-cover bg-center text-white px-0">
+      <div className=" md:px-28 px-6 mx-auto mt-[110px]">
+        <div className="text-center mb-[164px] w-full md:w-[65%] mx-auto">
+          <Text variant="h2" value={title} color="shades-50" weight={400} />
         </div>
-      </Lines>
+        <div className="grid grid-cols-2 md:grid-cols-7 gap-8">
+          {columns.map((column, index) => (
+            <FooterColumn
+              key={index}
+              title={column.title}
+              links={column.links}
+            />
+          ))}
+        </div>
+        <Foundation />
+      </div>
       <div className="flex gap-[70px] items-start mt-[36px] md:px-28 px-6 mx-auto bg-[#09050F] py-3">
         <div>
           <Logo />

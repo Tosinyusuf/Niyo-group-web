@@ -9,7 +9,7 @@ import Section3 from "@/templates/section3";
 import Section4 from "@/templates/section4";
 import Office from "@/templates/offices";
 import Media from "@/templates/media";
-import Awards from "@/templates/awards";
+
 import { useEffect } from "react";
 
 export default function Home() {
@@ -24,7 +24,6 @@ export default function Home() {
         <Section2 />
         <Section3 />
         <Section4 />
-        <Awards />
         <Office />
         <Media />
         <FooterSection />
