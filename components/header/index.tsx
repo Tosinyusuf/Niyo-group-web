@@ -12,7 +12,7 @@ function LandingHeader({
   waitlist: string;
 }) {
   return (
-    <div className="absolute top-0 z-10 w-full">
+    <section className="absolute top-0 z-10 w-full ">
       <header className="py-8 md:px-28 px-6 ">
         <nav className=" items-center flex justify-between">
           <Logo />
@@ -43,7 +43,7 @@ function LandingHeader({
           </ul>
         </nav>
       </header>
-    </div>
+    </section>
   );
 }
 

@@ -17,6 +17,7 @@ const Text = ({
 
   const textStyle = `${variants[textVariant]} ${className} ${center && "!text-center"}`;
 
+
   const dynamicStyle = {
     color: `var(--${color})`,
     fontWeight: weight,
@@ -29,15 +30,7 @@ const Text = ({
 };
 
 const variants = {
-  h1Large: `
-    md:text-[64px]
-    text-[40px]
-    md:leading-[48px]
-    leading-[72px]
-    font-normal 
-    font-figtree
-    tracking-[-3px]
-    `,
+
   h1: `
     md:text-[76px]
     text-[32px]
@@ -47,11 +40,21 @@ const variants = {
     font-figtree
     md:tracking-[-1.56px]
     tracking-[0.64px]
+    tracking-[-1.24px]
+    `,
+  h1medium: `
+    md:text-[62px]
+    text-[40px]
+    md:leading-[56px]
+    leading-[72px]
+    font-normal 
+    font-figtree
+    tracking-[-1.24px]
     `,
 
   h2: `
     md:text-[56px]
-    text-[32px]
+    text-[24px]
     md:leading-[61px]
     leading-[50px]
     font-figtree
@@ -103,7 +106,7 @@ const variants = {
   p16: `
 
     text-[16px]
-    leading-[24px]
+    leading-normal
     `,
   p14: `
     text-[14px]
@@ -131,7 +134,7 @@ const validElements = [
   "p14",
   "p16",
   "p18",
-  "h1Large"
+  "h1medium",
 ];
 type validElements =
   | "h1"
@@ -145,7 +148,7 @@ type validElements =
   | "p14"
   | "p16"
   | "p18"
-  | "h1Large";
+  | "h1medium";
 
 Text.propTypes = {
   value: PropTypes.string,
