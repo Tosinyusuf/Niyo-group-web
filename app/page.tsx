@@ -20,10 +20,10 @@ export default function Home() {
     <main>
       {/* <div className="max-w-[1440px] my-0 mx-auto"> */}
         <LandingHeader navLinks={navLinks} waitlist="kojij" />
-        {/* <HeroSection />
+        <HeroSection />
         <Section2 />
-        <Section3 />*/}
-        <Section4 /> 
+        <Section3 />
+        <Section4 />
         <Office />
         <Media />
         <FooterSection />

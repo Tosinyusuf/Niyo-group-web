@@ -16,6 +16,8 @@ export const split = () => {
   const upBeat = document.querySelectorAll("[data-animation='up-beat']");
 
   const cardNeon = document.querySelectorAll("[data-animation='card']");
+  const officeNeon = document.querySelectorAll("[data-animation='office']");
+  const mediaNeon = document.querySelectorAll("[data-animation='media']");
 
   cardNeon.forEach((item) => {
     const cardTitle = item.querySelector(".card-title");
@@ -23,15 +25,17 @@ export const split = () => {
     const cardDescription = item.querySelector(".card-description");
 
     const titleText = new SplitType(cardTitle as any, { types: ["chars"] });
-    const descriptionText = new SplitType(cardDescription as any, { types: ["chars"] });
-  
-    item.addEventListener('mouseover', function() {
-        gsap.to(cardImg, { duration: 0.5, scale: 1.2 });
+    const descriptionText = new SplitType(cardDescription as any, {
+      types: ["chars"],
+    });
+
+    item.addEventListener("mouseover", function () {
+      gsap.to(cardImg, { duration: 0.5, scale: 1.2 });
     });
 
     // Mouseout event to scale the image back down
-    item.addEventListener('mouseout', function() {
-        gsap.to(cardImg, { duration: 0.5, scale: 1 });
+    item.addEventListener("mouseout", function () {
+      gsap.to(cardImg, { duration: 0.5, scale: 1 });
     });
 
     gsap.set(cardImg, {
@@ -56,19 +60,191 @@ export const split = () => {
           duration: 1,
           scale: 1,
           ease: "easeOut",
-        }).to(titleText.chars, {
-          opacity: 1,
-          stagger: 0.05,
-          duration: 0.4,
-          ease: "power4.out",
-          y: 0
-        }).to(descriptionText.chars, {
-          opacity: 1,
-          stagger: 0.05,
-          duration: 0.2,
-          ease: "power4.out",
-          y: 0
         })
+          .to(titleText.chars, {
+            opacity: 1,
+            stagger: 0.05,
+            duration: 0.4,
+            ease: "power4.out",
+            y: 0,
+          })
+          .to(descriptionText.chars, {
+            opacity: 1,
+            stagger: 0.05,
+            duration: 0.2,
+            ease: "power4.out",
+            y: 0,
+          });
+        // gsap.to(item, {
+        //   opacity: 1,
+        //   duration: 1,
+        //   scale: 1,
+        //   ease: "easeOut",
+        // });
+      }
+      // { threshold: 1 }
+    );
+  });
+
+  officeNeon.forEach((item) => {
+    const cardTitle = item.querySelector(".office-title");
+    const cardImg = item.querySelectorAll(".office-img");
+    const btn = item.querySelectorAll(".office-btn");
+    const cardText = item.querySelectorAll(".office-text");
+    const cardDescription = item.querySelector(".office-description");
+
+    const titleText = new SplitType(cardTitle as any, { types: ["words"] });
+    const text = new SplitType(cardText as any, { types: ["chars"] });
+    const descriptionText = new SplitType(cardDescription as any, {
+      types: ["words"],
+    });
+
+    gsap.set(cardImg, {
+      opacity: 0,
+      transformStyle: "preserve-3d",
+    });
+    gsap.set(titleText.words, {
+      opacity: 0,
+      y: "20px",
+      transformStyle: "preserve-3d",
+    });
+    gsap.set(descriptionText.words, {
+      opacity: 0,
+      y: "20px",
+      transformStyle: "preserve-3d",
+    });
+    gsap.set(text.chars, {
+      opacity: 0,
+      y: "20px",
+    });
+    gsap.set(btn, {
+      opacity: 0,
+      y: "20px",
+    });
+    IO(item).then(
+      () => {
+        const tl = gsap.timeline();
+
+        tl.to(titleText.words, {
+          opacity: 1,
+          stagger: 0.3,
+          duration: 1.5,
+          ease: "Power3.easeOut",
+          y: 0,
+        })
+          .to(descriptionText.words, {
+            opacity: 1,
+            stagger: 0.05,
+            duration: 0.4,
+            ease: "power4.out",
+            y: 0,
+          })
+          .to(cardImg, {
+            opacity: 1,
+            duration: 1, 
+            ease: "Power3.easeOut",
+          })
+          .to(text.chars, {
+            opacity: 1,
+            stagger: 0.05,
+            duration: 0.4,
+            ease: "power4.out",
+            y: 0,
+          })
+          .to(btn, {
+            opacity: 1,
+          stagger: 0.3,
+          duration: 1.5,
+          ease: "Power3.easeOut",
+          y: 0,
+          });
+
+        // Bounce Sine ease Elastic Power0 Expo Circ Back Linear
+        // gsap.to(item, {
+        //   opacity: 1,
+        //   duration: 1,
+        //   scale: 1,
+        //   ease: "easeOut",
+        // });
+      }
+      // { threshold: 1 }
+    );
+  });
+
+  mediaNeon.forEach((item) => {
+    const cardTitle = item.querySelector(".media-title");
+    const cardImg = item.querySelectorAll(".media-img");
+    const btn = item.querySelectorAll(".media-btn");
+    const cardText = item.querySelectorAll(".media-text");
+    const cardDescription = item.querySelector(".media-description");
+
+    const titleText = new SplitType(cardTitle as any, { types: ["words"] });
+    const text = new SplitType(cardText as any, { types: ["chars"] });
+    const descriptionText = new SplitType(cardDescription as any, {
+      types: ["words"],
+    });
+
+    gsap.set(cardImg, {
+      opacity: 0,
+      transformStyle: "preserve-3d",
+    });
+    gsap.set(titleText.words, {
+      opacity: 0,
+      y: "20px",
+      transformStyle: "preserve-3d",
+    });
+    gsap.set(descriptionText.words, {
+      opacity: 0,
+      y: "20px",
+      transformStyle: "preserve-3d",
+    });
+    gsap.set(text.chars, {
+      opacity: 0,
+      y: "20px",
+    });
+    gsap.set(btn, {
+      opacity: 0,
+      y: "20px",
+    });
+    IO(item).then(
+      () => {
+        const tl = gsap.timeline();
+
+        tl.to(titleText.words, {
+          opacity: 1,
+          stagger: 0.3,
+          duration: 1.5,
+          ease: "Power3.easeOut",
+          y: 0,
+        })
+          .to(descriptionText.words, {
+            opacity: 1,
+            stagger: 0.05,
+            duration: 0.4,
+            ease: "power4.out",
+            y: 0,
+          })
+          .to(cardImg, {
+            opacity: 1,
+            duration: 1, 
+            ease: "Power3.easeOut",
+          })
+          .to(text.chars, {
+            opacity: 1,
+            stagger: 0.05,
+            duration: 0.4,
+            ease: "power4.out",
+            y: 0,
+          })
+          .to(btn, {
+            opacity: 1,
+          stagger: 0.3,
+          duration: 1.5,
+          ease: "Power3.easeOut",
+          y: 0,
+          });
+
+        // Bounce Sine ease Elastic Power0 Expo Circ Back Linear
         // gsap.to(item, {
         //   opacity: 1,
         //   duration: 1,

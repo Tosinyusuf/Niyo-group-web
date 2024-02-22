@@ -55,53 +55,18 @@ const Awards: FC = () => {
           yPercent: -50,
           transformStyle: "preserve-3d",
           rotation: -45, // Start rotated -45 degrees for example
-          width: "10%", // Start with a smaller width
+          scale: 0.001, // Start with a smaller width
           transformOrigin: "50% 50%",
         },
         {
           autoAlpha: 1,
           yPercent: 0,
           opacity: 1,
-          ease: "easeOut",
+          stagger: 0.2,
+          ease: "easeIn",
           rotation: 0, // End rotation at 0 degrees (no rotation)
-          width: "100%", // Animate to full width
-        //   duration: 1.5,
-        }
-      );
-    tl.fromTo(
-      ".nhb-desktop",
-      {
-        opacity: 0,
-        yPercent: 20,
-        duration: 2,
-      },
-      {
-        opacity: 1,
-        yPercent: 0,
-      }
-    )
-      .fromTo(
-        ".playcare-desktop",
-        {
-          opacity: 0,
-          rotate: 90,
-          scale: 2,
-        },
-        {
-          opacity: 1,
-          rotate: 0,
-          scale: 1,
-        }
-      )
-      .fromTo(
-        ".haircolor-desktop, .afrohair-desktop",
-        {
-          opacity: 0,
-          scale: 0.3,
-        },
-        {
-          opacity: 1,
-          scale: 1,
+          scale: 1, // Animate to full width
+          duration: 0.5,
         }
       );
     return () => {

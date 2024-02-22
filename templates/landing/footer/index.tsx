@@ -1,10 +1,13 @@
 // App.tsx or wherever you want to include the footer
-import React from "react";
+import React, { useEffect } from "react";
 import Logo from "svgs/logos/Logo.svg";
 import { Text, Lines } from "@/components";
 import BackgroundFooter from "@/assets/png/Footer.png";
 import Foundation from "svgs/logos/badge.svg";
-import Image, { StaticImageData } from "next/image";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface FooterProps {
   title: string;
@@ -82,7 +85,7 @@ const footerData = {
 
 const FooterColumn: React.FC<FooterColumnProps> = ({ title, links }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col cards">
       <Text
         variant="p18"
         value={title}
@@ -114,8 +117,13 @@ const Footer: React.FC<FooterProps> = ({ title, columns, bottomText }) => {
   return (
     <footer className="max-w-[1550px] w-full mx-auto">
       <div className=" md:px-28 px-6 mx-auto mt-[110px]">
-        <div className="text-center mb-[164px] w-full md:w-[65%] mx-auto">
-          <Text variant="h2" value={title} color="shades-50" weight={400} />
+        <div className="text-center mb-[164px] w-full md:w-[65%] mx-auto title">
+          <Text
+            variant="h2"
+            value={title}
+            color="shades-50"
+            weight={400}
+          />
         </div>
         <div className="grid grid-cols-2 md:grid-cols-7 gap-8">
           {columns.map((column, index) => (
@@ -144,8 +152,49 @@ const Footer: React.FC<FooterProps> = ({ title, columns, bottomText }) => {
   );
 };
 const FooterSection: React.FC = () => {
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".footer",
+        start: "top 50%",
+        id: "timeline", // Setting ID for the second ScrollTrigger
+      },
+    });
+    tl.fromTo(
+      ".title",
+      {
+        opacity: 0,
+        autoAlpha: 0,
+        yPercent: -50,
+        transformStyle: "preserve-3d",
+      },
+      { autoAlpha: 1, yPercent: 0, opacity: 1, ease: "easeOut" }
+    ).fromTo(
+      ".cards",
+      {
+        opacity: 0,
+        yPercent: 20,
+        duration: 2,
+        // filter: "blur(5px)",
+      },
+      {
+        opacity: 1,
+        // filter: "blur(0px)",
+        stagger: 0.2,
+        yPercent: 0,
+      }
+    );
+
+    return () => {
+      // Kill GSAP timelines
+      tl.kill();
+
+      // Kill ScrollTriggers by ID
+      ScrollTrigger.getById("timeline")?.kill();
+    };
+  }, []);
   return (
-    <div className="flex flex-col min-h-screen bg-footer bg-cover bg-center text-white px-0">
+    <div className="flex flex-col  bg-footer bg-cover bg-center text-white px-0 footer">
       <Footer {...footerData} />
     </div>
   );
