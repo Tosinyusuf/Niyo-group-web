@@ -4,6 +4,8 @@ import { Button2, Text } from "@/components";
 import Profile1 from "@/assets/pngs/media/1.png";
 import Profile2 from "@/assets/pngs/media/2.png";
 import Profile3 from "@/assets/pngs/media/3.png";
+import arrow2 from "@/assets/pngs/media/blackArrow.png";
+import arrow1 from "@/assets/pngs/media/whiteArrow.png";
 import Image, { StaticImageData } from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -25,17 +27,16 @@ const NiyoMedia: FC = () => {
         id: "timeline2", // Setting ID for the second ScrollTrigger
       },
     });
-    tl
-      .fromTo(
-        ".title",
-        {
-          opacity: 0,
-          autoAlpha: 0,
-          yPercent: -50,
-          transformStyle: "preserve-3d",
-        },
-        { autoAlpha: 1, yPercent: 0, opacity: 1, ease: "easeOut" }
-      )
+    tl.fromTo(
+      ".title",
+      {
+        opacity: 0,
+        autoAlpha: 0,
+        yPercent: -50,
+        transformStyle: "preserve-3d",
+      },
+      { autoAlpha: 1, yPercent: 0, opacity: 1, ease: "easeOut" }
+    )
       .fromTo(
         ".button",
         {
@@ -57,7 +58,7 @@ const NiyoMedia: FC = () => {
         {
           opacity: 1,
           filter: "blur(0px)",
-          stagger: 0.2, 
+          stagger: 0.2,
           yPercent: 0,
         }
       );
@@ -88,10 +89,10 @@ const NiyoMedia: FC = () => {
     },
   ];
 
-  const LocationCard = ({ name, imageSrc }: ProfileCardProps) => {
+  const MediaCard = ({ name, imageSrc }: ProfileCardProps) => {
     return (
       <div className="overflow-hidden  ">
-        <div className="w-[350px] h-[auto] cards">
+        <div className="md:w-[390px] h-[auto] cards">
           <Image
             className="w-full"
             src={imageSrc}
@@ -99,12 +100,19 @@ const NiyoMedia: FC = () => {
             width={200}
             height={200}
           />
-          <div className="px-6 py-4">
+          <div className="flex py-4">
             <Text
-              variant="p16"
+              variant="h5"
               value={name}
               color="generic-black"
               weight={400}
+            />
+            <Image
+              className="max-w-[100%] h-[50px]"
+              src={arrow1}
+              alt={`arrow`}
+              width={50}
+              height={20}
             />
           </div>
         </div>
@@ -116,7 +124,7 @@ const NiyoMedia: FC = () => {
       <div className=" mx-auto w-full max-w-[1550px]">
         <div className=" md:px-28 px-6 pb-[180px] pt-[100px]">
           <div
-            className="flex justify-between items-center overflow-hidden my-0"
+            className="flex  flex-wrap justify-center md:justify-between items-center overflow-hidden my-0"
             data-animation="media"
           >
             <div className="flex items-center gap-3 title">
@@ -133,11 +141,20 @@ const NiyoMedia: FC = () => {
                 weight={600}
               />
             </div>
-            <Button2
-              rounded
-              className=" !bg-generic-black button"
-              label="Read More"
-            />
+            <div className="flex items-center button">
+              <Button2
+                rounded
+                className=" !bg-generic-black"
+                label="Read More"
+              />
+              <Image
+                className="max-w-[100%] h-[50px]"
+                src={arrow2}
+                alt={`arrow`}
+                width={50}
+                height={20}
+              />
+            </div>
           </div>
 
           <div
@@ -145,7 +162,7 @@ const NiyoMedia: FC = () => {
             data-animation="media"
           >
             {media.map((location, idx) => (
-              <LocationCard key={idx} {...location} />
+              <MediaCard key={idx} {...location} />
             ))}
           </div>
         </div>

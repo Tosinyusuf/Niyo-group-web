@@ -136,7 +136,7 @@ const Footer: React.FC<FooterProps> = ({ title, columns, bottomText }) => {
         </div>
         <Foundation />
       </div>
-      <div className="flex gap-[70px] items-start mt-[36px] md:px-28 px-6 mx-auto bg-[#09050F] py-3">
+      <div className="flex flex-col md:flex-row md:gap-[70px] md:items-start mt-[36px] md:px-28 px-6 mx-auto bg-[#09050F] py-6">
         <div>
           <Logo />
         </div>

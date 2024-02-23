@@ -16,6 +16,7 @@ function HeroSection() {
             rounded
             className=" !bg-rdr-pink-500 text-black"
             label="Niyo Hair & Beauty"
+            size="lg"
             iconRight={{
               set: "icon",
               name: "ph:arrow-line-up-right",
@@ -31,6 +32,7 @@ function HeroSection() {
             label="NiyoLabs"
             rounded
             className=" !bg-gd-lemon-400 text-black"
+            size="lg"
             iconRight={{
               set: "icon",
               name: "ph:arrow-line-up-right",

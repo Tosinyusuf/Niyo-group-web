@@ -1,7 +1,7 @@
 // Awards.tsx
 import React, { FC, useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
-import { Button2, Text, Lines } from "@/components";
+import { Text } from "@/components";
 import MBC from "@/assets/png/MBCC Awards.png";
 import LeftFlower from "@/assets/png/leaf 1.png";
 import RightFlower from "@/assets/png/leaft 2.png";
@@ -101,8 +101,8 @@ const Awards: FC = () => {
     },
   ];
   return (
-    <div className="text-center w-full awards">
-      <div className="">
+    <div className="text-center awards">
+      <div className="mx-auto w-full max-w-[1550px]">
         <div className="flex items-center justify-center awards-header">
           <div className="w-[40px] md:w-[70px]">
             <Image
@@ -129,7 +129,7 @@ const Awards: FC = () => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-6 justify-center items-center mt-8">
+        <div className="mx-auto w-full max-w-[1550px] grid grid-cols-2 md:grid-cols-6 justify-center items-center mt-8">
           {awards.map((awards, idx) => (
             <div key={idx} className="award1">
               <Image

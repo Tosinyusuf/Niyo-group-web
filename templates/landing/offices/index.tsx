@@ -2,9 +2,10 @@
 import React, { FC, useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
 import { Button2, Text } from "@/components";
-import Lagos from "@/assets/png/Rectangle 231.png";
-import Birmingham from "@/assets/png/Rectangle 232.png";
+import Lagos from "@/assets/pngs/ofifice/Lagos.png";
+import Birmingham from "@/assets/pngs/ofifice/Birmingham.png";
 import { gsap } from "gsap";
+// import "./index.scss";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -24,27 +25,26 @@ const OfficeLocations: FC = () => {
   const locations: LocationProps[] = [
     {
       name: "Birmingham",
-      imageSrc: Lagos,
+      imageSrc: Birmingham,
     },
     {
       name: "Lagos",
-      imageSrc: Birmingham,
+      imageSrc: Lagos,
     },
-    // ... other locations
   ];
 
   const LocationCard = ({ name, imageSrc }: LocationCardProps) => {
     return (
-      <div className="overflow-hidden shadow-lg rounded-[32px] office-img">
-        <div className="w-[580px] h-[500px] relative">
+      <div className="shadow-lg rounded-[32px] office-img">
+        <div className="w-[100%] h-auto relative">
           <Image
             className="w-full"
             src={imageSrc}
             alt={`Office in ${name}`}
-            width={500}
-            height={600}
+            width={700}
+            height={200}
           />
-          <div className="px-6 py-4 absolute bottom-0">
+          <div className="px-6 py-4 absolute bottom-4">
             <Text
               variant="h1medium"
               value={name}
@@ -80,14 +80,13 @@ const OfficeLocations: FC = () => {
               weight={400}
             />
           </div>
-          <div className="flex flex-wrap justify-between gap-8 mt-8" data-animation="office">
+          <div className="flex flex-col md:flex-row  justify-between gap-8 mt-8" data-animation="office">
             {locations.map((location) => (
               <LocationCard key={location.name} {...location} />
             ))}
           </div>
           <div className="flex flex-wrap justify-center mt-[48px]" data-animation="office">
             <Button2
-              //   rounded
               className=" !bg-generic-black office-btn"
               label="View Our Careers"
               size="md"
